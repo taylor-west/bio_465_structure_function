@@ -6,6 +6,7 @@ import requests
 import json
 from urllib.request import urlretrieve
 import os
+import math
 
 uniprot_id = 'A0A2P1UMH5'
 
@@ -84,11 +85,13 @@ if alphafold_data:
         for pos in conserved_positions:
             for pos2 in conserved_positions:
                 if pos != pos2:
-                    # calculate distance between residues
-                    x_diff = abs(conserved_positions[pos][0] - conserved_positions[pos2][0])
-                    y_diff = abs(conserved_positions[pos][1] - conserved_positions[pos2][1])
-                    z_diff = abs(conserved_positions[pos][2] - conserved_positions[pos2][2])
-                    if x_diff <= max_distance and y_diff <= max_distance and z_diff <= max_distance:
+                    # calculate distance between residues using euclidian distance
+                    # https://bioinformatics.stackexchange.com/questions/17625/how-can-i-calculate-the-distances-between-two-specific-residues-of-a-protein-fro
+                    x_diff = conserved_positions[pos][0] - conserved_positions[pos2][0]
+                    y_diff = conserved_positions[pos][1] - conserved_positions[pos2][1]
+                    z_diff = conserved_positions[pos][2] - conserved_positions[pos2][2]
+                    distance = math.sqrt(x_diff**2 + y_diff**2 + z_diff**2)
+                    if distance <= max_distance:
                         close_residues[pos].append(pos2)
 
         print(close_residues)
