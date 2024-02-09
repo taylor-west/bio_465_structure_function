@@ -8,38 +8,43 @@ from urllib.request import urlretrieve
 import os
 import math
 
-uniprot_id = 'A0A2P1UMH5'
 
-url = f'https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}'
+def download_alphafold_data(uniprot_id):
 
-response = requests.get(url)
+    url = f'https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}'
 
-alphafold_data = None
+    response = requests.get(url)
 
-if response.status_code == 200:
-    alphafold_data = response.text
-else:
-    print(f'Error: Unable to retrieve AlphaFold entry for {uniprot_id}')
+    alphafold_data = None
 
-if alphafold_data:
-    # get the pdb url to download the file
-    alphafold_json = json.loads(alphafold_data)
-    pdb_url = alphafold_json[0]['pdbUrl']
-    print(pdb_url)
+    if response.status_code == 200:
+        alphafold_data = response.text
+    else:
+        print(f'Error: Unable to retrieve AlphaFold entry for {uniprot_id}')
 
-    # TODO: update this filepath for the proper place on your machine, we will have to set this up to be a parameter in the future
-    filepath = '/Users/olivia/PycharmProjects/PDBparsing/'
-    filename = f'alphafold_{uniprot_id}.pdb'
-    urlretrieve(pdb_url, filepath + filename)
+    if alphafold_data:
+        # get the pdb url to download the file
+        alphafold_json = json.loads(alphafold_data)
+        pdb_url = alphafold_json[0]['pdbUrl']
+        print(pdb_url)
 
-    if os.path.exists(filepath + filename):
+        filepath = '../3d_cluster_analysis/'
+        filename = f'alphafold_{uniprot_id}.pdb'
+        if os.path.exists(filepath):
+            urlretrieve(pdb_url, filepath + filename)
+            return f'{filepath}{filename}'
+        else:
+            return None
+    else:
+        return None
 
+def calculate_pdb_residue_distance(pdb_filepath):
+    if os.path.exists(pdb_filepath):
         # create parser
         parser = PDBParser()
 
         # read structure from file
-        structure = parser.get_structure('ENOLASE (A0A2P1UMH5)', filepath + filename)
-        #'AF-A0A2P1UMH5-F1-model_v4.pdb'
+        structure = parser.get_structure('ENOLASE (A0A2P1UMH5)', pdb_filepath)
 
         desired_residue = 'MET'
         conserved_positions = {1: None, 37: None, 87: None}
@@ -95,22 +100,18 @@ if alphafold_data:
                         close_residues[pos].append(pos2)
 
         print(close_residues)
+        os.remove(pdb_filepath)
+        return close_residues
+    else:
+        return None
+
+####################################################################################
+
+uniprot_id = 'A0A2P1UMH5'
+alphafold_pdb_data_filepath = download_alphafold_data(uniprot_id)
+if alphafold_pdb_data_filepath:
+    close_residues_dict = calculate_pdb_residue_distance(alphafold_pdb_data_filepath)
+    print(close_residues_dict)
 
 
-# this code comes from a biostars post
 
-# # this example uses only the first residue of a single chain.
-# # it is easy to extend this to multiple chains and residues.
-# for residue1 in chain:
-#     for residue2 in chain:
-#         if residue1 != residue2:
-#             # compute distance between CA atoms
-#             try:
-#                 distance = residue1['CA'] - residue2['CA']
-#             except KeyError:
-#                 ## no CA atom, e.g. for H_NAG
-#                 continue
-#             if distance < 6:
-#                 print(residue1, residue2, distance)
-#         # stop after first residue
-#         break
