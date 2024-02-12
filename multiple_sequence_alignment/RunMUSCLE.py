@@ -36,8 +36,6 @@ with open('/Users/olivia/PycharmProjects/CapstonePipeline/output.fasta', 'w') as
 print('done')
 print(f'completed {num_successes} entries')
 
-import requests
-
 # Define the endpoint URL
 url = "https://www.ebi.ac.uk/Tools/services/rest/muscle/run"
 
