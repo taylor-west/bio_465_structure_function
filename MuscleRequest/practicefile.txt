@@ -1,0 +1,1248 @@
+ID   ENOG_HUMAN              Reviewed;         434 AA.
+AC   P09104; B7Z2X9; Q96J33;
+DT   01-JUL-1989, integrated into UniProtKB/Swiss-Prot.
+DT   23-JAN-2007, sequence version 3.
+DT   24-JAN-2024, entry version 249.
+DE   RecName: Full=Gamma-enolase;
+DE            EC=4.2.1.11;
+DE   AltName: Full=2-phospho-D-glycerate hydro-lyase;
+DE   AltName: Full=Enolase 2;
+DE   AltName: Full=Neural enolase;
+DE   AltName: Full=Neuron-specific enolase;
+DE            Short=NSE;
+GN   Name=ENO2;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM 1), AND PARTIAL PROTEIN SEQUENCE.
+RC   TISSUE=Retina;
+RX   PubMed=3208766; DOI=10.1111/j.1432-1033.1988.tb14465.x;
+RA   McAleese S.M., Dunbar B., Fothergill J., Hinks L., Day I.N.M.;
+RT   "Complete amino acid sequence of the neurone-specific gamma isozyme of
+RT   enolase (NSE) from human brain and comparison with the non-neuronal alpha
+RT   form (NNE).";
+RL   Eur. J. Biochem. 178:413-417(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM 1).
+RC   TISSUE=Brain;
+RX   PubMed=3385803; DOI=10.1002/jnr.490190409;
+RA   van Obberghen E., Kamholz J., Bishop J.G. III, Zomzely-Neurath C.,
+RA   Lazzarini R.A.;
+RT   "Human gamma enolase: isolation of a cDNA clone and expression in normal
+RT   and tumor tissues of human origin.";
+RL   J. Neurosci. Res. 19:450-456(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM 1).
+RX   PubMed=2792767; DOI=10.1016/0378-1119(89)90217-5;
+RA   Oliva D., Barba G., Barbieri G., Giallongo A., Feo S.;
+RT   "Cloning, expression and sequence homologies of cDNA for human gamma
+RT   enolase.";
+RL   Gene 79:355-360(1989).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   TISSUE=Hematopoietic;
+RX   PubMed=2045099; DOI=10.1016/0888-7543(91)90496-2;
+RA   Oliva D., Cali L., Feo S., Giallongo A.;
+RT   "Complete structure of the human gene encoding neuron-specific enolase.";
+RL   Genomics 10:157-165(1991).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   TISSUE=Brain;
+RX   PubMed=9074930; DOI=10.1101/gr.7.3.268;
+RA   Ansari-Lari M.A., Shen Y., Muzny D.M., Lee W., Gibbs R.A.;
+RT   "Large-scale sequencing in human chromosome 12p13: experimental and
+RT   computational gene structure determination.";
+RL   Genome Res. 7:268-280(1997).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 2).
+RC   TISSUE=Caudate nucleus;
+RX   PubMed=14702039; DOI=10.1038/ng1285;
+RA   Ota T., Suzuki Y., Nishikawa T., Otsuki T., Sugiyama T., Irie R.,
+RA   Wakamatsu A., Hayashi K., Sato H., Nagai K., Kimura K., Makita H.,
+RA   Sekine M., Obayashi M., Nishi T., Shibahara T., Tanaka T., Ishii S.,
+RA   Yamamoto J., Saito K., Kawai Y., Isono Y., Nakamura Y., Nagahari K.,
+RA   Murakami K., Yasuda T., Iwayanagi T., Wagatsuma M., Shiratori A., Sudo H.,
+RA   Hosoiri T., Kaku Y., Kodaira H., Kondo H., Sugawara M., Takahashi M.,
+RA   Kanda K., Yokoi T., Furuya T., Kikkawa E., Omura Y., Abe K., Kamihara K.,
+RA   Katsuta N., Sato K., Tanikawa M., Yamazaki M., Ninomiya K., Ishibashi T.,
+RA   Yamashita H., Murakawa K., Fujimori K., Tanai H., Kimata M., Watanabe M.,
+RA   Hiraoka S., Chiba Y., Ishida S., Ono Y., Takiguchi S., Watanabe S.,
+RA   Yosida M., Hotuta T., Kusano J., Kanehori K., Takahashi-Fujii A., Hara H.,
+RA   Tanase T.-O., Nomura Y., Togiya S., Komai F., Hara R., Takeuchi K.,
+RA   Arita M., Imose N., Musashino K., Yuuki H., Oshima A., Sasaki N.,
+RA   Aotsuka S., Yoshikawa Y., Matsunawa H., Ichihara T., Shiohata N., Sano S.,
+RA   Moriya S., Momiyama H., Satoh N., Takami S., Terashima Y., Suzuki O.,
+RA   Nakagawa S., Senoh A., Mizoguchi H., Goto Y., Shimizu F., Wakebe H.,
+RA   Hishigaki H., Watanabe T., Sugiyama A., Takemoto M., Kawakami B.,
+RA   Yamazaki M., Watanabe K., Kumagai A., Itakura S., Fukuzumi Y., Fujimori Y.,
+RA   Komiyama M., Tashiro H., Tanigami A., Fujiwara T., Ono T., Yamada K.,
+RA   Fujii Y., Ozaki K., Hirao M., Ohmori Y., Kawabata A., Hikiji T.,
+RA   Kobatake N., Inagaki H., Ikema Y., Okamoto S., Okitani R., Kawakami T.,
+RA   Noguchi S., Itoh T., Shigeta K., Senba T., Matsumura K., Nakajima Y.,
+RA   Mizuno T., Morinaga M., Sasaki M., Togashi T., Oyama M., Hata H.,
+RA   Watanabe M., Komatsu T., Mizushima-Sugano J., Satoh T., Shirai Y.,
+RA   Takahashi Y., Nakagawa K., Okumura K., Nagase T., Nomura N., Kikuchi H.,
+RA   Masuho Y., Yamashita R., Nakai K., Yada T., Nakamura Y., Ohara O.,
+RA   Isogai T., Sugano S.;
+RT   "Complete sequencing and characterization of 21,243 full-length human
+RT   cDNAs.";
+RL   Nat. Genet. 36:40-45(2004).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1).
+RA   Kalnine N., Chen X., Rolfs A., Halleck A., Hines L., Eisenstein S.,
+RA   Koundinya M., Raphael J., Moreira D., Kelley T., LaBaer J., Lin Y.,
+RA   Phelan M., Farmer A.;
+RT   "Cloning of human full-length CDSs in BD Creator(TM) system donor vector.";
+RL   Submitted (OCT-2004) to the EMBL/GenBank/DDBJ databases.
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=16541075; DOI=10.1038/nature04569;
+RA   Scherer S.E., Muzny D.M., Buhay C.J., Chen R., Cree A., Ding Y.,
+RA   Dugan-Rocha S., Gill R., Gunaratne P., Harris R.A., Hawes A.C.,
+RA   Hernandez J., Hodgson A.V., Hume J., Jackson A., Khan Z.M., Kovar-Smith C.,
+RA   Lewis L.R., Lozado R.J., Metzker M.L., Milosavljevic A., Miner G.R.,
+RA   Montgomery K.T., Morgan M.B., Nazareth L.V., Scott G., Sodergren E.,
+RA   Song X.-Z., Steffen D., Lovering R.C., Wheeler D.A., Worley K.C., Yuan Y.,
+RA   Zhang Z., Adams C.Q., Ansari-Lari M.A., Ayele M., Brown M.J., Chen G.,
+RA   Chen Z., Clerc-Blankenburg K.P., Davis C., Delgado O., Dinh H.H.,
+RA   Draper H., Gonzalez-Garay M.L., Havlak P., Jackson L.R., Jacob L.S.,
+RA   Kelly S.H., Li L., Li Z., Liu J., Liu W., Lu J., Maheshwari M.,
+RA   Nguyen B.-V., Okwuonu G.O., Pasternak S., Perez L.M., Plopper F.J.H.,
+RA   Santibanez J., Shen H., Tabor P.E., Verduzco D., Waldron L., Wang Q.,
+RA   Williams G.A., Zhang J., Zhou J., Allen C.C., Amin A.G., Anyalebechi V.,
+RA   Bailey M., Barbaria J.A., Bimage K.E., Bryant N.P., Burch P.E.,
+RA   Burkett C.E., Burrell K.L., Calderon E., Cardenas V., Carter K., Casias K.,
+RA   Cavazos I., Cavazos S.R., Ceasar H., Chacko J., Chan S.N., Chavez D.,
+RA   Christopoulos C., Chu J., Cockrell R., Cox C.D., Dang M., Dathorne S.R.,
+RA   David R., Davis C.M., Davy-Carroll L., Deshazo D.R., Donlin J.E.,
+RA   D'Souza L., Eaves K.A., Egan A., Emery-Cohen A.J., Escotto M., Flagg N.,
+RA   Forbes L.D., Gabisi A.M., Garza M., Hamilton C., Henderson N.,
+RA   Hernandez O., Hines S., Hogues M.E., Huang M., Idlebird D.G., Johnson R.,
+RA   Jolivet A., Jones S., Kagan R., King L.M., Leal B., Lebow H., Lee S.,
+RA   LeVan J.M., Lewis L.C., London P., Lorensuhewa L.M., Loulseged H.,
+RA   Lovett D.A., Lucier A., Lucier R.L., Ma J., Madu R.C., Mapua P.,
+RA   Martindale A.D., Martinez E., Massey E., Mawhiney S., Meador M.G.,
+RA   Mendez S., Mercado C., Mercado I.C., Merritt C.E., Miner Z.L., Minja E.,
+RA   Mitchell T., Mohabbat F., Mohabbat K., Montgomery B., Moore N., Morris S.,
+RA   Munidasa M., Ngo R.N., Nguyen N.B., Nickerson E., Nwaokelemeh O.O.,
+RA   Nwokenkwo S., Obregon M., Oguh M., Oragunye N., Oviedo R.J., Parish B.J.,
+RA   Parker D.N., Parrish J., Parks K.L., Paul H.A., Payton B.A., Perez A.,
+RA   Perrin W., Pickens A., Primus E.L., Pu L.-L., Puazo M., Quiles M.M.,
+RA   Quiroz J.B., Rabata D., Reeves K., Ruiz S.J., Shao H., Sisson I.,
+RA   Sonaike T., Sorelle R.P., Sutton A.E., Svatek A.F., Svetz L.A.,
+RA   Tamerisa K.S., Taylor T.R., Teague B., Thomas N., Thorn R.D., Trejos Z.Y.,
+RA   Trevino B.K., Ukegbu O.N., Urban J.B., Vasquez L.I., Vera V.A.,
+RA   Villasana D.M., Wang L., Ward-Moore S., Warren J.T., Wei X., White F.,
+RA   Williamson A.L., Wleczyk R., Wooden H.S., Wooden S.H., Yen J., Yoon L.,
+RA   Yoon V., Zorrilla S.E., Nelson D., Kucherlapati R., Weinstock G.,
+RA   Gibbs R.A.;
+RT   "The finished DNA sequence of human chromosome 12.";
+RL   Nature 440:346-351(2006).
+RN   [9]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1).
+RC   TISSUE=Placenta;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA project:
+RT   the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [10]
+RP   PROTEIN SEQUENCE OF 16-28; 33-50; 90-103; 163-179; 184-193; 240-262;
+RP   270-285; 336-372 AND 413-422, AND IDENTIFICATION BY MASS SPECTROMETRY.
+RC   TISSUE=Brain, Cajal-Retzius cell, and Fetal brain cortex;
+RA   Lubec G., Vishwanath V., Chen W.-Q., Sun Y.;
+RL   Submitted (DEC-2008) to UniProtKB.
+RN   [11]
+RP   NUCLEOTIDE SEQUENCE [MRNA] OF 425-434 (ISOFORM 1/2).
+RX   PubMed=3653393; DOI=10.1016/0014-5793(87)80207-7;
+RA   Day I.N.M., Allsopp M.T.E.P., Moore D.C.M., Thompson R.J.;
+RT   "Sequence conservation in the 3'-untranslated regions of neurone-specific
+RT   enolase, lymphokine and protooncogene mRNAs.";
+RL   FEBS Lett. 222:139-143(1987).
+RN   [12]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT TYR-44, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=15592455; DOI=10.1038/nbt1046;
+RA   Rush J., Moritz A., Lee K.A., Guo A., Goss V.L., Spek E.J., Zhang H.,
+RA   Zha X.-M., Polakiewicz R.D., Comb M.J.;
+RT   "Immunoaffinity profiling of tyrosine phosphorylation in cancer cells.";
+RL   Nat. Biotechnol. 23:94-101(2005).
+RN   [13]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT THR-26, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Cervix carcinoma;
+RX   PubMed=20068231; DOI=10.1126/scisignal.2000475;
+RA   Olsen J.V., Vermeulen M., Santamaria A., Kumar C., Miller M.L.,
+RA   Jensen L.J., Gnad F., Cox J., Jensen T.S., Nigg E.A., Brunak S., Mann M.;
+RT   "Quantitative phosphoproteomics reveals widespread full phosphorylation
+RT   site occupancy during mitosis.";
+RL   Sci. Signal. 3:RA3-RA3(2010).
+RN   [14]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=21269460; DOI=10.1186/1752-0509-5-17;
+RA   Burkard T.R., Planyavsky M., Kaupe I., Breitwieser F.P., Buerckstuemmer T.,
+RA   Bennett K.L., Superti-Furga G., Colinge J.;
+RT   "Initial characterization of the human central proteome.";
+RL   BMC Syst. Biol. 5:17-17(2011).
+RN   [15]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-263, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Cervix carcinoma, and Erythroleukemia;
+RX   PubMed=23186163; DOI=10.1021/pr300630k;
+RA   Zhou H., Di Palma S., Preisinger C., Peng M., Polat A.N., Heck A.J.,
+RA   Mohammed S.;
+RT   "Toward a comprehensive characterization of a human cancer cell
+RT   phosphoproteome.";
+RL   J. Proteome Res. 12:260-271(2013).
+RN   [16]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Liver;
+RX   PubMed=24275569; DOI=10.1016/j.jprot.2013.11.014;
+RA   Bian Y., Song C., Cheng K., Dong M., Wang F., Huang J., Sun D., Wang L.,
+RA   Ye M., Zou H.;
+RT   "An enzyme assisted RP-RPLC approach for in-depth analysis of human liver
+RT   phosphoproteome.";
+RL   J. Proteomics 96:253-262(2014).
+RN   [17]
+RP   HYDROXYBUTYRYLATION AT LYS-233.
+RX   PubMed=29775581; DOI=10.1016/j.molcel.2018.04.011;
+RA   Huang H., Tang S., Ji M., Tang Z., Shimada M., Liu X., Qi S.,
+RA   Locasale J.W., Roeder R.G., Zhao Y., Li X.;
+RT   "p300-mediated lysine 2-hydroxyisobutyrylation regulates glycolysis.";
+RL   Mol. Cell 70:663-678(2018).
+RN   [18]
+RP   INDUCTION BY HCMV UL38 (MICROBIAL INFECTION).
+RX   PubMed=36459650; DOI=10.1073/pnas.2205789119;
+RA   Moreno I. Jr., Rodriguez-Sanchez I., Schafer X., Munger J.;
+RT   "Human cytomegalovirus induces neuronal enolase to support virally mediated
+RT   metabolic remodeling.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 119:e2205789119-e2205789119(2022).
+RN   [19]
+RP   X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS) IN COMPLEX WITH MAGNESIUM IONS.
+RX   PubMed=15289101; DOI=10.1016/j.jmb.2004.05.068;
+RA   Chai G., Brewer J.M., Lovelace L.L., Aoki T., Minor W., Lebioda L.;
+RT   "Expression, purification and the 1.8 angstroms resolution crystal
+RT   structure of human neuron specific enolase.";
+RL   J. Mol. Biol. 341:1015-1021(2004).
+CC   -!- FUNCTION: Has neurotrophic and neuroprotective properties on a broad
+CC       spectrum of central nervous system (CNS) neurons. Binds, in a calcium-
+CC       dependent manner, to cultured neocortical neurons and promotes cell
+CC       survival (By similarity). {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(2R)-2-phosphoglycerate = H2O + phosphoenolpyruvate;
+CC         Xref=Rhea:RHEA:10164, ChEBI:CHEBI:15377, ChEBI:CHEBI:58289,
+CC         ChEBI:CHEBI:58702; EC=4.2.1.11;
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420;
+CC       Note=Mg(2+) is required for catalysis and for stabilizing the dimer.;
+CC   -!- PATHWAY: Carbohydrate degradation; glycolysis; pyruvate from D-
+CC       glyceraldehyde 3-phosphate: step 4/5.
+CC   -!- SUBUNIT: Mammalian enolase is composed of 3 isozyme subunits, alpha,
+CC       beta and gamma, which can form homodimers or heterodimers which are
+CC       cell-type and development-specific. {ECO:0000269|PubMed:15289101}.
+CC   -!- INTERACTION:
+CC       P09104; Q9BSI4: TINF2; NbExp=2; IntAct=EBI-713154, EBI-717399;
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000250}. Cell membrane
+CC       {ECO:0000250}. Note=Can translocate to the plasma membrane in either
+CC       the homodimeric (alpha/alpha) or heterodimeric (alpha/gamma) form.
+CC       {ECO:0000250}.
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=2;
+CC       Name=1;
+CC         IsoId=P09104-1; Sequence=Displayed;
+CC       Name=2;
+CC         IsoId=P09104-2; Sequence=VSP_055482;
+CC   -!- TISSUE SPECIFICITY: The alpha/alpha homodimer is expressed in embryo
+CC       and in most adult tissues. The alpha/beta heterodimer and the beta/beta
+CC       homodimer are found in striated muscle, and the alpha/gamma heterodimer
+CC       and the gamma/gamma homodimer in neurons.
+CC   -!- DEVELOPMENTAL STAGE: During ontogenesis, there is a transition from the
+CC       alpha/alpha homodimer to the alpha/beta heterodimer in striated muscle
+CC       cells, and to the alpha/gamma heterodimer in nerve cells.
+CC   -!- INDUCTION: Levels of ENO2 increase dramatically in cardiovascular
+CC       accidents, cerebral trauma, brain tumors and Creutzfeldt-Jakob disease.
+CC   -!- INDUCTION: (Microbial infection) Activated by human cytomegalovirus
+CC       (HCMV) UL38 in order to provide the virus with glycosyl building
+CC       blocks. {ECO:0000269|PubMed:36459650}.
+CC   -!- SIMILARITY: Belongs to the enolase family. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=AAA52388.1; Type=Erroneous initiation; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X13120; CAA31512.1; -; mRNA.
+DR   EMBL; X14327; CAA32505.1; -; mRNA.
+DR   EMBL; M36768; AAA52388.1; ALT_INIT; mRNA.
+DR   EMBL; M22349; AAB59554.1; -; mRNA.
+DR   EMBL; X51956; CAA36215.1; -; Genomic_DNA.
+DR   EMBL; AK295220; BAH12015.1; -; mRNA.
+DR   EMBL; BT007383; AAP36047.1; -; mRNA.
+DR   EMBL; U47924; AAB51320.1; -; Genomic_DNA.
+DR   EMBL; BC002745; AAH02745.1; -; mRNA.
+DR   CCDS; CCDS8570.1; -. [P09104-1]
+DR   PIR; JU0060; NOHUG.
+DR   RefSeq; NP_001966.1; NM_001975.2. [P09104-1]
+DR   PDB; 1TE6; X-ray; 1.80 A; A/B=2-434.
+DR   PDB; 2AKM; X-ray; 1.92 A; A/B=2-434.
+DR   PDB; 2AKZ; X-ray; 1.36 A; A/B=2-434.
+DR   PDB; 3UCC; X-ray; 1.50 A; A/B=2-434.
+DR   PDB; 3UCD; X-ray; 1.41 A; A/B=2-434.
+DR   PDB; 3UJE; X-ray; 1.55 A; A/B=2-434.
+DR   PDB; 3UJF; X-ray; 2.10 A; A/B=2-434.
+DR   PDB; 3UJR; X-ray; 1.40 A; A/B=2-434.
+DR   PDB; 3UJS; X-ray; 1.65 A; A/B=2-434.
+DR   PDB; 4ZA0; X-ray; 2.31 A; A/B=1-434.
+DR   PDB; 4ZCW; X-ray; 1.99 A; A/B=1-434.
+DR   PDB; 5EU9; X-ray; 2.05 A; A/B/C/D/E/F/G/H=1-434.
+DR   PDB; 5IDZ; X-ray; 2.63 A; A/B=1-434.
+DR   PDB; 5TD9; X-ray; 2.32 A; A/B=1-434.
+DR   PDB; 5TIJ; X-ray; 2.63 A; A/B=1-434.
+DR   PDB; 7MBH; X-ray; 2.10 A; A/B=1-434.
+DR   PDBsum; 1TE6; -.
+DR   PDBsum; 2AKM; -.
+DR   PDBsum; 2AKZ; -.
+DR   PDBsum; 3UCC; -.
+DR   PDBsum; 3UCD; -.
+DR   PDBsum; 3UJE; -.
+DR   PDBsum; 3UJF; -.
+DR   PDBsum; 3UJR; -.
+DR   PDBsum; 3UJS; -.
+DR   PDBsum; 4ZA0; -.
+DR   PDBsum; 4ZCW; -.
+DR   PDBsum; 5EU9; -.
+DR   PDBsum; 5IDZ; -.
+DR   PDBsum; 5TD9; -.
+DR   PDBsum; 5TIJ; -.
+DR   PDBsum; 7MBH; -.
+DR   AlphaFoldDB; P09104; -.
+DR   SMR; P09104; -.
+DR   BioGRID; 108340; 128.
+DR   IntAct; P09104; 44.
+DR   MINT; P09104; -.
+DR   STRING; 9606.ENSP00000437402; -.
+DR   BindingDB; P09104; -.
+DR   DrugBank; DB02726; 2-Phosphoglycolic Acid.
+DR   GlyGen; P09104; 1 site, 1 O-linked glycan (1 site).
+DR   iPTMnet; P09104; -.
+DR   MetOSite; P09104; -.
+DR   PhosphoSitePlus; P09104; -.
+DR   SwissPalm; P09104; -.
+DR   BioMuta; ENO2; -.
+DR   DMDM; 20981682; -.
+DR   OGP; P09104; -.
+DR   UCD-2DPAGE; P09104; -.
+DR   EPD; P09104; -.
+DR   jPOST; P09104; -.
+DR   MassIVE; P09104; -.
+DR   MaxQB; P09104; -.
+DR   PaxDb; 9606-ENSP00000437402; -.
+DR   PeptideAtlas; P09104; -.
+DR   PRIDE; P09104; -.
+DR   ProteomicsDB; 52198; -. [P09104-1]
+DR   ProteomicsDB; 6473; -.
+DR   Pumba; P09104; -.
+DR   Antibodypedia; 3514; 2312 antibodies from 52 providers.
+DR   DNASU; 2026; -.
+DR   Ensembl; ENST00000229277.6; ENSP00000229277.1; ENSG00000111674.9. [P09104-1]
+DR   Ensembl; ENST00000535366.5; ENSP00000437402.1; ENSG00000111674.9. [P09104-1]
+DR   Ensembl; ENST00000538763.5; ENSP00000441490.1; ENSG00000111674.9. [P09104-2]
+DR   Ensembl; ENST00000541477.5; ENSP00000438873.1; ENSG00000111674.9. [P09104-1]
+DR   GeneID; 2026; -.
+DR   KEGG; hsa:2026; -.
+DR   MANE-Select; ENST00000229277.6; ENSP00000229277.1; NM_001975.3; NP_001966.1.
+DR   UCSC; uc058knm.1; human. [P09104-1]
+DR   AGR; HGNC:3353; -.
+DR   CTD; 2026; -.
+DR   DisGeNET; 2026; -.
+DR   GeneCards; ENO2; -.
+DR   HGNC; HGNC:3353; ENO2.
+DR   HPA; ENSG00000111674; Group enriched (brain, retina).
+DR   MIM; 131360; gene.
+DR   neXtProt; NX_P09104; -.
+DR   OpenTargets; ENSG00000111674; -.
+DR   PharmGKB; PA27788; -.
+DR   VEuPathDB; HostDB:ENSG00000111674; -.
+DR   eggNOG; KOG2670; Eukaryota.
+DR   GeneTree; ENSGT00950000182805; -.
+DR   HOGENOM; CLU_031223_0_0_1; -.
+DR   InParanoid; P09104; -.
+DR   OMA; QHLGGAF; -.
+DR   OrthoDB; 1093250at2759; -.
+DR   PhylomeDB; P09104; -.
+DR   TreeFam; TF300391; -.
+DR   BioCyc; MetaCyc:HS10646-MONOMER; -.
+DR   BRENDA; 4.2.1.11; 2681.
+DR   PathwayCommons; P09104; -.
+DR   Reactome; R-HSA-70171; Glycolysis.
+DR   Reactome; R-HSA-70263; Gluconeogenesis.
+DR   SABIO-RK; P09104; -.
+DR   SignaLink; P09104; -.
+DR   SIGNOR; P09104; -.
+DR   UniPathway; UPA00109; UER00187.
+DR   BioGRID-ORCS; 2026; 14 hits in 1156 CRISPR screens.
+DR   ChiTaRS; ENO2; human.
+DR   EvolutionaryTrace; P09104; -.
+DR   GeneWiki; Enolase_2; -.
+DR   GenomeRNAi; 2026; -.
+DR   Pharos; P09104; Tbio.
+DR   PRO; PR:P09104; -.
+DR   Proteomes; UP000005640; Chromosome 12.
+DR   RNAct; P09104; Protein.
+DR   Bgee; ENSG00000111674; Expressed in cerebellar hemisphere and 172 other cell types or tissues.
+DR   ExpressionAtlas; P09104; baseline and differential.
+DR   Genevisible; P09104; HS.
+DR   GO; GO:0005829; C:cytosol; IDA:HPA.
+DR   GO; GO:0070062; C:extracellular exosome; HDA:UniProtKB.
+DR   GO; GO:0005615; C:extracellular space; HDA:UniProtKB.
+DR   GO; GO:0016020; C:membrane; IDA:CAFA.
+DR   GO; GO:0043204; C:perikaryon; IEA:Ensembl.
+DR   GO; GO:0000015; C:phosphopyruvate hydratase complex; IBA:GO_Central.
+DR   GO; GO:0001917; C:photoreceptor inner segment; IEA:Ensembl.
+DR   GO; GO:0005886; C:plasma membrane; IDA:HPA.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:InterPro.
+DR   GO; GO:0004634; F:phosphopyruvate hydratase activity; ISS:CAFA.
+DR   GO; GO:0061621; P:canonical glycolysis; TAS:Reactome.
+DR   GO; GO:0006094; P:gluconeogenesis; TAS:Reactome.
+DR   GO; GO:0006096; P:glycolytic process; ISS:CAFA.
+DR   CDD; cd03313; enolase; 1.
+DR   Gene3D; 3.20.20.120; Enolase-like C-terminal domain; 1.
+DR   Gene3D; 3.30.390.10; Enolase-like, N-terminal domain; 1.
+DR   HAMAP; MF_00318; Enolase; 1.
+DR   InterPro; IPR000941; Enolase.
+DR   InterPro; IPR036849; Enolase-like_C_sf.
+DR   InterPro; IPR029017; Enolase-like_N.
+DR   InterPro; IPR020810; Enolase_C.
+DR   InterPro; IPR020809; Enolase_CS.
+DR   InterPro; IPR020811; Enolase_N.
+DR   NCBIfam; TIGR01060; eno; 1.
+DR   PANTHER; PTHR11902; ENOLASE; 1.
+DR   PANTHER; PTHR11902:SF10; GAMMA-ENOLASE; 1.
+DR   Pfam; PF00113; Enolase_C; 1.
+DR   Pfam; PF03952; Enolase_N; 1.
+DR   PIRSF; PIRSF001400; Enolase; 1.
+DR   PRINTS; PR00148; ENOLASE.
+DR   SFLD; SFLDS00001; Enolase; 1.
+DR   SFLD; SFLDF00002; enolase; 1.
+DR   SMART; SM01192; Enolase_C; 1.
+DR   SMART; SM01193; Enolase_N; 1.
+DR   SUPFAM; SSF51604; Enolase C-terminal domain-like; 1.
+DR   SUPFAM; SSF54826; Enolase N-terminal domain-like; 1.
+DR   PROSITE; PS00164; ENOLASE; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Acetylation; Alternative splicing; Cell membrane; Cytoplasm;
+KW   Direct protein sequencing; Glycolysis; Hydroxylation; Isopeptide bond;
+KW   Lyase; Magnesium; Membrane; Metal-binding; Phosphoprotein;
+KW   Reference proteome; Ubl conjugation.
+FT   INIT_MET        1
+FT                   /note="Removed"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   CHAIN           2..434
+FT                   /note="Gamma-enolase"
+FT                   /id="PRO_0000134112"
+FT   ACT_SITE        210
+FT                   /note="Proton donor"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   ACT_SITE        343
+FT                   /note="Proton acceptor"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         40
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_label="1"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   BINDING         158
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         167
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         245
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_label="2"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   BINDING         245
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT   BINDING         293
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_label="2"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   BINDING         293
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT   BINDING         293
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         318
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_label="2"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   BINDING         318
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT   BINDING         318
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         370..373
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   BINDING         394
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000250|UniProtKB:P00924"
+FT   MOD_RES         2
+FT                   /note="N-acetylserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         5
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         26
+FT                   /note="Phosphothreonine"
+FT                   /evidence="ECO:0007744|PubMed:20068231"
+FT   MOD_RES         44
+FT                   /note="Phosphotyrosine"
+FT                   /evidence="ECO:0007744|PubMed:15592455"
+FT   MOD_RES         60
+FT                   /note="N6-acetyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         60
+FT                   /note="N6-succinyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         64
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         89
+FT                   /note="N6-acetyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         89
+FT                   /note="N6-succinyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         193
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         197
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P17183"
+FT   MOD_RES         199
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P17183"
+FT   MOD_RES         202
+FT                   /note="N6-acetyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         228
+FT                   /note="N6-acetyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         228
+FT                   /note="N6-succinyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         233
+FT                   /note="N6-(2-hydroxyisobutyryl)lysine; alternate"
+FT                   /evidence="ECO:0000269|PubMed:29775581"
+FT   MOD_RES         233
+FT                   /note="N6-acetyllysine; alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         256
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         263
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0007744|PubMed:23186163"
+FT   MOD_RES         287
+FT                   /note="Phosphotyrosine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         291
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   MOD_RES         335
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         343
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   MOD_RES         406
+FT                   /note="N6-acetyllysine"
+FT                   /evidence="ECO:0000250|UniProtKB:P17182"
+FT   CROSSLNK        202
+FT                   /note="Glycyl lysine isopeptide (Lys-Gly) (interchain with
+FT                   G-Cter in SUMO2); alternate"
+FT                   /evidence="ECO:0000250|UniProtKB:P06733"
+FT   VAR_SEQ         61..104
+FT                   /note="GVLKAVDHINSTIAPALISSGLSVVEQEKLDNLMLELDGTENKS -> A
+FT                   (in isoform 2)"
+FT                   /evidence="ECO:0000303|PubMed:14702039"
+FT                   /id="VSP_055482"
+FT   VARIANT         264
+FT                   /note="P -> A"
+FT                   /id="VAR_002354"
+FT   VARIANT         395
+FT                   /note="T -> A"
+FT                   /id="VAR_002355"
+FT   CONFLICT        4
+FT                   /note="E -> Q (in Ref. 1; CAA31512/CAA32505)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        27..28
+FT                   /note="AK -> GC (in Ref. 2; AAA52388)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        127
+FT                   /note="E -> N (in Ref. 2; AAA52388)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        240
+FT                   /note="I -> M (in Ref. 1; CAA31512/CAA32505)"
+FT                   /evidence="ECO:0000305"
+FT   STRAND          5..12
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          18..26
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          29..34
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          43..45
+FT                   /evidence="ECO:0007829|PDB:5TD9"
+FT   TURN            54..56
+FT                   /evidence="ECO:0007829|PDB:5TD9"
+FT   HELIX           57..59
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           63..71
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           73..80
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           87..98
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          100..102
+FT                   /evidence="ECO:0007829|PDB:5TD9"
+FT   TURN            104..106
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           108..126
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           130..138
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          147..154
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           156..158
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          159..162
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          167..171
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           178..200
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           202..205
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          211..213
+FT                   /evidence="ECO:0007829|PDB:3UJF"
+FT   HELIX           220..234
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   TURN            237..239
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          241..245
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           248..251
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          254..257
+FT                   /evidence="ECO:0007829|PDB:2AKM"
+FT   TURN            259..262
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           267..269
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           273..286
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          289..293
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           301..309
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          312..318
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   TURN            319..323
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           325..333
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          338..342
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           344..347
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           350..362
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          366..370
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           380..388
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   STRAND          391..394
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           401..417
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           418..420
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           425..427
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+FT   HELIX           431..433
+FT                   /evidence="ECO:0007829|PDB:2AKZ"
+SQ   SEQUENCE   434 AA;  47269 MW;  6163DE81F5C67744 CRC64;
+     MSIEKIWARE ILDSRGNPTV EVDLYTAKGL FRAAVPSGAS TGIYEALELR DGDKQRYLGK
+     GVLKAVDHIN STIAPALISS GLSVVEQEKL DNLMLELDGT ENKSKFGANA ILGVSLAVCK
+     AGAAERELPL YRHIAQLAGN SDLILPVPAF NVINGGSHAG NKLAMQEFMI LPVGAESFRD
+     AMRLGAEVYH TLKGVIKDKY GKDATNVGDE GGFAPNILEN SEALELVKEA IDKAGYTEKI
+     VIGMDVAASE FYRDGKYDLD FKSPTDPSRY ITGDQLGALY QDFVRDYPVV SIEDPFDQDD
+     WAAWSKFTAN VGIQIVGDDL TVTNPKRIER AVEEKACNCL LLKVNQIGSV TEAIQACKLA
+     QENGWGVMVS HRSGETEDTF IADLVVGLCT GQIKTGAPCR SERLAKYNQL MRIEEELGDE
+     ARFAGHNFRN PSVL
+//
+ID   HPDL_CLOSL              Reviewed;         897 AA.
+AC   Q38HX4;
+DT   11-JAN-2011, integrated into UniProtKB/Swiss-Prot.
+DT   22-NOV-2005, sequence version 1.
+DT   13-SEP-2023, entry version 55.
+DE   RecName: Full=4-hydroxyphenylacetate decarboxylase glycyl radical subunit {ECO:0000303|PubMed:16878993};
+DE            Short=HPA decarboxylase glycyl radical subunit;
+DE            EC=4.1.1.83 {ECO:0000269|PubMed:16878993};
+DE   AltName: Full=4-hydroxyphenylacetate decarboxylase catalytic beta subunit {ECO:0000303|PubMed:21823587};
+DE   AltName: Full=4-hydroxyphenylacetate decarboxylase large subunit {ECO:0000312|EMBL:ABB05046.1};
+DE   AltName: Full=p-hydroxyphenylacetate decarboxylase large subunit {ECO:0000250|UniProtKB:Q84F16};
+GN   Name=csdB {ECO:0000312|EMBL:ABB05046.1};
+OS   Clostridium scatologenes.
+OC   Bacteria; Bacillota; Clostridia; Eubacteriales; Clostridiaceae;
+OC   Clostridium.
+OX   NCBI_TaxID=1548;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], FUNCTION, CATALYTIC ACTIVITY, ACTIVATION
+RP   BY CSDA, BIOPHYSICOCHEMICAL PROPERTIES, SUBUNIT, AND SERINE
+RP   PHOSPHORYLATION.
+RC   STRAIN=ATCC 25775 / DSM 757 / JCM 1414 / NCIB 8855 / VPI 5393
+RC   {ECO:0000312|EMBL:ABB05046.1};
+RX   PubMed=16878993; DOI=10.1021/bi060840b;
+RA   Yu L., Blaser M., Andrei P.I., Pierik A.J., Selmer T.;
+RT   "4-Hydroxyphenylacetate decarboxylases: properties of a novel subclass of
+RT   glycyl radical enzyme systems.";
+RL   Biochemistry 45:9584-9592(2006).
+RN   [2] {ECO:0007744|PDB:2Y8N, ECO:0007744|PDB:2YAJ}
+RP   X-RAY CRYSTALLOGRAPHY (1.75 ANGSTROMS) IN COMPLEX WITH HPA DECARBOXYLASE
+RP   SMALL SUBUNIT AND 4-HYDROXYPHENYLACETATE, SUBUNIT, REACTION MECHANISM, AND
+RP   ACTIVE SITE.
+RX   PubMed=21823587; DOI=10.1021/ja203344x;
+RA   Martins B.M., Blaser M., Feliks M., Ullmann G.M., Buckel W., Selmer T.;
+RT   "Structural basis for a Kolbe-type decarboxylation catalyzed by a glycyl
+RT   radical enzyme.";
+RL   J. Am. Chem. Soc. 133:14666-14674(2011).
+CC   -!- FUNCTION: Glycyl radical subunit of the HPA decarboxylase that
+CC       decarboxylates phenylacetates with a hydroxyl group in the p-position.
+CC       Active toward 4-hydroxyphenylacetate and 3,4-dihydroxyphenylacetate,
+CC       forming 4-methylphenol and 4-methylcatechol, respectively. Is likely
+CC       involved in the catabolism of aromatic amino acids such as tyrosine
+CC       fermentation. 4-methylphenol (p-cresol) formation provides metabolic
+CC       toxicity, which allows an active suppression of other microbes and may
+CC       provide growth advantages for the producers in highly competitive
+CC       environments (PubMed:16878993). The large subunit is the catalytic
+CC       subunit that binds the substrate (PubMed:21823587).
+CC       {ECO:0000269|PubMed:16878993, ECO:0000269|PubMed:21823587}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=4-hydroxyphenylacetate + H(+) = 4-methylphenol + CO2;
+CC         Xref=Rhea:RHEA:22732, ChEBI:CHEBI:15378, ChEBI:CHEBI:16526,
+CC         ChEBI:CHEBI:17847, ChEBI:CHEBI:48999; EC=4.1.1.83;
+CC         Evidence={ECO:0000269|PubMed:16878993};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:22733;
+CC         Evidence={ECO:0000305|PubMed:16878993};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=3,4-dihydroxyphenylacetate + H(+) = 4-methylcatechol + CO2;
+CC         Xref=Rhea:RHEA:62556, ChEBI:CHEBI:15378, ChEBI:CHEBI:16526,
+CC         ChEBI:CHEBI:17254, ChEBI:CHEBI:17612; EC=4.1.1.83;
+CC         Evidence={ECO:0000269|PubMed:16878993};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:62557;
+CC         Evidence={ECO:0000305|PubMed:16878993};
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=358 uM for 4-hydroxyphenylacetate {ECO:0000269|PubMed:16878993};
+CC         KM=388 uM for 3,4-dihydroxyphenylacetate
+CC         {ECO:0000269|PubMed:16878993};
+CC         Vmax=18.45 umol/min/mg enzyme for the decarboxylation of 4-
+CC         hydroxyphenylacetate {ECO:0000269|PubMed:16878993};
+CC         Vmax=9.12 umol/min/mg enzyme for the decarboxylation of 3,4-
+CC         hydroxyphenylacetate {ECO:0000269|PubMed:16878993};
+CC         Note=kcat is 135 sec(-1) for the decarboxylation of
+CC         4-hydroxyphenylacetate. kcat is 67 sec(-1) for the decarboxylation of
+CC         3,4-hydroxyphenylacetate. {ECO:0000269|PubMed:16878993};
+CC   -!- SUBUNIT: Heterooctamer consisting of 4 large (HpdB) subunits and 4
+CC       small (HpdC) subunits, arranged as a tetramer of heterodimers
+CC       (PubMed:16878993, PubMed:21823587). Also forms a catalytically inactive
+CC       homodimer (PubMed:16878993). {ECO:0000269|PubMed:16878993,
+CC       ECO:0000269|PubMed:21823587}.
+CC   -!- PTM: Requires the activating protein CsdA to generate the key active
+CC       site glycyl radical that is involved in catalysis.
+CC       {ECO:0000269|PubMed:16878993}.
+CC   -!- PTM: Phosphorylated on serine. Phosphorylation may trigger the
+CC       formation of the active heterooctamers and thereby regulates enzyme
+CC       activity. {ECO:0000269|PubMed:16878993}.
+CC   -!- SIMILARITY: Belongs to the glycyl radical enzyme (GRE) family. HPAD
+CC       subfamily. {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; DQ227741; ABB05046.1; -; Genomic_DNA.
+DR   RefSeq; WP_029163539.1; NZ_CP009933.1.
+DR   PDB; 2Y8N; X-ray; 1.75 A; A/C=1-897.
+DR   PDB; 2YAJ; X-ray; 1.81 A; A/C=1-897.
+DR   PDBsum; 2Y8N; -.
+DR   PDBsum; 2YAJ; -.
+DR   AlphaFoldDB; Q38HX4; -.
+DR   SMR; Q38HX4; -.
+DR   STRING; 1548.CSCA_5035; -.
+DR   BRENDA; 4.1.1.83; 9686.
+DR   SABIO-RK; Q38HX4; -.
+DR   GO; GO:0043722; F:4-hydroxyphenylacetate decarboxylase activity; IEA:UniProtKB-EC.
+DR   Gene3D; 3.20.70.20; -; 1.
+DR   InterPro; IPR001150; Gly_radical.
+DR   InterPro; IPR004184; PFL_dom.
+DR   NCBIfam; NF033715; glycyl_HPDL_Lrg; 1.
+DR   PANTHER; PTHR43641:SF2; DEHYDRATASE YBIW-RELATED; 1.
+DR   PANTHER; PTHR43641; FORMATE ACETYLTRANSFERASE 3-RELATED; 1.
+DR   Pfam; PF01228; Gly_radical; 1.
+DR   Pfam; PF02901; PFL-like; 1.
+DR   SUPFAM; SSF51998; PFL-like glycyl radical enzymes; 1.
+DR   PROSITE; PS51149; GLY_RADICAL_2; 1.
+DR   PROSITE; PS51554; PFL; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Lyase; Organic radical; Phosphoprotein.
+FT   CHAIN           1..897
+FT                   /note="4-hydroxyphenylacetate decarboxylase glycyl radical
+FT                   subunit"
+FT                   /id="PRO_0000403691"
+FT   DOMAIN          35..770
+FT                   /note="PFL"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00887"
+FT   DOMAIN          778..897
+FT                   /note="Glycine radical"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00493"
+FT   ACT_SITE        503
+FT                   /note="Cysteine radical intermediate"
+FT                   /evidence="ECO:0000305|PubMed:21823587"
+FT   ACT_SITE        505
+FT                   /note="Proton donor"
+FT                   /evidence="ECO:0000305|PubMed:21823587"
+FT   BINDING         344
+FT                   /ligand="4-hydroxyphenylacetate"
+FT                   /ligand_id="ChEBI:CHEBI:48999"
+FT                   /evidence="ECO:0000269|PubMed:21823587,
+FT                   ECO:0007744|PDB:2YAJ"
+FT   BINDING         503
+FT                   /ligand="4-hydroxyphenylacetate"
+FT                   /ligand_id="ChEBI:CHEBI:48999"
+FT                   /evidence="ECO:0000269|PubMed:21823587,
+FT                   ECO:0007744|PDB:2YAJ"
+FT   BINDING         536
+FT                   /ligand="4-hydroxyphenylacetate"
+FT                   /ligand_id="ChEBI:CHEBI:48999"
+FT                   /evidence="ECO:0000269|PubMed:21823587,
+FT                   ECO:0007744|PDB:2YAJ"
+FT   BINDING         637
+FT                   /ligand="4-hydroxyphenylacetate"
+FT                   /ligand_id="ChEBI:CHEBI:48999"
+FT                   /evidence="ECO:0000269|PubMed:21823587,
+FT                   ECO:0007744|PDB:2YAJ"
+FT   MOD_RES         873
+FT                   /note="Glycine radical"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00493,
+FT                   ECO:0000305|PubMed:21823587"
+FT   HELIX           35..45
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           54..65
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            66..68
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           71..84
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          100..103
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            111..113
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           116..126
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           136..139
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          157..160
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            161..163
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          164..167
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           168..170
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           171..178
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           179..181
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            182..184
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           186..194
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           200..208
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           216..218
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          219..225
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           229..250
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            258..262
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           263..294
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           299..315
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           323..338
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          343..347
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           351..354
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           356..364
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           370..385
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           393..396
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            397..399
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          408..413
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          417..419
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           423..434
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          442..446
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           452..462
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            463..465
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          469..473
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           474..485
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           486..488
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           492..496
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          499..501
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            502..504
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          505..507
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          509..516
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          519..526
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          534..539
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           540..548
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            549..551
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            554..556
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           571..603
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           608..612
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           616..619
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           623..625
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          635..639
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           641..654
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            655..657
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           663..671
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           673..675
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           679..682
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           696..708
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           717..734
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            752..754
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           755..760
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          777..781
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   TURN            784..786
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           791..798
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           803..805
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          812..815
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           817..820
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           822..838
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          843..849
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           851..859
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           861..863
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          868..870
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   STRAND          875..877
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           878..880
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+FT   HELIX           883..891
+FT                   /evidence="ECO:0007829|PDB:2Y8N"
+SQ   SEQUENCE   897 AA;  100637 MW;  DF8FC6541E459550 CRC64;
+     MNVKETKLED VLKSRGIDMK DAYNISEADI PEAKESTQKL MDIYYTLKVT ADMEAAYWYN
+     RTWWENDGEV IEVRRAKAVA ASLSHMTPTI LPYEKLVMNK TKNVRGAFPF PWVCASFFNA
+     QAEALMNEVD APAENEADSV SVVGAGGGNV TESYGNVISI AKKFGMRKEE IPVLVKTSKP
+     WEGISVEELS NKYSKMTPGY DQFKNIMESV ICMFDSFAIP QGREVINYYM PLQYGFDGII
+     KLCDEKIAEV MGEAGDDGDF GMSRGYYYAA MKEITKGLSA WCENYSKRAK YLASIETDSE
+     IKANYEKIEE VMGNIAHKKP ANFWEAIQMT LCCHFGVVNE DPQSGLSIGR LGQVLQPFYE
+     KDVEDGIMTD EEVIELLELY RIKITCIECF ASAGVSGGVL SGNTFNNLSL GGQNYDGLSA
+     VTPLEYLIVE AGMRNQTPQP TLSVLYDEKT PEDFLMKAAS CTKLGLGYPA WMNNQTGMNF
+     MMRNYGPEGM DLHDARAWCL GGCLESAPGC FLPLEYNGKV TMIPGGASPT CGTGVHFIGM
+     PKVLELVLTN GLDKRTGKQV YPPHNKKLDS YETMVNQWKE YMELTTDVVN RCNNIQMDIW
+     RKYNMPAVNS LLKPDCFKKG KHIGTMGARY NSCINFESCG TITFVNSLSS IKKNVFDDSK
+     FTIEEMTDAM LNNFGFKTAY ETEVFSPDFR ESTDKSTKYE KIFAACVNAP KYGNADKYAD
+     EIFKAYHYYI YDMTHKFRSY YGKPLYLCQI SVSTHGPQGF VTLATADGRL AGTTYSDGSV
+     SAAAGTDKNG IYAIFESATV YDHSMHQNAQ MNLKLHPTAV KGINGTRKLL DLVRAYMRKG
+     GFHVQFNVVD SKTLRDAQLT PEKYRELMVR VAGFTQYWCE IGKPIQDEVI YRTEYDK
+//
+ID   MFNA_METJA              Reviewed;         396 AA.
+AC   Q60358;
+DT   01-NOV-1997, integrated into UniProtKB/Swiss-Prot.
+DT   01-NOV-1997, sequence version 1.
+DT   08-NOV-2023, entry version 129.
+DE   RecName: Full=L-tyrosine/L-aspartate decarboxylase {ECO:0000305};
+DE            Short=TDC/ADC {ECO:0000255|HAMAP-Rule:MF_01610, ECO:0000305};
+DE            EC=4.1.1.11 {ECO:0000255|HAMAP-Rule:MF_01610, ECO:0000269|PubMed:24891443};
+DE            EC=4.1.1.25 {ECO:0000255|HAMAP-Rule:MF_01610, ECO:0000269|PubMed:15715981};
+GN   Name=mfnA {ECO:0000255|HAMAP-Rule:MF_01610,
+GN   ECO:0000303|PubMed:15715981}; OrderedLocusNames=MJ0050;
+OS   Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM
+OS   10045 / NBRC 100440) (Methanococcus jannaschii).
+OC   Archaea; Euryarchaeota; Methanomada group; Methanococci; Methanococcales;
+OC   Methanocaldococcaceae; Methanocaldococcus.
+OX   NCBI_TaxID=243232;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440;
+RX   PubMed=8688087; DOI=10.1126/science.273.5278.1058;
+RA   Bult C.J., White O., Olsen G.J., Zhou L., Fleischmann R.D., Sutton G.G.,
+RA   Blake J.A., FitzGerald L.M., Clayton R.A., Gocayne J.D., Kerlavage A.R.,
+RA   Dougherty B.A., Tomb J.-F., Adams M.D., Reich C.I., Overbeek R.,
+RA   Kirkness E.F., Weinstock K.G., Merrick J.M., Glodek A., Scott J.L.,
+RA   Geoghagen N.S.M., Weidman J.F., Fuhrmann J.L., Nguyen D., Utterback T.R.,
+RA   Kelley J.M., Peterson J.D., Sadow P.W., Hanna M.C., Cotton M.D.,
+RA   Roberts K.M., Hurst M.A., Kaine B.P., Borodovsky M., Klenk H.-P.,
+RA   Fraser C.M., Smith H.O., Woese C.R., Venter J.C.;
+RT   "Complete genome sequence of the methanogenic archaeon, Methanococcus
+RT   jannaschii.";
+RL   Science 273:1058-1073(1996).
+RN   [2]
+RP   FUNCTION AS A TYROSINE DECARBOXYLASE, CATALYTIC ACTIVITY, COFACTOR,
+RP   ACTIVITY REGULATION, BIOPHYSICOCHEMICAL PROPERTIES, PATHWAY, AND SUBUNIT.
+RC   STRAIN=ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440;
+RX   PubMed=15715981; DOI=10.1016/j.bbagen.2004.12.003;
+RA   Kezmarsky N.D., Xu H., Graham D.E., White R.H.;
+RT   "Identification and characterization of a L-tyrosine decarboxylase in
+RT   Methanocaldococcus jannaschii.";
+RL   Biochim. Biophys. Acta 1722:175-182(2005).
+RN   [3]
+RP   FUNCTION AS AN ASPARTATE DECARBOXYLASE, CATALYTIC ACTIVITY,
+RP   BIOPHYSICOCHEMICAL PROPERTIES, AND PATHWAY.
+RX   PubMed=24891443; DOI=10.1128/jb.01784-14;
+RA   Wang Y., Xu H., White R.H.;
+RT   "Beta-alanine biosynthesis in Methanocaldococcus jannaschii.";
+RL   J. Bacteriol. 196:2869-2875(2014).
+RN   [4] {ECO:0007744|PDB:3F9T}
+RP   X-RAY CRYSTALLOGRAPHY (2.11 ANGSTROMS) IN COMPLEX WITH PYRIDOXAL PHOSPHATE.
+RG   Joint Center for Structural Genomics (JCSG);
+RT   "Crystal structure of L-tyrosine decarboxylase MfnA (EC 4.1.1.25)
+RT   (NP_247014.1) from Methanococcus jannaschii at 2.11 A resolution.";
+RL   Submitted (NOV-2008) to the PDB data bank.
+CC   -!- FUNCTION: Catalyzes the decarboxylation of L-tyrosine to produce
+CC       tyramine for methanofuran biosynthesis (PubMed:15715981). Can also
+CC       catalyze the decarboxylation of L-aspartate to produce beta-alanine for
+CC       coenzyme A (CoA) biosynthesis (PubMed:24891443).
+CC       {ECO:0000269|PubMed:15715981, ECO:0000269|PubMed:24891443}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=H(+) + L-tyrosine = CO2 + tyramine; Xref=Rhea:RHEA:14345,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:16526, ChEBI:CHEBI:58315,
+CC         ChEBI:CHEBI:327995; EC=4.1.1.25; Evidence={ECO:0000255|HAMAP-
+CC         Rule:MF_01610, ECO:0000269|PubMed:15715981};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=H(+) + L-aspartate = beta-alanine + CO2; Xref=Rhea:RHEA:19497,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:16526, ChEBI:CHEBI:29991,
+CC         ChEBI:CHEBI:57966; EC=4.1.1.11; Evidence={ECO:0000255|HAMAP-
+CC         Rule:MF_01610, ECO:0000269|PubMed:24891443};
+CC   -!- COFACTOR:
+CC       Name=pyridoxal 5'-phosphate; Xref=ChEBI:CHEBI:597326;
+CC         Evidence={ECO:0000255|HAMAP-Rule:MF_01610,
+CC         ECO:0000269|PubMed:15715981};
+CC   -!- ACTIVITY REGULATION: Inhibited by hydroxylamine and O-
+CC       methylhydroxylamine. {ECO:0000269|PubMed:15715981}.
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=1.6 mM for L-tyrosine {ECO:0000269|PubMed:15715981};
+CC         KM=0.8 mM for L-aspartate {ECO:0000269|PubMed:24891443};
+CC       pH dependence:
+CC         Optimum pH is 7.5-8.5 for tyrosine decarboxylase activity.
+CC         {ECO:0000269|PubMed:15715981};
+CC       Temperature dependence:
+CC         Thermostable. Retains full tyrosine decarboxylase activity after
+CC         heating at 100 degrees Celsius for 10 minutes and 42% of its activity
+CC         after 10 minutes at 110 degrees Celsius. Inactive after 10 minutes at
+CC         121 degrees Celsius. {ECO:0000269|PubMed:15715981};
+CC   -!- PATHWAY: Cofactor biosynthesis; methanofuran biosynthesis.
+CC       {ECO:0000255|HAMAP-Rule:MF_01610, ECO:0000269|PubMed:15715981}.
+CC   -!- PATHWAY: Cofactor biosynthesis; coenzyme A biosynthesis.
+CC       {ECO:0000255|HAMAP-Rule:MF_01610, ECO:0000269|PubMed:24891443}.
+CC   -!- SUBUNIT: Homodimer. {ECO:0000269|PubMed:15715981}.
+CC   -!- SIMILARITY: Belongs to the group II decarboxylase family. MfnA
+CC       subfamily. {ECO:0000255|HAMAP-Rule:MF_01610}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; L77117; AAB98031.1; -; Genomic_DNA.
+DR   PIR; B64306; B64306.
+DR   PDB; 3F9T; X-ray; 2.11 A; A/B=1-396.
+DR   PDB; 6JY1; X-ray; 1.72 A; A=1-396.
+DR   PDB; 6LDR; X-ray; 1.79 A; A=1-396.
+DR   PDB; 6LDS; X-ray; 1.80 A; A=1-396.
+DR   PDB; 6LDT; X-ray; 1.93 A; A=1-396.
+DR   PDB; 6M4Y; X-ray; 2.10 A; A=1-396.
+DR   PDBsum; 3F9T; -.
+DR   PDBsum; 6JY1; -.
+DR   PDBsum; 6LDR; -.
+DR   PDBsum; 6LDS; -.
+DR   PDBsum; 6LDT; -.
+DR   PDBsum; 6M4Y; -.
+DR   AlphaFoldDB; Q60358; -.
+DR   SMR; Q60358; -.
+DR   STRING; 243232.MJ_0050; -.
+DR   PaxDb; 243232-MJ_0050; -.
+DR   EnsemblBacteria; AAB98031; AAB98031; MJ_0050.
+DR   KEGG; mja:MJ_0050; -.
+DR   eggNOG; arCOG00027; Archaea.
+DR   HOGENOM; CLU_028929_2_1_2; -.
+DR   InParanoid; Q60358; -.
+DR   OMA; DPHKMGL; -.
+DR   PhylomeDB; Q60358; -.
+DR   BioCyc; MetaCyc:MONOMER-12228; -.
+DR   BRENDA; 4.1.1.11; 3260.
+DR   BRENDA; 4.1.1.25; 3260.
+DR   UniPathway; UPA00080; -.
+DR   UniPathway; UPA00241; -.
+DR   EvolutionaryTrace; Q60358; -.
+DR   Proteomes; UP000000805; Chromosome.
+DR   GO; GO:0004068; F:aspartate 1-decarboxylase activity; IDA:UniProtKB.
+DR   GO; GO:0030170; F:pyridoxal phosphate binding; IDA:UniProtKB.
+DR   GO; GO:0004837; F:tyrosine decarboxylase activity; IDA:UniProtKB.
+DR   GO; GO:0019752; P:carboxylic acid metabolic process; IEA:InterPro.
+DR   GO; GO:0015937; P:coenzyme A biosynthetic process; IBA:GO_Central.
+DR   GO; GO:2001120; P:methanofuran biosynthetic process; TAS:UniProtKB.
+DR   Gene3D; 3.90.1150.10; Aspartate Aminotransferase, domain 1; 1.
+DR   Gene3D; 3.40.640.10; Type I PLP-dependent aspartate aminotransferase-like (Major domain); 1.
+DR   HAMAP; MF_01610; MfnA_decarbox; 1.
+DR   InterPro; IPR020931; MfnA.
+DR   InterPro; IPR002129; PyrdxlP-dep_de-COase.
+DR   InterPro; IPR015424; PyrdxlP-dep_Trfase.
+DR   InterPro; IPR015421; PyrdxlP-dep_Trfase_major.
+DR   InterPro; IPR015422; PyrdxlP-dep_Trfase_small.
+DR   NCBIfam; TIGR03812; tyr_de_CO2_Arch; 1.
+DR   PANTHER; PTHR42735; -; 1.
+DR   PANTHER; PTHR42735:SF6; SPHINGOSINE-1-PHOSPHATE LYASE 1; 1.
+DR   Pfam; PF00282; Pyridoxal_deC; 1.
+DR   SUPFAM; SSF53383; PLP-dependent transferases; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Decarboxylase; Lyase; Pyridoxal phosphate;
+KW   Reference proteome.
+FT   CHAIN           1..396
+FT                   /note="L-tyrosine/L-aspartate decarboxylase"
+FT                   /id="PRO_0000147023"
+FT   MOD_RES         245
+FT                   /note="N6-(pyridoxal phosphate)lysine"
+FT                   /evidence="ECO:0000255|HAMAP-Rule:MF_01610,
+FT                   ECO:0000269|Ref.4"
+FT   HELIX           11..24
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           28..30
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           44..52
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           60..62
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           64..80
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          87..92
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           94..114
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          124..128
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           133..142
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          145..149
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          155..157
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           159..168
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          173..179
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   TURN            181..183
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           189..199
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          202..206
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           210..212
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           214..216
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           219..221
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           232..234
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          237..241
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   TURN            243..247
+FT                   /evidence="ECO:0007829|PDB:6LDR"
+FT   STRAND          254..260
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           261..267
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          274..279
+FT                   /evidence="ECO:0007829|PDB:3F9T"
+FT   HELIX           289..326
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          331..333
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          336..343
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           347..356
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   STRAND          365..373
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+FT   HELIX           380..393
+FT                   /evidence="ECO:0007829|PDB:6JY1"
+SQ   SEQUENCE   396 AA;  45050 MW;  41CB8DEE45A8BBC0 CRC64;
+     MRNMQEKGVS EKEILEELKK YRSLDLKYED GNIFGSMCSN VLPITRKIVD IFLETNLGDP
+     GLFKGTKLLE EKAVALLGSL LNNKDAYGHI VSGGTEANLM ALRCIKNIWR EKRRKGLSKN
+     EHPKIIVPIT AHFSFEKGRE MMDLEYIYAP IKEDYTIDEK FVKDAVEDYD VDGIIGIAGT
+     TELGTIDNIE ELSKIAKENN IYIHVDAAFG GLVIPFLDDK YKKKGVNYKF DFSLGVDSIT
+     IDPHKMGHCP IPSGGILFKD IGYKRYLDVD APYLTETRQA TILGTRVGFG GACTYAVLRY
+     LGREGQRKIV NECMENTLYL YKKLKENNFK PVIEPILNIV AIEDEDYKEV CKKLRDRGIY
+     VSVCNCVKAL RIVVMPHIKR EHIDNFIEIL NSIKRD
+//
