@@ -1,0 +1,164 @@
+ID   AAXB_CHLPN              Reviewed;         195 AA.
+AC   Q9Z6M7; Q7AHX1; Q7BWL3; Q7DE85;
+DT   10-FEB-2009, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAY-1999, sequence version 1.
+DT   24-JAN-2024, entry version 127.
+DE   RecName: Full=Pyruvoyl-dependent arginine decarboxylase AaxB;
+DE            Short=PvlArgDC;
+DE            EC=4.1.1.19;
+DE   AltName: Full=Biodegradative arginine decarboxylase;
+DE   Contains:
+DE     RecName: Full=Pyruvoyl-dependent arginine decarboxylase subunit beta;
+DE   Contains:
+DE     RecName: Full=Pyruvoyl-dependent arginine decarboxylase subunit alpha;
+GN   Name=aaxB; OrderedLocusNames=CPn_1032, CP_0820, CPj1032, CpB1072;
+OS   Chlamydia pneumoniae (Chlamydophila pneumoniae).
+OC   Bacteria; Chlamydiota; Chlamydiia; Chlamydiales; Chlamydiaceae;
+OC   Chlamydia/Chlamydophila group; Chlamydia.
+OX   NCBI_TaxID=83558;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=CWL029;
+RX   PubMed=10192388; DOI=10.1038/7716;
+RA   Kalman S., Mitchell W.P., Marathe R., Lammel C.J., Fan J., Hyman R.W.,
+RA   Olinger L., Grimwood J., Davis R.W., Stephens R.S.;
+RT   "Comparative genomes of Chlamydia pneumoniae and C. trachomatis.";
+RL   Nat. Genet. 21:385-389(1999).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=AR39;
+RX   PubMed=10684935; DOI=10.1093/nar/28.6.1397;
+RA   Read T.D., Brunham R.C., Shen C., Gill S.R., Heidelberg J.F., White O.,
+RA   Hickey E.K., Peterson J.D., Utterback T.R., Berry K.J., Bass S.,
+RA   Linher K.D., Weidman J.F., Khouri H.M., Craven B., Bowman C., Dodson R.J.,
+RA   Gwinn M.L., Nelson W.C., DeBoy R.T., Kolonay J.F., McClarty G.,
+RA   Salzberg S.L., Eisen J.A., Fraser C.M.;
+RT   "Genome sequences of Chlamydia trachomatis MoPn and Chlamydia pneumoniae
+RT   AR39.";
+RL   Nucleic Acids Res. 28:1397-1406(2000).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=J138;
+RX   PubMed=10871362; DOI=10.1093/nar/28.12.2311;
+RA   Shirai M., Hirakawa H., Kimoto M., Tabuchi M., Kishi F., Ouchi K.,
+RA   Shiba T., Ishii K., Hattori M., Kuhara S., Nakazawa T.;
+RT   "Comparison of whole genome sequences of Chlamydia pneumoniae J138 from
+RT   Japan and CWL029 from USA.";
+RL   Nucleic Acids Res. 28:2311-2314(2000).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=TW-183;
+RA   Geng M.M., Schuhmacher A., Muehldorfer I., Bensch K.W., Schaefer K.P.,
+RA   Schneider S., Pohl T., Essig A., Marre R., Melchers K.;
+RT   "The genome sequence of Chlamydia pneumoniae TW183 and comparison with
+RT   other Chlamydia strains based on whole genome sequence analysis.";
+RL   Submitted (MAY-2002) to the EMBL/GenBank/DDBJ databases.
+RN   [5]
+RP   CHARACTERIZATION, BIOPHYSICOCHEMICAL PROPERTIES, MASS SPECTROMETRY,
+RP   MUTAGENESIS OF THR-52, AND PYRUVATE FORMATION AT SER-53.
+RC   STRAIN=Kajaani 6;
+RX   PubMed=17693492; DOI=10.1128/jb.00772-07;
+RA   Giles T.N., Graham D.E.;
+RT   "Characterization of an acid-dependent arginine decarboxylase enzyme from
+RT   Chlamydophila pneumoniae.";
+RL   J. Bacteriol. 189:7376-7383(2007).
+RN   [6]
+RP   FUNCTION AS PYRUVOYL-DEPENDENT ARGININE DECARBOXYLASE.
+RC   STRAIN=Kajaani 6;
+RX   PubMed=18790867; DOI=10.1128/jb.00652-08;
+RA   Smith C.B., Graham D.E.;
+RT   "Outer and inner membrane proteins compose an arginine-agmatine exchange
+RT   system in Chlamydophila pneumoniae.";
+RL   J. Bacteriol. 190:7431-7440(2008).
+CC   -!- FUNCTION: Part of the AaxABC system, catalyzes the decarboxylation of
+CC       L-arginine. The arginine uptake by the bacterium in the macrophage may
+CC       be a virulence factor against the host innate immune response.
+CC       {ECO:0000269|PubMed:18790867}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=H(+) + L-arginine = agmatine + CO2; Xref=Rhea:RHEA:17641,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:16526, ChEBI:CHEBI:32682,
+CC         ChEBI:CHEBI:58145; EC=4.1.1.19;
+CC   -!- COFACTOR:
+CC       Name=pyruvate; Xref=ChEBI:CHEBI:15361;
+CC       Note=Binds 1 pyruvoyl group covalently per subunit.;
+CC   -!- ACTIVITY REGULATION: Inhibited by argininamide.
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=5 mM for L-arginine {ECO:0000269|PubMed:17693492};
+CC       pH dependence:
+CC         Optimum pH is 3.4. {ECO:0000269|PubMed:17693492};
+CC       Temperature dependence:
+CC         Thermostable. Retains 48% activity at 50 degrees Celsius, and 13%
+CC         activity at 100 degrees Celsius. {ECO:0000269|PubMed:17693492};
+CC   -!- SUBUNIT: Trimer of an alpha-beta dimer.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000305}.
+CC   -!- MASS SPECTROMETRY: [Pyruvoyl-dependent arginine decarboxylase subunit
+CC       alpha]: Mass=15875; Method=MALDI;
+CC       Evidence={ECO:0000269|PubMed:17693492};
+CC   -!- SIMILARITY: Belongs to the pyruvoyl-dependent arginine decarboxylase
+CC       family. {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AE001363; AAD19169.1; -; Genomic_DNA.
+DR   EMBL; AE002161; AAF38615.1; -; Genomic_DNA.
+DR   EMBL; BA000008; BAA99239.1; -; Genomic_DNA.
+DR   EMBL; AE009440; AAP99001.1; -; Genomic_DNA.
+DR   PIR; B72006; B72006.
+DR   PIR; E86619; E86619.
+DR   RefSeq; NP_225226.1; NC_000922.1.
+DR   RefSeq; WP_010883665.1; NZ_LN847257.1.
+DR   AlphaFoldDB; Q9Z6M7; -.
+DR   SMR; Q9Z6M7; -.
+DR   STRING; 406984.CPK_ORF00459; -.
+DR   GeneID; 45051090; -.
+DR   KEGG; cpa:CP_0820; -.
+DR   KEGG; cpj:CPj1032; -.
+DR   KEGG; cpn:CPn_1032; -.
+DR   KEGG; cpt:CpB1072; -.
+DR   PATRIC; fig|115713.3.peg.1130; -.
+DR   eggNOG; COG1945; Bacteria.
+DR   HOGENOM; CLU_1313366_0_0_0; -.
+DR   OMA; KKKFGFC; -.
+DR   OrthoDB; 9783061at2; -.
+DR   SABIO-RK; Q9Z6M7; -.
+DR   Proteomes; UP000000583; Chromosome.
+DR   Proteomes; UP000000801; Chromosome.
+DR   GO; GO:0005737; C:cytoplasm; IEA:UniProtKB-SubCell.
+DR   GO; GO:0008792; F:arginine decarboxylase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0006527; P:arginine catabolic process; IEA:InterPro.
+DR   Gene3D; 3.50.20.10; Pyruvoyl-Dependent Histidine Decarboxylase, subunit B; 1.
+DR   InterPro; IPR016104; Pyr-dep_his/arg-deCO2ase.
+DR   InterPro; IPR016105; Pyr-dep_his/arg-deCO2ase_sand.
+DR   InterPro; IPR002724; Pyruvoyl-dep_arg_deCO2ase.
+DR   PANTHER; PTHR40438; PYRUVOYL-DEPENDENT ARGININE DECARBOXYLASE; 1.
+DR   PANTHER; PTHR40438:SF1; PYRUVOYL-DEPENDENT ARGININE DECARBOXYLASE; 1.
+DR   Pfam; PF01862; PvlArgDC; 1.
+DR   SFLD; SFLDG01170; Pyruvoyl-dependent_arginine_de; 1.
+DR   SUPFAM; SSF56271; Pyruvoyl-dependent histidine and arginine decarboxylases; 1.
+PE   1: Evidence at protein level;
+KW   Cytoplasm; Decarboxylase; Lyase; Pyruvate; Virulence.
+FT   CHAIN           1..52
+FT                   /note="Pyruvoyl-dependent arginine decarboxylase subunit
+FT                   beta"
+FT                   /id="PRO_0000364033"
+FT   CHAIN           53..195
+FT                   /note="Pyruvoyl-dependent arginine decarboxylase subunit
+FT                   alpha"
+FT                   /id="PRO_0000364034"
+FT   SITE            52..53
+FT                   /note="Cleavage (non-hydrolytic)"
+FT   MOD_RES         53
+FT                   /note="Pyruvic acid (Ser)"
+FT                   /evidence="ECO:0000269|PubMed:17693492"
+FT   MUTAGEN         52
+FT                   /note="T->S: 70% loss of activity. Significantly impaired
+FT                   in ability to self-cleave."
+FT                   /evidence="ECO:0000269|PubMed:17693492"
+SQ   SEQUENCE   195 AA;  21655 MW;  1506883FB4854DA2 CRC64;
+     MAYGTRYPTL AFHTGGIGES DDGMPPQPFE TFCYDSALLQ AKIENFNIVP YTSVLPKELF
+     GNIVPVDTCV KSFKHGAVLE VIMAGRGAAL SDGTHAIATG IGICWGKDKN GELIGGWAAE
+     YVEFFPTWIN DEIAETHAKM WLKKSLQHEL DLRSIAKHSE FQFFHNYINI KQKFGFCLTA
+     LGFLNFENAE PAKVN
+//
