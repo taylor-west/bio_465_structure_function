@@ -1,0 +1,171 @@
+ID   D5ES25_PRER2            Unreviewed;       435 AA.
+AC   D5ES25;
+DT   15-JUN-2010, integrated into UniProtKB/TrEMBL.
+DT   15-JUN-2010, sequence version 1.
+DT   24-JAN-2024, entry version 78.
+DE   RecName: Full=Enolase {ECO:0000256|HAMAP-Rule:MF_00318};
+DE            EC=4.2.1.11 {ECO:0000256|HAMAP-Rule:MF_00318};
+DE   AltName: Full=2-phospho-D-glycerate hydro-lyase {ECO:0000256|HAMAP-Rule:MF_00318};
+DE   AltName: Full=2-phosphoglycerate dehydratase {ECO:0000256|HAMAP-Rule:MF_00318};
+GN   Name=eno {ECO:0000256|HAMAP-Rule:MF_00318,
+GN   ECO:0000313|EMBL:ADE81722.1};
+GN   OrderedLocusNames=PRU_1102 {ECO:0000313|EMBL:ADE81722.1};
+OS   Prevotella ruminicola (strain ATCC 19189 / JCM 8958 / 23).
+OC   Bacteria; Bacteroidota; Bacteroidia; Bacteroidales; Prevotellaceae;
+OC   Prevotella.
+OX   NCBI_TaxID=264731 {ECO:0000313|EMBL:ADE81722.1, ECO:0000313|Proteomes:UP000000927};
+RN   [1] {ECO:0000313|EMBL:ADE81722.1, ECO:0000313|Proteomes:UP000000927}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 19189 / JCM 8958 / 23 {ECO:0000313|Proteomes:UP000000927};
+RX   PubMed=20585943; DOI=10.1007/s00248-010-9692-8;
+RG   North American Consortium for Rumen Bacteria;
+RA   Purushe J., Fouts D.E., Morrison M., White B.A., Mackie R.I.,
+RA   Coutinho P.M., Henrissat B., Nelson K.E.;
+RT   "Comparative genome analysis of Prevotella ruminicola and Prevotella
+RT   bryantii: insights into their environmental niche.";
+RL   Microb. Ecol. 60:721-729(2010).
+CC   -!- FUNCTION: Catalyzes the reversible conversion of 2-phosphoglycerate
+CC       into phosphoenolpyruvate. It is essential for the degradation of
+CC       carbohydrates via glycolysis. {ECO:0000256|HAMAP-Rule:MF_00318}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(2R)-2-phosphoglycerate = H2O + phosphoenolpyruvate;
+CC         Xref=Rhea:RHEA:10164, ChEBI:CHEBI:15377, ChEBI:CHEBI:58289,
+CC         ChEBI:CHEBI:58702; EC=4.2.1.11; Evidence={ECO:0000256|HAMAP-
+CC         Rule:MF_00318};
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001946,
+CC         ECO:0000256|HAMAP-Rule:MF_00318};
+CC   -!- ACTIVITY REGULATION: The covalent binding to the substrate causes
+CC       inactivation of the enzyme, and possibly serves as a signal for the
+CC       export of the protein. {ECO:0000256|HAMAP-Rule:MF_00318}.
+CC   -!- PATHWAY: Carbohydrate degradation; glycolysis; pyruvate from D-
+CC       glyceraldehyde 3-phosphate: step 4/5. {ECO:0000256|ARBA:ARBA00005031,
+CC       ECO:0000256|HAMAP-Rule:MF_00318}.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000256|HAMAP-Rule:MF_00318}.
+CC       Secreted {ECO:0000256|HAMAP-Rule:MF_00318}. Cell surface
+CC       {ECO:0000256|HAMAP-Rule:MF_00318}. Note=Fractions of enolase are
+CC       present in both the cytoplasm and on the cell surface. The export of
+CC       enolase possibly depends on the covalent binding to the substrate; once
+CC       secreted, it remains attached to the cell surface. {ECO:0000256|HAMAP-
+CC       Rule:MF_00318}.
+CC   -!- SIMILARITY: Belongs to the enolase family.
+CC       {ECO:0000256|ARBA:ARBA00009604, ECO:0000256|HAMAP-Rule:MF_00318}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CP002006; ADE81722.1; -; Genomic_DNA.
+DR   RefSeq; WP_013063709.1; NC_014033.1.
+DR   AlphaFoldDB; D5ES25; -.
+DR   STRING; 264731.PRU_1102; -.
+DR   KEGG; pru:PRU_1102; -.
+DR   eggNOG; COG0148; Bacteria.
+DR   HOGENOM; CLU_031223_2_1_10; -.
+DR   OMA; EFMIIPV; -.
+DR   UniPathway; UPA00109; UER00187.
+DR   Proteomes; UP000000927; Chromosome.
+DR   GO; GO:0009986; C:cell surface; IEA:UniProtKB-SubCell.
+DR   GO; GO:0005576; C:extracellular region; IEA:UniProtKB-SubCell.
+DR   GO; GO:0000015; C:phosphopyruvate hydratase complex; IEA:InterPro.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-UniRule.
+DR   GO; GO:0004634; F:phosphopyruvate hydratase activity; IEA:UniProtKB-UniRule.
+DR   GO; GO:0006096; P:glycolytic process; IEA:UniProtKB-UniRule.
+DR   CDD; cd03313; enolase; 1.
+DR   Gene3D; 3.20.20.120; Enolase-like C-terminal domain; 1.
+DR   Gene3D; 3.30.390.10; Enolase-like, N-terminal domain; 1.
+DR   HAMAP; MF_00318; Enolase; 1.
+DR   InterPro; IPR000941; Enolase.
+DR   InterPro; IPR036849; Enolase-like_C_sf.
+DR   InterPro; IPR029017; Enolase-like_N.
+DR   InterPro; IPR020810; Enolase_C.
+DR   InterPro; IPR020809; Enolase_CS.
+DR   InterPro; IPR020811; Enolase_N.
+DR   NCBIfam; TIGR01060; eno; 1.
+DR   PANTHER; PTHR11902; ENOLASE; 1.
+DR   PANTHER; PTHR11902:SF1; ENOLASE; 1.
+DR   Pfam; PF00113; Enolase_C; 1.
+DR   Pfam; PF03952; Enolase_N; 1.
+DR   PIRSF; PIRSF001400; Enolase; 1.
+DR   PRINTS; PR00148; ENOLASE.
+DR   SFLD; SFLDF00002; enolase; 1.
+DR   SFLD; SFLDS00001; Enolase; 1.
+DR   SMART; SM01192; Enolase_C; 1.
+DR   SMART; SM01193; Enolase_N; 1.
+DR   SUPFAM; SSF51604; Enolase C-terminal domain-like; 1.
+DR   SUPFAM; SSF54826; Enolase N-terminal domain-like; 1.
+DR   PROSITE; PS00164; ENOLASE; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm {ECO:0000256|HAMAP-Rule:MF_00318};
+KW   Glycolysis {ECO:0000256|ARBA:ARBA00023152, ECO:0000256|HAMAP-
+KW   Rule:MF_00318};
+KW   Lyase {ECO:0000256|ARBA:ARBA00023239, ECO:0000256|HAMAP-Rule:MF_00318};
+KW   Magnesium {ECO:0000256|ARBA:ARBA00022842, ECO:0000256|HAMAP-Rule:MF_00318};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|HAMAP-
+KW   Rule:MF_00318}; Reference proteome {ECO:0000313|Proteomes:UP000000927};
+KW   Secreted {ECO:0000256|ARBA:ARBA00022525, ECO:0000256|HAMAP-Rule:MF_00318}.
+FT   DOMAIN          3..133
+FT                   /note="Enolase N-terminal"
+FT                   /evidence="ECO:0000259|SMART:SM01193"
+FT   DOMAIN          138..432
+FT                   /note="Enolase C-terminal TIM barrel"
+FT                   /evidence="ECO:0000259|SMART:SM01192"
+FT   ACT_SITE        204
+FT                   /note="Proton donor"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-1"
+FT   ACT_SITE        349
+FT                   /note="Proton acceptor"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-1"
+FT   BINDING         154
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+FT   BINDING         163
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+FT   BINDING         241
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318"
+FT   BINDING         297
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318"
+FT   BINDING         297
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+FT   BINDING         324
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318"
+FT   BINDING         324
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+FT   BINDING         349
+FT                   /ligand="substrate"
+FT                   /note="covalent; in inhibited form"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318"
+FT   BINDING         376..379
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+FT   BINDING         400
+FT                   /ligand="substrate"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_00318,
+FT                   ECO:0000256|PIRSR:PIRSR001400-2"
+SQ   SEQUENCE   435 AA;  47141 MW;  593014B86759095A CRC64;
+     MKIEKIHARE ILDSRGNPTV EVEVTLENGV MGRAAVPSGA STGENEALEL RDGDKERYLG
+     KGVLKAVDNV NKVIAPALKG DCVLEQRAID YKMLALDGTP TKSKLGANAI LGVSLACAQA
+     AAKALNVPLY RYIGGCNAYT LPVPMMNIVN GGAHSAAPIA FQEFMIRPVG ASNEREAIRM
+     GAEVFHNLAK LLKARGLSTA VGDEGGYAPN FDGIEDALDT IVEAIKKAGY EPGKDVKIAM
+     DCAASEFATC ENGQWFYDYR QLKNGAKKDP NGKKLSADEQ IAYLEQLITK YPIDSIEDGL
+     DENDWDNWVK LTEKIGDRCQ LVGDDLFVTN TNFLEKGIKM GAANSILIKV NQIGSLTETL
+     EAIEMAHRHG YTTVTSHRSG ETEDTTIADI AVATNSGQIK TGSLSRTDRM AKYNQLIRIE
+     EELGSTAAYG YQRLK
+//
+
