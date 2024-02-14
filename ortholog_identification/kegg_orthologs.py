@@ -39,6 +39,7 @@ def get_pathways():
         kegg_ids = get_genes_by_pathway(pathway_name)
         pathway_orthologs[pathway_name] = kegg_ids
 
+    print(pathway_orthologs)
     return pathway_orthologs
 
 
@@ -89,7 +90,6 @@ def get_genes_by_pathway(pathway_name):
     # see below link for some information on Bio.KEGG.REST
     # https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/09-KEGG_programming.html
     # kegg_get()
-
 
 
 def get_genes_by_ortholog():
