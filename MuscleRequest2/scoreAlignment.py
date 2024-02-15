@@ -1,11 +1,19 @@
-from Bio import AlignIO
+import os
+
+from Bio import AlignIO, motifs
 from Bio.Align import AlignInfo
+from Bio.Align import MultipleSeqAlignment
+from Bio.Align.AlignInfo import SummaryInfo
+import Bio.motifs
 
 # Parse the Clustal format alignment
-alignment = AlignIO.read("alignment.clustal", "clustal")
+alignment = AlignIO.read("alignment.aln", "clustal")
 
-summary_align = AlignInfo.SummaryInfo(alignment)
-consensus = summary_align.dumb_consensus()
+# Create a Motif object
+motif = motifs.create(alignment)
+
+# Get the consensus sequence
+consensus = motif.consensus
 
 # Define a threshold for conservation score
 threshold = 1.0  # Adjust as needed
@@ -18,7 +26,13 @@ for i, char in enumerate(consensus):
         if column.count(char) / len(column) >= threshold:
             invariant_locations.append(i)
 
+if os.path.exists(os.path.join(os.getcwd(), "indices")):
+    os.unlink(os.path.join(os.getcwd(), "indices"))
+
 # Output the list of invariant locations
-print("Invariant locations (position):")
-for position in invariant_locations:
-    print(position + 1)  # Positions are 0-indexed in Python
+with open("indices", 'a') as outF:
+    print("Invariant locations (position):")
+    outF.write("Invariant locations (index):\n")
+    for position in invariant_locations:
+        print(position + 1)  # Positions are 0-indexed in Python
+        outF.write(str(position) + "\n")

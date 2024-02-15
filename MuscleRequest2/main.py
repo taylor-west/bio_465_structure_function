@@ -43,8 +43,8 @@ def readDirectoryContents():
 def remove_files_in_subfolder(folder_path):
     # Get the list of files in the subfolder
     files_to_remove = os.listdir(folder_path)
-    if os.path.exists(os.path.join(os.getcwd(), "alignment.clustal")):
-        os.unlink(os.path.join(os.getcwd(), "alignment.clustal"))
+    if os.path.exists(os.path.join(os.getcwd(), "alignment.aln")):
+        os.unlink(os.path.join(os.getcwd(), "alignment.aln"))
 
     # Iterate through the files and remove them
     for file_name in files_to_remove:
@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
     getURL2 = f"https://www.ebi.ac.uk/Tools/services/rest/muscle/result/{jobID}/{format}"
     alignment = requests.get(getURL2)
-    f = open("alignment.clustal", "a")
+    f = open("alignment.aln", "a")
     f.write(alignment.text)
     f.close()
 

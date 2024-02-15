@@ -2,7 +2,7 @@ from Bio import AlignIO
 from Bio.Align import AlignInfo
 
 # Parse the Clustal format alignment
-alignment = AlignIO.read("alignment.clustal", "clustal")
+alignment = AlignIO.read("alignment.aln", "clustal")
 
 summary_align = AlignInfo.SummaryInfo(alignment)
 consensus = summary_align.dumb_consensus()
