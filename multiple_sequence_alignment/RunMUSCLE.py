@@ -28,7 +28,7 @@ for entry_id in uniprot_ids:
         fasta_str += entry_data
         num_successes += 1
 
-with open('/Users/olivia/PycharmProjects/CapstonePipeline/output.fasta', 'w') as myFile:
+with open('/Users/olivia/Documents/capstone/bio_465_structure_function/multiple_sequence_alignment/output.fasta', 'w') as myFile:
     myFile.write(fasta_str)
 
     myFile.close()
