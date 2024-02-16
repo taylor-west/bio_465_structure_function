@@ -55,7 +55,7 @@ def get_uniprot_ids_for_pathways():
         gene_list = []
         for index, row in pathway_orthologs_df.iterrows():
             genes = get_genes_by_ortholog(row["ko_id"])  # gets an array of the gene names
-            print(genes)
+
             gene_list.append(genes)
             # ortholog_genes_df.merge(genes, on='ko_id', how='left') # old way using a merge, but is super slow
         ortholog_genes_df = pathway_orthologs_df.assign(gene_name=gene_list).explode('gene_name').dropna(
@@ -171,10 +171,10 @@ def get_uniprot_ids_by_gene(gene_name):
     match = re.search(pattern, gene_response)
     if match:
         uniprot_id = match.group(1)
-        print("UniProt ID:", uniprot_id)
+        # print("UniProt ID:", uniprot_id)
     else:
         uniprot_id = None
-        print("UniProt ID not found.")
+        # print("UniProt ID not found.")
     return uniprot_id
 
 
