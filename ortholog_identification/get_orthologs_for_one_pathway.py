@@ -23,19 +23,20 @@ def get_uniprot_ids_for_pathway(pathway_id):
 
     # get KEGG id for the pathway
     kegg_ids = get_orthologs_by_pathway(pathway_id)
-
+    print(kegg_ids)
     # get genes for the KEGG ortholog id
-    for kegg_id in kegg_ids:
+    for kegg_id in kegg_ids[0:3]:
         genes = get_genes_by_ortholog(kegg_id)  # gets an array of the gene names
 
         # get uniprot ids for each gene
         uniprot_ids = []
-        for gene in genes:
+        for gene in genes[0:20]:
             uniprot_id = get_uniprot_ids_by_gene(gene)
             uniprot_ids.append(uniprot_id)
             ortholog_df.loc[len(ortholog_df)] = [pathway_id, kegg_id, gene, uniprot_id]
 
     print(ortholog_df)
+    ortholog_df.to_csv('data/hsa00051_pathway_first_3_gene_orthologs.csv')
     return ortholog_df
 
 
