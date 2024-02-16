@@ -1,10 +1,6 @@
 import os
 
 from Bio import AlignIO, motifs
-from Bio.Align import AlignInfo
-from Bio.Align import MultipleSeqAlignment
-from Bio.Align.AlignInfo import SummaryInfo
-import Bio.motifs
 
 # Parse the Clustal format alignment
 alignment = AlignIO.read("alignment.aln", "clustal")
