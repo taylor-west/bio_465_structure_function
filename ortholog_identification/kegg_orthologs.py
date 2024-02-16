@@ -106,9 +106,11 @@ def get_genes_by_ortholog(kegg_ortholog_id):
 
     ortholog_genes_response = REST.kegg_find("genes", kegg_ortholog_id).read().rstrip().split('\n')
     
-    ortholog_genes_response_df = pd.DataFrame([line.split("\t") for line in ortholog_genes_response], columns=['gene_name', 'gene_description'])
+    # This is another option if we need to include gene description data in the final dataframe. It is significantly slower though.
+    # ortholog_genes_response_df = pd.DataFrame([line.split("\t") for line in ortholog_genes_response], columns=['gene_name', 'gene_description'])
 
-    return ortholog_genes_response_df['gene_name']
+    gene_names = [line.split("\t")[0] for line in ortholog_genes_response]
+    return gene_names
 
 def get_orthologs_by_pathway(pathway_name):
     # https://www.biostars.org/p/6224/#6355
