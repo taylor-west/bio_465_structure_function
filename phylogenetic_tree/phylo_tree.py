@@ -1,8 +1,5 @@
-import ete3
 import os
 from ete3 import NodeStyle
-
-import os
 
 def make_tree_with_species_names():
     idDict = {}
