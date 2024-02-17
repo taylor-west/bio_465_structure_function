@@ -22,7 +22,7 @@ def make_tree_with_species_names():
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
     currentDirectory = os.getcwd()
-    folderName = "uniprotEntries"
+    folderName = "uniprot_entries"
     subdirectoryPath = os.path.join(currentDirectory, folderName)
     fileList = os.listdir(subdirectoryPath)
     organisms = []
@@ -45,3 +45,7 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
                 for organism in organisms:
                     outF.write(str(ids[i]) +  " " + organism + "\n")
                     i += 1
+
+if __name__ == "__main__":
+    get_species_names_and_uniprot_ids_from_uniprot_entries()
+    make_tree_with_species_names()
