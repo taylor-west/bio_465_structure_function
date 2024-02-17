@@ -57,8 +57,9 @@ def remove_files_in_subfolder(folder_path):
 if __name__ == "__main__":
     folder_path = os.path.join(os.getcwd(), "uniprotEntries")
     remove_files_in_subfolder(folder_path)
-    uniprot_ids = ['P37869', 'A5FUW3', 'A0A411SXA6', 'A0A0P7YND4', 'B6W7V0', 'Q815K8', 'B7GTK2', 'A0A0A7K4W5', 'A0A411DND6', 'C0B602', 'G0EYL2', 'A0A080NRS1', 'A0A1H1MXD9', 'C9RQM6',
-               'A0Q5J9', 'A0A0P8B8C6', 'Q5ZTX1', 'A0A8B4R093', 'D5ES25', 'Q88MF9', 'Q0S4I1', 'Q6N5U6', 'A0A0P7VUY9', 'A7AZX6', 'Q08YA3', 'F2R6D4', 'Q31QJ8']
+    uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',
+'A0A1U7UAV0', 'A0A8B7E9X4', 'Q924M7', 'A0A6P5Q4Y5', 'Q68FX1', 'G3I837', 'A0A1U7QCS9', 'A0A8C6R367', 'G5AL67',
+'A0A8B7VRU0', 'A0A1S3ETZ6']
 
     fasta_str = ''
     num_successes = 0
