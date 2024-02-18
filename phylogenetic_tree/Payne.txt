@@ -1,0 +1,79 @@
+
+#Hominidae
+a_style = NodeStyle()
+a_style["bgcolor"] = "#9ac4f8"
+Hominidae_list = ["Homo_sapiens", "Pan_troglodytes", "Gorilla_gorilla"]
+Hominidae_root = tree.get_common_ancestor(Hominidae_list)
+Hominidae_root.set_style(a_style)
+
+#Cercopithecidae
+f_style = NodeStyle()
+f_style["bgcolor"] = "#c3a1f7"
+Cercopithecidae_list = ["Papio_anubis", "Macaca_nemestrina", "Saimiri_boliviensis", "Carlito_syrichta", "Colobus_angolensis"]
+Cercopithecidae_root = tree.get_common_ancestor(Cercopithecidae_list)
+Cercopithecidae_root.set_style(f_style)
+
+#Cebidae
+b_style = NodeStyle()
+b_style["bgcolor"] = "#a2e57b"
+Cebidae_list = ["Callithrix_jacchus"]
+Cebidae_root = tree.get_common_ancestor(Cebidae_list)
+Cebidae_root.set_style(b_style)
+
+# Heteromyidae
+p_style = NodeStyle()
+p_style["bgcolor"] = "#ffb3b3"
+Heteromyidae_list = ["Dipodomys_ordii"]
+Heteromyidae_root = tree.get_common_ancestor(Heteromyidae_list)
+Heteromyidae_root.set_style(p_style)
+
+# Sciuridae
+s_style = NodeStyle()
+s_style["bgcolor"] = "#fff59d"
+Sciuridae_list = ["Heterocephalus_glaber", "Mesocricetus_auratus", "Castor_canadensis", "Macaca_mulatta", "Nannospalax_galili"]
+Sciuridae_root = tree.get_common_ancestor(Sciuridae_list)
+Sciuridae_root.set_style(s_style)
+
+# Muridae
+m_style = NodeStyle()
+m_style["bgcolor"] = "#ffcc80"
+Muridae_list = ["Microcebus_murinus", "Rattus_norvegicus", "Mus_musculus", "Mus_caroli", "Cricetulus_griseus"]
+Muridae_root = tree.get_common_ancestor(Muridae_list)
+Muridae_root.set_style(m_style)
+
+
+Blue Shades:
+
+Light Blue: #9ac4f8
+Medium Blue: #4682b4
+Dark Blue: #1e90ff
+
+Green Shades:
+
+Light Green: #a2e57b
+Medium Green: #4caf50
+Dark Green: #087f23
+
+Purple Shades:
+
+Light Purple: #c3a1f7
+Medium Purple: #8a2be2
+Dark Purple: #4b0082
+
+Orange Shades:
+
+Light Orange: #ffcc80
+Medium Orange: #ffa726
+Dark Orange: #e65100
+
+Red Shades:
+
+Light Red: #ffb3b3
+Medium Red: #e57373
+Dark Red: #b71c1c
+
+Yellow Shades:
+
+Light Yellow: #fff59d
+Medium Yellow: #fdd835
+Dark Yellow: #f9a825

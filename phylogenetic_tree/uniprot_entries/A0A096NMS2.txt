@@ -1,0 +1,153 @@
+ID   A0A096NMS2_PAPAN        Unreviewed;       425 AA.
+AC   A0A096NMS2;
+DT   26-NOV-2014, integrated into UniProtKB/TrEMBL.
+DT   28-FEB-2018, sequence version 2.
+DT   24-JAN-2024, entry version 46.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00018236, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=MPI {ECO:0000313|Ensembl:ENSPANP00000014281.2};
+OS   Papio anubis (Olive baboon).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini;
+OC   Cercopithecidae; Cercopithecinae; Papio.
+OX   NCBI_TaxID=9555 {ECO:0000313|Ensembl:ENSPANP00000014281.2, ECO:0000313|Proteomes:UP000028761};
+RN   [1] {ECO:0000313|Ensembl:ENSPANP00000014281.2, ECO:0000313|Proteomes:UP000028761}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RA   Liu Y.L., Abraham K.A., Akbar H.A., Ali S.A., Anosike U.A., Aqrawi P.A.,
+RA   Arias F.A., Attaway T.A., Awwad R.A., Babu C.B., Bandaranaike D.B.,
+RA   Battles P.B., Bell A.B., Beltran B.B., Berhane-Mersha D.B., Bess C.B.,
+RA   Bickham C.B., Bolden T.B., Carter K.C., Chau D.C., Chavez A.C.,
+RA   Clerc-Blankenburg K.C., Coyle M.C., Dao M.D., Davila M.L.D.,
+RA   Davy-Carroll L.D., Denson S.D., Dinh H.D., Fernandez S.F., Fernando P.F.,
+RA   Forbes L.F., Francis C.F., Francisco L.F., Fu Q.F., Garcia-Iii R.G.,
+RA   Garrett T.G., Gross S.G., Gubbala S.G., Hirani K.H., Hogues M.H.,
+RA   Hollins B.H., Jackson L.J., Javaid M.J., Jhangiani S.J., Johnson A.J.,
+RA   Johnson B.J., Jones J.J., Joshi V.J., Kalu J.K., Khan N.K., Korchina V.K.,
+RA   Kovar C.K., Lago L.L., Lara F.L., Le T.-K.L., Lee S.L., Legall-Iii F.L.,
+RA   Lemon S.L., Liu J.L., Liu Y.-S.L., Liyanage D.L., Lopez J.L.,
+RA   Lorensuhewa L.L., Mata R.M., Mathew T.M., Mercado C.M., Mercado I.M.,
+RA   Morales K.M., Morgan M.M., Munidasa M.M., Ngo D.N., Nguyen L.N.,
+RA   Nguyen T.N., Nguyen N.N., Obregon M.O., Okwuonu G.O., Ongeri F.O.,
+RA   Onwere C.O., Osifeso I.O., Parra A.P., Patil S.P., Perez A.P., Perez Y.P.,
+RA   Pham C.P., Pu L.-L.P., Puazo M.P., Quiroz J.Q., Rouhana J.R., Ruiz M.R.,
+RA   Ruiz S.-J.R., Saada N.S., Santibanez J.S., Scheel M.S., Schneider B.S.,
+RA   Simmons D.S., Sisson I.S., Tang L.-Y.T., Thornton R.T., Tisius J.T.,
+RA   Toledanes G.T., Trejos Z.T., Usmani K.U., Varghese R.V., Vattathil S.V.,
+RA   Vee V.V., Walker D.W., Weissenberger G.W., White C.W., Williams A.W.,
+RA   Woodworth J.W., Wright R.W., Zhu Y.Z., Han Y.H., Newsham I.N.,
+RA   Nazareth L.N., Worley K.W., Muzny D.M., Rogers J.R., Gibbs R.G.;
+RT   "Whole Genome Assembly of Papio anubis.";
+RL   Submitted (MAR-2012) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|Ensembl:ENSPANP00000014281.2}
+RP   IDENTIFICATION.
+RG   Ensembl;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666,
+CC       ECO:0000256|RuleBase:RU004248}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   RefSeq; XP_003901264.1; XM_003901215.2.
+DR   AlphaFoldDB; A0A096NMS2; -.
+DR   STRING; 9555.ENSPANP00000014281; -.
+DR   Ensembl; ENSPANT00000026149.3; ENSPANP00000014281.2; ENSPANG00000016005.3.
+DR   GeneID; 101004556; -.
+DR   KEGG; panu:101004556; -.
+DR   CTD; 4351; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_2_0_1; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000028761; Chromosome 7.
+DR   Bgee; ENSPANG00000016005; Expressed in amygdala and 66 other cell types or tissues.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   GO; GO:0061611; P:mannose to fructose-6-phosphate metabolic process; IEA:Ensembl.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000028761};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          8..156
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          172..259
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          339..383
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        297
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         114
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         139
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         278
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   425 AA;  46843 MW;  71523D1F44738C5A CRC64;
+     MSMAAPRVFP LSCAVQQYAW GKMGSNSEVA RLLASSDPLA QIAEDKPYAE LWMGTHPRGD
+     AKIFDNRISQ KTLGQWIAEN QDSLGSKVKD TFNGNLPFLF KVLSVETPLS IQAHPNKELA
+     EKLHLQAPQH YPDANHKPEM AIALTPFQGL CGFRPVEEIV TFLKKVPEFQ FLIGDEAATH
+     LKQTMSHDSQ AVASALQSCF SHLMKSEKKV VAEQLNLLVK RISQQVAAGN NMEDIFGELL
+     LQLHQQYPGD IGCFAIYFLN LLNLKPGEAM FLEANVPHAY LKGDCVECMA CSDNTVRAGL
+     TPKFIDVPTL CEMLSYTPSS SKDRLFLPTR SQEDPYLSIY DPPVPDFAIM KMEVPGSVTE
+     YKVLALDSAS ILLVVQGTVI ASTPTTQTPI PLQRGGVLFI GANESVSLKL TEPKDLLIFR
+     ACCLL
+//
+

@@ -1,0 +1,35 @@
+Order Primates:
+
+Family Hominidae:
+Homo_sapiens (MPI_HUMAN)
+Pan_troglodytes (MPI_PANTR)
+Gorilla_gorilla (G3RFM0_GORGO)
+
+Family Cercopithecidae:
+Papio_anubis (A0A096NMS2)
+Macaca_nemestrina (A0A2K6DHS4_MACNE)
+Saimiri_boliviensis (A0A2K6T9B3_SAIBB)
+Carlito_syrichta (A0A1U7UAV0_CARSF)
+Colobus_angolensis (A0A2K5JTJ0_COLAP)
+
+Family Cebidae:
+Callithrix_jacchus (U3CWX3_CALJA)
+
+Order Rodentia:
+
+Family Heteromyidae:
+Dipodomys_ordii (A0A1S3ETZ6_DIPOR)
+
+Family Sciuridae:
+Heterocephalus_glaber (G5AL67_HETGA)
+Mesocricetus_auratus (A0A1U7QCS9_MESAU)
+Castor_canadensis (A0A8B7VRU0_CASCN)
+Macaca_mulatta (G7MYC5_MACMU)
+Nannospalax_galili (A0A8C6R367_NANGA)
+
+Family Muridae:
+Microcebus_murinus (A0A8B7E9X4_MICMU)
+Rattus_norvegicus (MPI_RAT)
+Mus_musculus (MPI_MOUSE)
+Mus_caroli (A0A6P5Q4Y5_MUSCR)
+Cricetulus_griseus (G3I837_CRIGR)
