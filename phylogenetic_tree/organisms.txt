@@ -1,20 +1,20 @@
-A0A096NMS2_PAPAN Papio_anubis
-A0A1S3ETZ6_DIPOR Dipodomys_ordii
-A0A1U7QCS9_MESAU Mesocricetus_auratus
-A0A1U7UAV0_CARSF Carlito_syrichta
-A0A2K5JTJ0_COLAP Colobus_angolensis
-A0A2K6DHS4_MACNE Macaca_nemestrina
-A0A2K6T9B3_SAIBB Saimiri_boliviensis
-A0A6P5Q4Y5_MUSCR Mus_caroli
-A0A8B7E9X4_MICMU Microcebus_murinus
-A0A8B7VRU0_CASCN Castor_canadensis
-A0A8C6R367_NANGA Nannospalax_galili
-MPI_PANTR Pan_troglodytes
-G3I837_CRIGR Cricetulus_griseus
-G3RFM0_GORGO Gorilla_gorilla
-G5AL67_HETGA Heterocephalus_glaber
-G7MYC5_MACMU Macaca_mulatta
-MPI_HUMAN Homo_sapiens
-MPI_RAT Rattus_norvegicus
-MPI_MOUSE Mus_musculus
-U3CWX3_CALJA Callithrix_jacchus
+A0A096NMS2_PAPAN Papio anubis
+A0A1S3ETZ6_DIPOR Dipodomys ordii
+A0A1U7QCS9_MESAU Mesocricetus auratus
+A0A1U7UAV0_CARSF Carlito syrichta
+A0A2K5JTJ0_COLAP Colobus angolensis
+A0A2K6DHS4_MACNE Macaca nemestrina
+A0A2K6T9B3_SAIBB Saimiri boliviensis
+A0A6P5Q4Y5_MUSCR Mus caroli
+A0A8B7E9X4_MICMU Microcebus murinus
+A0A8B7VRU0_CASCN Castor canadensis
+A0A8C6R367_NANGA Nannospalax galili
+MPI_PANTR Pan troglodytes
+G3I837_CRIGR Cricetulus griseus
+G3RFM0_GORGO Gorilla gorilla
+G5AL67_HETGA Heterocephalus glaber
+G7MYC5_MACMU Macaca mulatta
+MPI_HUMAN Homo sapiens
+MPI_RAT Rattus norvegicus
+MPI_MOUSE Mus musculus
+U3CWX3_CALJA Callithrix jacchus
