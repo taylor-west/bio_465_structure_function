@@ -8,9 +8,18 @@ BIO 465 - Capstone Project
 
 
 ### If not using arm64 architecture
-- run `conda create --name <env> python requests numpy pandas && activate <env>`
+- create a new conda environement by running `conda create --name <env>`
+- activate this environment with `conda activate <env>`
+- install the following packages:
+   - `conda install python`
+   - `conda install requests`
+   - `conda install numpy`
+   - `conda install pandas`
+   - `conda install -c etetoolkit ete3`
+   - `conda install biopython`
 
 [post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica)
+
 
 
 ## Guidelines
