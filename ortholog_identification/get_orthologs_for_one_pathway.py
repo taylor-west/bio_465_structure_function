@@ -30,7 +30,7 @@ def get_uniprot_ids_for_pathway(pathway_id):
 
         # get uniprot ids for each gene
         uniprot_ids = []
-        for gene in genes[0:20]:
+        for gene in genes[0:60]:
             uniprot_id = get_uniprot_ids_by_gene(gene)
             uniprot_ids.append(uniprot_id)
             ortholog_df.loc[len(ortholog_df)] = [pathway_id, kegg_id, gene, uniprot_id]

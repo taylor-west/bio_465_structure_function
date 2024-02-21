@@ -5,10 +5,13 @@ import os
 from urllib.request import urlretrieve
 from Bio.PDB import PDBParser
 
-uniprot_ids = ['P37869', 'A5FUW3', 'A0A411SXA6', 'A0A0P7YND4', 'B6W7V0', 'Q815K8', 'B7GTK2', 'A0A0A7K4W5', 'A0A411DND6',
-               'C0B602', 'G0EYL2', 'A0A080NRS1', 'A0A1H1MXD9', 'C9RQM6',
-               'A0Q5J9', 'A0A0P8B8C6', 'Q5ZTX1', 'A0A8B4R093', 'D5ES25', 'Q88MF9', 'Q0S4I1', 'Q6N5U6', 'A0A0P7VUY9',
-               'A7AZX6', 'Q08YA3', 'F2R6D4', 'Q31QJ8']
+uniprot_ids = ['P37869', 'A0A0P8B8C6', 'Q5ZTX1']
+
+# the one's that didn't have PDB ID's show up from the search:
+# 'A5FUW3', 'A0A411SXA6', 'A0A0P7YND4', 'B6W7V0', 'Q815K8', 'B7GTK2', 'A0A0A7K4W5', 'A0A411DND6',
+# 'C0B602', 'G0EYL2', 'A0A080NRS1', 'A0A1H1MXD9', 'C9RQM6', 'A0Q5J9',
+# 'A0A8B4R093', 'D5ES25', 'Q88MF9', 'Q0S4I1', 'Q6N5U6', 'A0A0P7VUY9',
+#                'A7AZX6', 'Q08YA3', 'F2R6D4', 'Q31QJ8'
 
 def get_uniprot_entry(entry_id):
     url = f'https://rest.uniprot.org/uniprotkb/{entry_id}.json'
@@ -136,6 +139,8 @@ def find_pdb_sequences(pdb_filepaths, uniprot_id):
         sequence = ''
         residues = chain.get_residues()
         for residue in residues:
+            if residue.get_resname() not in list(residue_codes['Three Letter Code']):
+                continue
             row = residue_codes[residue_codes['Three Letter Code'] == residue.get_resname()]
             single_letter_code = row['Single Letter Code']
             sequence += list(single_letter_code)[0]
@@ -147,14 +152,19 @@ def find_pdb_sequences(pdb_filepaths, uniprot_id):
 
 # Example usage
 uniprot_df = get_uniprot_data_df(uniprot_ids)
-pdb_ids = get_pdb_ids(uniprot_df.loc[0]['uniprot_id'], uniprot_df.loc[0]['organism_name'])
-if pdb_ids:
-    filepaths = download_pdb_files(pdb_ids, uniprot_df.loc[0]['uniprot_id'])
-    pdb_sequences = find_pdb_sequences(filepaths, uniprot_df.loc[0]['uniprot_id'])
+for i in range(len(uniprot_df)):
+    pdb_ids = get_pdb_ids(uniprot_df.loc[i]['uniprot_id'], uniprot_df.loc[i]['organism_name'])
+    if pdb_ids:
+        filepaths = download_pdb_files(pdb_ids, uniprot_df.loc[i]['uniprot_id'])
+        pdb_sequences = find_pdb_sequences(filepaths, uniprot_df.loc[i]['uniprot_id'])
 
-    for pdb_seq in pdb_sequences:
-        if uniprot_df.loc[0]['uniprot_sequence'] == pdb_seq:
-            print(True)
+        for pdb_seq in pdb_sequences:
+            if uniprot_df.loc[i]['uniprot_sequence'] == pdb_seq:
+                print(True)
+                uniprot_id = uniprot_df.loc[i]['uniprot_id']
+                print(f'sequences match for PDB ID {pdb_sequences} and Uniprot ID {uniprot_id}')
+            else:
+                print(False)
 
 
 
