@@ -22,7 +22,7 @@ def make_tree_with_species_names():
     for leaf in tree.iter_leaves():
         leaf.name = idDict[leaf.name]
 
-    # Traverse the tree and apply the default background color function
+    # Traverse the tree and apply the default background color function among other style choices
     set_styles_for_each_group(tree)
     ts = ete3.TreeStyle()
     ts.show_leaf_name = False
@@ -35,7 +35,6 @@ def make_tree_with_species_names():
     ts.allow_face_overlap = True
 
     # Render the tree to a file (e.g., tree.png)
-    tree.show(tree_style=ts)
     tree.render("tree.png", tree_style=ts)
 
 def set_styles_for_each_group(tree):
@@ -74,26 +73,12 @@ def set_styles_for_each_group(tree):
     Cebidae_root = tree.get_common_ancestor(Cebidae_list)
     Cebidae_root.set_style(ceb_style)
 
-    # Heteromyidae
-    #het_style = NodeStyle()
-    #het_style["bgcolor"] = "#ffb3b3"
-    #Heteromyidae_list = ["Dipodomys_ordii"]
-    #Heteromyidae_root = tree.get_common_ancestor(Heteromyidae_list)
-    #Heteromyidae_root.set_style(het_style)
-
     # Sciuridae
     s_style = NodeStyle()
     s_style["bgcolor"] = "#fff59d"
     Sciuridae_list = ["Heterocephalus glaber", "Castor canadensis","Dipodomys ordii"]
     Sciuridae_root = tree.get_common_ancestor(Sciuridae_list)
     Sciuridae_root.set_style(s_style)
-
-    # Cheirogaleidae
-    #Che_style = NodeStyle()
-    #Che_style["bgcolor"] = "#ffcc80"
-    #Cheirogaleidae_list = ["Microcebus_murinus"]
-    #Cheirogaleidae_root = tree.get_common_ancestor(Cheirogaleidae_list)
-    #Cheirogaleidae_root.set_style(Che_style)
 
     # Muridae
     m_style = NodeStyle()
