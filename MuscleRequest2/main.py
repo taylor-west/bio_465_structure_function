@@ -67,6 +67,8 @@ if __name__ == "__main__":
     for entry_id in uniprot_ids:
         entry_data = get_uniprot_entry(entry_id)
         if entry_data:
+            # first_line = entry_data[0].split()
+            # file_name = first_line[1]
             # print(entry_data)
             currentDirectory = os.getcwd()
             filePath = os.path.join(os.getcwd(), "uniprotEntries", f"{entry_id}.txt")

@@ -54,10 +54,16 @@ if __name__ == "__main__":
             if seq[i] != '-':
                 counter_dictionary[seq.id] += 1
             if meets_threshold:
-                invariant_locations_dict[seq.id].append(counter_dictionary[seq.id])
+                invariant_locations_dict[seq.id].append((counter_dictionary[seq.id], seq[i]))
 
     print(invariant_locations_dict)
     num_invariant = list(column_annotations).count('*')
+
+    for record in alignment:
+        alignment_to_uniprot = {}
+        uniprot_id = record.id.split("_")[0]
+        alignment_to_uniprot[record.id] = uniprot_id
+
 
 
 
