@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
     getURL2 = f"https://www.ebi.ac.uk/Tools/services/rest/muscle/result/{jobID}/{format}"
     alignment = requests.get(getURL2)
-    file = open("alignment.aln", "w")
+    file = open(os.path.join(os.getcwd(), "alignment.aln"), "w")
     file.write(alignment.text)
     file.close()
 
