@@ -19,6 +19,7 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
 
     clusters_for_prots = {}
     clusters_dict = {}
+    filepath = '../datafiles/pdb_files/'
     for uniprot_id, locs in invariant_locs_dict.items():
         url = f'https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}'
 
@@ -37,7 +38,6 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
             pdb_url = alphafold_json[0]['pdbUrl']
             print(pdb_url)
 
-            filepath = '../datafiles/pdb_files'
             filename = f'alphafold_{uniprot_id}.pdb'
             urlretrieve(pdb_url, filepath + filename)
 
@@ -82,6 +82,9 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
                                 clusters_dict[pos].append(pos2)
 
         clusters_for_prots[uniprot_id] = clusters_dict
+        for file in os.listdir(filepath):
+            os.remove(f'{filepath}{file}')
+
     return clusters_for_prots
 
 result = find_clusters(invariant_locs_dict, 5)
