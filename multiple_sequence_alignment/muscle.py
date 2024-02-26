@@ -104,7 +104,7 @@ def retrieve_uniprot_id(filepath):
 
 
 if __name__ == "__main__":
-    folder_path = os.path.join(os.getcwd(), "../uniprotEntries")
+    folder_path = os.path.join(os.getcwd(), "../datafiles/uniprotEntries")
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
     uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',
@@ -116,7 +116,7 @@ if __name__ == "__main__":
         if entry_data:
             first_line = entry_data.split()
             file_name = first_line[1]
-            filePath = os.path.join(os.getcwd(), "../uniprotEntries", f"{file_name}.txt")
+            filePath = os.path.join(os.getcwd(), "../datafiles/uniprotEntries", f"{file_name}.txt")
             with open(filePath, 'w') as inF:
                 inF.write(entry_data)
 
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     file.write(alignment.text)
     file.close()
 
-    sequenceDictionary = read_uniprot_files(os.path.join(os.getcwd(), "../uniprotEntries"))
+    sequenceDictionary = read_uniprot_files(os.path.join(os.getcwd(), "../datafiles/uniprotEntries"))
     # Parse the Clustal format alignment
     alignment = AlignIO.read("alignment.aln", "clustal")
 
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
-        uniprot_id = retrieve_uniprot_id(f'{os.path.join(os.getcwd(), "../uniprotEntries")}/{key}.txt')
+        uniprot_id = retrieve_uniprot_id(f'{os.path.join(os.getcwd(), "../datafiles/uniprotEntries")}/{key}.txt')
         uniprot_invariant_locs_dict[uniprot_id] = val
 
     print(uniprot_invariant_locs_dict)
