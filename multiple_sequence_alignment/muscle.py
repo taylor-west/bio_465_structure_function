@@ -3,7 +3,8 @@ import time
 import os
 from Bio import AlignIO
 
-PATH_TO_DATAFILES = os.path.dirname(os.getcwd())
+PATH_TO_PARENT = os.path.dirname(os.getcwd())
+PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
 # makes a dictionary to keep track of what position we are at for each protein
@@ -46,7 +47,7 @@ def get_uniprot_entry(entry_id):
         print(f'Error: Unable to retrieve UniProt entry {entry_id}')
         return None
 
-def readDirectoryContents(folderPath):
+def readDirectoryContents(folder_path):
     fileList = os.listdir(folder_path)
     sequences = ""
     for fileName in fileList:
@@ -104,8 +105,8 @@ def retrieve_uniprot_id(filepath):
     return uniprot_id
 
 
-if __name__ == "__main__":
-    folder_path = os.path(PATH_TO_UNIPROT_ENTRIES)
+def multiple_sequence_alignment():
+    folder_path = PATH_TO_UNIPROT_ENTRIES
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
     uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',
@@ -153,9 +154,9 @@ if __name__ == "__main__":
     file.write(alignment.text)
     file.close()
 
-    sequenceDictionary = read_uniprot_files(os.path(PATH_TO_UNIPROT_ENTRIES))
+    sequenceDictionary = read_uniprot_files(PATH_TO_UNIPROT_ENTRIES)
     # Parse the Clustal format alignment
-    alignment = AlignIO.read("alignment.aln", "clustal")
+    alignment = AlignIO.read(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "clustal")
 
     # Define a threshold for conservation score
     threshold = 1.0  # Adjust as needed
@@ -181,8 +182,11 @@ if __name__ == "__main__":
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
-        uniprot_id = retrieve_uniprot_id(f'{os.path(PATH_TO_UNIPROT_ENTRIES)}/{key}.txt')
+        uniprot_id = retrieve_uniprot_id(f'{PATH_TO_UNIPROT_ENTRIES}/{key}.txt')
         uniprot_invariant_locs_dict[uniprot_id] = val
 
-    print(uniprot_invariant_locs_dict)
+if __name__ == "__main__":
+    multiple_sequence_alignment()
+
+    # print(uniprot_invariant_locs_dict)
     # this dict is what will be passed on to the 3d_cluster_analysis
