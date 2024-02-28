@@ -1,6 +1,8 @@
 import os
+import time
 
 import ete3
+import requests
 from ete3 import faces, NodeStyle
 
 PATH_TO_PARENT = os.path.dirname(os.getcwd())
@@ -18,7 +20,9 @@ def make_tree_with_species_names():
         idDict[id] = organism
     names.close()
 
-    file_path = os.path.join(PATH_TO_DATAFILES, "tree.txt")
+    get_newick_tree()
+
+    file_path = os.path.join(PATH_TO_DATAFILES, "newick.txt")
     tree = ete3.Tree(file_path)
 
     #change nodes to be labeled with species names instead of protein IDs
@@ -101,6 +105,34 @@ def my_layout(node):
     if node.is_leaf():
         # position controls the position of the text in the tree
         faces.add_face_to_node(faces.TextFace(node.name, fsize=8, fgcolor="black", fstyle="italic"), node, column=0, position="branch-right")
+
+def get_newick_tree():
+    email = "alexwalbom@gmail.com"
+    title = "Eukaryotes"
+    with open(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), 'r') as inF:
+        sequence = inF.read()
+    data = {
+        "email": email,
+        "title": title,
+        "sequence": sequence
+    }
+    postURL = "https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/run"
+    response = requests.post(postURL, data)
+    jobID = response.text
+    statusURL = f"https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/status/{jobID}"
+    while True:
+        response = requests.get(statusURL)
+        if response.text == "FINISHED":
+            break
+        print("Waiting for Tree...")
+        time.sleep(5)
+
+    resultType = "tree"
+    getURL = f"https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/result/{jobID}/{resultType}"
+    response = requests.get(getURL)
+    newick_tree = response.text
+    with open(os.path.join(PATH_TO_DATAFILES, "newick.txt"), 'w') as outF:
+        outF.write(newick_tree)
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
     subdirectoryPath = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
