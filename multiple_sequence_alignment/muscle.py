@@ -7,9 +7,10 @@ PATH_TO_PARENT = os.path.dirname(os.getcwd())
 PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
-KO_ID = "K03841"
+KO_ID = "K00966"
 # KO3841
 # KO1809
+# K00966
 
 # makes a dictionary to keep track of what position we are at for each protein
 def make_counter_dictionary_from_alignment_ids(alignment):
@@ -120,17 +121,23 @@ def get_organism_code(file_path):
     return codes
 
 def get_uniprot_ids(file_path, codes):
+    unused_codes = codes[:]
+    used_codes = []
     uniprot_ids = []
     with open(file_path, 'r') as inF:
         file = inF.readlines()
         file = file[1:]
         for line in file:
             line = line.split(",")
-            if line[5] in codes and line[3] == KO_ID:
-                codes.remove(line[5])
-                print(line[5])
+            if line[5] in unused_codes and line[3] == KO_ID:
+                unused_codes.remove(line[5])
+                used_codes.append(line[5])
                 uniprot_id = line[6].strip()
                 uniprot_ids.append(uniprot_id)
+    with open(os.path.join(PATH_TO_DATAFILES, "unused_codes.txt"), 'w') as outF:
+        outF.write(str(unused_codes))
+    with open(os.path.join(PATH_TO_DATAFILES, "used_codes.txt"), 'w') as outF:
+        outF.write(str(used_codes))
     return uniprot_ids
 
 
@@ -138,8 +145,8 @@ def multiple_sequence_alignment():
     folder_path = PATH_TO_UNIPROT_ENTRIES
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
-    codes = get_organism_code(os.path.join(PATH_TO_DATAFILES, "top_20_eukaryotes.csv"))
-    # codes =
+    # codes = get_organism_code(os.path.join(PATH_TO_DATAFILES, "top_20_eukaryotes.csv"))
+    codes = ['cin', 'mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
     uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_DATAFILES, "input.csv"), codes)
 
     # uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',

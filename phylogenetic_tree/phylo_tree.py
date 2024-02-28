@@ -1,6 +1,6 @@
 import os
 import time
-
+import re
 import ete3
 import requests
 from ete3 import faces, NodeStyle
@@ -42,9 +42,10 @@ def make_tree_with_species_names():
     ts.allow_face_overlap = True
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render("tree.png", tree_style=ts)
+    tree.render("UPGMA-tree.png", tree_style=ts)
 
 def set_styles_for_each_group(tree):
+    # NOTE: THESE NAMES MUST MATCH THE NAMES IN THE UNIPROT ENTRIES FILES
     # Vertebrates
     v_style = NodeStyle()
     v_style["bgcolor"] = "lightblue"
@@ -56,7 +57,7 @@ def set_styles_for_each_group(tree):
     # Fungi
     f_style = NodeStyle()
     f_style["bgcolor"] = "#c3a1f7"
-    Fungi_list = ["Saccharomyces cerevisiae", "Schizosaccharomyces pombe", "Aspergillus nidulans"]
+    Fungi_list = ["Saccharomyces cerevisiae", "Schizosaccharomyces pombe", "Emericella nidulans"]
     # col_node = tree.search_nodes(name=colobus)[0]
     # pap_node = tree.search_nodes(name=papio)[0]
     # col_node.set_style(c_style)
@@ -81,7 +82,7 @@ def set_styles_for_each_group(tree):
     # Invertebrates
     i_style = NodeStyle()
     i_style["bgcolor"] = "#fff59d"
-    Invertebrate_list = ["Ciona intestinalis", "Drosophila melanogaster","Caenorhabditis elegans"]
+    Invertebrate_list = ["Drosophila melanogaster","Caenorhabditis elegans"]
     Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
     Invertebrate_root.set_style(i_style)
 
@@ -111,9 +112,11 @@ def get_newick_tree():
     title = "Eukaryotes"
     with open(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), 'r') as inF:
         sequence = inF.read()
+    clustering = "UPGMA"
     data = {
         "email": email,
         "title": title,
+        "clustering": clustering,
         "sequence": sequence
     }
     postURL = "https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/run"
@@ -139,18 +142,20 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
     fileList = os.listdir(subdirectoryPath)
     organisms = []
     ids = []
+    pattern = re.compile(r'OS\s+((?:(?!subsp\.)[^(.])+)?\s*')
     for fileName in fileList:
         filePath = os.path.join(subdirectoryPath, fileName)
         with open(filePath, 'r', encoding="utf-8") as inF:
             lines = inF.readlines()
             first_line = lines[0].split()
             ids.append(first_line[1])
-            for line in lines:
-                if line.startswith("OS"):
-                    words = line.split()
-                    organism = words[1] + " " + words[2]
-                    organisms.append(organism)
-                    break
+            content = "".join(lines)
+            match = pattern.search(content)
+            if match:
+                organism = match.group(1)
+                organisms.append(organism)
+            else:
+                print(f"Match failed in file {fileName}")
 
     with open(os.path.join(PATH_TO_DATAFILES, "organisms.txt"), 'w') as outF:
                 i = 0
