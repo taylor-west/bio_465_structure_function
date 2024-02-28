@@ -18,9 +18,9 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
     residue_codes = pd.read_csv('residue_codes.csv')
 
     clusters_for_prots = {}
-    clusters_dict = {}
     filepath = '../datafiles/pdb_files/'
     for uniprot_id, locs in invariant_locs_dict.items():
+        clusters_dict = {}
         url = f'https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}'
 
         response = requests.get(url)
@@ -57,7 +57,7 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
                 chain = model['A']
 
                 for invariant_res in locs:
-                    clusters_dict[invariant_res[0]] = []
+                    # clusters_dict[invariant_res[0]] = []
                     print(invariant_res)
                     residue = chain[invariant_res[0]]
                     row = residue_codes[residue_codes['Three Letter Code'] == residue.get_resname()]
@@ -79,7 +79,11 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
                             # calculate distance between residues
                             distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
                             if distance <= distance_threshold:
-                                clusters_dict[pos].append(pos2)
+                                if pos in clusters_dict.keys():
+                                    clusters_dict[pos].append(pos2)
+                                else:
+                                    clusters_dict[pos] = []
+                                    clusters_dict[pos].append(pos2)
 
         clusters_for_prots[uniprot_id] = clusters_dict
         for file in os.listdir(filepath):
@@ -87,5 +91,22 @@ def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
 
     return clusters_for_prots
 
-result = find_clusters(invariant_locs_dict, 5)
+def filter_interesting_clusters(uniprot_clusters_dict: dict, sequence_separation_threshold: int):
+    interesting_clusters_prots = {}
+    for uniprot_id, clusters in uniprot_clusters_dict.items():
+        interesting_clusters_dict = {}
+        for key_position, value_list in clusters.items():
+            for position in value_list:
+                if abs(key_position - position) > sequence_separation_threshold:
+                    if key_position in interesting_clusters_dict:
+                        interesting_clusters_dict[key_position].append(position)
+                    else:
+                        interesting_clusters_dict[key_position] = []
+                        interesting_clusters_dict[key_position].append(position)
+        interesting_clusters_prots[uniprot_id] = interesting_clusters_dict
+    return interesting_clusters_prots
+
+result = find_clusters(invariant_locs_dict, 4)
+result2 = filter_interesting_clusters(result, 20)
 print(result)
+print(result2)

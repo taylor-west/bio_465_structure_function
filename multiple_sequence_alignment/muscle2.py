@@ -44,7 +44,7 @@ def get_uniprot_entry(entry_id):
         print(f'Error: Unable to retrieve UniProt entry {entry_id}')
         return None
 
-def readDirectoryContents(folderPath):
+def readDirectoryContents(folder_path):
     fileList = os.listdir(folder_path)
     sequences = ""
     for fileName in fileList:
@@ -104,7 +104,8 @@ def retrieve_uniprot_id(filepath):
     return uniprot_id
 
 
-if __name__ == "__main__":
+def get_invariant_residues(threshold: int = 1.0):
+    # this parameter is the threshold of the conservation score (1 = 100% invariant)
     folder_path = os.path.join(os.getcwd(), "../datafiles/uniprotEntries")
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
@@ -154,18 +155,18 @@ if __name__ == "__main__":
     file.close()
 
     sequenceDictionary = read_uniprot_files(os.path.join(os.getcwd(), "../datafiles/uniprotEntries"))
+
     # Parse the Clustal format alignment
     alignment = AlignIO.read("alignment.aln", "clustal")
 
-    # Define a threshold for conservation score
-    threshold = 1.0  # Adjust as needed
-    column_annotations = alignment.column_annotations['clustal_consensus']
+    consensus_seq = alignment.column_annotations['clustal_consensus']
     # Identify invariant locations
     counter_dictionary = make_counter_dictionary_from_alignment_ids(alignment)
     invariant_locations_dict = make_position_dictionary_from_alignment_ids(alignment)
-    alignment_length = alignment.get_alignment_length()
 
-    for i, char in enumerate(column_annotations):
+    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue'])
+
+    for i, char in enumerate(consensus_seq):
         meets_threshold = False
         column = alignment[:, i]
         most_frequent_element = max(set(column), key=column.count)
@@ -178,11 +179,18 @@ if __name__ == "__main__":
                 counter_dictionary[seq.id] += 1
             if meets_threshold:
                 invariant_locations_dict[seq.id].append((counter_dictionary[seq.id], seq[i]))
+                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i]]
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
         uniprot_id = retrieve_uniprot_id(f'{os.path.join(os.getcwd(), "../datafiles/uniprotEntries")}/{key}.txt')
         uniprot_invariant_locs_dict[uniprot_id] = val
+        invariant_res_df.loc[invariant_res_df['entry_id'] == key, 'uniprot_id'] = uniprot_id
 
-    print(uniprot_invariant_locs_dict)
+    # print(uniprot_invariant_locs_dict)
+    return invariant_res_df
     # this dict is what will be passed on to the 3d_cluster_analysis
+
+result_df = get_invariant_residues()
+result_df.to_csv('../datafiles/MSA_results.csv')
+print(result_df)
