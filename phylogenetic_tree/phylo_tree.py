@@ -3,10 +3,13 @@ import os
 import ete3
 from ete3 import faces, NodeStyle
 
+PATH_TO_PARENT = os.path.dirname(os.getcwd())
+PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
+
 
 def make_tree_with_species_names():
     idDict = {}
-    names = open("organisms.txt", "r")
+    names = open(os.path.join(PATH_TO_DATAFILES, "organisms.txt"), "r")
     lines = names.readlines()
     for line in lines:
         line = line.strip().split()
@@ -15,7 +18,7 @@ def make_tree_with_species_names():
         idDict[id] = organism
     names.close()
 
-    file_path = os.path.join(os.getcwd(), "tree.txt")
+    file_path = os.path.join(PATH_TO_DATAFILES, "tree.txt")
     tree = ete3.Tree(file_path)
 
     #change nodes to be labeled with species names instead of protein IDs
@@ -38,62 +41,60 @@ def make_tree_with_species_names():
     tree.render("tree.png", tree_style=ts)
 
 def set_styles_for_each_group(tree):
-    # Hominidae
-    h_style = NodeStyle()
-    h_style["bgcolor"] = "lightblue"
-    Hominidae_list = ["Homo sapiens", "Pan troglodytes", "Gorilla gorilla"]
-    Hominidae_root = tree.get_common_ancestor(Hominidae_list)
-    Hominidae_root.set_style(h_style)
+    # Vertebrates
+    v_style = NodeStyle()
+    v_style["bgcolor"] = "lightblue"
+    Vertebrate_list = ["Canis lupus familiaris", "Rattus norvegicus", "Danio rerio", "Taeniopygia guttata", "Mus musculus", "Heterocephalus glaber", "Poecilia reticulata"]
+    Vertebrate_root = tree.get_common_ancestor(Vertebrate_list)
+    Vertebrate_root.set_style(v_style)
 
 
-    # Cercopithecidae
-    c_style = NodeStyle()
-    c_style["bgcolor"] = "#c3a1f7"
-    Cercopithecidae_list = ["Macaca nemestrina", "Macaca mulatta"]
-    colobus = "Colobus angolensis"
-    papio = "Papio anubis"
-    col_node = tree.search_nodes(name=colobus)[0]
-    pap_node = tree.search_nodes(name=papio)[0]
-    col_node.set_style(c_style)
-    pap_node.set_style(c_style)
-    Cercopithecidae_root = tree.get_common_ancestor(Cercopithecidae_list)
-    Cercopithecidae_root.set_style(c_style)
+    # Fungi
+    f_style = NodeStyle()
+    f_style["bgcolor"] = "#c3a1f7"
+    Fungi_list = ["Saccharomyces cerevisiae", "Schizosaccharomyces pombe", "Aspergillus nidulans"]
+    # col_node = tree.search_nodes(name=colobus)[0]
+    # pap_node = tree.search_nodes(name=papio)[0]
+    # col_node.set_style(c_style)
+    # pap_node.set_style(c_style)
+    Fungi_root = tree.get_common_ancestor(Fungi_list)
+    Fungi_root.set_style(f_style)
 
-    # Tarsiidae
-    t_style = NodeStyle()
-    t_style["bgcolor"] = "#FFFFFF"
-    Tarsiidae_list = ["Carlito syrichta", "Microcebus murinus"]
-    Tarsiidae_root = tree.get_common_ancestor(Tarsiidae_list)
-    Tarsiidae_root.set_style(t_style)
+    # Protists
+    p_style = NodeStyle()
+    p_style["bgcolor"] = "#FFFFFF"
+    Protist_list = ["Dictyostelium discoideum"]
+    Protist_root = tree.get_common_ancestor(Protist_list)
+    Protist_root.set_style(p_style)
 
-    # Cebidae
-    ceb_style = NodeStyle()
-    ceb_style["bgcolor"] = "#a2e57b"
-    Cebidae_list = ["Callithrix jacchus", "Saimiri boliviensis"]
-    Cebidae_root = tree.get_common_ancestor(Cebidae_list)
-    Cebidae_root.set_style(ceb_style)
+    # Vascular Plants
+    v_style = NodeStyle()
+    v_style["bgcolor"] = "#a2e57b"
+    vascular_list = ["Arabidopsis thaliana", "Zea mays", "Medicago truncatula", "Oryza sativa", "Selaginella moellendorffii"]
+    vascular_root = tree.get_common_ancestor(vascular_list)
+    vascular_root.set_style(v_style)
 
-    # Sciuridae
-    s_style = NodeStyle()
-    s_style["bgcolor"] = "#fff59d"
-    Sciuridae_list = ["Heterocephalus glaber", "Castor canadensis","Dipodomys ordii"]
-    Sciuridae_root = tree.get_common_ancestor(Sciuridae_list)
-    Sciuridae_root.set_style(s_style)
+    # Invertebrates
+    i_style = NodeStyle()
+    i_style["bgcolor"] = "#fff59d"
+    Invertebrate_list = ["Ciona intestinalis", "Drosophila melanogaster","Caenorhabditis elegans"]
+    Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
+    Invertebrate_root.set_style(i_style)
 
-    # Muridae
-    m_style = NodeStyle()
-    m_style["bgcolor"] = "#ffcc80"
-    Muridae_list = ["Rattus norvegicus", "Mus musculus", "Mus caroli", "Cricetulus griseus", "Nannospalax galili", "Mesocricetus auratus"]
-    Muridae_root = tree.get_common_ancestor(Muridae_list)
-    Muridae_root.set_style(m_style)
+    # Archaeplastida
+    a_style = NodeStyle()
+    a_style["bgcolor"] = "#ffcc80"
+    Arch_list = ["Chlamydomonas reinhardtii"]
+    Arch_root = tree.get_common_ancestor(Arch_list)
+    Arch_root.set_style(a_style)
 
-    # None
-    no_style = NodeStyle()
-    no_style["bgcolor"] = "white"
-    Reject_list = ["Carlito syrichta", "Microcebus murinus"]
-    for node_name in Reject_list:
-        node = tree.search_nodes(name=node_name)[0]
-        node.set_style(no_style)
+    # # None
+    # no_style = NodeStyle()
+    # no_style["bgcolor"] = "white"
+    # Reject_list = ["Carlito syrichta", "Microcebus murinus"]
+    # for node_name in Reject_list:
+    #     node = tree.search_nodes(name=node_name)[0]
+    #     node.set_style(no_style)
 
 # Define a layout function for the tree
 def my_layout(node):
@@ -102,9 +103,7 @@ def my_layout(node):
         faces.add_face_to_node(faces.TextFace(node.name, fsize=8, fgcolor="black", fstyle="italic"), node, column=0, position="branch-right")
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
-    currentDirectory = os.getcwd()
-    folderName = "uniprot_entries"
-    subdirectoryPath = os.path.join(currentDirectory, folderName)
+    subdirectoryPath = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
     fileList = os.listdir(subdirectoryPath)
     organisms = []
     ids = []
@@ -121,7 +120,7 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
                     organisms.append(organism)
                     break
 
-    with open(os.path.join(currentDirectory, "organisms.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_DATAFILES, "organisms.txt"), 'w') as outF:
                 i = 0
                 for organism in organisms:
                     outF.write(str(ids[i]) + " " + organism + "\n")
