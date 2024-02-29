@@ -1,19 +1,17 @@
-A0A3P9PHF0_POERE Poecilia reticulata 
-A0A674HLF9_TAEGU Taeniopygia guttata 
-A0A8C0SY08_CANLF Canis lupus familiaris 
-A8J3F9_CHLRE Chlamydomonas reinhardtii 
-B4FCE5_MAIZE Zea mays 
-C8VKT1_EMENI Emericella nidulans 
-D8R6R6_SELML Selaginella moellendorffii 
-F1R683_DANRE Danio rerio 
-G5BZX1_HETGA Heterocephalus glaber 
-G7KGV6_MEDTR Medicago truncatula 
-GMPP2_ORYSJ Oryza sativa 
-GMPPA_DICDI Dictyostelium discoideum 
-GMPPA_MOUSE Mus musculus 
-GMPPA_RAT Rattus norvegicus 
-GMPPB_DROME Drosophila melanogaster 
-MPG1_YEAST Saccharomyces cerevisiae 
-Q9C9P3_ARATH Arabidopsis thaliana 
-Q9N4V3_CAEEL Caenorhabditis elegans
-YBB2_SCHPO Schizosaccharomyces pombe 
+A0A072TVL2_MEDTR Medicago truncatula 
+A0A3P9PED3_POERE Poecilia reticulata 
+A0A8I3P413_CANLF Canis lupus familiaris 
+B4FP68_MAIZE Zea mays 
+D8SVH8_SELML Selaginella moellendorffii 
+G5AL67_HETGA Heterocephalus glaber 
+MPI2_ARATH Arabidopsis thaliana 
+MPI_CAEEL Caenorhabditis elegans
+MPI_DICDI Dictyostelium discoideum 
+MPI_EMENI Emericella nidulans 
+MPI_MOUSE Mus musculus 
+MPI_RAT Rattus norvegicus 
+MPI_SCHPO Schizosaccharomyces pombe 
+MPI_YEAST Saccharomyces cerevisiae 
+Q2R1L4_ORYSJ Oryza sativa 
+Q3ZB95_DANRE Danio rerio 
+Q9VH77_DROME Drosophila melanogaster 

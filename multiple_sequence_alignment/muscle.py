@@ -7,9 +7,9 @@ PATH_TO_PARENT = os.path.dirname(os.getcwd())
 PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
-KO_ID = "K00966"
-# KO3841
-# KO1809
+KO_ID = "K01809"
+# K03841
+# K01809
 # K00966
 
 # makes a dictionary to keep track of what position we are at for each protein
@@ -146,7 +146,7 @@ def multiple_sequence_alignment():
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
     # codes = get_organism_code(os.path.join(PATH_TO_DATAFILES, "top_20_eukaryotes.csv"))
-    codes = ['cin', 'mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
+    codes = ['mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
     uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_DATAFILES, "input.csv"), codes)
 
     # uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',

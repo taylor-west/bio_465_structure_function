@@ -17,10 +17,10 @@ def make_tree_with_species_names():
         line = line.strip().split()
         id = line[0]
         organism = " ".join(line[1:])
-        idDict[id] = organism
+        idDict[id] = str(" " + organism)
     names.close()
 
-    get_newick_tree()
+    #get_newick_tree()
 
     file_path = os.path.join(PATH_TO_DATAFILES, "newick.txt")
     tree = ete3.Tree(file_path)
@@ -28,6 +28,11 @@ def make_tree_with_species_names():
     #change nodes to be labeled with species names instead of protein IDs
     for leaf in tree.iter_leaves():
         leaf.name = idDict[leaf.name]
+
+    node_style = NodeStyle()
+    node_style["fgcolor"] = "black"
+    for node in tree.traverse():
+        node.set_style(node_style)
 
     # Traverse the tree and apply the default background color function among other style choices
     set_styles_for_each_group(tree)
@@ -42,22 +47,24 @@ def make_tree_with_species_names():
     ts.allow_face_overlap = True
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render("UPGMA-tree.png", tree_style=ts)
+    tree.render("tree.png", tree_style=ts)
 
 def set_styles_for_each_group(tree):
     # NOTE: THESE NAMES MUST MATCH THE NAMES IN THE UNIPROT ENTRIES FILES
     # Vertebrates
     v_style = NodeStyle()
     v_style["bgcolor"] = "lightblue"
-    Vertebrate_list = ["Canis lupus familiaris", "Rattus norvegicus", "Danio rerio", "Taeniopygia guttata", "Mus musculus", "Heterocephalus glaber", "Poecilia reticulata"]
+    v_style["fgcolor"] = "black"
+    Vertebrate_list = [" Canis lupus familiaris", " Rattus norvegicus", " Danio rerio", " Mus musculus", " Heterocephalus glaber", " Poecilia reticulata"]
     Vertebrate_root = tree.get_common_ancestor(Vertebrate_list)
     Vertebrate_root.set_style(v_style)
 
 
     # Fungi
     f_style = NodeStyle()
-    f_style["bgcolor"] = "#c3a1f7"
-    Fungi_list = ["Saccharomyces cerevisiae", "Schizosaccharomyces pombe", "Emericella nidulans"]
+    f_style["bgcolor"] = "tan"
+    f_style["fgcolor"] = "black"
+    Fungi_list = [" Saccharomyces cerevisiae", " Schizosaccharomyces pombe", " Emericella nidulans"]
     # col_node = tree.search_nodes(name=colobus)[0]
     # pap_node = tree.search_nodes(name=papio)[0]
     # col_node.set_style(c_style)
@@ -67,31 +74,42 @@ def set_styles_for_each_group(tree):
 
     # Protists
     p_style = NodeStyle()
-    p_style["bgcolor"] = "#FFFFFF"
-    Protist_list = ["Dictyostelium discoideum"]
-    Protist_root = tree.get_common_ancestor(Protist_list)
-    Protist_root.set_style(p_style)
+    p_style["bgcolor"] = "palegoldenrod"
+    p_style["fgcolor"] = "black"
+    Protist_list = [" Dictyostelium discoideum"]
+    ddi_node = tree.search_nodes(name=" Dictyostelium discoideum")[0]
+    ddi_node.set_style(p_style)
+    # Protist_root = tree.get_common_ancestor(Protist_list)
+    # Protist_root.set_style(p_style)
 
     # Vascular Plants
     v_style = NodeStyle()
     v_style["bgcolor"] = "#a2e57b"
-    vascular_list = ["Arabidopsis thaliana", "Zea mays", "Medicago truncatula", "Oryza sativa", "Selaginella moellendorffii"]
+    v_style["fgcolor"] = "black"
+    vascular_list = [" Arabidopsis thaliana", " Zea mays", " Medicago truncatula", " Oryza sativa", " Selaginella moellendorffii"]
     vascular_root = tree.get_common_ancestor(vascular_list)
     vascular_root.set_style(v_style)
 
     # Invertebrates
     i_style = NodeStyle()
-    i_style["bgcolor"] = "#fff59d"
-    Invertebrate_list = ["Drosophila melanogaster","Caenorhabditis elegans"]
-    Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
-    Invertebrate_root.set_style(i_style)
+    i_style["bgcolor"] = "#c3a1f7"
+    i_style["fgcolor"] = "black"
+    #F5F5DC
+    Invertebrate_list = [" Drosophila melanogaster"," Caenorhabditis elegans"]
+    dme_node = tree.search_nodes(name=" Drosophila melanogaster")[0]
+    dme_node.set_style(i_style)
+    cel_node = tree.search_nodes(name=" Caenorhabditis elegans")[0]
+    cel_node.set_style(i_style)
+    # Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
+    # Invertebrate_root.set_style(i_style)
 
     # Archaeplastida
     a_style = NodeStyle()
     a_style["bgcolor"] = "#ffcc80"
-    Arch_list = ["Chlamydomonas reinhardtii"]
-    Arch_root = tree.get_common_ancestor(Arch_list)
-    Arch_root.set_style(a_style)
+    a_style["fgcolor"] = "black"
+    # Arch_list = ["Chlamydomonas reinhardtii"]
+    # Arch_root = tree.get_common_ancestor(Arch_list)
+    # Arch_root.set_style(a_style)
 
     # # None
     # no_style = NodeStyle()
@@ -105,7 +123,7 @@ def set_styles_for_each_group(tree):
 def my_layout(node):
     if node.is_leaf():
         # position controls the position of the text in the tree
-        faces.add_face_to_node(faces.TextFace(node.name, fsize=8, fgcolor="black", fstyle="italic"), node, column=0, position="branch-right")
+        faces.add_face_to_node(faces.TextFace(node.name, fsize=8, fgcolor="black", fstyle="normal"), node, column=0, position="branch-right")
 
 def get_newick_tree():
     email = "alexwalbom@gmail.com"
@@ -116,7 +134,7 @@ def get_newick_tree():
     data = {
         "email": email,
         "title": title,
-        "clustering": clustering,
+        # "clustering": clustering,
         "sequence": sequence
     }
     postURL = "https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/run"
