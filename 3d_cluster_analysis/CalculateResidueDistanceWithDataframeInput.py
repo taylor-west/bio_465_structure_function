@@ -69,36 +69,17 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                 # see exactly which ones were in close proximity in 3d space
 
                 for pos in locs_3d_dict:
+                    clusters_list = []
                     for pos2 in locs_3d_dict:
                         if pos != pos2:
                             # calculate distance between residues
                             distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
                             if distance <= distance_threshold:
-                                clusters_list = \
-                                filtered_by_id_df.loc[filtered_by_id_df['seq_pos'] == pos, 'clusters'].iloc[0]
-                                if clusters_list is not None:
-                                    clusters_list.append(pos2)
-                                else:
-                                    clusters_list = [pos2]
-                                # Update the DataFrame directly
-                                invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (
-                                            invariant_res_df['seq_pos'] == pos), 'clusters'] = clusters_list
+                                clusters_list.append(pos2)
+                    if len(clusters_list) > 0:
+                        index = invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'].index[0]
+                        invariant_res_df.at[index, 'clusters'] = clusters_list
 
-                # for pos in locs_3d_dict:
-                #     for pos2 in locs_3d_dict:
-                #         if pos != pos2:
-                #             # calculate distance between residues
-                #             distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
-                #             if distance <= distance_threshold:
-                #                 clusters_list = list(filtered_by_id_df[filtered_by_id_df['seq_pos'] == pos]['clusters'])[0]
-                #                 if clusters_list is not None:
-                #                     clusters_list.append(pos2)
-                #                     # filtered_by_id_df[filtered_by_id_df['seq_pos'] == pos]['clusters'] = clusters_list
-                #                     invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'] = clusters_list
-                #                 else:
-                #                     clusters_list = [pos2]
-                #                     invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'] = clusters_list
-                #                     # filtered_by_id_df[filtered_by_id_df['seq_pos'] == pos]['clusters'] = clusters_list
 
         clusters_for_prots[uniprot_id] = clusters_dict
         for file in os.listdir(filepath):
