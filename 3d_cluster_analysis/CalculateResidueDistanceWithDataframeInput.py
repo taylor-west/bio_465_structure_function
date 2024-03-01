@@ -9,12 +9,9 @@ import os
 import pandas as pd
 import ast
 
-
-
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
     residue_codes = pd.read_csv('residue_codes.csv')
 
-    clusters_for_prots = {}
     filepath = '../datafiles/pdb_files/'
 
     uniprot_ids = set(invariant_res_df['uniprot_id'])
@@ -81,13 +78,11 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                     if len(clusters_list) > 0:
                         index = invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'].index[0]
                         invariant_res_df.at[index, 'clusters'] = clusters_list
-
-        clusters_for_prots[uniprot_id] = clusters_dict
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-    invariant_res_df = invariant_res_df.drop(columns='Unnamed: 0')
+    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
     invariant_res_df.to_csv('../datafiles/clusters.csv')
-    return clusters_for_prots
+    return invariant_res_df
 
 def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
     separated_cluster_col = [None for i in range(len(clusters_df))]
@@ -103,25 +98,23 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
                     interesting_clusters_list.append(pos)
             if len(interesting_clusters_list) > 0:
                 clusters_df.at[i, 'separated_clusters'] = str(interesting_clusters_list)
-    # clean up the dataframe
-    clusters_df.drop(columns=['Unnamed: 0'], inplace=True)
     clusters_df.dropna(inplace=True, ignore_index=True)
-    clusters_df.to_csv('interesting_clusters.csv')
+    clusters_df.to_csv('../datafiles/interesting_clusters.csv')
     return clusters_df
 
-def find_common_clusters(res_clusters_df: pd.DataFrame):
-    already_searched = []
-    for i, row in res_clusters_df.iterrows():
-        MSA_pos = row['MSA_pos']
-        if MSA_pos in already_searched:
-            continue
-        already_searched.append(MSA_pos)
-        same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
-    pass
+# def find_common_clusters(res_clusters_df: pd.DataFrame):
+#     already_searched = []
+#     for i, row in res_clusters_df.iterrows():
+#         MSA_pos = row['MSA_pos']
+#         if MSA_pos in already_searched:
+#             continue
+#         already_searched.append(MSA_pos)
+#         same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
+#     pass
 
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-clusters_df = pd.read_csv('../datafiles/clusters.csv')
-result = find_clusters(invariant_res_df, 10)
-result2 = filter_interesting_clusters(clusters_df, 20)
+# clusters_df = pd.read_csv('../datafiles/clusters.csv')
+result = find_clusters(invariant_res_df, 100)
+result2 = filter_interesting_clusters(result, 20)
 print(result)
 print(result2)
