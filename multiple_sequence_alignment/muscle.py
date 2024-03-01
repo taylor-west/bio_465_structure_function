@@ -196,7 +196,6 @@ def multiple_sequence_alignment():
     file.write(alignment.text)
     file.close()
 
-    sequenceDictionary = read_uniprot_files(PATH_TO_UNIPROT_ENTRIES)
     # Parse the Clustal format alignment
     alignment = AlignIO.read(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "clustal")
 
@@ -206,7 +205,9 @@ def multiple_sequence_alignment():
     # Identify invariant locations
     counter_dictionary = make_counter_dictionary_from_alignment_ids(alignment)
     invariant_locations_dict = make_position_dictionary_from_alignment_ids(alignment)
-    alignment_length = alignment.get_alignment_length()
+
+    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue'])
+
 
     for i, char in enumerate(column_annotations):
         meets_threshold = False
@@ -221,14 +222,16 @@ def multiple_sequence_alignment():
                 counter_dictionary[seq.id] += 1
             if meets_threshold:
                 invariant_locations_dict[seq.id].append((counter_dictionary[seq.id], seq[i]))
+                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i]]
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
         uniprot_id = retrieve_uniprot_id(f'{PATH_TO_UNIPROT_ENTRIES}/{key}.txt')
         uniprot_invariant_locs_dict[uniprot_id] = val
+        invariant_res_df.loc[invariant_res_df['entry_id'] == key, 'uniprot_id'] = uniprot_id
 
-if __name__ == "__main__":
-    multiple_sequence_alignment()
+    return invariant_res_df
 
-    # print(uniprot_invariant_locs_dict)
-    # this dict is what will be passed on to the 3d_cluster_analysis
+result_df = multiple_sequence_alignment()
+result_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
+print(result_df)
