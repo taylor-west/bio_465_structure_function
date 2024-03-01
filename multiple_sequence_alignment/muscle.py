@@ -2,6 +2,7 @@ import requests
 import time
 import os
 from Bio import AlignIO
+import pandas as pd
 
 PATH_TO_PARENT = os.path.dirname(os.getcwd())
 PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
@@ -159,6 +160,7 @@ def multiple_sequence_alignment():
             first_line = entry_data.split()
             file_name = first_line[1]
             filePath = os.path.join(PATH_TO_UNIPROT_ENTRIES, f"{file_name}.txt")
+
             with open(filePath, 'w') as inF:
                 inF.write(entry_data)
 
