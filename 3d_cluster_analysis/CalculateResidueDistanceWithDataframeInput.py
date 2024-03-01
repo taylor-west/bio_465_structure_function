@@ -7,6 +7,8 @@ import json
 from urllib.request import urlretrieve
 import os
 import pandas as pd
+import ast
+
 
 
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
@@ -80,31 +82,46 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                         index = invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'].index[0]
                         invariant_res_df.at[index, 'clusters'] = clusters_list
 
-
         clusters_for_prots[uniprot_id] = clusters_dict
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-
+    invariant_res_df = invariant_res_df.drop(columns='Unnamed: 0')
     invariant_res_df.to_csv('../datafiles/clusters.csv')
     return clusters_for_prots
 
-def filter_interesting_clusters(uniprot_clusters_dict: dict, sequence_separation_threshold: int):
-    interesting_clusters_prots = {}
-    for uniprot_id, clusters in uniprot_clusters_dict.items():
-        interesting_clusters_dict = {}
-        for key_position, value_list in clusters.items():
-            for position in value_list:
-                if abs(key_position - position) > sequence_separation_threshold:
-                    if key_position in interesting_clusters_dict:
-                        interesting_clusters_dict[key_position].append(position)
-                    else:
-                        interesting_clusters_dict[key_position] = []
-                        interesting_clusters_dict[key_position].append(position)
-        interesting_clusters_prots[uniprot_id] = interesting_clusters_dict
-    return interesting_clusters_prots
+def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
+    separated_cluster_col = [None for i in range(len(clusters_df))]
+    clusters_df['separated_clusters'] = separated_cluster_col
+    for i, row in clusters_df.iterrows():
+        pos_list = row['clusters']
+        if isinstance(pos_list, str):
+            seq_pos = row['seq_pos']
+            interesting_clusters_list = []
+            pos_list = ast.literal_eval(pos_list)
+            for pos in pos_list:
+                if abs(seq_pos - pos) > sequence_separation_threshold:
+                    interesting_clusters_list.append(pos)
+            if len(interesting_clusters_list) > 0:
+                clusters_df.at[i, 'separated_clusters'] = str(interesting_clusters_list)
+    # clean up the dataframe
+    clusters_df.drop(columns=['Unnamed: 0'], inplace=True)
+    clusters_df.dropna(inplace=True, ignore_index=True)
+    clusters_df.to_csv('interesting_clusters.csv')
+    return clusters_df
+
+def find_common_clusters(res_clusters_df: pd.DataFrame):
+    already_searched = []
+    for i, row in res_clusters_df.iterrows():
+        MSA_pos = row['MSA_pos']
+        if MSA_pos in already_searched:
+            continue
+        already_searched.append(MSA_pos)
+        same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
+    pass
 
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
+clusters_df = pd.read_csv('../datafiles/clusters.csv')
 result = find_clusters(invariant_res_df, 10)
-result2 = filter_interesting_clusters(result, 20)
+result2 = filter_interesting_clusters(clusters_df, 20)
 print(result)
 print(result2)
