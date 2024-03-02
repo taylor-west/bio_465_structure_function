@@ -142,13 +142,13 @@ def get_uniprot_ids(file_path, codes):
     return uniprot_ids
 
 
-def multiple_sequence_alignment():
+def multiple_sequence_alignment(uniprot_ids):
     folder_path = PATH_TO_UNIPROT_ENTRIES
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
     # codes = get_organism_code(os.path.join(PATH_TO_DATAFILES, "top_20_eukaryotes.csv"))
-    codes = ['mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
-    uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_DATAFILES, "input.csv"), codes)
+    # codes = ['mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
+    # uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_DATAFILES, "input.csv"), codes)
 
     # uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',
     #     'A0A1U7UAV0', 'A0A8B7E9X4', 'Q924M7', 'A0A6P5Q4Y5', 'Q68FX1', 'G3I837', 'A0A1U7QCS9', 'A0A8C6R367', 'G5AL67',
