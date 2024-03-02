@@ -80,8 +80,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                         invariant_res_df.at[index, 'clusters'] = clusters_list
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-    invariant_res_df.to_csv('../datafiles/clusters.csv')
+    invariant_res_df.to_csv('../datafiles/clusters.csv', index=False)
     return invariant_res_df
 
 def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
@@ -114,7 +113,8 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
 
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
 # clusters_df = pd.read_csv('../datafiles/clusters.csv')
+invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 result = find_clusters(invariant_res_df, 100)
-result2 = filter_interesting_clusters(result, 20)
 print(result)
+result2 = filter_interesting_clusters(result, 20)
 print(result2)
