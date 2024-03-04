@@ -23,7 +23,7 @@ if __name__ == "__main__":
         # loops through each KEGG Ortholog and generates a multiple sequence alignment for each
         for ortholog in ortholog_uniprot_dict:
             # extract the uniprot ids for all of that ortholog
-            extracted_ids = []
+            extracted_ids = ortholog_uniprot_dict[ortholog]
             msa_df = multiple_sequence_alignment.muscle.multiple_sequence_alignment(extracted_ids)
             #continue to 3d
     else:
