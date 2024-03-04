@@ -6,8 +6,9 @@ import ortholog_identification.kegg_orthologs
 if __name__ == "__main__":
     # uses KOID and organisms or all three not sure
     # TODO update this statement with somethinf for the command line args (if statement):
-        KOID = sys.argv[1]
-        organisms = sys.argv[2]
+    KOID = sys.argv[1]
+    organisms = sys.argv[2]
+    
     # generate the list of uniprot ids for the given pathway
     uniprot_ids = ortholog_identification.kegg_orthologs.get_uniprot_ids_for_pathways(KOID, organisms)
     msa_df = multiple_sequence_alignment.muscle.multiple_sequence_alignment()
