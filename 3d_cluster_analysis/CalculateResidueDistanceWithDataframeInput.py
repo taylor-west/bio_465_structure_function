@@ -1,6 +1,4 @@
-
 # If you need to process multiple files, you could use Biopython to parse a PDB structure.
-
 from Bio.PDB import PDBParser
 import requests
 import json
@@ -13,6 +11,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
     residue_codes = pd.read_csv('residue_codes.csv')
 
     filepath = '../datafiles/pdb_files/'
+    os.makedirs(filepath, exist_ok=True)
 
     uniprot_ids = set(invariant_res_df['uniprot_id'])
     cluster_col = [None for i in range(len(invariant_res_df))]
@@ -61,12 +60,6 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                     if single_letter_code == row['residue']:
                         locs_3d_dict[row['seq_pos']] = residue['CA']
 
-                # this dict will map which residues are actually close to each other
-                # if all the lists remain empty by the end, of the double for loop,
-                # then we can conclude that none of the conserved residues are clustered together
-                # else we can conclude that some of the residues are clustered together and we can
-                # see exactly which ones were in close proximity in 3d space
-
                 for pos in locs_3d_dict:
                     clusters_list = []
                     for pos2 in locs_3d_dict:
@@ -80,8 +73,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                         invariant_res_df.at[index, 'clusters'] = clusters_list
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-    invariant_res_df.to_csv('../datafiles/clusters.csv')
+    invariant_res_df.to_csv('../datafiles/clusters.csv', index=False)
     return invariant_res_df
 
 def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
@@ -96,25 +88,18 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
             for pos in pos_list:
                 if abs(seq_pos - pos) > sequence_separation_threshold:
                     interesting_clusters_list.append(pos)
+
             if len(interesting_clusters_list) > 0:
                 clusters_df.at[i, 'separated_clusters'] = str(interesting_clusters_list)
     clusters_df.dropna(inplace=True, ignore_index=True)
     clusters_df.to_csv('../datafiles/interesting_clusters.csv')
     return clusters_df
 
-# def find_common_clusters(res_clusters_df: pd.DataFrame):
-#     already_searched = []
-#     for i, row in res_clusters_df.iterrows():
-#         MSA_pos = row['MSA_pos']
-#         if MSA_pos in already_searched:
-#             continue
-#         already_searched.append(MSA_pos)
-#         same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
-#     pass
-
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-# clusters_df = pd.read_csv('../datafiles/clusters.csv')
+clusters_df = pd.read_csv('../datafiles/clusters.csv')
+invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
+# print(invariant_res_df)
 result = find_clusters(invariant_res_df, 100)
-result2 = filter_interesting_clusters(result, 20)
 print(result)
+result2 = filter_interesting_clusters(clusters_df, 20)
 print(result2)
