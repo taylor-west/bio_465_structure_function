@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: structure_function_pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/structure_function_pipeline.py",
+            "console": "integratedTerminal",
+            "args": ["2hsa00051", "${workspaceFolder}/target_organisms.csv"]
+        },
+        // {
+        //     "name": "Python Debugger: structure_function_pipeline with ko_id",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${file}",
+        //     "console": "integratedTerminal",
+        //     "args": ["2hsa00051", "target_organisms.csv", "K03841"]
+        // }
+    ]
+}

@@ -4,13 +4,13 @@ import os
 import pandas as pd
 from Bio.KEGG import REST
 
-READ_PATHWAYS_FROM_FILE = True
-READ_ORTHOLOGS_FROM_FILE = True
-READ_GENES_FROM_FILE = True
-READ_ORGANISMS_FROM_FILE = True
-USING_TEMP_GENE_DATA = True
-USING_TEMP_UNIPROT_DATA = True
-PATHWAY_KEYWORDS = ["metabolic", "metabolism"]
+# READ_PATHWAYS_FROM_FILE = True
+# READ_ORTHOLOGS_FROM_FILE = True
+# READ_GENES_FROM_FILE = True
+# READ_ORGANISMS_FROM_FILE = True
+# USING_TEMP_GENE_DATA = True
+# USING_TEMP_UNIPROT_DATA = True
+# PATHWAY_KEYWORDS = ["metabolic", "metabolism"]
 
 CURR_DIRECTORY_PATH = os.path.dirname(__file__)
 DATAFILES_FILEPATH = os.path.join(os.path.abspath(os.path.join(CURR_DIRECTORY_PATH, os.pardir)), 'datafiles')
@@ -33,7 +33,7 @@ UNIPROT_IDS_FILEPATH = os.path.join(DATAFILES_FILEPATH, 'orthologs_uniprot_ids.c
 # Step 3: get all genes associated with each ortholog
 # Step 4: get UniProt IDs for each gene
 
-
+# returns a dictionary of uniprot_id's grouped by KEGG Ortholog ID's (e.g. {'K03841': 'A0A1U7QCS9', ...})
 def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
     print('in kegg_orthologs.find_ortholog_uniprots...')
 
@@ -107,7 +107,7 @@ def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
     uniprot_id_array = uniprot_ids_df["uniprot_id"].array
     return uniprot_id_array
 
-
+# returns a list of uniprot_id values
 def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
     print('in kegg_orthologs.find_ortholog_uniprots_by_ko_id...')
 
