@@ -9,7 +9,7 @@ if __name__ == "__main__":
     # kegg_pathway = '2hsa00051' # TODO: remove once commandline args work
     target_organisms_filepath = sys.argv[2]
     # target_organisms_filepath = os.path.join(os.path.cwd(), 'target_organisms.csv') # TODO: remove once commandline args work
-    target_ko_id = (sys.argv[3] if num_cmdline_args > 3 else None)
+    target_ko_id = (sys.argv[3] if num_cmdline_args > 2 else None)
     # target_ko_id = 'K03841' # TODO: remove once commandline args work
 
 
@@ -33,6 +33,6 @@ if __name__ == "__main__":
         print(f'located {len(uniprots)} UniProt IDs')
 
         # generates a multiple sequence alignment from the uniprot ids
-        msa_df = multiple_sequence_alignment.muscle.multiple_sequence_alignment()
+        msa_df = multiple_sequence_alignment.muscle.multiple_sequence_alignment(uniprots)
 
     #continue to 3d

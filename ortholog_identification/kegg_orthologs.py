@@ -55,10 +55,8 @@ def find_ortholog_uniprots_by_pathway(target_pathway, target_organisms_filepath)
         unprocessed_orthologs = pathway_orthologs_df
 
     # get genes for each KEGG ortholog
-    # gene_list = []
     for index, row in unprocessed_orthologs.iterrows():
             genes = get_genes_by_ortholog(row["ko_id"]) # gets an array of the gene names
-            # gene_list.append(genes)
 
             # writes the genes to the temp save file
             temp_gene_loop_df = pd.DataFrame([{'ko_id': row["ko_id"], 'gene_name': gene} for gene in genes], columns=['ko_id', 'gene_name'])
@@ -67,7 +65,6 @@ def find_ortholog_uniprots_by_pathway(target_pathway, target_organisms_filepath)
 
 
     #write genes to a file
-    # ortholog_genes_df = pathway_orthologs_df.assign(gene_name=gene_list).explode('gene_name').dropna(subset=["gene_name"]).drop_duplicates() # cleans up data
     ortholog_genes_df = temp_gene_df.dropna(subset=["gene_name"]).drop_duplicates() # cleans up data
     ortholog_genes_df.to_csv(GENES_RESULTS_FILEPATH, index=False)
 
@@ -86,10 +83,8 @@ def find_ortholog_uniprots_by_pathway(target_pathway, target_organisms_filepath)
         unprocessed_genes = filtered_genes
     
     # get uniprot ids for each KEGG ortholog
-    # id_list = []
     for index, row in unprocessed_genes.iterrows():
         uniprot_id = get_uniprot_ids_by_gene(row["gene_name"])
-        # id_list.append(uniprot_id)
 
         # writes the uniprots to the temp save file
         temp_uniprot_loop_df = pd.DataFrame([{'ko_id': row["ko_id"], 'gene_name': row["gene_name"], 'kegg_organism_code': row["kegg_organism_code"], 'uniprot_id': uniprot_id}], columns=['ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
@@ -101,13 +96,11 @@ def find_ortholog_uniprots_by_pathway(target_pathway, target_organisms_filepath)
     # uniprot_ids_df = filtered_genes.assign(uniprot_id=id_list).dropna(subset=["uniprot_id"])       
 
     #write uniprot ids to a file
-    # uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)
     uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", "pathways", f'uniprot_ids_{target_pathway}.csv')
     uniprot_ids_df.to_csv(uniprots_filepath)
 
     # condenses the dataframe into a dictionary of ko_id's and their associated uniprot_id's
     grouped_results = (uniprot_ids_df.groupby("ko_id")).agg(uniprot_ids = pd.NamedAgg(column = 'uniprot_id', aggfunc = list)).reset_index()
-
     results_dictionary = dict(zip(grouped_results['ko_id'], grouped_results['uniprot_ids'])) 
 
     # removes temp save files
@@ -124,7 +117,7 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
 
     # get genes for the specified KEGG ortholog
     genes = get_genes_by_ortholog(ko_id) # gets gene names for the given ko_id (returns list<string>)
-    genes_dict = [{'ko_id': ko_id, 'gene_name': gene_name} for gene_name in genes] # TODO: integrate intpo line below after testing
+    genes_dict = [{'ko_id': ko_id, 'gene_name': gene_name} for gene_name in genes] # TODO: integrate into line below after testing
     ortholog_genes_df = pd.DataFrame(genes_dict, columns=['ko_id', 'gene_name'])
     # ortholog_genes_df = pathway_orthologs_df.assign(gene_name=gene_list).explode('gene_name').dropna(subset=["gene_name"]).drop_duplicates()
 
@@ -133,29 +126,27 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
     ortholog_genes_df['kegg_organism_code'] = ortholog_genes_df.apply(get_organism_code_from_row, axis=1)
     filtered_genes = ortholog_genes_df.loc[ortholog_genes_df['kegg_organism_code'].isin(organisms_df['kegg_organism_code'])]
 
-    # get uniprot ids for each KEGG ortholog
 
-    # TODO: change this to act like a tempfile
-    
-    if USING_TEMP_UNIPROT_DATA: 
+    # creates a temporary save file for the uniprots (so you don't have to start completely over if it crashes)
+    if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
         temp_uniprot_df = pd.read_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
-        filtered_genes = filtered_genes.loc[filtered_genes['gene_name'].isin(temp_uniprot_df['gene_name']) == False]
+        unprocessed_genes = filtered_genes.loc[filtered_genes['gene_name'].isin(temp_uniprot_df['gene_name']) == False] # only iterate over genes that haven't been already processed
     else:
-        temp_uniprot_df = pd.DataFrame(columns=[ 'pathway_name', 'pathway_description', 'ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
-        
-    id_list = []
-    for index, row in filtered_genes.iterrows():
-        uniprot_id = get_uniprot_ids_by_gene(row["gene_name"])
-        id_list.append(uniprot_id)
+        temp_uniprot_df = pd.DataFrame(columns=['ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
+        unprocessed_genes = filtered_genes
 
-        if uniprot_id != None:
-            temp_uniprot_loop_df = pd.DataFrame([{'pathway_name': row["pathway_name"], 'pathway_description': row["pathway_description"], 'ko_id': row["ko_id"], 'gene_name': row["gene_name"], 'kegg_organism_code': row["kegg_organism_code"], 'uniprot_id': uniprot_id}], columns=[ 'pathway_name', 'pathway_description', 'ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
-            temp_uniprot_df = pd.concat([temp_uniprot_df, temp_uniprot_loop_df])
-            temp_uniprot_df.to_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH, index=False)
+    # get uniprot ids for each unprocessed gene
+    for index, row in unprocessed_genes.iterrows():
+        uniprot_id = get_uniprot_ids_by_gene(row["gene_name"])
+
+        temp_uniprot_loop_df = pd.DataFrame([{'ko_id': row["ko_id"], 'gene_name': row["gene_name"], 'kegg_organism_code': row["kegg_organism_code"], 'uniprot_id': uniprot_id}], columns=['ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
+        temp_uniprot_df = pd.concat([temp_uniprot_df, temp_uniprot_loop_df])
+        temp_uniprot_df.to_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH, index=False)
     ####
 
 
-    uniprot_ids_df = filtered_genes.assign(uniprot_id=id_list).dropna(subset=["uniprot_id"])       
+    uniprot_ids_df = temp_uniprot_df.dropna(subset=["uniprot_id"]) 
+    # uniprot_ids_df = filtered_genes.assign(uniprot_id=id_list).dropna(subset=["uniprot_id"])       
 
     #write uniprot ids to a file
     # uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)

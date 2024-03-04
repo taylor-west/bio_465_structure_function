@@ -12,13 +12,13 @@
             "console": "integratedTerminal",
             "args": ["hsa00051", "${workspaceFolder}/target_organisms.csv"]
         },
-        // {
-        //     "name": "Python Debugger: structure_function_pipeline with ko_id",
-        //     "type": "debugpy",
-        //     "request": "launch",
-        //     "program": "${file}",
-        //     "console": "integratedTerminal",
-        //     "args": ["2hsa00051", "target_organisms.csv", "K03841"]
-        // }
+        {
+            "name": "Python Debugger: structure_function_pipeline with ko_id",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["hsa00051", "${workspaceFolder}/target_organisms.csv", "K03841"]
+        }
     ]
 }
