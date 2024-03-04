@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/structure_function_pipeline.py",
             "console": "integratedTerminal",
-            "args": ["2hsa00051", "${workspaceFolder}/target_organisms.csv"]
+            "args": ["hsa00051", "${workspaceFolder}/target_organisms.csv"]
         },
         // {
         //     "name": "Python Debugger: structure_function_pipeline with ko_id",

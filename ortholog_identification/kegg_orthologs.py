@@ -9,7 +9,7 @@ from Bio.KEGG import REST
 # READ_GENES_FROM_FILE = True
 # READ_ORGANISMS_FROM_FILE = True
 # USING_TEMP_GENE_DATA = True
-# USING_TEMP_UNIPROT_DATA = True
+USING_TEMP_UNIPROT_DATA = True
 # PATHWAY_KEYWORDS = ["metabolic", "metabolism"]
 
 CURR_DIRECTORY_PATH = os.path.dirname(__file__)
@@ -26,6 +26,8 @@ GENES_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'genes_results
 TEMP_UNIPROT_IDS_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'temp', 'temp_uniprot_ids_results.csv')
 
 UNIPROT_IDS_FILEPATH = os.path.join(DATAFILES_FILEPATH, 'orthologs_uniprot_ids.csv')
+PATHWAYS_UNIPROTS_FILEPATH = os.path.join(DATAFILES_FILEPATH, 'uniprot_ids.csv')
+KO_UNIPROTS_FILEPATH = os.path.join(DATAFILES_FILEPATH, 'ko_uniprots.csv')
 
 
 # Step 1: get a list of the correct pathways for humans
@@ -34,12 +36,14 @@ UNIPROT_IDS_FILEPATH = os.path.join(DATAFILES_FILEPATH, 'orthologs_uniprot_ids.c
 # Step 4: get UniProt IDs for each gene
 
 # returns a dictionary of uniprot_id's grouped by KEGG Ortholog ID's (e.g. {'K03841': 'A0A1U7QCS9', ...})
-def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
+def find_ortholog_uniprots_by_pathway(target_pathway, target_organisms_filepath):
     print('in kegg_orthologs.find_ortholog_uniprots...')
 
     # get orthologs for the given pathway
-    pathway_orthologs_df = get_orthologs_by_pathway(target_pathway)
-    # pathway_orthologs_df = pathways_df.asfsign(ko_id=kegg_ids_list).explode('ko_id').dropna(subset=["ko_id"]).drop_duplicates()       
+    kegg_orthologs_ids = get_orthologs_by_pathway(target_pathway)
+    print(f'Found {len(kegg_orthologs_ids)} KO codes for pathway {target_pathway}')
+    print(f'KO codes: {kegg_orthologs_ids}')
+    pathway_orthologs_df = pd.DataFrame(columns=['ko_id', 'gene_name']).assign(ko_id=kegg_orthologs_ids)   
 
     # get genes for each KEGG ortholog
     gene_list = []
@@ -52,22 +56,18 @@ def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
 
     for index, row in pathway_orthologs_df.iterrows():
         if not (row["ko_id"] in temp_gene_df['ko_id']): # only process genes that haven't already been processed
-            genes = get_genes_by_ortholog(row["ko_id"], pathway_orthologs_df) # gets an array of the gene names
+            genes = get_genes_by_ortholog(row["ko_id"]) # gets an array of the gene names
             gene_list.append(genes)
 
             # writes the genes to the temp save file
             temp_df = pd.DataFrame([{'ko_id': row["ko_id"], 'gene_name': gene} for gene in genes], columns=['ko_id', 'gene_name'])
             temp_gene_df = pd.concat([temp_gene_df, temp_df])
-            temp_gene_df.to_csv(TEMP_GENES_FILEPATH)
+            temp_gene_df.to_csv(TEMP_GENES_FILEPATH, index=False)
 
 
     #write genes to a file
     ortholog_genes_df = pathway_orthologs_df.assign(gene_name=gene_list).explode('gene_name').dropna(subset=["gene_name"]).drop_duplicates() # cleans up data
     ortholog_genes_df.to_csv(GENES_RESULTS_FILEPATH, index=False)
-
-
-
-    # get uniprot ids for each KEGG ortholog
 
 
     # filter the list of genes for the appropriate organisms (if applicable)
@@ -80,15 +80,16 @@ def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
         temp_uniprot_df = pd.read_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
         filtered_genes = filtered_genes.loc[filtered_genes['gene_name'].isin(temp_uniprot_df['gene_name']) == False] # only iterate over genes that haven't been alread processed
     else:
-        temp_uniprot_df = pd.DataFrame(columns=[ 'pathway_name', 'pathway_description', 'ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
+        temp_uniprot_df = pd.DataFrame(columns=['pathway_description', 'ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
     
+    # get uniprot ids for each KEGG ortholog
     id_list = []
     for index, row in filtered_genes.iterrows():
         uniprot_id = get_uniprot_ids_by_gene(row["gene_name"])
         id_list.append(uniprot_id)
 
         # writes the uniprots to the temp save file
-        temp_uniprot_loop_df = pd.DataFrame([{'pathway_name': row["pathway_name"], 'ko_id': row["ko_id"], 'gene_name': row["gene_name"], 'kegg_organism_code': row["kegg_organism_code"], 'uniprot_id': uniprot_id}], columns=[ 'pathway_name', 'ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
+        temp_uniprot_loop_df = pd.DataFrame([{'ko_id': row["ko_id"], 'gene_name': row["gene_name"], 'kegg_organism_code': row["kegg_organism_code"], 'uniprot_id': uniprot_id}], columns=['ko_id', 'gene_name', 'kegg_organism_code', 'uniprot_id'])
         temp_uniprot_df = pd.concat([temp_uniprot_df, temp_uniprot_loop_df])
         temp_uniprot_df.to_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH, index=False)
     
@@ -96,16 +97,21 @@ def find_ortholog_uniprots(target_pathway, target_organisms_filepath):
     uniprot_ids_df = filtered_genes.assign(uniprot_id=id_list).dropna(subset=["uniprot_id"])       
 
     #write uniprot ids to a file
-    uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)
+    # uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)
+    uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", "pathways", f'uniprot_ids_{target_pathway}.csv')
+    uniprot_ids_df.to_csv(uniprots_filepath)
+
+    # condenses the dataframe into a dictionary of ko_id's and their associated uniprot_id's
+    grouped_results = uniprot_ids_df.groupby("ko_id").apply(lambda x: ','.join(x))
+    results_dictionary = grouped_results # TODO: convert this into ao dictionary somehow
+
 
     # removes temp save files
     if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
         os.remove(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
     if os.path.exists(TEMP_GENES_FILEPATH):
         os.remove(TEMP_GENES_FILEPATH)
-
-    uniprot_id_array = uniprot_ids_df["uniprot_id"].array
-    return uniprot_id_array
+    return results_dictionary
 
 # returns a list of uniprot_id values
 def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
@@ -125,6 +131,7 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
     # get uniprot ids for each KEGG ortholog
 
     # TODO: change this to act like a tempfile
+    
     if USING_TEMP_UNIPROT_DATA: 
         temp_uniprot_df = pd.read_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
         filtered_genes = filtered_genes.loc[filtered_genes['gene_name'].isin(temp_uniprot_df['gene_name']) == False]
@@ -146,7 +153,10 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
     uniprot_ids_df = filtered_genes.assign(uniprot_id=id_list).dropna(subset=["uniprot_id"])       
 
     #write uniprot ids to a file
-    uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)
+    # uniprot_ids_df.to_csv(UNIPROT_IDS_FILEPATH)
+    uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", "ko_ids", f'ko_uniprots_{ko_id}.csv')
+    uniprot_ids_df.to_csv(uniprots_filepath)
+
     if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
         os.remove(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
 
@@ -224,9 +234,9 @@ def get_orthologs_by_pathway(pathway_name):
             if match:
                 ko_code = match.group(1)
                 kegg_ids.append(ko_code)
-                print("Extracted KO code:", ko_code)
-            else:
-                print("KO code not found in the line.")
+                # print("Extracted KO code:", ko_code)
+            # else:
+                # print("KO code not found in the line.")
 
     return kegg_ids
 
