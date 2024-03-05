@@ -1,0 +1,271 @@
+ID   COX1_SCHPO              Reviewed;         537 AA.
+AC   P07657;
+DT   01-APR-1988, integrated into UniProtKB/Swiss-Prot.
+DT   15-DEC-1998, sequence version 4.
+DT   24-JAN-2024, entry version 167.
+DE   RecName: Full=Cytochrome c oxidase subunit 1;
+DE            EC=7.1.1.9;
+DE   AltName: Full=Cytochrome c oxidase polypeptide I;
+GN   Name=cox1; ORFNames=SPMIT.01;
+OS   Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast).
+OG   Mitochondrion.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Taphrinomycotina;
+OC   Schizosaccharomycetes; Schizosaccharomycetales; Schizosaccharomycetaceae;
+OC   Schizosaccharomyces.
+OX   NCBI_TaxID=284812;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=AD7-50;
+RA   Lang B.F.;
+RT   "The mitochondrial genome of Schizosaccharomyces pombe.";
+RL   (In) O'Brien S.J. (eds.);
+RL   Genetic Maps (6th edition), pp.3118-3119, Cold Spring Harbor Laboratory
+RL   Press, New York (1993).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA] OF 201-537.
+RC   STRAIN=AD7-50;
+RX   PubMed=6092057; DOI=10.1002/j.1460-2075.1984.tb02102.x;
+RA   Lang B.F.;
+RT   "The mitochondrial genome of the fission yeast Schizosaccharomyces pombe:
+RT   highly homologous introns are inserted at the same position of the
+RT   otherwise less conserved cox1 genes in Schizosaccharomyces pombe and
+RT   Aspergillus nidulans.";
+RL   EMBO J. 3:2129-2136(1984).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 136-409.
+RC   STRAIN=EF1;
+RX   PubMed=3026914; DOI=10.1016/0378-1119(86)90027-2;
+RA   Trinkl H., Wolf K.;
+RT   "The mosaic cox1 gene in the mitochondrial genome of Schizosaccharomyces
+RT   pombe: minimal structural requirements and evolution of group I introns.";
+RL   Gene 45:289-297(1986).
+CC   -!- FUNCTION: Component of the cytochrome c oxidase, the last enzyme in the
+CC       mitochondrial electron transport chain which drives oxidative
+CC       phosphorylation. The respiratory chain contains 3 multisubunit
+CC       complexes succinate dehydrogenase (complex II, CII), ubiquinol-
+CC       cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III,
+CC       CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to
+CC       transfer electrons derived from NADH and succinate to molecular oxygen,
+CC       creating an electrochemical gradient over the inner membrane that
+CC       drives transmembrane transport and the ATP synthase. Cytochrome c
+CC       oxidase is the component of the respiratory chain that catalyzes the
+CC       reduction of oxygen to water. Electrons originating from reduced
+CC       cytochrome c in the intermembrane space (IMS) are transferred via the
+CC       dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1
+CC       to the active site in subunit 1, a binuclear center (BNC) formed by
+CC       heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2
+CC       water molecules using 4 electrons from cytochrome c in the IMS and 4
+CC       protons from the mitochondrial matrix. {ECO:0000250|UniProtKB:P00401}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=4 Fe(II)-[cytochrome c] + 8 H(+)(in) + O2 = 4 Fe(III)-
+CC         [cytochrome c] + 4 H(+)(out) + 2 H2O; Xref=Rhea:RHEA:11436,
+CC         Rhea:RHEA-COMP:10350, Rhea:RHEA-COMP:14399, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:15379, ChEBI:CHEBI:29033,
+CC         ChEBI:CHEBI:29034; EC=7.1.1.9;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:11437;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC   -!- COFACTOR:
+CC       Name=heme; Xref=ChEBI:CHEBI:30413;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC       Note=Binds 2 heme A groups non-covalently per subunit.
+CC       {ECO:0000250|UniProtKB:P00401};
+CC   -!- COFACTOR:
+CC       Name=Cu cation; Xref=ChEBI:CHEBI:23378;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC       Note=Binds a copper B center. {ECO:0000250|UniProtKB:P00401};
+CC   -!- PATHWAY: Energy metabolism; oxidative phosphorylation.
+CC       {ECO:0000250|UniProtKB:P00401}.
+CC   -!- SUBUNIT: Component of the cytochrome c oxidase (complex IV, CIV), a
+CC       multisubunit enzyme composed of a catalytic core of 3 subunits and
+CC       several supernumerary subunits. The complex exists as a monomer or a
+CC       dimer and forms supercomplexes (SCs) in the inner mitochondrial
+CC       membrane with ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1
+CC       complex, complex III, CIII). {ECO:0000250|UniProtKB:P00401}.
+CC   -!- SUBCELLULAR LOCATION: Mitochondrion inner membrane
+CC       {ECO:0000250|UniProtKB:P00401}; Multi-pass membrane protein
+CC       {ECO:0000250|UniProtKB:P00401}.
+CC   -!- SIMILARITY: Belongs to the heme-copper respiratory oxidase family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X54421; CAA38284.1; -; Genomic_DNA.
+DR   EMBL; X00886; CAA25421.1; -; Genomic_DNA.
+DR   EMBL; M15671; AAB00165.1; -; Genomic_DNA.
+DR   EMBL; M15670; AAB00164.1; -; Genomic_DNA.
+DR   EMBL; M15669; AAB00164.1; JOINED; Genomic_DNA.
+DR   PIR; S78195; S78195.
+DR   RefSeq; NP_039499.1; NC_001326.1.
+DR   PDB; 8C8Q; EM; 3.36 A; A=1-537.
+DR   PDBsum; 8C8Q; -.
+DR   AlphaFoldDB; P07657; -.
+DR   SMR; P07657; -.
+DR   STRING; 284812.P07657; -.
+DR   MaxQB; P07657; -.
+DR   PaxDb; 4896-SPMIT-01-1; -.
+DR   EnsemblFungi; SPMIT.01.1; SPMIT.01.1:pep; SPMIT.01.
+DR   GeneID; 1669524; -.
+DR   KEGG; spo:ScpofMp01; -.
+DR   PomBase; SPMIT.01; cox1.
+DR   VEuPathDB; FungiDB:SPMIT.01; -.
+DR   eggNOG; KOG4769; Eukaryota.
+DR   HOGENOM; CLU_011899_7_3_1; -.
+DR   InParanoid; P07657; -.
+DR   OMA; WAMMSIG; -.
+DR   PhylomeDB; P07657; -.
+DR   UniPathway; UPA00705; -.
+DR   PRO; PR:P07657; -.
+DR   Proteomes; UP000002485; Mitochondrion.
+DR   GO; GO:0005751; C:mitochondrial respiratory chain complex IV; IDA:PomBase.
+DR   GO; GO:0004129; F:cytochrome-c oxidase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0020037; F:heme binding; IEA:InterPro.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0015990; P:electron transport coupled proton transport; IBA:GO_Central.
+DR   GO; GO:0006123; P:mitochondrial electron transport, cytochrome c to oxygen; IDA:PomBase.
+DR   CDD; cd01663; Cyt_c_Oxidase_I; 1.
+DR   Gene3D; 1.20.210.10; Cytochrome c oxidase-like, subunit I domain; 1.
+DR   InterPro; IPR023616; Cyt_c_oxase-like_su1_dom.
+DR   InterPro; IPR036927; Cyt_c_oxase-like_su1_sf.
+DR   InterPro; IPR000883; Cyt_C_Oxase_1.
+DR   InterPro; IPR023615; Cyt_c_Oxase_su1_BS.
+DR   InterPro; IPR033944; Cyt_c_oxase_su1_dom.
+DR   PANTHER; PTHR10422; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   PANTHER; PTHR10422:SF18; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   Pfam; PF00115; COX1; 1.
+DR   PRINTS; PR01165; CYCOXIDASEI.
+DR   SUPFAM; SSF81442; Cytochrome c oxidase subunit I-like; 1.
+DR   PROSITE; PS50855; COX1; 1.
+DR   PROSITE; PS00077; COX1_CUB; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Calcium; Copper; Electron transport; Heme; Iron; Magnesium;
+KW   Membrane; Metal-binding; Mitochondrion; Mitochondrion inner membrane;
+KW   Reference proteome; Respiratory chain; Translocase; Transmembrane;
+KW   Transmembrane helix; Transport.
+FT   CHAIN           1..537
+FT                   /note="Cytochrome c oxidase subunit 1"
+FT                   /id="PRO_0000183414"
+FT   TRANSMEM        22..42
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        70..90
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        104..124
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        152..172
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        190..210
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        241..261
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        279..299
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        318..338
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        345..365
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        379..399
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        418..438
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        458..478
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   BINDING         45
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         48
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         50
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         68
+FT                   /ligand="Fe(II)-heme a"
+FT                   /ligand_id="ChEBI:CHEBI:61715"
+FT                   /ligand_note="low-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         247
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         251
+FT                   /ligand="O2"
+FT                   /ligand_id="ChEBI:CHEBI:15379"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         296
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         297
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         375
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_note="ligand shared with subunit 2"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         376
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_note="ligand shared with subunit 2"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         383
+FT                   /ligand="heme a3"
+FT                   /ligand_id="ChEBI:CHEBI:83282"
+FT                   /ligand_note="high-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         385
+FT                   /ligand="Fe(II)-heme a"
+FT                   /ligand_id="ChEBI:CHEBI:61715"
+FT                   /ligand_note="low-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   BINDING         447
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   CROSSLNK        247..251
+FT                   /note="1'-histidyl-3'-tyrosine (His-Tyr)"
+FT                   /evidence="ECO:0000250|UniProtKB:P00401"
+FT   CONFLICT        401
+FT                   /note="Y -> YY (in Ref. 3; AAB00165)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   537 AA;  59412 MW;  FF4BFD284B27BBBA CRC64;
+     MNSWWTYVNR WIFSTNAKDI AILYLLFGLV SGIIGSVFSF IIRMELSAPG SQFLSGNGQL
+     YNVAISAHGI LMIFFFIIPA LFGAFGNYLV PLMIGAPDVA YPRVNNFTFW LLPPALMLLL
+     ISALTEEGPG GGWTVYPPLS SITSHSGPAI DLAILSLQLT GISSTLGSVN LIATMINMRA
+     PGLSLYQMPL FAWAIMITSI LLLLTLPVLA GGLFMLFSDR NLNTSFYAPE GGGDPVLYQH
+     LFWFFGHPEV YILIMPAFGV VSHIIPSLAH KPIFGKEGML WAMLSIALLG LMVWSHHLFT
+     VGLDVDTRAY FSAATMVIAI PTGIKIFSWL ATLTGGAIQW SRVPMLYAIG FLILFTIGGL
+     TGVILSNSVL DIAFHDTYFV VAHFHYVLSM GALFGLCGAY YWSPKMFGLM YNETLASIQF
+     WILFIGVNIV FGPQHFLGLN GMPRRIPDYP EAFVGWNFVS SIGSVISILS LFLFMYVMYD
+     QFTSNRVVKT NPYLIPSYFD DNVIFVNEKL GVAQSIEWLL HSPVHEHAFN TLPTKSI
+//
+

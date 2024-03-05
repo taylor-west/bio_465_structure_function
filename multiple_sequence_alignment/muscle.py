@@ -4,8 +4,9 @@ import os
 from Bio import AlignIO
 import pandas as pd
 
-PATH_TO_PARENT = os.path.dirname(os.getcwd())
-PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
+# PATH_TO_PARENT = os.path.dirname(os.getcwd())
+PATH_TO_PARENT = os.getcwd()
+PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "../datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
 KO_ID = "K01809"
@@ -142,7 +143,8 @@ def get_uniprot_ids(file_path, codes):
     return uniprot_ids
 
 
-def multiple_sequence_alignment(uniprot_ids):
+def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
+    print(f'HERE IS THE CWD: {PATH_TO_PARENT}')
     folder_path = PATH_TO_UNIPROT_ENTRIES
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
@@ -199,8 +201,6 @@ def multiple_sequence_alignment(uniprot_ids):
     # Parse the Clustal format alignment
     alignment = AlignIO.read(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "clustal")
 
-    # Define a threshold for conservation score
-    threshold = 1.0  # Adjust as needed
     column_annotations = alignment.column_annotations['clustal_consensus']
     # Identify invariant locations
     counter_dictionary = make_counter_dictionary_from_alignment_ids(alignment)
@@ -214,6 +214,7 @@ def multiple_sequence_alignment(uniprot_ids):
         column = alignment[:, i]
         most_frequent_element = max(set(column), key=column.count)
         frequency = column.count(most_frequent_element) / len(column)
+        # Use the threshold for conservation score parameter
         if frequency >= threshold:
             meets_threshold = True
         # update the index
@@ -232,3 +233,22 @@ def multiple_sequence_alignment(uniprot_ids):
     
     invariant_res_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
     return invariant_res_df
+
+uniprot_ids = [
+    'P00397',
+    'P05503',
+    'E9NPC9',
+    'Q9ZZ64',
+    'Q9MIY8',
+    'A0A023UN37',
+    'P00399',
+    'P24893',
+    'A0A126TGS8',
+    'P14578',
+    'P00401',
+    'H9D0P5',
+    'P07657',
+    'O21042'
+]
+
+multiple_sequence_alignment(uniprot_ids)
