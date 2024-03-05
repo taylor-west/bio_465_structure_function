@@ -95,6 +95,7 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
     clusters_df.to_csv('../datafiles/interesting_clusters.csv')
     return clusters_df
 
+<<<<<<< HEAD
 
 # def find_common_clusters(res_clusters_df: pd.DataFrame):
 #     already_searched = []
@@ -106,13 +107,22 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
 #         same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
 #     pass
 
+=======
+>>>>>>> integration
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
 clusters_df = pd.read_csv('../datafiles/clusters.csv')
 invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 # print(invariant_res_df)
+<<<<<<< HEAD
 result = find_clusters(invariant_res_df, 6)
 print(result)
 result2 = filter_interesting_clusters(clusters_df, 20)
 print(result2)
 
 
+=======
+result = find_clusters(invariant_res_df, 100)
+print(result)
+result2 = filter_interesting_clusters(clusters_df, 20)
+print(result2)
+>>>>>>> integration
