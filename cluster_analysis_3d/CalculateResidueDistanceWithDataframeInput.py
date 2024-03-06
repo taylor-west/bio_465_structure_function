@@ -95,11 +95,47 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
     clusters_df.to_csv('../datafiles/interesting_clusters.csv')
     return clusters_df
 
+
+def find_common_clusters(res_clusters_df: pd.DataFrame):
+    invariant_MSA_positions = set(res_clusters_df['MSA_pos'])
+    MSA_cluster_positions_list = []
+    for i, row in res_clusters_df.iterrows():
+        if row['separated_clusters'] is None:
+            MSA_cluster_positions_list.append(None)
+            continue
+        MSA_cluster_positions = []
+        separated_cluster = row['separated_clusters']
+        if isinstance(separated_cluster, str):
+            separated_cluster = ast.literal_eval(separated_cluster)
+        for pos in separated_cluster:
+            MSA_iteration = 0
+            seq_iteration = 0
+            seq = row['MSA_sequence']
+            for i in range(len(seq)):
+                if seq[i] == '-':
+                    MSA_iteration += 1
+                else:
+                    MSA_iteration += 1
+                    seq_iteration += 1
+                if seq_iteration == pos:
+                    MSA_cluster_positions.append(MSA_iteration)
+        MSA_cluster_positions_list.append(MSA_cluster_positions)
+    res_clusters_df['MSA_cluster_positions'] = MSA_cluster_positions_list
+    res_clusters_df.to_csv('../datafiles/filtered_dataframe.csv')
+    return res_clusters_df
+
+    # for MSA_pos in invariant_MSA_positions:
+    #     same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
+
+
+
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-clusters_df = pd.read_csv('../datafiles/clusters.csv')
 invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-# print(invariant_res_df)
-result = find_clusters(invariant_res_df, 10)
+
+result = find_clusters(invariant_res_df, 6)
 print(result)
+clusters_df = pd.read_csv('../datafiles/clusters.csv')
 result2 = filter_interesting_clusters(clusters_df, 20)
 print(result2)
+find_common_clusters(result2)
+

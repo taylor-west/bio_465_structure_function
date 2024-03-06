@@ -4,8 +4,9 @@ import os
 from Bio import AlignIO
 import pandas as pd
 
-PATH_TO_PARENT = os.path.dirname(os.getcwd())
-PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
+# PATH_TO_PARENT = os.path.dirname(os.getcwd())
+PATH_TO_PARENT = os.getcwd()
+PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "../datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
 KO_ID = "K01809"
@@ -142,7 +143,8 @@ def get_uniprot_ids(file_path, codes):
     return uniprot_ids
 
 
-def multiple_sequence_alignment(uniprot_ids):
+def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
+    print(f'HERE IS THE CWD: {PATH_TO_PARENT}')
     folder_path = PATH_TO_UNIPROT_ENTRIES
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
@@ -199,14 +201,12 @@ def multiple_sequence_alignment(uniprot_ids):
     # Parse the Clustal format alignment
     alignment = AlignIO.read(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "clustal")
 
-    # Define a threshold for conservation score
-    threshold = 1.0  # Adjust as needed
     column_annotations = alignment.column_annotations['clustal_consensus']
     # Identify invariant locations
     counter_dictionary = make_counter_dictionary_from_alignment_ids(alignment)
     invariant_locations_dict = make_position_dictionary_from_alignment_ids(alignment)
 
-    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue'])
+    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue', 'MSA_sequence'])
 
 
     for i, char in enumerate(column_annotations):
@@ -214,6 +214,7 @@ def multiple_sequence_alignment(uniprot_ids):
         column = alignment[:, i]
         most_frequent_element = max(set(column), key=column.count)
         frequency = column.count(most_frequent_element) / len(column)
+        # Use the threshold for conservation score parameter
         if frequency >= threshold:
             meets_threshold = True
         # update the index
@@ -222,7 +223,7 @@ def multiple_sequence_alignment(uniprot_ids):
                 counter_dictionary[seq.id] += 1
             if meets_threshold:
                 invariant_locations_dict[seq.id].append((counter_dictionary[seq.id], seq[i]))
-                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i]]
+                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i], seq.seq]
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
