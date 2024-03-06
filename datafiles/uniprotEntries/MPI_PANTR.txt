@@ -1,0 +1,135 @@
+ID   MPI_PANTR               Reviewed;         423 AA.
+AC   A5A6K3;
+DT   24-JUL-2007, integrated into UniProtKB/Swiss-Prot.
+DT   12-JUN-2007, sequence version 1.
+DT   24-JAN-2024, entry version 86.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8 {ECO:0000250|UniProtKB:P34949};
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase {ECO:0000250|UniProtKB:P34949};
+DE            Short=PMI {ECO:0000250|UniProtKB:P34949};
+GN   Name=MPI;
+OS   Pan troglodytes (Chimpanzee).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Pan.
+OX   NCBI_TaxID=9598;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   TISSUE=Brain;
+RX   PubMed=17574350; DOI=10.1016/j.gene.2007.04.013;
+RA   Sakate R., Suto Y., Imanishi T., Tanoue T., Hida M., Hayasaka I.,
+RA   Kusuda J., Gojobori T., Hashimoto K., Hirai M.;
+RT   "Mapping of chimpanzee full-length cDNAs onto the human genome unveils
+RT   large potential divergence of the transcriptome.";
+RL   Gene 399:1-10(2007).
+CC   -!- FUNCTION: Isomerase that catalyzes the interconversion of fructose-6-P
+CC       and mannose-6-P and has a critical role in the supply of D-mannose
+CC       derivatives required for many eukaryotic glycosylation reactions.
+CC       {ECO:0000250|UniProtKB:P34949}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000250|UniProtKB:P34949};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000250|UniProtKB:P34948};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250|UniProtKB:P34948};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000250|UniProtKB:Q924M7}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AB222131; BAF62376.1; -; mRNA.
+DR   RefSeq; NP_001092020.1; NM_001098550.1.
+DR   AlphaFoldDB; A5A6K3; -.
+DR   SMR; A5A6K3; -.
+DR   STRING; 9598.ENSPTRP00000012471; -.
+DR   PaxDb; 9598-ENSPTRP00000012471; -.
+DR   GeneID; 453748; -.
+DR   KEGG; ptr:453748; -.
+DR   CTD; 4351; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   InParanoid; A5A6K3; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000002277; Unplaced.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; ISS:UniProtKB.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   GO; GO:0061611; P:mannose to fructose-6-phosphate metabolic process; ISS:UniProtKB.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   2: Evidence at transcript level;
+KW   Acetylation; Cytoplasm; Isomerase; Metal-binding; Phosphoprotein;
+KW   Reference proteome; Zinc.
+FT   INIT_MET        1
+FT                   /note="Removed"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   CHAIN           2..423
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000296675"
+FT   ACT_SITE        295
+FT                   /evidence="ECO:0000250"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         276
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   MOD_RES         2
+FT                   /note="N-acetylalanine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         102
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         108
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+SQ   SEQUENCE   423 AA;  46612 MW;  3B3E6C09B8E680AF CRC64;
+     MAAPRVFPLS CAVQQYAWGK MGSNSEVARL LASSDPLAQI AEDKPYAELW MGTHPRGDAK
+     ILDNRISQKT LSQWIAENQD SLGSKVKDTF NGNLPFLFKV LSVETPLSIQ AHPNKELAEK
+     LHLQAPQHYP DANHKPEMAI ALTPFQGLCG FRPVEEIVTF LKKVPEFQFL IGDEAATHLK
+     QTMSHDSQAV ASSLQSCFSH LMKSEKKVVV EQLNLLVKRI SQQAAAGNNM EDIFGELLLQ
+     LHQQYPGDIG CFAIYFLNLL TLKPGEAMFL EANVPHAYLK GDCVECMACS DNTVRAGLTP
+     KFIDVPTLCE MLSYTPSSSK DRLFLPTRSR EDPYLSIYDP PVPDFTIMKT EVPGSVTGYK
+     VLALDSASIL LMVQGTVIAS TPTTQTPIPL QRGGVLFIGA NESVSLKLTE PKDLLIFRAC
+     CLL
+//
+

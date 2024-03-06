@@ -1,0 +1,146 @@
+kegg_organism_code,kegg_organism_description
+acr,Acidiphilium cryptum
+ata,Agrobacterium tumefaciens S33
+agr,Agrobacterium tumefaciens H13-3
+atf,Agrobacterium tumefaciens Ach5
+afa,Alcaligenes faecalis ZD02
+afq,Alcaligenes faecalis JQ135
+alm,Algoriphagus sanaruensis
+bce,Bacillus cereus ATCC 14579
+bca,Bacillus cereus ATCC 10987
+bcz,Bacillus cereus E33L
+bcr,Bacillus cereus AH187
+bcb,Bacillus cereus B4264
+bcu,Bacillus cereus AH820
+bcg,Bacillus cereus G9842
+bcq,Bacillus cereus Q1
+bcx,Bacillus cereus 03BB102
+bal,Bacillus cereus biovar anthracis CI
+bnc,Bacillus cereus NC7401
+bcf,Bacillus cereus F837/76
+bcer,Bacillus cereus FRI-35
+bcef,Bacillus cereus FT9
+bsu,Bacillus subtilis subsp. subtilis 168
+bsr,Bacillus subtilis subsp. subtilis RO-NN-1
+bsl,Bacillus subtilis subsp. subtilis BSP1
+bsh,Bacillus subtilis subsp. subtilis 6051-HGW
+bsy,Bacillus subtilis subsp. subtilis BAB-1
+bsut,Bacillus subtilis subsp. subtilis AG1839
+bsul,Bacillus subtilis subsp. subtilis JH642
+bsus,Bacillus subtilis subsp. subtilis OH 131.1
+bso,Bacillus subtilis subsp. natto BEST195
+bsn,Bacillus subtilis BSn5
+bsq,Bacillus subtilis QB928
+bsx,Bacillus subtilis XF-1
+bsp,Bacillus subtilis PY79
+bsu,Bacillus subtilis subsp. subtilis 168
+bsr,Bacillus subtilis subsp. subtilis RO-NN-1
+bsl,Bacillus subtilis subsp. subtilis BSP1
+bsh,Bacillus subtilis subsp. subtilis 6051-HGW
+bsy,Bacillus subtilis subsp. subtilis BAB-1
+bsut,Bacillus subtilis subsp. subtilis AG1839
+bsul,Bacillus subtilis subsp. subtilis JH642
+bsus,Bacillus subtilis subsp. subtilis OH 131.1
+bso,Bacillus subtilis subsp. natto BEST195
+bsn,Bacillus subtilis BSn5
+bsq,Bacillus subtilis QB928
+bsx,Bacillus subtilis XF-1
+bsp,Bacillus subtilis PY79
+bth,Bacteroides thetaiotaomicron VPI-5482
+btho,Bacteroides thetaiotaomicron 7330
+bbp,Bifidobacterium bifidum PRL2010
+bbi,Bifidobacterium bifidum S17
+bbf,Bifidobacterium bifidum BGN4
+bln,Bifidobacterium longum subsp. infantis ATCC 15697 (JGI)
+blon,Bifidobacterium longum subsp. infantis ATCC 15697 (Tokyo)
+blf,Bifidobacterium longum subsp. infantis 157F
+cje,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819
+cjb,Campylobacter jejuni subsp. jejuni NCTC 11168-BN148
+cjj,Campylobacter jejuni subsp. jejuni 81-176
+cju,Campylobacter jejuni subsp. jejuni 81116
+cjn,Campylobacter jejuni subsp. jejuni ICDCCJ07001
+cji,Campylobacter jejuni subsp. jejuni IA3902
+cjm,Campylobacter jejuni subsp. jejuni M1
+cjs,Campylobacter jejuni subsp. jejuni S3
+cjp,Campylobacter jejuni subsp. jejuni PT14
+cjej,Campylobacter jejuni subsp. jejuni 00-2426
+cjeu,Campylobacter jejuni subsp. jejuni 00-2538
+cjen,Campylobacter jejuni subsp. jejuni 00-2544
+cjei,Campylobacter jejuni subsp. jejuni 00-2425
+cjer,Campylobacter jejuni subsp. jejuni R14
+cjv,Campylobacter jejuni subsp. jejuni MTVDSCj20
+cjy,Campylobacter jejuni subsp. jejuni YH001
+cjq,Campylobacter jejuni subsp. jejuni 35925B2
+cjl,Campylobacter jejuni subsp. jejuni 00-1597
+cjw,Campylobacter jejuni subsp. jejuni 00-6200
+cjr,Campylobacter jejuni RM1221
+cjd,Campylobacter jejuni subsp. doylei 269.97
+cjz,Campylobacter jejuni 32488
+cjx,Campylobacter jejuni 4031
+cga,Cellulomonas gilvus
+cbal,Cellulophaga baltica NN016038
+cbat,Cellulophaga baltica 18
+cio,Chryseobacterium indologenes
+cfd,Citrobacter freundii
+clj,Clostridium ljungdahlii
+ccom,Coprococcus comes
+reh,Cupriavidus necator H16
+cnc,Cupriavidus necator N-1
+cuh,Cupriavidus necator NH9
+dac,Delftia acidovorans
+dfm,Dorea formicigenerans
+fpr,Faecalibacterium prausnitzii L2-6
+fpa,Faecalibacterium prausnitzii SL3/3
+fsu,Fibrobacter succinogenes
+fsc,Fibrobacter succinogenes
+lpn,Legionella pneumophila subsp. pneumophila Philadelphia 1 (serogroup 1)
+mlu,Micrococcus luteus
+mxa,Myxococcus xanthus
+ppy,Paenibacillus polymyxa E681
+ppm,Paenibacillus polymyxa SC2
+ppo,Paenibacillus polymyxa M1
+ppol,Paenibacillus polymyxa CR1
+ppq,Paenibacillus polymyxa SQR-21
+ppoy,Paenibacillus polymyxa Sb3-1
+pde,Paracoccus denitrificans
+ppu,Pseudomonas putida KT2440
+ppf,Pseudomonas putida F1
+ppg,Pseudomonas putida GB-1
+ppw,Pseudomonas putida W619
+ppt,Pseudomonas putida S16
+ppb,Pseudomonas putida BIRD-1
+ppi,Pseudomonas putida ND6
+ppx,Pseudomonas putida DOT-T1E
+ppuh,Pseudomonas putida HB3267
+pput,Pseudomonas putida H8234
+ppun,Pseudomonas putida NBRC 14164
+ppud,Pseudomonas putida DLL-E4
+rha,Rhodococcus jostii
+rpa,Rhodopseudomonas palustris CGA009
+rpb,Rhodopseudomonas palustris HaA2
+rpc,Rhodopseudomonas palustris BisB18
+rpd,Rhodopseudomonas palustris BisB5
+rpe,Rhodopseudomonas palustris BisA53
+rpt,Rhodopseudomonas palustris TIE-1
+rpx,Rhodopseudomonas palustris DX-1
+sur,Stigmatella aurantiaca
+sag,Streptococcus agalactiae 2603 (serotype V)
+san,Streptococcus agalactiae NEM316 (serotype III)
+sak,Streptococcus agalactiae A909 (serotype Ia)
+sgc,Streptococcus agalactiae GD201008-001 (serotype Ia)
+sags,Streptococcus agalactiae SA20
+sagl,Streptococcus agalactiae 2-22 (serotype Ib)
+sagm,Streptococcus agalactiae 09mas018883
+sagi,Streptococcus agalactiae ILRI005
+sagr,Streptococcus agalactiae ILRI112
+sagp,Streptococcus agalactiae 138P
+sagc,Streptococcus agalactiae 138spar
+sagt,Streptococcus agalactiae COH1
+sage,Streptococcus agalactiae NGBS061
+sagg,Streptococcus agalactiae NGBS572
+sagn,Streptococcus agalactiae CNCTC 10/84
+sagj,Streptococcus agalactiae CJB111
+sve,Streptomyces venezuelae
+syc,Synechococcus elongatus PCC6301
+syu,Synechococcus elongatus UTEX 2973
+syf,Synechococcus elongatus PCC7942

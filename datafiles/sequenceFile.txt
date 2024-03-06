@@ -1,0 +1,2972 @@
+ID   A0A3P9PED3_POERE        Unreviewed;       422 AA.
+AC   A0A3P9PED3;
+DT   13-FEB-2019, integrated into UniProtKB/TrEMBL.
+DT   13-FEB-2019, sequence version 1.
+DT   24-JAN-2024, entry version 25.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00018236};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956};
+DE   AltName: Full=Phosphohexomutase {ECO:0000256|ARBA:ARBA00029741};
+DE   AltName: Full=Phosphomannose isomerase {ECO:0000256|ARBA:ARBA00030762};
+OS   Poecilia reticulata (Guppy) (Acanthophacelus reticulatus).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Neoteleostei; Acanthomorphata;
+OC   Ovalentaria; Atherinomorphae; Cyprinodontiformes; Poeciliidae; Poeciliinae;
+OC   Poecilia.
+OX   NCBI_TaxID=8081 {ECO:0000313|Ensembl:ENSPREP00000020043.1, ECO:0000313|Proteomes:UP000242638};
+RN   [1] {ECO:0000313|Proteomes:UP000242638}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Guanapo {ECO:0000313|Proteomes:UP000242638};
+RA   Kuenstner A., Dreyer C.;
+RT   "The genomic landscape of the Guanapo guppy.";
+RL   Submitted (NOV-2013) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|Ensembl:ENSPREP00000020043.1}
+RP   IDENTIFICATION.
+RC   STRAIN=Guanapo {ECO:0000313|Ensembl:ENSPREP00000020043.1};
+RG   Ensembl;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   RefSeq; XP_008409446.1; XM_008411224.2.
+DR   AlphaFoldDB; A0A3P9PED3; -.
+DR   STRING; 8081.ENSPREP00000020043; -.
+DR   Ensembl; ENSPRET00000020255.1; ENSPREP00000020043.1; ENSPREG00000013559.1.
+DR   GeneID; 103465971; -.
+DR   KEGG; pret:103465971; -.
+DR   CTD; 4351; -.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000242638; Unassembled WGS sequence.
+DR   Bgee; ENSPREG00000013559; Expressed in head and 1 other cell type or tissue.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0090171; P:chondrocyte morphogenesis; IEA:Ensembl.
+DR   GO; GO:0043009; P:chordate embryonic development; IEA:Ensembl.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   GO; GO:0001889; P:liver development; IEA:Ensembl.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000242638};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          6..154
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          172..256
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          336..377
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        294
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         275
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   422 AA;  45908 MW;  FF55814A5321DF50 CRC64;
+     MEEVRVFPLT CAVQNYAWGK IGLDSEVAKL VVGGDPLAVI EGDKPYAELW MGAHPKGDAQ
+     IKDNRIAQTT LGQWIAHYPA CLGSKVKDAF QGQLPFLFKV LSVNTALSIQ AHPNKELAAT
+     LHAQFPEHYP DNNHKPEMAI ALTRFQGLCG FRPVDEILGF LQAVPEFHAL VGRDAAEELR
+     SSVGDEVRTG RALKKCFTKM MSCEKKVFVD ELNELVKRVT QEGAAGKDTS SSNGDLLLRL
+     HSQYPGDIGC FSIYFLNYVV LEPGQAMFLG ANEPHAYIYG DCIECMACSD NTVRAGLTRK
+     YIDVNTLCEM LNYKPASAFS KIFPCVSDPA DPCVTLYDPP VPDFTVMKIQ VPASVKDYTV
+     ASVDSASILL VIEGDATATS AAAFPDVTLT RGSVLFVSAN ESVSLQVTSQ SGMTLFRACS
+     LL
+//
+
+
+ID   MPI_SCHPO               Reviewed;         412 AA.
+AC   O43014;
+DT   15-JAN-2008, integrated into UniProtKB/Swiss-Prot.
+DT   01-JUN-1998, sequence version 1.
+DT   24-JAN-2024, entry version 139.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   Name=pmi40; ORFNames=SPBC2G2.16;
+OS   Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Taphrinomycotina;
+OC   Schizosaccharomycetes; Schizosaccharomycetales; Schizosaccharomycetaceae;
+OC   Schizosaccharomyces.
+OX   NCBI_TaxID=284812;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=972 / ATCC 24843;
+RX   PubMed=11859360; DOI=10.1038/nature724;
+RA   Wood V., Gwilliam R., Rajandream M.A., Lyne M.H., Lyne R., Stewart A.,
+RA   Sgouros J.G., Peat N., Hayles J., Baker S.G., Basham D., Bowman S.,
+RA   Brooks K., Brown D., Brown S., Chillingworth T., Churcher C.M., Collins M.,
+RA   Connor R., Cronin A., Davis P., Feltwell T., Fraser A., Gentles S.,
+RA   Goble A., Hamlin N., Harris D.E., Hidalgo J., Hodgson G., Holroyd S.,
+RA   Hornsby T., Howarth S., Huckle E.J., Hunt S., Jagels K., James K.D.,
+RA   Jones L., Jones M., Leather S., McDonald S., McLean J., Mooney P.,
+RA   Moule S., Mungall K.L., Murphy L.D., Niblett D., Odell C., Oliver K.,
+RA   O'Neil S., Pearson D., Quail M.A., Rabbinowitsch E., Rutherford K.M.,
+RA   Rutter S., Saunders D., Seeger K., Sharp S., Skelton J., Simmonds M.N.,
+RA   Squares R., Squares S., Stevens K., Taylor K., Taylor R.G., Tivey A.,
+RA   Walsh S.V., Warren T., Whitehead S., Woodward J.R., Volckaert G., Aert R.,
+RA   Robben J., Grymonprez B., Weltjens I., Vanstreels E., Rieger M.,
+RA   Schaefer M., Mueller-Auer S., Gabel C., Fuchs M., Duesterhoeft A.,
+RA   Fritzc C., Holzer E., Moestl D., Hilbert H., Borzym K., Langer I., Beck A.,
+RA   Lehrach H., Reinhardt R., Pohl T.M., Eger P., Zimmermann W., Wedler H.,
+RA   Wambutt R., Purnelle B., Goffeau A., Cadieu E., Dreano S., Gloux S.,
+RA   Lelaure V., Mottier S., Galibert F., Aves S.J., Xiang Z., Hunt C.,
+RA   Moore K., Hurst S.M., Lucas M., Rochet M., Gaillardin C., Tallada V.A.,
+RA   Garzon A., Thode G., Daga R.R., Cruzado L., Jimenez J., Sanchez M.,
+RA   del Rey F., Benito J., Dominguez A., Revuelta J.L., Moreno S.,
+RA   Armstrong J., Forsburg S.L., Cerutti L., Lowe T., McCombie W.R.,
+RA   Paulsen I., Potashkin J., Shpakovski G.V., Ussery D., Barrell B.G.,
+RA   Nurse P.;
+RT   "The genome sequence of Schizosaccharomyces pombe.";
+RL   Nature 415:871-880(2002).
+RN   [2]
+RP   SUBCELLULAR LOCATION [LARGE SCALE ANALYSIS].
+RX   PubMed=16823372; DOI=10.1038/nbt1222;
+RA   Matsuyama A., Arai R., Yashiroda Y., Shirai A., Kamata A., Sekido S.,
+RA   Kobayashi Y., Hashimoto A., Hamamoto M., Hiraoka Y., Horinouchi S.,
+RA   Yoshida M.;
+RT   "ORFeome cloning and global analysis of protein localization in the fission
+RT   yeast Schizosaccharomyces pombe.";
+RL   Nat. Biotechnol. 24:841-847(2006).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000269|PubMed:16823372}. Nucleus
+CC       {ECO:0000269|PubMed:16823372}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CU329671; CAA17896.1; -; Genomic_DNA.
+DR   PIR; T40155; T40155.
+DR   RefSeq; NP_596445.1; NM_001022364.2.
+DR   AlphaFoldDB; O43014; -.
+DR   SMR; O43014; -.
+DR   STRING; 284812.O43014; -.
+DR   iPTMnet; O43014; -.
+DR   MaxQB; O43014; -.
+DR   PaxDb; 4896-SPBC2G2-16-1; -.
+DR   EnsemblFungi; SPBC2G2.16.1; SPBC2G2.16.1:pep; SPBC2G2.16.
+DR   GeneID; 2540428; -.
+DR   KEGG; spo:SPBC2G2.16; -.
+DR   PomBase; SPBC2G2.16; -.
+DR   VEuPathDB; FungiDB:SPBC2G2.16; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   InParanoid; O43014; -.
+DR   OMA; DIGLFCG; -.
+DR   PhylomeDB; O43014; -.
+DR   Reactome; R-SPO-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:O43014; -.
+DR   Proteomes; UP000002485; Chromosome II.
+DR   GO; GO:0005829; C:cytosol; HDA:PomBase.
+DR   GO; GO:0005634; C:nucleus; HDA:PomBase.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; ISO:PomBase.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; ISO:PomBase.
+DR   GO; GO:0006486; P:protein glycosylation; ISO:PomBase.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm; Isomerase; Metal-binding; Nucleus; Reference proteome; Zinc.
+FT   CHAIN           1..412
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000314774"
+FT   ACT_SITE        284
+FT                   /evidence="ECO:0000250"
+FT   BINDING         99
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         101
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         126
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         265
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   412 AA;  45590 MW;  E1B4685C02B25C89 CRC64;
+     MYRLKCDVKS YGWGKVGHES LAAKLAEAGY GFEVDPNTPY AELWMGSHPS GPSFVMQTGK
+     PLSELLTPET VGEKVYKKYG KQLPFLFKVL SINKVLSIQA HPDKPLGKQL HKTNPKEYKD
+     DNHKPEMAVA LTEFDALCGF RPVKQIEQFL DSIAPLREFV GEEAVRQFKG TVKQDERKAL
+     ETLFNELMHK DEKRIQEFTP QLVQLAKSDA NNFGGTEYGG KAFSDLIIHL NSQFPDDIGL
+     FVTPFLNYVR LHPGEAVFLR ALDPHAYVSG NIIECMAASD NVIRLGFTPK FKDIETLVNN
+     LTYQTADAKS QLTQPVPFAK ACGSGKTLLY DPPIEEFSIL QTKVSPGQKQ CIRGINGPSI
+     LLVTEGSGIL NGDKGDVASI SPGFVYFISA NFPLTISATS EPVVVYQAFC EI
+//
+
+
+ID   G5AL67_HETGA            Unreviewed;       423 AA.
+AC   G5AL67;
+DT   14-DEC-2011, integrated into UniProtKB/TrEMBL.
+DT   14-DEC-2011, sequence version 1.
+DT   24-JAN-2024, entry version 53.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00018236, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=MPI {ECO:0000313|EMBL:JAN99776.1};
+GN   ORFNames=GW7_01863 {ECO:0000313|EMBL:EHA97777.1};
+OS   Heterocephalus glaber (Naked mole rat).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Bathyergidae;
+OC   Heterocephalus.
+OX   NCBI_TaxID=10181 {ECO:0000313|EMBL:EHA97777.1, ECO:0000313|Proteomes:UP000006813};
+RN   [1] {ECO:0000313|EMBL:EHA97777.1, ECO:0000313|Proteomes:UP000006813}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=21993625; DOI=10.1038/nature10533;
+RA   Kim E.B., Fang X., Fushan A.A., Huang Z., Lobanov A.V., Han L.,
+RA   Marino S.M., Sun X., Turanov A.A., Yang P., Yim S.H., Zhao X.,
+RA   Kasaikina M.V., Stoletzki N., Peng C., Polak P., Xiong Z., Kiezun A.,
+RA   Zhu Y., Chen Y., Kryukov G.V., Zhang Q., Peshkin L., Yang L., Bronson R.T.,
+RA   Buffenstein R., Wang B., Han C., Li Q., Chen L., Zhao W., Sunyaev S.R.,
+RA   Park T.J., Zhang G., Wang J., Gladyshev V.N.;
+RT   "Genome sequencing reveals insights into physiology and longevity of the
+RT   naked mole rat.";
+RL   Nature 479:223-227(2011).
+RN   [2] {ECO:0000313|EMBL:JAN99776.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Kidney {ECO:0000313|EMBL:JAN99776.1};
+RA   Bens M., Sahm A., Jahn N., Morhart M., Holtze S., Hildebrandt T.B.,
+RA   Platzer M., Szafranski K.;
+RT   "FRAMA: From RNA-seq data to annotated mRNA assemblies.";
+RL   Submitted (OCT-2015) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666,
+CC       ECO:0000256|RuleBase:RU004248}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JH165769; EHA97777.1; -; Genomic_DNA.
+DR   EMBL; GEBF01003856; JAN99776.1; -; Transcribed_RNA.
+DR   RefSeq; XP_004872089.1; XM_004872032.2.
+DR   AlphaFoldDB; G5AL67; -.
+DR   STRING; 10181.G5AL67; -.
+DR   GeneID; 101711803; -.
+DR   KEGG; hgl:101711803; -.
+DR   CTD; 4351; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   InParanoid; G5AL67; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000006813; Unassembled WGS sequence.
+DR   Bgee; ENSHGLG00000000351; Expressed in heart and 10 other cell types or tissues.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000006813};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          6..154
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          170..257
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          337..381
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        295
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         276
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   423 AA;  46454 MW;  0760748F0EB76274 CRC64;
+     MAGPRVFPLS CVVQQYAWGK KGSNSEVARL LASSDPLAQI SEDKPYAELW MGAHPRGDAK
+     IFDNHVSQKT LGQWIAENQD CLGSKVKVAF KGKLPFLFKV LSVETALSIQ AHPNKELAEK
+     LHFQAPQHYP DANHKPEMAI ALTSFQGLCG FRPVEEILTF LKKVPEFQLL IGDDAATQLR
+     QSVRSDPQMV TSALRSCFSH LMKSEKKAVA EQLNVLVKRI SQQVSAGNNM DDICGELLLR
+     LHQQYPGDIG CFAIYFLNLL ILKPGEAMFL EASVPHAYLE GDCVECMACS DNTVRAGLTP
+     KFIDVPTLCD MLNYTPTPSK DRLFPPSHSQ EDPYLSIYDP PVPDFTVMKM EVPSSVTEYK
+     VSVLDSASIL LVVKGTVTAS SPTAQAAIPL QRGGVLFVGA NESVTLKHTA SQDLVLFRAC
+     CLL
+//
+
+
+ID   MPI2_ARATH              Reviewed;         441 AA.
+AC   Q9FZH5; Q67YT4; Q9FVM3;
+DT   28-NOV-2012, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAR-2001, sequence version 1.
+DT   24-JAN-2024, entry version 147.
+DE   RecName: Full=Mannose-6-phosphate isomerase 2;
+DE            EC=5.3.1.8 {ECO:0000269|PubMed:18755683};
+DE   AltName: Full=Phosphohexomutase 2;
+DE   AltName: Full=Phosphomannose isomerase 2;
+DE            Short=PMI2;
+DE   AltName: Full=Protein DARK INDUCIBLE 9;
+GN   Name=PMI2; Synonyms=DIN9; OrderedLocusNames=At1g67070;
+GN   ORFNames=F1O19.12;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=11130712; DOI=10.1038/35048500;
+RA   Theologis A., Ecker J.R., Palm C.J., Federspiel N.A., Kaul S., White O.,
+RA   Alonso J., Altafi H., Araujo R., Bowman C.L., Brooks S.Y., Buehler E.,
+RA   Chan A., Chao Q., Chen H., Cheuk R.F., Chin C.W., Chung M.K., Conn L.,
+RA   Conway A.B., Conway A.R., Creasy T.H., Dewar K., Dunn P., Etgu P.,
+RA   Feldblyum T.V., Feng J.-D., Fong B., Fujii C.Y., Gill J.E., Goldsmith A.D.,
+RA   Haas B., Hansen N.F., Hughes B., Huizar L., Hunter J.L., Jenkins J.,
+RA   Johnson-Hopson C., Khan S., Khaykin E., Kim C.J., Koo H.L.,
+RA   Kremenetskaia I., Kurtz D.B., Kwan A., Lam B., Langin-Hooper S., Lee A.,
+RA   Lee J.M., Lenz C.A., Li J.H., Li Y.-P., Lin X., Liu S.X., Liu Z.A.,
+RA   Luros J.S., Maiti R., Marziali A., Militscher J., Miranda M., Nguyen M.,
+RA   Nierman W.C., Osborne B.I., Pai G., Peterson J., Pham P.K., Rizzo M.,
+RA   Rooney T., Rowley D., Sakano H., Salzberg S.L., Schwartz J.R., Shinn P.,
+RA   Southwick A.M., Sun H., Tallon L.J., Tambunga G., Toriumi M.J., Town C.D.,
+RA   Utterback T., Van Aken S., Vaysberg M., Vysotskaia V.S., Walker M., Wu D.,
+RA   Yu G., Fraser C.M., Venter J.C., Davis R.W.;
+RT   "Sequence and analysis of chromosome 1 of the plant Arabidopsis thaliana.";
+RL   Nature 408:816-820(2000).
+RN   [2]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RA   Totoki Y., Seki M., Ishida J., Nakajima M., Enju A., Kamiya A.,
+RA   Narusaka M., Shin-i T., Nakagawa M., Sakamoto N., Oishi K., Kohara Y.,
+RA   Kobayashi M., Toyoda A., Sakaki Y., Sakurai T., Iida K., Akiyama K.,
+RA   Satou M., Toyoda T., Konagaya A., Carninci P., Kawai J., Hayashizaki Y.,
+RA   Shinozaki K.;
+RT   "Large-scale analysis of RIKEN Arabidopsis full-length (RAFL) cDNAs.";
+RL   Submitted (SEP-2004) to the EMBL/GenBank/DDBJ databases.
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RA   Shinn P., Chen H., Kim C.J., Quinitio C., Ecker J.R.;
+RT   "Arabidopsis ORF clones.";
+RL   Submitted (JUN-2006) to the EMBL/GenBank/DDBJ databases.
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [MRNA] OF 5-240, INDUCTION BY DARK, AND DEVELOPMENTAL
+RP   STAGE.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=11240919; DOI=10.1034/j.1399-3054.2001.1110312.x;
+RA   Fujiki Y., Yoshikawa Y., Sato T., Inada N., Ito M., Nishida I.,
+RA   Watanabe A.;
+RT   "Dark-inducible genes from Arabidopsis thaliana are associated with leaf
+RT   senescence and repressed by sugars.";
+RL   Physiol. Plantarum 111:345-352(2001).
+RN   [6]
+RP   INDUCTION.
+RX   PubMed=11080291; DOI=10.1104/pp.124.3.1139;
+RA   Fujiki Y., Ito M., Nishida I., Watanabe A.;
+RT   "Multiple signaling pathways in gene expression during sugar starvation.
+RT   Pharmacological analysis of din gene expression in suspension-cultured
+RT   cells of Arabidopsis.";
+RL   Plant Physiol. 124:1139-1148(2000).
+RN   [7]
+RP   INDUCTION BY DARK, AND DEVELOPMENTAL STAGE.
+RX   PubMed=16100230; DOI=10.1093/pcp/pci174;
+RA   Fujiki Y., Nakagawa Y., Furumoto T., Yoshida S., Biswal B., Ito M.,
+RA   Watanabe A., Nishida I.;
+RT   "Response to darkness of late-responsive dark-inducible genes is positively
+RT   regulated by leaf age and negatively regulated by calmodulin-antagonist-
+RT   sensitive signalling in Arabidopsis thaliana.";
+RL   Plant Cell Physiol. 46:1741-1746(2005).
+RN   [8]
+RP   FUNCTION, BIOPHYSICOCHEMICAL PROPERTIES, ACTIVITY REGULATION, TISSUE
+RP   SPECIFICITY, INDUCTION, AND CATALYTIC ACTIVITY.
+RX   PubMed=18755683; DOI=10.1074/jbc.m805538200;
+RA   Maruta T., Yonemitsu M., Yabuta Y., Tamoi M., Ishikawa T., Shigeoka S.;
+RT   "Arabidopsis phosphomannose isomerase 1, but not phosphomannose isomerase
+RT   2, is essential for ascorbic acid biosynthesis.";
+RL   J. Biol. Chem. 283:28842-28851(2008).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000269|PubMed:18755683}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000269|PubMed:18755683};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- ACTIVITY REGULATION: Inhibited by EDTA, Zn(2+), Cd(2+), DTT, p-
+CC       chloromercuribenzoate and L-ascorbic acid (AsA).
+CC       {ECO:0000269|PubMed:18755683}.
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=372 uM for mannose-6-phosphate {ECO:0000269|PubMed:18755683};
+CC         Vmax=22.5 umol/min/mg enzyme with mannose-6-phosphate as substrate
+CC         {ECO:0000269|PubMed:18755683};
+CC       pH dependence:
+CC         Optimum pH is 7.5. {ECO:0000269|PubMed:18755683};
+CC       Temperature dependence:
+CC         Optimum temperature is 48 degrees Celsius.
+CC         {ECO:0000269|PubMed:18755683};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000305|PubMed:18755683}.
+CC   -!- TISSUE SPECIFICITY: Not expressed in any organs under light (at protein
+CC       level). {ECO:0000269|PubMed:18755683}.
+CC   -!- DEVELOPMENTAL STAGE: Expressed at the last stage of senescence in old
+CC       leaves. {ECO:0000269|PubMed:11240919, ECO:0000269|PubMed:16100230}.
+CC   -!- INDUCTION: By sugar starvation, by dark and by 3-O-methyl-Glc (3-OMG).
+CC       Down-regulated by sugars. Up-regulated by DCMU, an exogenous
+CC       photosynthesis inhibitor. {ECO:0000269|PubMed:11080291,
+CC       ECO:0000269|PubMed:11240919, ECO:0000269|PubMed:16100230,
+CC       ECO:0000269|PubMed:18755683}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AC007152; AAF98217.1; -; Genomic_DNA.
+DR   EMBL; CP002684; AEE34592.1; -; Genomic_DNA.
+DR   EMBL; CP002684; ANM59346.1; -; Genomic_DNA.
+DR   EMBL; AK176384; BAD44147.1; -; mRNA.
+DR   EMBL; AK176481; BAD44244.1; -; mRNA.
+DR   EMBL; BT025995; ABG25084.1; -; mRNA.
+DR   EMBL; AF159377; AAG23720.1; -; mRNA.
+DR   PIR; E96694; E96694.
+DR   RefSeq; NP_001319330.1; NM_001334269.1.
+DR   RefSeq; NP_176878.1; NM_105377.5.
+DR   AlphaFoldDB; Q9FZH5; -.
+DR   SMR; Q9FZH5; -.
+DR   STRING; 3702.Q9FZH5; -.
+DR   PaxDb; 3702-AT1G67070-1; -.
+DR   ProteomicsDB; 238900; -.
+DR   EnsemblPlants; AT1G67070.1; AT1G67070.1; AT1G67070.
+DR   EnsemblPlants; AT1G67070.2; AT1G67070.2; AT1G67070.
+DR   GeneID; 843027; -.
+DR   Gramene; AT1G67070.1; AT1G67070.1; AT1G67070.
+DR   Gramene; AT1G67070.2; AT1G67070.2; AT1G67070.
+DR   KEGG; ath:AT1G67070; -.
+DR   Araport; AT1G67070; -.
+DR   TAIR; AT1G67070; DIN9.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_2_1_1; -.
+DR   InParanoid; Q9FZH5; -.
+DR   OMA; VKILCSM; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   PhylomeDB; Q9FZH5; -.
+DR   BioCyc; ARA:AT1G67070-MONOMER; -.
+DR   BioCyc; MetaCyc:AT1G67070-MONOMER; -.
+DR   SABIO-RK; Q9FZH5; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:Q9FZH5; -.
+DR   Proteomes; UP000006548; Chromosome 1.
+DR   ExpressionAtlas; Q9FZH5; baseline and differential.
+DR   Genevisible; Q9FZH5; AT.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IDA:TAIR.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   GO; GO:0019853; P:L-ascorbic acid biosynthetic process; IMP:TAIR.
+DR   GO; GO:0009646; P:response to absence of light; IEP:UniProtKB.
+DR   GO; GO:0046686; P:response to cadmium ion; IEP:UniProtKB.
+DR   GO; GO:0046680; P:response to DDT; IEP:UniProtKB.
+DR   GO; GO:0033591; P:response to L-ascorbic acid; IEP:UniProtKB.
+DR   GO; GO:0009744; P:response to sucrose; IEP:UniProtKB.
+DR   GO; GO:0010043; P:response to zinc ion; IEP:UniProtKB.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   1: Evidence at protein level;
+KW   Isomerase; Metal-binding; Reference proteome; Zinc.
+FT   CHAIN           1..441
+FT                   /note="Mannose-6-phosphate isomerase 2"
+FT                   /id="PRO_0000420340"
+FT   ACT_SITE        315
+FT                   /evidence="ECO:0000250"
+FT   BINDING         131
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         133
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         158
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         296
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   CONFLICT        85
+FT                   /note="S -> F (in Ref. 5; AAG23720)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        90
+FT                   /note="V -> A (in Ref. 5; AAG23720)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        211
+FT                   /note="R -> S (in Ref. 5; AAG23720)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        288
+FT                   /note="L -> W (in Ref. 3; BAD44147)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   441 AA;  49248 MW;  05D6F0820858D2B1 CRC64;
+     MGADAIQTNG HDQAKLTGGE EIQRLRCFVK NYEWGKLGPE SLVARLQEAN TGQRVDSEIP
+     YAEFWMGTHE SGPSHVEFGS GHGVSDKCMV TLKSWVLDNP NLLGSKVVDK WGCDLPFLFK
+     VLSVTKALSI QAHPNKALAE KLHREDPLLY RDNNHKPEIA LAVTPFQALC GFVTLKELKE
+     VITNVPEITE LVGSKAADQI FNVHEHDEDE RIKSVVRLIF TQLMSASNNE TKQVVSRMKN
+     RLLLETKHRE LSEKEKLVLE LEKQYTGDIG VISAFFFNYV KLNPGEALYL DANEPHAYIS
+     GDCVECMAAS DNVVRAGLTP KHRDVQTLCS MLTYKLGYPE ILKGFPLTPY VTRYLPPFDE
+     FEVDHCDLPR GKSTVFPAVP GPSVYLVIEG KGQLRTGSSK VLVNRGDVLF VPADIEIHVT
+     GESDVMKLYR AGVSSRFFQT L
+//
+
+
+ID   Q3ZB95_DANRE            Unreviewed;       422 AA.
+AC   Q3ZB95; A0A8M1N7N3;
+DT   27-SEP-2005, integrated into UniProtKB/TrEMBL.
+DT   27-SEP-2005, sequence version 1.
+DT   24-JAN-2024, entry version 131.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00018236, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=zgc:110773 {ECO:0000313|EMBL:AAI03484.1,
+GN   ECO:0000313|RefSeq:NP_001028282.1};
+GN   Synonyms=im:7140016 {ECO:0000313|RefSeq:NP_001028282.1};
+GN   OrderedLocusNames=mpi {ECO:0000313|Ensembl:ENSDARP00000124229,
+GN   ECO:0000313|RefSeq:NP_001028282.1,
+GN   ECO:0000313|ZFIN:ZDB-GENE-050904-6};
+OS   Danio rerio (Zebrafish) (Brachydanio rerio).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Ostariophysi; Cypriniformes;
+OC   Danionidae; Danioninae; Danio.
+OX   NCBI_TaxID=7955 {ECO:0000313|EMBL:AAI03484.1};
+RN   [1] {ECO:0000313|EMBL:AAI03484.1}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=Singapore local strain {ECO:0000313|EMBL:AAI03484.1};
+RC   TISSUE=Embryo {ECO:0000313|EMBL:AAI03484.1};
+RG   NIH - Zebrafish Gene Collection (ZGC) project;
+RL   Submitted (AUG-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=22767353;
+RA   Ling X.P., Lu Y.H., Huang H.Q.;
+RT   "Differential protein profile in zebrafish (Danio rerio) brain under the
+RT   joint exposure of methyl parathion and cadmium.";
+RL   Environ. Sci. Pollut. Res. Int. 19:3925-3941(2012).
+RN   [3] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=22956764;
+RA   Cline A., Gao N., Flanagan-Steet H., Sharma V., Rosa S., Sonon R.,
+RA   Azadi P., Sadler K.C., Freeze H.H., Lehrman M.A., Steet R.;
+RT   "A zebrafish model of PMM2-CDG reveals altered neurogenesis and a
+RT   substrate-accumulation mechanism for N-linked glycosylation deficiency.";
+RL   Mol. Biol. Cell 23:4175-4187(2012).
+RN   [4] {ECO:0000313|Ensembl:ENSDARP00000124229}
+RP   IDENTIFICATION.
+RC   STRAIN=Tuebingen {ECO:0000313|Ensembl:ENSDARP00000124229};
+RG   Ensembl;
+RL   Submitted (FEB-2012) to UniProtKB.
+RN   [5] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=22899857;
+RA   Chu J., Mir A., Gao N., Rosa S., Monson C., Sharma V., Steet R.,
+RA   Freeze H.H., Lehrman M.A., Sadler K.C.;
+RT   "A zebrafish model of congenital disorders of glycosylation with
+RT   phosphomannose isomerase deficiency reveals an early opportunity for
+RT   corrective mannose supplementation.";
+RL   Dis. Model. Mech. 6:95-105(2013).
+RN   [6] {ECO:0000313|Ensembl:ENSDARP00000124229, ECO:0000313|Proteomes:UP000000437}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Tuebingen {ECO:0000313|Ensembl:ENSDARP00000124229};
+RX   PubMed=23594743; DOI=10.1038/nature12111;
+RG   Genome Reference Consortium Zebrafish;
+RA   Howe K., Clark M.D., Torroja C.F., Torrance J., Berthelot C., Muffato M.,
+RA   Collins J.E., Humphray S., McLaren K., Matthews L., McLaren S., Sealy I.,
+RA   Caccamo M., Churcher C., Scott C., Barrett J.C., Koch R., Rauch G.J.,
+RA   White S., Chow W., Kilian B., Quintais L.T., Guerra-Assuncao J.A., Zhou Y.,
+RA   Gu Y., Yen J., Vogel J.H., Eyre T., Redmond S., Banerjee R., Chi J., Fu B.,
+RA   Langley E., Maguire S.F., Laird G.K., Lloyd D., Kenyon E., Donaldson S.,
+RA   Sehra H., Almeida-King J., Loveland J., Trevanion S., Jones M., Quail M.,
+RA   Willey D., Hunt A., Burton J., Sims S., McLay K., Plumb B., Davis J.,
+RA   Clee C., Oliver K., Clark R., Riddle C., Elliot D., Eliott D.,
+RA   Threadgold G., Harden G., Ware D., Begum S., Mortimore B., Mortimer B.,
+RA   Kerry G., Heath P., Phillimore B., Tracey A., Corby N., Dunn M.,
+RA   Johnson C., Wood J., Clark S., Pelan S., Griffiths G., Smith M.,
+RA   Glithero R., Howden P., Barker N., Lloyd C., Stevens C., Harley J.,
+RA   Holt K., Panagiotidis G., Lovell J., Beasley H., Henderson C., Gordon D.,
+RA   Auger K., Wright D., Collins J., Raisen C., Dyer L., Leung K.,
+RA   Robertson L., Ambridge K., Leongamornlert D., McGuire S., Gilderthorp R.,
+RA   Griffiths C., Manthravadi D., Nichol S., Barker G., Whitehead S., Kay M.,
+RA   Brown J., Murnane C., Gray E., Humphries M., Sycamore N., Barker D.,
+RA   Saunders D., Wallis J., Babbage A., Hammond S., Mashreghi-Mohammadi M.,
+RA   Barr L., Martin S., Wray P., Ellington A., Matthews N., Ellwood M.,
+RA   Woodmansey R., Clark G., Cooper J., Cooper J., Tromans A., Grafham D.,
+RA   Skuce C., Pandian R., Andrews R., Harrison E., Kimberley A., Garnett J.,
+RA   Fosker N., Hall R., Garner P., Kelly D., Bird C., Palmer S., Gehring I.,
+RA   Berger A., Dooley C.M., Ersan-Urun Z., Eser C., Geiger H., Geisler M.,
+RA   Karotki L., Kirn A., Konantz J., Konantz M., Oberlander M.,
+RA   Rudolph-Geiger S., Teucke M., Lanz C., Raddatz G., Osoegawa K., Zhu B.,
+RA   Rapp A., Widaa S., Langford C., Yang F., Schuster S.C., Carter N.P.,
+RA   Harrow J., Ning Z., Herrero J., Searle S.M., Enright A., Geisler R.,
+RA   Plasterk R.H., Lee C., Westerfield M., de Jong P.J., Zon L.I.,
+RA   Postlethwait J.H., Nusslein-Volhard C., Hubbard T.J., Roest Crollius H.,
+RA   Rogers J., Stemple D.L.;
+RT   "The zebrafish reference genome sequence and its relationship to the human
+RT   genome.";
+RL   Nature 496:498-503(2013).
+RN   [7] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=26469318;
+RA   Elkon R., Milon B., Morrison L., Shah M., Vijayakumar S., Racherla M.,
+RA   Leitch C.C., Silipino L., Hadi S., Weiss-Gayet M., Barras E., Schmid C.D.,
+RA   Ait-Lounis A., Barnes A., Song Y., Eisenman D.J., Eliyahu E.,
+RA   Frolenkov G.I., Strome S.E., Durand B., Zaghloul N.A., Jones S.M.,
+RA   Reith W., Hertzano R.;
+RT   "RFX transcription factors are essential for hearing in mice.";
+RL   Nat. Commun. 6:8549-8549(2015).
+RN   [8] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=27189481;
+RA   Pasquier J., Cabau C., Nguyen T., Jouanno E., Severac D., Braasch I.,
+RA   Journot L., Pontarotti P., Klopp C., Postlethwait J.H., Guiguen Y.,
+RA   Bobe J.;
+RT   "Gene evolution and gene expression after whole genome duplication in fish:
+RT   the PhyloFish database.";
+RL   BMC Genomics 17:368-368(2016).
+RN   [9] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=26912795;
+RA   DeRossi C., Vacaru A., Rafiq R., Cinaroglu A., Imrie D., Nayar S.,
+RA   Baryshnikova A., Milev M.P., Stanga D., Kadakia D., Gao N., Chu J.,
+RA   Freeze H.H., Lehrman M.A., Sacher M., Sadler K.C.;
+RT   "trappc11 is required for protein glycosylation in zebrafish and humans.";
+RL   Mol. Biol. Cell 27:1220-1234(2016).
+RN   [10] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=28644127;
+RA   Shtraizent N., DeRossi C., Nayar S., Sachidanandam R., Katz L.S.,
+RA   Prince A., Koh A.P., Vincek A., Hadas Y., Hoshida Y., Scott D.K.,
+RA   Eliyahu E., Freeze H.H., Sadler K.C., Chu J.;
+RT   "MPI depletion enhances O-GlcNAcylation of p53 and suppresses the Warburg
+RT   effect.";
+RL   Elife 6:e22477-e22477(2017).
+RN   [11] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=28924386;
+RA   Sun Q., Liu X., Gong B., Wu D., Meng A., Jia S.;
+RT   "Alkbh4 and Atrn Act Maternally to Regulate Zebrafish Epiboly.";
+RL   Int. J. Biol. Sci. 13:1051-1066(2017).
+RN   [12] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RX   PubMed=28252024;
+RA   Bayes A., Collins M.O., Reig-Viader R., Gou G., Goulding D., Izquierdo A.,
+RA   Choudhary J.S., Emes R.D., Grant S.G.;
+RT   "Evolution of complexity in the zebrafish synapse proteome.";
+RL   Nat. Commun. 8:14613-14613(2017).
+RN   [13] {ECO:0000313|RefSeq:NP_001028282.1}
+RP   IDENTIFICATION.
+RC   STRAIN=Singapore {ECO:0000313|RefSeq:NP_001028282.1};
+RG   RefSeq;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666,
+CC       ECO:0000256|RuleBase:RU004248}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CU633769; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; CU651670; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; BC103483; AAI03484.1; -; mRNA.
+DR   RefSeq; NP_001028282.1; NM_001033110.1.
+DR   STRING; 7955.ENSDARP00000124229; -.
+DR   PaxDb; 7955-ENSDARP00000124229; -.
+DR   Ensembl; ENSDART00000149360.3; ENSDARP00000124229.1; ENSDARG00000030786.12.
+DR   GeneID; 613246; -.
+DR   KEGG; dre:613246; -.
+DR   CTD; 4351; -.
+DR   ZFIN; ZDB-GENE-050904-6; mpi.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   Reactome; R-DRE-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000000437; Chromosome 25.
+DR   Bgee; ENSDARG00000030786; Expressed in granulocyte and 28 other cell types or tissues.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IDA:ZFIN.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0090171; P:chondrocyte morphogenesis; IGI:ZFIN.
+DR   GO; GO:0043009; P:chordate embryonic development; IMP:ZFIN.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   GO; GO:0001889; P:liver development; IMP:ZFIN.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   1: Evidence at protein level;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Proteomics identification {ECO:0007829|PeptideAtlas:Q3ZB95};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000000437};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          6..153
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          170..256
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          336..376
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        294
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         275
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   422 AA;  46260 MW;  CD6B5B43F62DA7AF CRC64;
+     MAEVKVFPLC CVVQNYAWGK AGLDSEVARL VLGGDPQAHI EHSKPYAELW MGAHPKGDAL
+     IKDNRISQRT LGQWIADFPG CLGSKVKDTF HGQLPFLFKV LSVNTALSIQ AHPNRELAAR
+     LHAQFPEHYP DNNHKPEMAI ALTQFEGLCG FRPMEEILGF LKNVPEFRAL VGNEASEELQ
+     SADGNPHRTS LALKKCFTRM MNCEKKLFVD QLNMLVKRIS EEEAAGKDTS GSNGELLLRL
+     HSQYPGDIGC FSIYFLNRIV LQPGEAMFLG ANEPHAYLSG DCVECMACSD NTVRAGLTPK
+     YIDVDTLCEM LNYCPAPVSA KIFPCVRDNA DPCVYLYDPP VPDFTVMRIQ VPSSTQQYTV
+     SALDSAGILL VIDGEAVATS AAALSDITLK RGSVLFISAN ESVSLQLTSS TGMTMFRACC
+     LL
+//
+
+
+ID   MPI_CAEEL               Reviewed;         416 AA.
+AC   P34650;
+DT   01-FEB-1994, integrated into UniProtKB/Swiss-Prot.
+DT   16-AUG-2004, sequence version 3.
+DT   24-JAN-2024, entry version 158.
+DE   RecName: Full=Probable mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   ORFNames=ZK632.4;
+OS   Caenorhabditis elegans.
+OC   Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida;
+OC   Rhabditina; Rhabditomorpha; Rhabditoidea; Rhabditidae; Peloderinae;
+OC   Caenorhabditis.
+OX   NCBI_TaxID=6239;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Bristol N2;
+RX   PubMed=7906398; DOI=10.1038/368032a0;
+RA   Wilson R., Ainscough R., Anderson K., Baynes C., Berks M., Bonfield J.,
+RA   Burton J., Connell M., Copsey T., Cooper J., Coulson A., Craxton M.,
+RA   Dear S., Du Z., Durbin R., Favello A., Fraser A., Fulton L., Gardner A.,
+RA   Green P., Hawkins T., Hillier L., Jier M., Johnston L., Jones M.,
+RA   Kershaw J., Kirsten J., Laisster N., Latreille P., Lightning J., Lloyd C.,
+RA   Mortimore B., O'Callaghan M., Parsons J., Percy C., Rifken L., Roopra A.,
+RA   Saunders D., Shownkeen R., Sims M., Smaldon N., Smith A., Smith M.,
+RA   Sonnhammer E., Staden R., Sulston J., Thierry-Mieg J., Thomas K.,
+RA   Vaudin M., Vaughan K., Waterston R., Watson A., Weinstock L.,
+RA   Wilkinson-Sproat J., Wohldman P.;
+RT   "2.2 Mb of contiguous nucleotide sequence from chromosome III of C.
+RT   elegans.";
+RL   Nature 368:32-38(1994).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Bristol N2;
+RX   PubMed=9851916; DOI=10.1126/science.282.5396.2012;
+RG   The C. elegans sequencing consortium;
+RT   "Genome sequence of the nematode C. elegans: a platform for investigating
+RT   biology.";
+RL   Science 282:2012-2018(1998).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000250}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; Z22181; CAA80181.3; -; Genomic_DNA.
+DR   PIR; S40936; S40936.
+DR   RefSeq; NP_499174.3; NM_066773.4.
+DR   AlphaFoldDB; P34650; -.
+DR   SMR; P34650; -.
+DR   BioGRID; 41582; 6.
+DR   STRING; 6239.ZK632.4.1; -.
+DR   EPD; P34650; -.
+DR   PaxDb; 6239-ZK632-4; -.
+DR   PeptideAtlas; P34650; -.
+DR   EnsemblMetazoa; ZK632.4.1; ZK632.4.1; WBGene00014013.
+DR   GeneID; 176388; -.
+DR   UCSC; ZK632.4; c. elegans.
+DR   AGR; WB:WBGene00014013; -.
+DR   WormBase; ZK632.4; CE36417; WBGene00014013; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_2_1_1; -.
+DR   InParanoid; P34650; -.
+DR   OMA; VKILCSM; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   PhylomeDB; P34650; -.
+DR   Reactome; R-CEL-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:P34650; -.
+DR   Proteomes; UP000001940; Chromosome III.
+DR   Bgee; WBGene00014013; Expressed in germ line (C elegans) and 4 other cell types or tissues.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm; Isomerase; Metal-binding; Reference proteome; Zinc.
+FT   CHAIN           1..416
+FT                   /note="Probable mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000194233"
+FT   ACT_SITE        278
+FT                   /evidence="ECO:0000250"
+FT   BINDING         99
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         101
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         126
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         259
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   416 AA;  46384 MW;  1C7DEDEE85DB8459 CRC64;
+     MLLKLKCTVN NYAWGPKGNS SMAGSLALDG GHIPNLDKDK PYAEFWVGTH ANGPAHVIEK
+     DIALKQLLAT SPELQGKHEK GNLSFLFKVL SVLGPLSIQI HPTKEQGKLL HATDPKNYPD
+     DNHKPEIAIA LTEFELLSGF RQHSQISEYL KLYSEIQELL TEEEKSQIDS LGSYGESSAQ
+     VLKKIFSRIW RTPKEKLQIV VDKLARRIQG HENKTALDEI IVYLFTLYPG DVGVFAPIFL
+     NYFKLQPGEA TFLEPNMPHA YLKGDCVECM ADSDNTIRAG LTPKYIDVES LVEMLNYDET
+     LLPKYIPNEL DDGSLLFTPR GIDEFWVQEV KGPAGSIYQL PYSESCSVLT VLYGTATVTL
+     GDASQVLNRG EVVFIGATHD AERPKINISD DFLAFRAFTP SPRALESLSN KRLIID
+//
+
+
+ID   MPI_MOUSE               Reviewed;         423 AA.
+AC   Q924M7;
+DT   12-APR-2005, integrated into UniProtKB/Swiss-Prot.
+DT   01-DEC-2001, sequence version 1.
+DT   24-JAN-2024, entry version 162.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8 {ECO:0000269|PubMed:12122025};
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase {ECO:0000303|PubMed:12122025};
+DE            Short=PMI {ECO:0000303|PubMed:12122025};
+GN   Name=Mpi {ECO:0000312|MGI:MGI:97075}; Synonyms=Mpi1, Pmi;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae;
+OC   Murinae; Mus; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA], FUNCTION, CATALYTIC ACTIVITY, AND SUBCELLULAR
+RP   LOCATION.
+RX   PubMed=12122025; DOI=10.1093/glycob/cwf060;
+RA   Davis J.A., Wu X.H., Wang L., DeRossi C., Westphal V., Wu R., Alton G.,
+RA   Srikrishna G., Freeze H.H.;
+RT   "Molecular cloning, gene organization, and expression of mouse Mpi encoding
+RT   phosphomannose isomerase.";
+RL   Glycobiology 12:435-442(2002).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   TISSUE=Eye;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA project:
+RT   the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [3]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Brain, Brown adipose tissue, Heart, Kidney, Liver, Lung,
+RC   Pancreas, Spleen, and Testis;
+RX   PubMed=21183079; DOI=10.1016/j.cell.2010.12.001;
+RA   Huttlin E.L., Jedrychowski M.P., Elias J.E., Goswami T., Rad R.,
+RA   Beausoleil S.A., Villen J., Haas W., Sowa M.E., Gygi S.P.;
+RT   "A tissue-specific atlas of mouse protein phosphorylation and expression.";
+RL   Cell 143:1174-1189(2010).
+CC   -!- FUNCTION: Isomerase that catalyzes the interconversion of fructose-6-P
+CC       and mannose-6-P and has a critical role in the supply of D-mannose
+CC       derivatives required for many eukaryotic glycosylation reactions.
+CC       {ECO:0000269|PubMed:12122025}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000269|PubMed:12122025};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000250|UniProtKB:P34948};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250|UniProtKB:P34948};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000269|PubMed:12122025}.
+CC   -!- TISSUE SPECIFICITY: Expressed in all tissues, but more abundant in
+CC       testis. {ECO:0000269|PubMed:12122025}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AF244360; AAK69388.1; -; mRNA.
+DR   EMBL; BC051163; AAH51163.1; -; mRNA.
+DR   CCDS; CCDS40650.1; -.
+DR   RefSeq; NP_080113.1; NM_025837.2.
+DR   AlphaFoldDB; Q924M7; -.
+DR   SMR; Q924M7; -.
+DR   BioGRID; 225310; 1.
+DR   IntAct; Q924M7; 1.
+DR   MINT; Q924M7; -.
+DR   STRING; 10090.ENSMUSP00000034856; -.
+DR   iPTMnet; Q924M7; -.
+DR   PhosphoSitePlus; Q924M7; -.
+DR   SwissPalm; Q924M7; -.
+DR   REPRODUCTION-2DPAGE; Q924M7; -.
+DR   EPD; Q924M7; -.
+DR   jPOST; Q924M7; -.
+DR   MaxQB; Q924M7; -.
+DR   PaxDb; 10090-ENSMUSP00000034856; -.
+DR   ProteomicsDB; 291487; -.
+DR   Pumba; Q924M7; -.
+DR   Antibodypedia; 2008; 449 antibodies from 32 providers.
+DR   Ensembl; ENSMUST00000034856.15; ENSMUSP00000034856.9; ENSMUSG00000032306.15.
+DR   GeneID; 110119; -.
+DR   KEGG; mmu:110119; -.
+DR   UCSC; uc009pvd.1; mouse.
+DR   AGR; MGI:97075; -.
+DR   CTD; 4351; -.
+DR   MGI; MGI:97075; Mpi.
+DR   VEuPathDB; HostDB:ENSMUSG00000032306; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_2_0_1; -.
+DR   InParanoid; Q924M7; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   PhylomeDB; Q924M7; -.
+DR   TreeFam; TF312831; -.
+DR   Reactome; R-MMU-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   BioGRID-ORCS; 110119; 7 hits in 78 CRISPR screens.
+DR   ChiTaRS; Mpi; mouse.
+DR   PRO; PR:Q924M7; -.
+DR   Proteomes; UP000000589; Chromosome 9.
+DR   RNAct; Q924M7; Protein.
+DR   Bgee; ENSMUSG00000032306; Expressed in spermatocyte and 242 other cell types or tissues.
+DR   ExpressionAtlas; Q924M7; baseline and differential.
+DR   Genevisible; Q924M7; MM.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IDA:MGI.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IMP:MGI.
+DR   GO; GO:0061619; P:glycolytic process from mannose through fructose-6-phosphate; IC:MGI.
+DR   GO; GO:0061611; P:mannose to fructose-6-phosphate metabolic process; IMP:MGI.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   1: Evidence at protein level;
+KW   Acetylation; Cytoplasm; Isomerase; Metal-binding; Phosphoprotein;
+KW   Reference proteome; Zinc.
+FT   INIT_MET        1
+FT                   /note="Removed"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   CHAIN           2..423
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000194237"
+FT   ACT_SITE        295
+FT                   /evidence="ECO:0000250|UniProtKB:P34948"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250|UniProtKB:P34948"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250|UniProtKB:P34948"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250|UniProtKB:P34948"
+FT   BINDING         276
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250|UniProtKB:P34948"
+FT   MOD_RES         2
+FT                   /note="N-acetylalanine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         102
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         108
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+SQ   SEQUENCE   423 AA;  46575 MW;  3A49506D1249B670 CRC64;
+     MASPRVFPLS CVVQQYAWGK VGSKSEVACL LASSDPLAQI SEDKPYAELW MGTHPRGDAK
+     ILDNRISQKT LGQWIAENPD CLGSKVKNTF NGKLPFLFKV LSVDTALSIQ AHPNKELAEK
+     LHLQAPEHYP DANHKPEMAI ALTSFQGLCG FRPVEEIVTF MKKVPEFQLL IGDDATAQLK
+     ESVGGDTEAM ASALRNCFSH LMKSEKKVVV EQLNLLVKRI SQQVFDGNNM EDIYGKLLLQ
+     LHQQHPGDIG CFAIYFLNLL TLKPGEAMFL DANVPHAYLK GDCVECMACS DNTVRAGLTP
+     KFIDVPTLCE MLNYTPSPSN NRLFAPAQSQ DDPYLSIYDP PVPDFTVMKM EVPSSVTEYK
+     VSTLDSASIL LMVQGTVTAI IPSAHAEIPL YRGGVLFIAA NESVLLKITV PKDLLIFRAC
+     CLL
+//
+
+
+ID   B4FP68_MAIZE            Unreviewed;       435 AA.
+AC   B4FP68;
+DT   23-SEP-2008, integrated into UniProtKB/TrEMBL.
+DT   23-SEP-2008, sequence version 1.
+DT   24-JAN-2024, entry version 80.
+DE   RecName: Full=mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956};
+OS   Zea mays (Maize).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; Liliopsida; Poales; Poaceae; PACMAD clade;
+OC   Panicoideae; Andropogonodae; Andropogoneae; Tripsacinae; Zea.
+OX   NCBI_TaxID=4577 {ECO:0000313|EMBL:ACF83911.1};
+RN   [1] {ECO:0000313|EMBL:ACG46630.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=18937034; DOI=10.1007/s11103-008-9415-4;
+RA   Alexandrov N.N., Brover V.V., Freidin S., Troukhan M.E., Tatarinova T.V.,
+RA   Zhang H., Swaller T.J., Lu Y.P., Bouck J., Flavell R.B., Feldmann K.A.;
+RT   "Insights into corn genes derived from large-scale cDNA sequencing.";
+RL   Plant Mol. Biol. 69:179-194(2009).
+RN   [2] {ECO:0000313|EMBL:ACF83911.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=B73 {ECO:0000313|EMBL:ACF83911.1};
+RX   PubMed=19936069; DOI=10.1371/journal.pgen.1000740;
+RA   Soderlund C., Descour A., Kudrna D., Bomhoff M., Boyd L., Currie J.,
+RA   Angelova A., Collura K., Wissotski M., Ashley E., Morrow D., Fernandes J.,
+RA   Walbot V., Yu Y.;
+RT   "Sequencing, mapping, and analysis of 27,455 maize full-length cDNAs.";
+RL   PLoS Genet. 5:E1000740-E1000740(2009).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; BT038906; ACF83911.1; -; mRNA.
+DR   EMBL; EU974512; ACG46630.1; -; mRNA.
+DR   RefSeq; NP_001140476.1; NM_001147004.1.
+DR   AlphaFoldDB; B4FP68; -.
+DR   GeneID; 100272536; -.
+DR   KEGG; zma:100272536; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   ExpressionAtlas; B4FP68; baseline and differential.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   2: Evidence at transcript level;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000313|EMBL:ACG46630.1};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          26..164
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          183..268
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   REGION          1..22
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1..17
+FT                   /note="Pro residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   ACT_SITE        307
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         123
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         125
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         150
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         288
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   435 AA;  47756 MW;  A73552DBAE86A0C0 CRC64;
+     MENPPALPSP EPEPETEVSQ APPRRLLRLR CAVQHYEWGQ RGAASLVARL ADHNNPDPAR
+     PYAELWMGTH PSGPSSLVDD GSLLRDWLAR NHDALGPAVA ARWGGDLPFL FKVLSVAKAL
+     SIQAHPDKKL AEVLHALRPS TYKDENHKPE MAIAITEFRA LCGFAGIEEL KDVLRTIPEI
+     QGLVGHEDTG KMMNMKEYDG VSEVKSTLQS AFAKLMTASK DMVSEAVAKL ISRLNTESKI
+     RTLTDKEQLL LSLERQYQDD VGVLAALFFN YVKLSPGEAL YIGANEPHAY LSGECIECMA
+     TSDNVVRAGL TPKYRDVQTL CSMLTYKQAF PEILRGVPVQ PHVRRYTPPF NEFEVDRCLV
+     PPGGSLVVVP PVPGPSIFLV MTGAGEIQLD SASDGEKADE GDVFFVPAYT EVKISACGPE
+     SLQLYRAGVN SRFFS
+//
+
+
+ID   MPI_EMENI               Reviewed;         461 AA.
+AC   P29951; C8VRS9; Q5BFL3;
+DT   01-APR-1993, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAY-2007, sequence version 2.
+DT   24-JAN-2024, entry version 144.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   Name=manA; ORFNames=AN0667;
+OS   Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 /
+OS   M139) (Aspergillus nidulans).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes;
+OC   Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus;
+OC   Aspergillus subgen. Nidulantes.
+OX   NCBI_TaxID=227321;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   PubMed=8307007; DOI=10.1111/j.1432-1033.1994.tb19954.x;
+RA   Proudfoot A.E.I., Turcatti G., Wells T.N.C., Payton M.A., Smith D.J.;
+RT   "Purification, cDNA cloning and heterologous expression of human
+RT   phosphomannose isomerase.";
+RL   Eur. J. Biochem. 219:415-423(1994).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139;
+RX   PubMed=16372000; DOI=10.1038/nature04341;
+RA   Galagan J.E., Calvo S.E., Cuomo C., Ma L.-J., Wortman J.R., Batzoglou S.,
+RA   Lee S.-I., Bastuerkmen M., Spevak C.C., Clutterbuck J., Kapitonov V.,
+RA   Jurka J., Scazzocchio C., Farman M.L., Butler J., Purcell S., Harris S.,
+RA   Braus G.H., Draht O., Busch S., D'Enfert C., Bouchier C., Goldman G.H.,
+RA   Bell-Pedersen D., Griffiths-Jones S., Doonan J.H., Yu J., Vienken K.,
+RA   Pain A., Freitag M., Selker E.U., Archer D.B., Penalva M.A., Oakley B.R.,
+RA   Momany M., Tanaka T., Kumagai T., Asai K., Machida M., Nierman W.C.,
+RA   Denning D.W., Caddick M.X., Hynes M., Paoletti M., Fischer R., Miller B.L.,
+RA   Dyer P.S., Sachs M.S., Osmani S.A., Birren B.W.;
+RT   "Sequencing of Aspergillus nidulans and comparative analysis with A.
+RT   fumigatus and A. oryzae.";
+RL   Nature 438:1105-1115(2005).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139;
+RX   PubMed=19146970; DOI=10.1016/j.fgb.2008.12.003;
+RA   Wortman J.R., Gilsenan J.M., Joardar V., Deegan J., Clutterbuck J.,
+RA   Andersen M.R., Archer D., Bencina M., Braus G., Coutinho P., von Dohren H.,
+RA   Doonan J., Driessen A.J., Durek P., Espeso E., Fekete E., Flipphi M.,
+RA   Estrada C.G., Geysens S., Goldman G., de Groot P.W., Hansen K.,
+RA   Harris S.D., Heinekamp T., Helmstaedt K., Henrissat B., Hofmann G.,
+RA   Homan T., Horio T., Horiuchi H., James S., Jones M., Karaffa L.,
+RA   Karanyi Z., Kato M., Keller N., Kelly D.E., Kiel J.A., Kim J.M.,
+RA   van der Klei I.J., Klis F.M., Kovalchuk A., Krasevec N., Kubicek C.P.,
+RA   Liu B., Maccabe A., Meyer V., Mirabito P., Miskei M., Mos M., Mullins J.,
+RA   Nelson D.R., Nielsen J., Oakley B.R., Osmani S.A., Pakula T., Paszewski A.,
+RA   Paulsen I., Pilsyk S., Pocsi I., Punt P.J., Ram A.F., Ren Q., Robellet X.,
+RA   Robson G., Seiboth B., van Solingen P., Specht T., Sun J.,
+RA   Taheri-Talesh N., Takeshita N., Ussery D., vanKuyk P.A., Visser H.,
+RA   van de Vondervoort P.J., de Vries R.P., Walton J., Xiang X., Xiong Y.,
+RA   Zeng A.P., Brandt B.W., Cornell M.J., van den Hondel C.A., Visser J.,
+RA   Oliver S.G., Turner G.;
+RT   "The 2008 update of the Aspergillus nidulans genome annotation: a community
+RT   effort.";
+RL   Fungal Genet. Biol. 46:S2-13(2009).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000305}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; M85239; AAA33319.1; -; Genomic_DNA.
+DR   EMBL; AACD01000010; EAA65443.1; -; Genomic_DNA.
+DR   EMBL; BN001308; CBF89025.1; -; Genomic_DNA.
+DR   PIR; A56239; A56239.
+DR   RefSeq; XP_658271.1; XM_653179.1.
+DR   AlphaFoldDB; P29951; -.
+DR   SMR; P29951; -.
+DR   STRING; 227321.P29951; -.
+DR   EnsemblFungi; CBF89025; CBF89025; ANIA_00667.
+DR   GeneID; 2876445; -.
+DR   KEGG; ani:AN0667.2; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   InParanoid; P29951; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000000560; Chromosome VIII.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0000032; P:cell wall mannoprotein biosynthetic process; IEA:EnsemblFungi.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   GO; GO:0006486; P:protein glycosylation; IEA:EnsemblFungi.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm; Isomerase; Metal-binding; Reference proteome; Zinc.
+FT   CHAIN           1..461
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000194244"
+FT   ACT_SITE        310
+FT                   /evidence="ECO:0000250"
+FT   BINDING         107
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         109
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         134
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         291
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   CONFLICT        19
+FT                   /note="R -> K (in Ref. 1; AAA33319)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   461 AA;  50613 MW;  17E0D089A6656F79 CRC64;
+     MQVPLLRLQC GVNSYDWGRV GPESAAAKYA AATAPSDFTI EADKPYAELW MGTHPSLPSK
+     DVETQRTLLD MVQDNLALMS PEVSERYGGK LPFLFKVLSI RKALSIQAHP NKKLAEALHA
+     RDPRNYPDDN HKPEMTIAIT PFEGLCGFRP LAEIVHFLKA VAPLRYLIGV QTATDFENAV
+     RGFENTEDPE QTKKNKVALR TLFTSLMQSA SENIEQAARE LVAAAQSSPE TFASLVNAPD
+     TNPTNAAELA SIIIRLNEQF PNDIGLFVFF FLNFVRLEPG EAMFLKADDI HAYISGDIIE
+     CMASSDNVVR AGFTPKFKDV DTLTEMLTYS YAPIDEQKLQ PTDYPYTVLN AAAYSSASDS
+     LLYDPPIEEF SVVKTSLRRT GAKATFDPLT GPSILICTGG TGKISVGHKT EEVKEGYVFF
+     VGANAECIIE NTGTGSDEEN VFTTFKAFCD LTGKEDMANG H
+//
+
+
+ID   MPI_YEAST               Reviewed;         429 AA.
+AC   P29952; D3DLP9;
+DT   01-APR-1993, integrated into UniProtKB/Swiss-Prot.
+DT   23-JAN-2007, sequence version 4.
+DT   08-NOV-2023, entry version 189.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   Name=PMI40; OrderedLocusNames=YER003C;
+OS   Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes;
+OC   Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+OX   NCBI_TaxID=559292;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], PARTIAL PROTEIN SEQUENCE, CLEAVAGE OF
+RP   INITIATOR METHIONINE, AND ACETYLATION AT SER-2.
+RX   PubMed=1377774; DOI=10.1128/mcb.12.7.2924-2930.1992;
+RA   Smith D.J., Proudfoot A.E.I., Friedli L., Klig L.S., Paravicini G.,
+RA   Payton M.A.;
+RT   "PMI40, an intron-containing gene required for early steps in yeast
+RT   mannosylation.";
+RL   Mol. Cell. Biol. 12:2924-2930(1992).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=9169868;
+RA   Dietrich F.S., Mulligan J.T., Hennessy K.M., Yelton M.A., Allen E.,
+RA   Araujo R., Aviles E., Berno A., Brennan T., Carpenter J., Chen E.,
+RA   Cherry J.M., Chung E., Duncan M., Guzman E., Hartzell G., Hunicke-Smith S.,
+RA   Hyman R.W., Kayser A., Komp C., Lashkari D., Lew H., Lin D., Mosedale D.,
+RA   Nakahara K., Namath A., Norgren R., Oefner P., Oh C., Petel F.X.,
+RA   Roberts D., Sehl P., Schramm S., Shogren T., Smith V., Taylor P., Wei Y.,
+RA   Botstein D., Davis R.W.;
+RT   "The nucleotide sequence of Saccharomyces cerevisiae chromosome V.";
+RL   Nature 387:78-81(1997).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=24374639; DOI=10.1534/g3.113.008995;
+RA   Engel S.R., Dietrich F.S., Fisk D.G., Binkley G., Balakrishnan R.,
+RA   Costanzo M.C., Dwight S.S., Hitz B.C., Karra K., Nash R.S., Weng S.,
+RA   Wong E.D., Lloyd P., Skrzypek M.S., Miyasato S.R., Simison M., Cherry J.M.;
+RT   "The reference genome sequence of Saccharomyces cerevisiae: Then and now.";
+RL   G3 (Bethesda) 4:389-398(2014).
+RN   [4]
+RP   INHIBITION BY ZINC.
+RX   PubMed=8448139; DOI=10.1021/bi00056a014;
+RA   Wells T.N.C., Coulin F., Payton M.A., Proudfoot A.E.I.;
+RT   "Phosphomannose isomerase from Saccharomyces cerevisiae contains two
+RT   inhibitory metal ion binding sites.";
+RL   Biochemistry 32:1294-1301(1993).
+RN   [5]
+RP   LEVEL OF PROTEIN EXPRESSION [LARGE SCALE ANALYSIS].
+RX   PubMed=14562106; DOI=10.1038/nature02046;
+RA   Ghaemmaghami S., Huh W.-K., Bower K., Howson R.W., Belle A., Dephoure N.,
+RA   O'Shea E.K., Weissman J.S.;
+RT   "Global analysis of protein expression in yeast.";
+RL   Nature 425:737-741(2003).
+RN   [6]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-107, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=18407956; DOI=10.1074/mcp.m700468-mcp200;
+RA   Albuquerque C.P., Smolka M.B., Payne S.H., Bafna V., Eng J., Zhou H.;
+RT   "A multidimensional chromatography technology for in-depth phosphoproteome
+RT   analysis.";
+RL   Mol. Cell. Proteomics 7:1389-1396(2008).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC       Note=Binds 1 zinc ion per subunit.;
+CC   -!- ACTIVITY REGULATION: Can be inhibited by an excess of zinc.
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBUNIT: Monomer.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm.
+CC   -!- INDUCTION: By D-mannose.
+CC   -!- MISCELLANEOUS: Present with 5220 molecules/cell in log phase SD medium.
+CC       {ECO:0000269|PubMed:14562106}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; M85238; AAA34872.1; -; Genomic_DNA.
+DR   EMBL; U18778; AAB64536.1; -; Genomic_DNA.
+DR   EMBL; BK006939; DAA07653.1; -; Genomic_DNA.
+DR   PIR; S50461; S50461.
+DR   RefSeq; NP_010918.1; NM_001178894.1.
+DR   AlphaFoldDB; P29952; -.
+DR   SMR; P29952; -.
+DR   BioGRID; 36733; 393.
+DR   DIP; DIP-6619N; -.
+DR   IntAct; P29952; 2.
+DR   MINT; P29952; -.
+DR   STRING; 4932.YER003C; -.
+DR   BindingDB; P29952; -.
+DR   ChEMBL; CHEMBL3308954; -.
+DR   CarbonylDB; P29952; -.
+DR   iPTMnet; P29952; -.
+DR   UCD-2DPAGE; P29952; -.
+DR   MaxQB; P29952; -.
+DR   PaxDb; 4932-YER003C; -.
+DR   PeptideAtlas; P29952; -.
+DR   EnsemblFungi; YER003C_mRNA; YER003C; YER003C.
+DR   GeneID; 856720; -.
+DR   KEGG; sce:YER003C; -.
+DR   AGR; SGD:S000000805; -.
+DR   SGD; S000000805; PMI40.
+DR   VEuPathDB; FungiDB:YER003C; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   InParanoid; P29952; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   BioCyc; YEAST:YER003C-MONOMER; -.
+DR   Reactome; R-SCE-446205; Synthesis of GDP-mannose.
+DR   SABIO-RK; P29952; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   BioGRID-ORCS; 856720; 10 hits in 10 CRISPR screens.
+DR   PRO; PR:P29952; -.
+DR   Proteomes; UP000002311; Chromosome V.
+DR   RNAct; P29952; Protein.
+DR   GO; GO:0005737; C:cytoplasm; HDA:SGD.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0005634; C:nucleus; HDA:SGD.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IDA:SGD.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0000032; P:cell wall mannoprotein biosynthetic process; IMP:SGD.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IMP:SGD.
+DR   GO; GO:0006486; P:protein glycosylation; IMP:SGD.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   1: Evidence at protein level;
+KW   Acetylation; Cytoplasm; Direct protein sequencing; Isomerase;
+KW   Metal-binding; Phosphoprotein; Reference proteome; Zinc.
+FT   INIT_MET        1
+FT                   /note="Removed"
+FT                   /evidence="ECO:0000269|PubMed:1377774"
+FT   CHAIN           2..429
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000194247"
+FT   ACT_SITE        300
+FT                   /evidence="ECO:0000250"
+FT   BINDING         109
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         111
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         136
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         281
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   MOD_RES         2
+FT                   /note="N-acetylserine"
+FT                   /evidence="ECO:0000269|PubMed:1377774"
+FT   MOD_RES         107
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0007744|PubMed:18407956"
+FT   CONFLICT        25
+FT                   /note="A -> R (in Ref. 1; AAA34872)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   429 AA;  48189 MW;  C95E7C06B348A02F CRC64;
+     MSNKLFRLDA GYQQYDWGKI GSSSAVAQFA AHSDPSVQIE QDKPYAELWM GTHSKMPSYN
+     HESKESLRDI ISKNPSAMLG KDIIDKFHAT NELPFLFKVL SIEKVLSIQA HPDKALGKIL
+     HAQDPKNYPD DNHKPEMAIA VTDFEGFCGF KPLQEIADEL KRIPELRNIV GEETSRNFIE
+     NIQPSAQKGS PEDEQNKKLL QAVFSRVMNA SDDKIKIQAR SLVERSKNSP SDFNKPDLPE
+     LIQRLNKQFP DDVGLFCGCL LLNHCRLNAG EAIFLRAKDP HAYISGDIME CMAASDNVVR
+     AGFTPKFKDV KNLVSMLTYT YDPVEKQKMQ PLKFDRSSGN GKSVLYNPPI EEFAVLETTF
+     DEKLGQRHFE GVDGPSILIT TKGNGYIKAD GQKLKAEPGF VFFIAPHLPV DLEAEDEAFT
+     TYRAFVEPN
+//
+
+
+ID   Q9VH77_DROME            Unreviewed;       396 AA.
+AC   Q9VH77;
+DT   01-MAY-2000, integrated into UniProtKB/TrEMBL.
+DT   01-MAY-2000, sequence version 1.
+DT   24-JAN-2024, entry version 193.
+DE   RecName: Full=mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956};
+DE   AltName: Full=Phosphohexomutase {ECO:0000256|ARBA:ARBA00029741};
+DE   AltName: Full=Phosphomannose isomerase {ECO:0000256|ARBA:ARBA00030762};
+GN   Name=Mpi {ECO:0000313|EMBL:AAF54442.1,
+GN   ECO:0000313|FlyBase:FBgn0286506};
+GN   Synonyms=Dmel\CG8417 {ECO:0000313|EMBL:AAF54442.1}, dMPI
+GN   {ECO:0000313|EMBL:AAF54442.1}, MPI {ECO:0000313|EMBL:AAF54442.1};
+GN   ORFNames=CG8417 {ECO:0000313|EMBL:AAF54442.1,
+GN   ECO:0000313|FlyBase:FBgn0286506}, Dmel_CG8417
+GN   {ECO:0000313|EMBL:AAF54442.1};
+OS   Drosophila melanogaster (Fruit fly).
+OC   Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Diptera; Brachycera; Muscomorpha; Ephydroidea;
+OC   Drosophilidae; Drosophila; Sophophora.
+OX   NCBI_TaxID=7227 {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803};
+RN   [1] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=10731132; DOI=10.1126/science.287.5461.2185;
+RA   Adams M.D., Celniker S.E., Holt R.A., Evans C.A., Gocayne J.D.,
+RA   Amanatides P.G., Scherer S.E., Li P.W., Hoskins R.A., Galle R.F.,
+RA   George R.A., Lewis S.E., Richards S., Ashburner M., Henderson S.N.,
+RA   Sutton G.G., Wortman J.R., Yandell M.D., Zhang Q., Chen L.X., Brandon R.C.,
+RA   Rogers Y.H., Blazej R.G., Champe M., Pfeiffer B.D., Wan K.H., Doyle C.,
+RA   Baxter E.G., Helt G., Nelson C.R., Gabor G.L., Abril J.F., Agbayani A.,
+RA   An H.J., Andrews-Pfannkoch C., Baldwin D., Ballew R.M., Basu A.,
+RA   Baxendale J., Bayraktaroglu L., Beasley E.M., Beeson K.Y., Benos P.V.,
+RA   Berman B.P., Bhandari D., Bolshakov S., Borkova D., Botchan M.R., Bouck J.,
+RA   Brokstein P., Brottier P., Burtis K.C., Busam D.A., Butler H., Cadieu E.,
+RA   Center A., Chandra I., Cherry J.M., Cawley S., Dahlke C., Davenport L.B.,
+RA   Davies P., de Pablos B., Delcher A., Deng Z., Mays A.D., Dew I.,
+RA   Dietz S.M., Dodson K., Doup L.E., Downes M., Dugan-Rocha S., Dunkov B.C.,
+RA   Dunn P., Durbin K.J., Evangelista C.C., Ferraz C., Ferriera S.,
+RA   Fleischmann W., Fosler C., Gabrielian A.E., Garg N.S., Gelbart W.M.,
+RA   Glasser K., Glodek A., Gong F., Gorrell J.H., Gu Z., Guan P., Harris M.,
+RA   Harris N.L., Harvey D., Heiman T.J., Hernandez J.R., Houck J., Hostin D.,
+RA   Houston K.A., Howland T.J., Wei M.H., Ibegwam C., Jalali M., Kalush F.,
+RA   Karpen G.H., Ke Z., Kennison J.A., Ketchum K.A., Kimmel B.E., Kodira C.D.,
+RA   Kraft C., Kravitz S., Kulp D., Lai Z., Lasko P., Lei Y., Levitsky A.A.,
+RA   Li J., Li Z., Liang Y., Lin X., Liu X., Mattei B., McIntosh T.C.,
+RA   McLeod M.P., McPherson D., Merkulov G., Milshina N.V., Mobarry C.,
+RA   Morris J., Moshrefi A., Mount S.M., Moy M., Murphy B., Murphy L.,
+RA   Muzny D.M., Nelson D.L., Nelson D.R., Nelson K.A., Nixon K., Nusskern D.R.,
+RA   Pacleb J.M., Palazzolo M., Pittman G.S., Pan S., Pollard J., Puri V.,
+RA   Reese M.G., Reinert K., Remington K., Saunders R.D., Scheeler F., Shen H.,
+RA   Shue B.C., Siden-Kiamos I., Simpson M., Skupski M.P., Smith T., Spier E.,
+RA   Spradling A.C., Stapleton M., Strong R., Sun E., Svirskas R., Tector C.,
+RA   Turner R., Venter E., Wang A.H., Wang X., Wang Z.Y., Wassarman D.A.,
+RA   Weinstock G.M., Weissenbach J., Williams S.M., WoodageT, Worley K.C.,
+RA   Wu D., Yang S., Yao Q.A., Ye J., Yeh R.F., Zaveri J.S., Zhan M., Zhang G.,
+RA   Zhao Q., Zheng L., Zheng X.H., Zhong F.N., Zhong W., Zhou X., Zhu S.,
+RA   Zhu X., Smith H.O., Gibbs R.A., Myers E.W., Rubin G.M., Venter J.C.;
+RT   "The genome sequence of Drosophila melanogaster.";
+RL   Science 287:2185-2195(2000).
+RN   [2] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=12537568;
+RA   Celniker S.E., Wheeler D.A., Kronmiller B., Carlson J.W., Halpern A.,
+RA   Patel S., Adams M., Champe M., Dugan S.P., Frise E., Hodgson A.,
+RA   George R.A., Hoskins R.A., Laverty T., Muzny D.M., Nelson C.R.,
+RA   Pacleb J.M., Park S., Pfeiffer B.D., Richards S., Sodergren E.J.,
+RA   Svirskas R., Tabor P.E., Wan K., Stapleton M., Sutton G.G., Venter C.,
+RA   Weinstock G., Scherer S.E., Myers E.W., Gibbs R.A., Rubin G.M.;
+RT   "Finishing a whole-genome shotgun: release 3 of the Drosophila melanogaster
+RT   euchromatic genome sequence.";
+RL   Genome Biol. 3:RESEARCH0079-RESEARCH0079(2002).
+RN   [3] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   GENOME REANNOTATION.
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=12537572; DOI=10.1186/gb-2002-3-12-research0083;
+RA   Misra S., Crosby M.A., Mungall C.J., Matthews B.B., Campbell K.S.,
+RA   Hradecky P., Huang Y., Kaminker J.S., Millburn G.H., Prochnik S.E.,
+RA   Smith C.D., Tupy J.L., Whitfield E.J., Bayraktaroglu L., Berman B.P.,
+RA   Bettencourt B.R., Celniker S.E., de Grey A.D.N.J., Drysdale R.A.,
+RA   Harris N.L., Richter J., Russo S., Schroeder A.J., Shu S.Q., Stapleton M.,
+RA   Yamada C., Ashburner M., Gelbart W.M., Rubin G.M., Lewis S.E.;
+RT   "Annotation of the Drosophila melanogaster euchromatic genome: a systematic
+RT   review.";
+RL   Genome Biol. 3:RESEARCH0083.1-RESEARCH0083.22(2002).
+RN   [4] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=12537573;
+RA   Kaminker J.S., Bergman C.M., Kronmiller B., Carlson J., Svirskas R.,
+RA   Patel S., Frise E., Wheeler D.A., Lewis S.E., Rubin G.M., Ashburner M.,
+RA   Celniker S.E.;
+RT   "The transposable elements of the Drosophila melanogaster euchromatin: a
+RT   genomics perspective.";
+RL   Genome Biol. 3:RESEARCH0084.1-RESEARCH0084.20(2002).
+RN   [5] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=12537574;
+RA   Hoskins R.A., Smith C.D., Carlson J.W., Carvalho A.B., Halpern A.,
+RA   Kaminker J.S., Kennedy C., Mungall C.J., Sullivan B.A., Sutton G.G.,
+RA   Yasuhara J.C., Wakimoto B.T., Myers E.W., Celniker S.E., Rubin G.M.,
+RA   Karpen G.H.;
+RT   "Heterochromatic sequences in a Drosophila whole-genome shotgun assembly.";
+RL   Genome Biol. 3:RESEARCH0085-RESEARCH0085(2002).
+RN   [6] {ECO:0000313|EMBL:AAL68359.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Berkeley {ECO:0000313|EMBL:AAL68359.1};
+RA   Stapleton M., Brokstein P., Hong L., Agbayani A., Carlson J., Champe M.,
+RA   Chavez C., Dorsett V., Dresnek D., Farfan D., Frise E., George R.,
+RA   Gonzalez M., Guarin H., Kronmiller B., Li P., Liao G., Miranda A.,
+RA   Mungall C.J., Nunoo J., Pacleb J., Paragas V., Park S., Patel S.,
+RA   Phouanenavong S., Wan K., Yu C., Lewis S.E., Rubin G.M., Celniker S.;
+RL   Submitted (JAN-2002) to the EMBL/GenBank/DDBJ databases.
+RN   [7] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=16110336; DOI=10.1371/journal.pcbi.0010022;
+RA   Quesneville H., Bergman C.M., Andrieu O., Autard D., Nouaud D.,
+RA   Ashburner M., Anxolabehere D.;
+RT   "Combined evidence annotation of transposable elements in genome
+RT   sequences.";
+RL   PLoS Comput. Biol. 1:166-175(2005).
+RN   [8] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Celniker S., Carlson J., Wan K., Frise E., Hoskins R., Park S.,
+RA   Svirskas R., Rubin G.;
+RL   Submitted (AUG-2006) to the EMBL/GenBank/DDBJ databases.
+RN   [9] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=17569856; DOI=10.1126/science.1139815;
+RA   Smith C.D., Shu S., Mungall C.J., Karpen G.H.;
+RT   "The Release 5.1 annotation of Drosophila melanogaster heterochromatin.";
+RL   Science 316:1586-1591(2007).
+RN   [10] {ECO:0000313|EMBL:AAF54442.1, ECO:0000313|Proteomes:UP000000803}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley {ECO:0000313|Proteomes:UP000000803};
+RX   PubMed=17569867; DOI=10.1126/science.1139816;
+RA   Hoskins R.A., Carlson J.W., Kennedy C., Acevedo D., Evans-Holm M.,
+RA   Frise E., Wan K.H., Park S., Mendez-Lago M., Rossi F., Villasante A.,
+RA   Dimitri P., Karpen G.H., Celniker S.E.;
+RT   "Sequence finishing and mapping of Drosophila melanogaster
+RT   heterochromatin.";
+RL   Science 316:1625-1628(2007).
+RN   [11] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=26109357; DOI=.1534/g3.115.018929;
+RG   FlyBase Consortium;
+RA   Matthews B.B., Dos Santos G., Crosby M.A., Emmert D.B., St Pierre S.E.,
+RA   Gramates L.S., Zhou P., Schroeder A.J., Falls K., Strelets V., Russo S.M.,
+RA   Gelbart W.M., null;
+RT   "Gene Model Annotations for Drosophila melanogaster: Impact of High-
+RT   Throughput Data.";
+RL   G3 (Bethesda) 5:1721-1736(2015).
+RN   [12] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=26109356; DOI=.1534/g3.115.018937;
+RG   FlyBase Consortium;
+RA   Crosby M.A., Gramates L.S., Dos Santos G., Matthews B.B., St Pierre S.E.,
+RA   Zhou P., Schroeder A.J., Falls K., Emmert D.B., Russo S.M., Gelbart W.M.,
+RA   null;
+RT   "Gene Model Annotations for Drosophila melanogaster: The Rule-Benders.";
+RL   G3 (Bethesda) 5:1737-1749(2015).
+RN   [13] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=25589440;
+RA   Hoskins R.A., Carlson J.W., Wan K.H., Park S., Mendez I., Galle S.E.,
+RA   Booth B.W., Pfeiffer B.D., George R.A., Svirskas R., Krzywinski M.,
+RA   Schein J., Accardo M.C., Damia E., Messina G., Mendez-Lago M.,
+RA   de Pablos B., Demakova O.V., Andreyeva E.N., Boldyreva L.V., Marra M.,
+RA   Carvalho A.B., Dimitri P., Villasante A., Zhimulev I.F., Rubin G.M.,
+RA   Karpen G.H., Celniker S.E.;
+RT   "The Release 6 reference sequence of the Drosophila melanogaster genome.";
+RL   Genome Res. 25:445-458(2015).
+RN   [14] {ECO:0000313|EMBL:AAL13350.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Berkeley {ECO:0000313|EMBL:AAL13350.1};
+RA   Mah S.A., Swanson W.J., Moy G.W., Vacquier V.D.;
+RL   Submitted (JAN-2017) to the EMBL/GenBank/DDBJ databases.
+RN   [15] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RG   Berkeley Drosophila Genome Project;
+RA   Celniker S., Carlson J., Wan K., Pfeiffer B., Frise E., George R.,
+RA   Hoskins R., Stapleton M., Pacleb J., Park S., Svirskas R., Smith E., Yu C.,
+RA   Rubin G.;
+RT   "Drosophila melanogaster release 4 sequence.";
+RL   Submitted (APR-2020) to the EMBL/GenBank/DDBJ databases.
+RN   [16] {ECO:0000313|EMBL:AAF54442.1}
+RP   NUCLEOTIDE SEQUENCE.
+RG   FlyBase;
+RL   Submitted (APR-2020) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666,
+CC       ECO:0000256|RuleBase:RU004248}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AE014297; AAF54442.1; -; Genomic_DNA.
+DR   EMBL; AY059444; AAL13350.1; -; mRNA.
+DR   EMBL; AY075552; AAL68359.1; -; mRNA.
+DR   RefSeq; NP_649940.1; NM_141683.3.
+DR   AlphaFoldDB; Q9VH77; -.
+DR   SMR; Q9VH77; -.
+DR   IntAct; Q9VH77; 10.
+DR   STRING; 7227.FBpp0081609; -.
+DR   PaxDb; 7227-FBpp0081609; -.
+DR   DNASU; 41192; -.
+DR   EnsemblMetazoa; FBtr0082131; FBpp0081609; FBgn0286506.
+DR   GeneID; 41192; -.
+DR   KEGG; dme:Dmel_CG8417; -.
+DR   UCSC; CG8417-RA; d. melanogaster.
+DR   AGR; FB:FBgn0286506; -.
+DR   CTD; 4351; -.
+DR   FlyBase; FBgn0286506; Mpi.
+DR   VEuPathDB; VectorBase:FBgn0286506; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_2_1_1; -.
+DR   InParanoid; Q9VH77; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   Reactome; R-DME-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   BioGRID-ORCS; 41192; 0 hits in 1 CRISPR screen.
+DR   GenomeRNAi; 41192; -.
+DR   Proteomes; UP000000803; Chromosome 3R.
+DR   Bgee; FBgn0286506; Expressed in adult hindgut (Drosophila) and 26 other cell types or tissues.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   1: Evidence at protein level;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000313|EMBL:AAF54442.1};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Proteomics identification {ECO:0007829|PeptideAtlas:Q9VH77};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000000803};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          3..127
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          154..222
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   ACT_SITE        260
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         86
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         88
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         113
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         241
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   396 AA;  44774 MW;  1EB1176951903C2B CRC64;
+     MELTGWVKNY GWGRKGINSA VAQLAMANDP DFRLNEEETY AEMWMGTHVC GVSVVKETGE
+     TLDRVLKKDL SYLFKVLSIN KALSIQVHPN KCEAERLHKE RPDIYKDPNH KPELAIALTP
+     FLALVGFMSA EDIRDYIDEF QPLSKLIGKE AVDQLHDSTN SESVKLCYEK LMKTEEPVIA
+     KCISEIAKDY QNELKSNDLL EVFTKVNKDF PGDVGVLSLF FLNLIRLQPG QAIYLGANEI
+     HAYLDGDCVE CMACSDNVIR AGLTPKYKDV DQLLESVIFE SSYKDRKEFI PYRIDDQVQV
+     YIPPVSDFAV INVNIEHSLE SYKLEIQAFG SILIVLKGSR ILKLKTQQGD KEILVTRGSI
+     VYIPVEAAPE IEFAQSDDCD EDFSGYIATS NYFRVP
+//
+
+
+ID   D8SVH8_SELML            Unreviewed;       422 AA.
+AC   D8SVH8;
+DT   05-OCT-2010, integrated into UniProtKB/TrEMBL.
+DT   05-OCT-2010, sequence version 1.
+DT   24-JAN-2024, entry version 66.
+DE   RecName: Full=mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956};
+GN   ORFNames=SELMODRAFT_125724 {ECO:0000313|EMBL:EFJ11670.1},
+GN   SELMODRAFT_129293 {ECO:0000313|EMBL:EFJ09739.1};
+OS   Selaginella moellendorffii (Spikemoss).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Lycopodiopsida; Selaginellales; Selaginellaceae; Selaginella.
+OX   NCBI_TaxID=88036 {ECO:0000313|Proteomes:UP000001514};
+RN   [1] {ECO:0000313|EMBL:EFJ11670.1, ECO:0000313|Proteomes:UP000001514}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=21551031; DOI=10.1126/science.1203810;
+RA   Banks J.A., Nishiyama T., Hasebe M., Bowman J.L., Gribskov M.,
+RA   dePamphilis C., Albert V.A., Aono N., Aoyama T., Ambrose B.A., Ashton N.W.,
+RA   Axtell M.J., Barker E., Barker M.S., Bennetzen J.L., Bonawitz N.D.,
+RA   Chapple C., Cheng C., Correa L.G., Dacre M., DeBarry J., Dreyer I.,
+RA   Elias M., Engstrom E.M., Estelle M., Feng L., Finet C., Floyd S.K.,
+RA   Frommer W.B., Fujita T., Gramzow L., Gutensohn M., Harholt J., Hattori M.,
+RA   Heyl A., Hirai T., Hiwatashi Y., Ishikawa M., Iwata M., Karol K.G.,
+RA   Koehler B., Kolukisaoglu U., Kubo M., Kurata T., Lalonde S., Li K., Li Y.,
+RA   Litt A., Lyons E., Manning G., Maruyama T., Michael T.P., Mikami K.,
+RA   Miyazaki S., Morinaga S., Murata T., Mueller-Roeber B., Nelson D.R.,
+RA   Obara M., Oguri Y., Olmstead R.G., Onodera N., Petersen B.L., Pils B.,
+RA   Prigge M., Rensing S.A., Riano-Pachon D.M., Roberts A.W., Sato Y.,
+RA   Scheller H.V., Schulz B., Schulz C., Shakirov E.V., Shibagaki N.,
+RA   Shinohara N., Shippen D.E., Soerensen I., Sotooka R., Sugimoto N.,
+RA   Sugita M., Sumikawa N., Tanurdzic M., Theissen G., Ulvskov P., Wakazuki S.,
+RA   Weng J.K., Willats W.W., Wipf D., Wolf P.G., Yang L., Zimmer A.D., Zhu Q.,
+RA   Mitros T., Hellsten U., Loque D., Otillar R., Salamov A., Schmutz J.,
+RA   Shapiro H., Lindquist E., Lucas S., Rokhsar D., Grigoriev I.V.;
+RT   "The Selaginella genome identifies genetic changes associated with the
+RT   evolution of vascular plants.";
+RL   Science 332:960-963(2011).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; GL377659; EFJ09739.1; -; Genomic_DNA.
+DR   EMBL; GL377645; EFJ11670.1; -; Genomic_DNA.
+DR   RefSeq; XP_002987355.1; XM_002987309.1.
+DR   RefSeq; XP_002989145.1; XM_002989099.1.
+DR   AlphaFoldDB; D8SVH8; -.
+DR   STRING; 88036.D8SVH8; -.
+DR   EnsemblPlants; EFJ09739; EFJ09739; SELMODRAFT_129293.
+DR   EnsemblPlants; EFJ11670; EFJ11670; SELMODRAFT_125724.
+DR   Gramene; EFJ09739; EFJ09739; SELMODRAFT_129293.
+DR   Gramene; EFJ11670; EFJ11670; SELMODRAFT_125724.
+DR   KEGG; smo:SELMODRAFT_125724; -.
+DR   KEGG; smo:SELMODRAFT_129293; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   InParanoid; D8SVH8; -.
+DR   OMA; DIGLFCG; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000001514; Unassembled WGS sequence.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000001514};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          1..146
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          180..249
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   ACT_SITE        287
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         105
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         107
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         132
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         268
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   422 AA;  46081 MW;  60054623B8C65DDE CRC64;
+     MIRLQCQVQH YEWGRIGEES EVGRLHALMT GSAVDADVPY AELWMGTHAS GPSTVLRRGG
+     AGQILLKDWL QRHPEALGDR VLERWNGDLP FLFKVLSVAK ALSIQAHPDK KLAEYLHGKN
+     PQVYKDANHK PELALALTRF GALCGFVTSQ ELQAALESVP ELRDALGPLV VESVIRSGCG
+     QSAKDVLRRA FTCLMTLDES VVTHTLSNLI DRLKRKSKAA GGLSPKEELV VSLEKQYPGD
+     VGVLSAFFLN YTNLEAGQAV FLDANEPHAY LYGECVECMA TSDNVVRAGL TPKFRDTQTL
+     CSMLSYNQAS KTILDGCYVN PFTRRYSPPS DEFEVDHICV PVGGTAKISS PCGPSIFLVY
+     RGMGVLSRVG KEDEANSIIA GLVRGNIFML VAGTELEVSA VMDDALQLYR AGVSSRLLHQ
+     AV
+//
+
+
+ID   MPI_DICDI               Reviewed;         452 AA.
+AC   Q54PA0;
+DT   08-APR-2008, integrated into UniProtKB/Swiss-Prot.
+DT   24-MAY-2005, sequence version 1.
+DT   24-JAN-2024, entry version 113.
+DE   RecName: Full=Probable mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   Name=mpi; ORFNames=DDB_G0284685;
+OS   Dictyostelium discoideum (Social amoeba).
+OC   Eukaryota; Amoebozoa; Evosea; Eumycetozoa; Dictyostelia; Dictyosteliales;
+OC   Dictyosteliaceae; Dictyostelium.
+OX   NCBI_TaxID=44689;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=AX4;
+RX   PubMed=15875012; DOI=10.1038/nature03481;
+RA   Eichinger L., Pachebat J.A., Gloeckner G., Rajandream M.A., Sucgang R.,
+RA   Berriman M., Song J., Olsen R., Szafranski K., Xu Q., Tunggal B.,
+RA   Kummerfeld S., Madera M., Konfortov B.A., Rivero F., Bankier A.T.,
+RA   Lehmann R., Hamlin N., Davies R., Gaudet P., Fey P., Pilcher K., Chen G.,
+RA   Saunders D., Sodergren E.J., Davis P., Kerhornou A., Nie X., Hall N.,
+RA   Anjard C., Hemphill L., Bason N., Farbrother P., Desany B., Just E.,
+RA   Morio T., Rost R., Churcher C.M., Cooper J., Haydock S., van Driessche N.,
+RA   Cronin A., Goodhead I., Muzny D.M., Mourier T., Pain A., Lu M., Harper D.,
+RA   Lindsay R., Hauser H., James K.D., Quiles M., Madan Babu M., Saito T.,
+RA   Buchrieser C., Wardroper A., Felder M., Thangavelu M., Johnson D.,
+RA   Knights A., Loulseged H., Mungall K.L., Oliver K., Price C., Quail M.A.,
+RA   Urushihara H., Hernandez J., Rabbinowitsch E., Steffen D., Sanders M.,
+RA   Ma J., Kohara Y., Sharp S., Simmonds M.N., Spiegler S., Tivey A.,
+RA   Sugano S., White B., Walker D., Woodward J.R., Winckler T., Tanaka Y.,
+RA   Shaulsky G., Schleicher M., Weinstock G.M., Rosenthal A., Cox E.C.,
+RA   Chisholm R.L., Gibbs R.A., Loomis W.F., Platzer M., Kay R.R.,
+RA   Williams J.G., Dear P.H., Noegel A.A., Barrell B.G., Kuspa A.;
+RT   "The genome of the social amoeba Dictyostelium discoideum.";
+RL   Nature 435:43-57(2005).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000305}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AAFI02000070; EAL65112.1; -; Genomic_DNA.
+DR   RefSeq; XP_638475.1; XM_633383.1.
+DR   AlphaFoldDB; Q54PA0; -.
+DR   SMR; Q54PA0; -.
+DR   STRING; 44689.Q54PA0; -.
+DR   PaxDb; 44689-DDB0231659; -.
+DR   EnsemblProtists; EAL65112; EAL65112; DDB_G0284685.
+DR   GeneID; 8624726; -.
+DR   KEGG; ddi:DDB_G0284685; -.
+DR   dictyBase; DDB_G0284685; mpi.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_2_1_1; -.
+DR   InParanoid; Q54PA0; -.
+DR   OMA; DIGLFCG; -.
+DR   PhylomeDB; Q54PA0; -.
+DR   Reactome; R-DDI-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:Q54PA0; -.
+DR   Proteomes; UP000002195; Chromosome 4.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; ISS:dictyBase.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; ISS:dictyBase.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm; Isomerase; Metal-binding; Reference proteome; Zinc.
+FT   CHAIN           1..452
+FT                   /note="Probable mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000327494"
+FT   ACT_SITE        314
+FT                   /evidence="ECO:0000250"
+FT   BINDING         141
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         143
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         168
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         295
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   452 AA;  51091 MW;  FBD259EF215E6D47 CRC64;
+     MENNNNNNNN NNNNNNNNNN IVLLKCVSQN YEWGKYGSNS TVAKLLKGYA KECSDIIKET
+     IPYAELWMGD HVSAPSKVEY KNKELKLREY IDTVQKEINE KSSTSSSSSS SIRGEIVEKR
+     FGNDFPFLFK VLSIRTALSI QAHPDSQLAQ VLFKKYPNIY KDPYHKPEIA IATTPFEALC
+     SFRPLSEIQS FIDTIPEFKN SLPNNLIKLD DCKEYLKSIV TSLLKADGLL ISNNLKELNN
+     RLNEKREEER DDLDRLVLKL YSQYPGDVGV FFAYILNYIV LKPGEALFLG AGEPHAYISG
+     DCVECMAPSD NVVRAGLTPK LKDVDTLGDM LTYRTGRPDL VVPQQRPDLS LTNYRCYQPP
+     VDEFQVEYYH LDDCCKNINV YSSKGPSIVL VYSGNLSIEN KSNQSTLNNL HTGSILFVPA
+     NTDYQFIQSD SSIPVSIYVA SVSNRIFNKN NL
+//
+
+
+ID   A0A072TVL2_MEDTR        Unreviewed;       424 AA.
+AC   A0A072TVL2;
+DT   01-OCT-2014, integrated into UniProtKB/TrEMBL.
+DT   01-OCT-2014, sequence version 1.
+DT   24-JAN-2024, entry version 44.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=25497434 {ECO:0000313|EnsemblPlants:KEH21549};
+GN   OrderedLocusNames=MTR_7g007320 {ECO:0000313|EMBL:KEH21549.1};
+GN   ORFNames=MtrunA17_Chr7g0215521 {ECO:0000313|EMBL:RHN44086.1};
+OS   Medicago truncatula (Barrel medic) (Medicago tribuloides).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fabales; Fabaceae; Papilionoideae; 50 kb inversion clade;
+OC   NPAAA clade; Hologalegina; IRL clade; Trifolieae; Medicago.
+OX   NCBI_TaxID=3880 {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051};
+RN   [1] {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=A17 {ECO:0000313|EMBL:KEH21549.1}, and cv. Jemalong A17
+RC   {ECO:0000313|EnsemblPlants:KEH21549,
+RC   ECO:0000313|Proteomes:UP000002051};
+RX   PubMed=22089132; DOI=10.1038/nature10625;
+RA   Young N.D., Debelle F., Oldroyd G.E., Geurts R., Cannon S.B., Udvardi M.K.,
+RA   Benedito V.A., Mayer K.F., Gouzy J., Schoof H., Van de Peer Y., Proost S.,
+RA   Cook D.R., Meyers B.C., Spannagl M., Cheung F., De Mita S.,
+RA   Krishnakumar V., Gundlach H., Zhou S., Mudge J., Bharti A.K., Murray J.D.,
+RA   Naoumkina M.A., Rosen B., Silverstein K.A., Tang H., Rombauts S.,
+RA   Zhao P.X., Zhou P., Barbe V., Bardou P., Bechner M., Bellec A., Berger A.,
+RA   Berges H., Bidwell S., Bisseling T., Choisne N., Couloux A., Denny R.,
+RA   Deshpande S., Dai X., Doyle J.J., Dudez A.M., Farmer A.D., Fouteau S.,
+RA   Franken C., Gibelin C., Gish J., Goldstein S., Gonzalez A.J., Green P.J.,
+RA   Hallab A., Hartog M., Hua A., Humphray S.J., Jeong D.H., Jing Y.,
+RA   Jocker A., Kenton S.M., Kim D.J., Klee K., Lai H., Lang C., Lin S.,
+RA   Macmil S.L., Magdelenat G., Matthews L., McCorrison J., Monaghan E.L.,
+RA   Mun J.H., Najar F.Z., Nicholson C., Noirot C., O'Bleness M., Paule C.R.,
+RA   Poulain J., Prion F., Qin B., Qu C., Retzel E.F., Riddle C., Sallet E.,
+RA   Samain S., Samson N., Sanders I., Saurat O., Scarpelli C., Schiex T.,
+RA   Segurens B., Severin A.J., Sherrier D.J., Shi R., Sims S., Singer S.R.,
+RA   Sinharoy S., Sterck L., Viollet A., Wang B.B., Wang K., Wang M., Wang X.,
+RA   Warfsmann J., Weissenbach J., White D.D., White J.D., Wiley G.B.,
+RA   Wincker P., Xing Y., Yang L., Yao Z., Ying F., Zhai J., Zhou L., Zuber A.,
+RA   Denarie J., Dixon R.A., May G.D., Schwartz D.C., Rogers J., Quetier F.,
+RA   Town C.D., Roe B.A.;
+RT   "The Medicago genome provides insight into the evolution of rhizobial
+RT   symbioses.";
+RL   Nature 480:520-524(2011).
+RN   [2] {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051}
+RP   GENOME REANNOTATION.
+RC   STRAIN=A17 {ECO:0000313|EMBL:KEH21549.1}, and cv. Jemalong A17
+RC   {ECO:0000313|EnsemblPlants:KEH21549,
+RC   ECO:0000313|Proteomes:UP000002051};
+RX   PubMed=24767513; DOI=10.1186/1471-2164-15-312;
+RA   Tang H., Krishnakumar V., Bidwell S., Rosen B., Chan A., Zhou S.,
+RA   Gentzbittel L., Childs K.L., Yandell M., Gundlach H., Mayer K.F.,
+RA   Schwartz D.C., Town C.D.;
+RT   "An improved genome release (version Mt4.0) for the model legume Medicago
+RT   truncatula.";
+RL   BMC Genomics 15:312-312(2014).
+RN   [3] {ECO:0000313|EnsemblPlants:KEH21549}
+RP   IDENTIFICATION.
+RC   STRAIN=cv. Jemalong A17 {ECO:0000313|EnsemblPlants:KEH21549};
+RG   EnsemblPlants;
+RL   Submitted (APR-2015) to UniProtKB.
+RN   [4] {ECO:0000313|EMBL:RHN44086.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Leaves {ECO:0000313|EMBL:RHN44086.1};
+RA   Pecrix Y., Gamas P., Carrere S.;
+RT   "Whole-genome landscape of Medicago truncatula symbiotic genes.";
+RL   Nat. Plants 0:0-0(2018).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CM001223; KEH21549.1; -; Genomic_DNA.
+DR   EMBL; PSQE01000007; RHN44086.1; -; Genomic_DNA.
+DR   RefSeq; XP_013447468.1; XM_013592014.1.
+DR   AlphaFoldDB; A0A072TVL2; -.
+DR   STRING; 3880.A0A072TVL2; -.
+DR   PaxDb; 3880-AES84461; -.
+DR   EnsemblPlants; KEH21549; KEH21549; MTR_7g007320.
+DR   GeneID; 25497434; -.
+DR   Gramene; KEH21549; KEH21549; MTR_7g007320.
+DR   KEGG; mtr:25497434; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000002051; Chromosome 7.
+DR   Proteomes; UP000265566; Chromosome 7.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000002051};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          10..156
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          187..260
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          337..376
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        298
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         115
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         117
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         142
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         279
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   424 AA;  47104 MW;  B8D0E56CFDB3167F CRC64;
+     MEDSNPNNSL QKLHCSVKNY DWGLPGQLSQ VAKLSELNSG FKFDPMKPYA ELWIGTHDSG
+     PSFLVSDDDG QRISLKDWIF DNPDLLLGHK VVKKWGSDLP FLFKVLSVGK ALSIQAHPDK
+     ELARMLHKLH PDVYKDGNHK PEMALAMTDF EALCGFITLK ELKAVIHTVP EVVNLVGASN
+     ANLVLETSDQ NEEKVKPVLQ AVFTHLMSAS KEIVTDAVNR LINRLHEESE MRHLTEKELL
+     VLRLENQYPS DIGVIAAFFL NHVKLNPGEA LFLGANEPHA YLSGECIECM ATSDNVVRAG
+     LTPKFIDVPT LCSMLTYKQG FPEILRGVSM NPYVNKYIPP FEEFEIDRCI LPKGQTVVFP
+     AVPGPSIFLV TAGEGSMNTG SPKVYEITEG DALFAPAYTE ISVASESELH LYRTGINSKF
+     FEDS
+//
+
+
+ID   A0A8I3P413_CANLF        Unreviewed;       421 AA.
+AC   A0A8I3P413;
+DT   25-MAY-2022, integrated into UniProtKB/TrEMBL.
+DT   25-MAY-2022, sequence version 1.
+DT   08-NOV-2023, entry version 9.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00018236, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=MPI {ECO:0000313|Ensembl:ENSCAFP00845025560.1};
+OS   Canis lupus familiaris (Dog) (Canis familiaris).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Canis.
+OX   NCBI_TaxID=9615 {ECO:0000313|Ensembl:ENSCAFP00845025560.1, ECO:0000313|Proteomes:UP000805418};
+RN   [1] {ECO:0000313|Ensembl:ENSCAFP00845025560.1}
+RP   IDENTIFICATION.
+RC   STRAIN=Boxer {ECO:0000313|Ensembl:ENSCAFP00845025560.1};
+RG   Ensembl;
+RL   Submitted (JUL-2023) to UniProtKB.
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666,
+CC       ECO:0000256|RuleBase:RU004248}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   RefSeq; XP_013964961.1; XM_014109486.1.
+DR   Ensembl; ENSCAFT00845032675.1; ENSCAFP00845025560.1; ENSCAFG00845018367.1.
+DR   GeneID; 478369; -.
+DR   KEGG; cfa:478369; -.
+DR   CTD; 4351; -.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000805418; Chromosome 30.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:Ensembl.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   GO; GO:0061611; P:mannose to fructose-6-phosphate metabolic process; IEA:Ensembl.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000805418};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          6..154
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          170..257
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          335..379
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        295
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         276
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   421 AA;  46224 MW;  DA4F4076BAE2018D CRC64;
+     MAAPQVFPLS CAVQHYAWGK MGSSSEVAQL LASSDPAAAI SEDKPYAELW MGSHPRGDAK
+     ILDDRISQKT LGQWIAENQD CLGSKVKDMF HGKLPFLFKV LSVETALSIQ AHPNKELAEK
+     LHLQAPQHYP DANHKPEMAV ALTSFQGLCG FRPVEEILTF LTKVPEFQFL IGDKAATQLK
+     QSMGGDSRSM ASALQSCFSH LMKSEKKVVV EQLNLLVKRI SQQVAAGNNM EDIYGELLLQ
+     LHQQYPGDIG CFAIYFLNLL TLKPGEAMFL EANVPHAYLK GDCVECMACS DNTVRAGLTP
+     KFIDVPTLCE MLSYTPSKDR LFLPARSQED PYLYIYDPPV PDFTVMKMQV PGSVAEYNVL
+     AVDSASILLV VQGRVTASTP TAQTPIPLQR GGVLFIGANE RVSLKLAVPS DLLLFRACCL
+     L
+//
+
+
+ID   Q2R1L4_ORYSJ            Unreviewed;       460 AA.
+AC   Q2R1L4;
+DT   24-JAN-2006, integrated into UniProtKB/TrEMBL.
+DT   24-JAN-2006, sequence version 1.
+DT   24-JAN-2024, entry version 97.
+DE   RecName: Full=mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956};
+GN   OrderedLocusNames=LOC_Os11g38810 {ECO:0000313|EMBL:ABA94585.1};
+OS   Oryza sativa subsp. japonica (Rice).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; Liliopsida; Poales; Poaceae; BOP clade;
+OC   Oryzoideae; Oryzeae; Oryzinae; Oryza; Oryza sativa.
+OX   NCBI_TaxID=39947 {ECO:0000313|EMBL:ABA94585.1};
+RN   [1] {ECO:0000313|EMBL:ABA94585.1}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=16188032; DOI=10.1186/1741-7007-3-20;
+RG   The rice chromosomes 11 and 12 sequencing consortia;
+RT   "The sequence of rice chromosomes 11 and 12, rich in disease resistance
+RT   genes and recent gene duplications.";
+RL   BMC Biol. 3:20-20(2005).
+RN   [2] {ECO:0000313|EMBL:ABA94585.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Buell C.R., Wing R.A., McCombie W.A., Ouyang S.;
+RL   Submitted (APR-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [3] {ECO:0000313|EMBL:ABA94585.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Buell R.;
+RL   Submitted (JAN-2006) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; DP000010; ABA94585.1; -; Genomic_DNA.
+DR   RefSeq; XP_015615379.1; XM_015759893.1.
+DR   AlphaFoldDB; Q2R1L4; -.
+DR   GeneID; 4350861; -.
+DR   KEGG; osa:4350861; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IEA:UniProtKB-UniPathway.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF7; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000313|EMBL:ABA94585.1};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          50..190
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          209..294
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   ACT_SITE        333
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         149
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         151
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         176
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         314
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   460 AA;  49539 MW;  41FA98FEE923E9C5 CRC64;
+     MASSTTASSQ LALALGIPGL GGLLIPTDAA ATTTTTAEGN DLHADASHPV LRLAGAVQHY
+     EWGGRRGSSL VARLAGEGDD GDERPYAELW MGTHPAAPSS LAASGESLRE WLGRRGPAAL
+     LGRDVAARWG GDLPFLFKVL SVARALSIQA HPDAALARAL HALRPATYRD DNHKPEMAVA
+     VTDFRALCGF VSVQELKDVL RTVPEVRELV GKEEAVKLMG AKEHDGGIGV RSYLQSAFTN
+     LMTASKETVS EAVSKLKSRL NIESKVRTLT KKEQLVLSLE MQYPEDVGVL AAFFFNYVKL
+     NPGEALYIGA NEPHAYLSGE CVECMATSDN VVRAGLTPKY RDVQTLCSML TYKQNYPEIL
+     RGVPVQAYVT RYIPPSEEFE VDRCLLPSGE SVTMSPVPGP SIFLVMTGEG KIEADSMLDE
+     GKAKEGDVFF VPAHTEVRIL ASGPGSMQLY RAGVNSRFFS
+//
+
+
+ID   MPI_RAT                 Reviewed;         423 AA.
+AC   Q68FX1;
+DT   12-APR-2005, integrated into UniProtKB/Swiss-Prot.
+DT   11-OCT-2004, sequence version 1.
+DT   24-JAN-2024, entry version 132.
+DE   RecName: Full=Mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8 {ECO:0000250|UniProtKB:P34949};
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase {ECO:0000250|UniProtKB:P34949};
+DE            Short=PMI {ECO:0000250|UniProtKB:P34949};
+GN   Name=Mpi {ECO:0000312|RGD:3107};
+OS   Rattus norvegicus (Rat).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae;
+OC   Murinae; Rattus.
+OX   NCBI_TaxID=10116;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   TISSUE=Lung;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA project:
+RT   the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+CC   -!- FUNCTION: Isomerase that catalyzes the interconversion of fructose-6-P
+CC       and mannose-6-P and has a critical role in the supply of D-mannose
+CC       derivatives required for many eukaryotic glycosylation reactions.
+CC       {ECO:0000250|UniProtKB:P34949}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000250|UniProtKB:P34949};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000250|UniProtKB:P34948};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250|UniProtKB:P34948};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000250|UniProtKB:Q924M7}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; BC079111; AAH79111.1; -; mRNA.
+DR   RefSeq; NP_001004081.1; NM_001004081.1.
+DR   AlphaFoldDB; Q68FX1; -.
+DR   SMR; Q68FX1; -.
+DR   STRING; 10116.ENSRNOP00000025783; -.
+DR   iPTMnet; Q68FX1; -.
+DR   PhosphoSitePlus; Q68FX1; -.
+DR   jPOST; Q68FX1; -.
+DR   PaxDb; 10116-ENSRNOP00000025783; -.
+DR   Ensembl; ENSRNOT00000025783.6; ENSRNOP00000025783.4; ENSRNOG00000018898.6.
+DR   Ensembl; ENSRNOT00055049489; ENSRNOP00055040726; ENSRNOG00055028546.
+DR   Ensembl; ENSRNOT00060029161; ENSRNOP00060023480; ENSRNOG00060016996.
+DR   Ensembl; ENSRNOT00065027891; ENSRNOP00065022011; ENSRNOG00065016717.
+DR   GeneID; 300741; -.
+DR   KEGG; rno:300741; -.
+DR   UCSC; RGD:3107; rat.
+DR   AGR; RGD:3107; -.
+DR   CTD; 4351; -.
+DR   RGD; 3107; Mpi.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   GeneTree; ENSGT00390000016075; -.
+DR   HOGENOM; CLU_026967_2_0_1; -.
+DR   InParanoid; Q68FX1; -.
+DR   OMA; DIGLFCG; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   PhylomeDB; Q68FX1; -.
+DR   TreeFam; TF312831; -.
+DR   Reactome; R-RNO-446205; Synthesis of GDP-mannose.
+DR   SABIO-RK; Q68FX1; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:Q68FX1; -.
+DR   Proteomes; UP000002494; Chromosome 8.
+DR   Bgee; ENSRNOG00000018898; Expressed in skeletal muscle tissue and 20 other cell types or tissues.
+DR   Genevisible; Q68FX1; RN.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; ISS:UniProtKB.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; ISO:RGD.
+DR   GO; GO:0061611; P:mannose to fructose-6-phosphate metabolic process; ISS:UniProtKB.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   2: Evidence at transcript level;
+KW   Acetylation; Cytoplasm; Isomerase; Metal-binding; Phosphoprotein;
+KW   Reference proteome; Zinc.
+FT   INIT_MET        1
+FT                   /note="Removed"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   CHAIN           2..423
+FT                   /note="Mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000194238"
+FT   ACT_SITE        295
+FT                   /evidence="ECO:0000250"
+FT   BINDING         110
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         112
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         137
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         276
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   MOD_RES         2
+FT                   /note="N-acetylalanine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         102
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+FT   MOD_RES         108
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P34949"
+SQ   SEQUENCE   423 AA;  46424 MW;  69C6CE365535002B CRC64;
+     MANPRVFPLS CVVQQYAWGK VGSKSEVACL LACSDPLTQI SEDKPYAELW MGAHPRGDAK
+     ILDNRISQKT LGQWIAENQN SLGQKVKDTF NGKLPFLFKV LSVETALSIQ AHPNKELAEK
+     LHLQAPEHYP DANHKPEMAI ALTPFQGLCG FRPVEEIVTF LKKVPEFQSL IGEDATAQLK
+     KSMNEGSGAM ASALKNCFSH LMKSEKKVVV EQLNLLVKRI SQQISNGNSM DDICGELLLQ
+     LHQQYPGDIG CFAIYLLNLI TLKPGEAMFL EANVPHAYLK GDCVECMACS DNTVRAGLTP
+     KFIDVSTLCE MLDYTPSPSK DRLFAPTLSQ DDPYLSIYDP PVPDFTVMKI EVPGSVTEYK
+     VLTLDSASIL LLVQGTVTAI IPSVQGEIPL SRGGVLFIGA NETVLLKLTV PKNLLIFRAC
+     CLL
+//
+
+
