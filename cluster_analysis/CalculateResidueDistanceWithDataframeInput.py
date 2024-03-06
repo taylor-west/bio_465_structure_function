@@ -129,13 +129,18 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
 
 
 
-invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 
-result = find_clusters(invariant_res_df, 6)
-print(result)
-clusters_df = pd.read_csv('../datafiles/clusters.csv')
-result2 = filter_interesting_clusters(clusters_df, 20)
-print(result2)
-find_common_clusters(result2)
+
+def get_clusters_dataframe():
+    invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
+    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
+    result = find_clusters(invariant_res_df, 6)
+    # print(result)
+    clusters_df = pd.read_csv('../datafiles/clusters.csv')
+    result2 = filter_interesting_clusters(clusters_df, 20)
+    # print(result2)
+    interesting_dataframe = pd.read_csv('../datafiles/interesting_clusters.csv')
+    find_common_clusters(interesting_dataframe)
+
+get_clusters_dataframe()
 
