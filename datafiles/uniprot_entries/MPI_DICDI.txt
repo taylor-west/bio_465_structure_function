@@ -1,0 +1,135 @@
+ID   MPI_DICDI               Reviewed;         452 AA.
+AC   Q54PA0;
+DT   08-APR-2008, integrated into UniProtKB/Swiss-Prot.
+DT   24-MAY-2005, sequence version 1.
+DT   24-JAN-2024, entry version 113.
+DE   RecName: Full=Probable mannose-6-phosphate isomerase;
+DE            EC=5.3.1.8;
+DE   AltName: Full=Phosphohexomutase;
+DE   AltName: Full=Phosphomannose isomerase;
+DE            Short=PMI;
+GN   Name=mpi; ORFNames=DDB_G0284685;
+OS   Dictyostelium discoideum (Social amoeba).
+OC   Eukaryota; Amoebozoa; Evosea; Eumycetozoa; Dictyostelia; Dictyosteliales;
+OC   Dictyosteliaceae; Dictyostelium.
+OX   NCBI_TaxID=44689;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=AX4;
+RX   PubMed=15875012; DOI=10.1038/nature03481;
+RA   Eichinger L., Pachebat J.A., Gloeckner G., Rajandream M.A., Sucgang R.,
+RA   Berriman M., Song J., Olsen R., Szafranski K., Xu Q., Tunggal B.,
+RA   Kummerfeld S., Madera M., Konfortov B.A., Rivero F., Bankier A.T.,
+RA   Lehmann R., Hamlin N., Davies R., Gaudet P., Fey P., Pilcher K., Chen G.,
+RA   Saunders D., Sodergren E.J., Davis P., Kerhornou A., Nie X., Hall N.,
+RA   Anjard C., Hemphill L., Bason N., Farbrother P., Desany B., Just E.,
+RA   Morio T., Rost R., Churcher C.M., Cooper J., Haydock S., van Driessche N.,
+RA   Cronin A., Goodhead I., Muzny D.M., Mourier T., Pain A., Lu M., Harper D.,
+RA   Lindsay R., Hauser H., James K.D., Quiles M., Madan Babu M., Saito T.,
+RA   Buchrieser C., Wardroper A., Felder M., Thangavelu M., Johnson D.,
+RA   Knights A., Loulseged H., Mungall K.L., Oliver K., Price C., Quail M.A.,
+RA   Urushihara H., Hernandez J., Rabbinowitsch E., Steffen D., Sanders M.,
+RA   Ma J., Kohara Y., Sharp S., Simmonds M.N., Spiegler S., Tivey A.,
+RA   Sugano S., White B., Walker D., Woodward J.R., Winckler T., Tanaka Y.,
+RA   Shaulsky G., Schleicher M., Weinstock G.M., Rosenthal A., Cox E.C.,
+RA   Chisholm R.L., Gibbs R.A., Loomis W.F., Platzer M., Kay R.R.,
+RA   Williams J.G., Dear P.H., Noegel A.A., Barrell B.G., Kuspa A.;
+RT   "The genome of the social amoeba Dictyostelium discoideum.";
+RL   Nature 435:43-57(2005).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8;
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105; Evidence={ECO:0000250};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000250};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000305}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AAFI02000070; EAL65112.1; -; Genomic_DNA.
+DR   RefSeq; XP_638475.1; XM_633383.1.
+DR   AlphaFoldDB; Q54PA0; -.
+DR   SMR; Q54PA0; -.
+DR   STRING; 44689.Q54PA0; -.
+DR   PaxDb; 44689-DDB0231659; -.
+DR   EnsemblProtists; EAL65112; EAL65112; DDB_G0284685.
+DR   GeneID; 8624726; -.
+DR   KEGG; ddi:DDB_G0284685; -.
+DR   dictyBase; DDB_G0284685; mpi.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_2_1_1; -.
+DR   InParanoid; Q54PA0; -.
+DR   OMA; DIGLFCG; -.
+DR   PhylomeDB; Q54PA0; -.
+DR   Reactome; R-DDI-446205; Synthesis of GDP-mannose.
+DR   UniPathway; UPA00126; UER00423.
+DR   PRO; PR:Q54PA0; -.
+DR   Proteomes; UP000002195; Chromosome 4.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; ISS:dictyBase.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; ISS:dictyBase.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Cytoplasm; Isomerase; Metal-binding; Reference proteome; Zinc.
+FT   CHAIN           1..452
+FT                   /note="Probable mannose-6-phosphate isomerase"
+FT                   /id="PRO_0000327494"
+FT   ACT_SITE        314
+FT                   /evidence="ECO:0000250"
+FT   BINDING         141
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         143
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         168
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+FT   BINDING         295
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   452 AA;  51091 MW;  FBD259EF215E6D47 CRC64;
+     MENNNNNNNN NNNNNNNNNN IVLLKCVSQN YEWGKYGSNS TVAKLLKGYA KECSDIIKET
+     IPYAELWMGD HVSAPSKVEY KNKELKLREY IDTVQKEINE KSSTSSSSSS SIRGEIVEKR
+     FGNDFPFLFK VLSIRTALSI QAHPDSQLAQ VLFKKYPNIY KDPYHKPEIA IATTPFEALC
+     SFRPLSEIQS FIDTIPEFKN SLPNNLIKLD DCKEYLKSIV TSLLKADGLL ISNNLKELNN
+     RLNEKREEER DDLDRLVLKL YSQYPGDVGV FFAYILNYIV LKPGEALFLG AGEPHAYISG
+     DCVECMAPSD NVVRAGLTPK LKDVDTLGDM LTYRTGRPDL VVPQQRPDLS LTNYRCYQPP
+     VDEFQVEYYH LDDCCKNINV YSSKGPSIVL VYSGNLSIEN KSNQSTLNNL HTGSILFVPA
+     NTDYQFIQSD SSIPVSIYVA SVSNRIFNKN NL
+//
+

@@ -1,0 +1,17 @@
+A0A072TVL2_MEDTR Medicago truncatula 
+A0A3P9PED3_POERE Poecilia reticulata 
+A0A8I3P413_CANLF Canis lupus familiaris 
+B4FP68_MAIZE Zea mays 
+D8SVH8_SELML Selaginella moellendorffii 
+G5AL67_HETGA Heterocephalus glaber 
+MPI2_ARATH Arabidopsis thaliana 
+MPI_CAEEL Caenorhabditis elegans
+MPI_DICDI Dictyostelium discoideum 
+MPI_EMENI Emericella nidulans 
+MPI_MOUSE Mus musculus 
+MPI_RAT Rattus norvegicus 
+MPI_SCHPO Schizosaccharomyces pombe 
+MPI_YEAST Saccharomyces cerevisiae 
+Q2R1L4_ORYSJ Oryza sativa 
+Q3ZB95_DANRE Danio rerio 
+Q9VH77_DROME Drosophila melanogaster 

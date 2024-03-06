@@ -1,0 +1,179 @@
+ID   A0A072TVL2_MEDTR        Unreviewed;       424 AA.
+AC   A0A072TVL2;
+DT   01-OCT-2014, integrated into UniProtKB/TrEMBL.
+DT   01-OCT-2014, sequence version 1.
+DT   24-JAN-2024, entry version 44.
+DE   RecName: Full=Mannose-6-phosphate isomerase {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+DE            EC=5.3.1.8 {ECO:0000256|ARBA:ARBA00011956, ECO:0000256|RuleBase:RU000611};
+GN   Name=25497434 {ECO:0000313|EnsemblPlants:KEH21549};
+GN   OrderedLocusNames=MTR_7g007320 {ECO:0000313|EMBL:KEH21549.1};
+GN   ORFNames=MtrunA17_Chr7g0215521 {ECO:0000313|EMBL:RHN44086.1};
+OS   Medicago truncatula (Barrel medic) (Medicago tribuloides).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fabales; Fabaceae; Papilionoideae; 50 kb inversion clade;
+OC   NPAAA clade; Hologalegina; IRL clade; Trifolieae; Medicago.
+OX   NCBI_TaxID=3880 {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051};
+RN   [1] {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=A17 {ECO:0000313|EMBL:KEH21549.1}, and cv. Jemalong A17
+RC   {ECO:0000313|EnsemblPlants:KEH21549,
+RC   ECO:0000313|Proteomes:UP000002051};
+RX   PubMed=22089132; DOI=10.1038/nature10625;
+RA   Young N.D., Debelle F., Oldroyd G.E., Geurts R., Cannon S.B., Udvardi M.K.,
+RA   Benedito V.A., Mayer K.F., Gouzy J., Schoof H., Van de Peer Y., Proost S.,
+RA   Cook D.R., Meyers B.C., Spannagl M., Cheung F., De Mita S.,
+RA   Krishnakumar V., Gundlach H., Zhou S., Mudge J., Bharti A.K., Murray J.D.,
+RA   Naoumkina M.A., Rosen B., Silverstein K.A., Tang H., Rombauts S.,
+RA   Zhao P.X., Zhou P., Barbe V., Bardou P., Bechner M., Bellec A., Berger A.,
+RA   Berges H., Bidwell S., Bisseling T., Choisne N., Couloux A., Denny R.,
+RA   Deshpande S., Dai X., Doyle J.J., Dudez A.M., Farmer A.D., Fouteau S.,
+RA   Franken C., Gibelin C., Gish J., Goldstein S., Gonzalez A.J., Green P.J.,
+RA   Hallab A., Hartog M., Hua A., Humphray S.J., Jeong D.H., Jing Y.,
+RA   Jocker A., Kenton S.M., Kim D.J., Klee K., Lai H., Lang C., Lin S.,
+RA   Macmil S.L., Magdelenat G., Matthews L., McCorrison J., Monaghan E.L.,
+RA   Mun J.H., Najar F.Z., Nicholson C., Noirot C., O'Bleness M., Paule C.R.,
+RA   Poulain J., Prion F., Qin B., Qu C., Retzel E.F., Riddle C., Sallet E.,
+RA   Samain S., Samson N., Sanders I., Saurat O., Scarpelli C., Schiex T.,
+RA   Segurens B., Severin A.J., Sherrier D.J., Shi R., Sims S., Singer S.R.,
+RA   Sinharoy S., Sterck L., Viollet A., Wang B.B., Wang K., Wang M., Wang X.,
+RA   Warfsmann J., Weissenbach J., White D.D., White J.D., Wiley G.B.,
+RA   Wincker P., Xing Y., Yang L., Yao Z., Ying F., Zhai J., Zhou L., Zuber A.,
+RA   Denarie J., Dixon R.A., May G.D., Schwartz D.C., Rogers J., Quetier F.,
+RA   Town C.D., Roe B.A.;
+RT   "The Medicago genome provides insight into the evolution of rhizobial
+RT   symbioses.";
+RL   Nature 480:520-524(2011).
+RN   [2] {ECO:0000313|EMBL:KEH21549.1, ECO:0000313|Proteomes:UP000002051}
+RP   GENOME REANNOTATION.
+RC   STRAIN=A17 {ECO:0000313|EMBL:KEH21549.1}, and cv. Jemalong A17
+RC   {ECO:0000313|EnsemblPlants:KEH21549,
+RC   ECO:0000313|Proteomes:UP000002051};
+RX   PubMed=24767513; DOI=10.1186/1471-2164-15-312;
+RA   Tang H., Krishnakumar V., Bidwell S., Rosen B., Chan A., Zhou S.,
+RA   Gentzbittel L., Childs K.L., Yandell M., Gundlach H., Mayer K.F.,
+RA   Schwartz D.C., Town C.D.;
+RT   "An improved genome release (version Mt4.0) for the model legume Medicago
+RT   truncatula.";
+RL   BMC Genomics 15:312-312(2014).
+RN   [3] {ECO:0000313|EnsemblPlants:KEH21549}
+RP   IDENTIFICATION.
+RC   STRAIN=cv. Jemalong A17 {ECO:0000313|EnsemblPlants:KEH21549};
+RG   EnsemblPlants;
+RL   Submitted (APR-2015) to UniProtKB.
+RN   [4] {ECO:0000313|EMBL:RHN44086.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Leaves {ECO:0000313|EMBL:RHN44086.1};
+RA   Pecrix Y., Gamas P., Carrere S.;
+RT   "Whole-genome landscape of Medicago truncatula symbiotic genes.";
+RL   Nat. Plants 0:0-0(2018).
+CC   -!- FUNCTION: Involved in the synthesis of the GDP-mannose and dolichol-
+CC       phosphate-mannose required for a number of critical mannosyl transfer
+CC       reactions. {ECO:0000256|ARBA:ARBA00002564}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=D-mannose 6-phosphate = D-fructose 6-phosphate;
+CC         Xref=Rhea:RHEA:12356, ChEBI:CHEBI:58735, ChEBI:CHEBI:61527;
+CC         EC=5.3.1.8; Evidence={ECO:0000256|ARBA:ARBA00000757,
+CC         ECO:0000256|RuleBase:RU000611};
+CC   -!- COFACTOR:
+CC       Name=Zn(2+); Xref=ChEBI:CHEBI:29105;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR001480-2,
+CC         ECO:0000256|RuleBase:RU000611};
+CC       Note=Binds 1 zinc ion per subunit. {ECO:0000256|PIRSR:PIRSR001480-2,
+CC       ECO:0000256|RuleBase:RU000611};
+CC   -!- PATHWAY: Nucleotide-sugar biosynthesis; GDP-alpha-D-mannose
+CC       biosynthesis; alpha-D-mannose 1-phosphate from D-fructose 6-phosphate:
+CC       step 1/2. {ECO:0000256|ARBA:ARBA00004666}.
+CC   -!- SIMILARITY: Belongs to the mannose-6-phosphate isomerase type 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010772, ECO:0000256|RuleBase:RU004189}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CM001223; KEH21549.1; -; Genomic_DNA.
+DR   EMBL; PSQE01000007; RHN44086.1; -; Genomic_DNA.
+DR   RefSeq; XP_013447468.1; XM_013592014.1.
+DR   AlphaFoldDB; A0A072TVL2; -.
+DR   STRING; 3880.A0A072TVL2; -.
+DR   PaxDb; 3880-AES84461; -.
+DR   EnsemblPlants; KEH21549; KEH21549; MTR_7g007320.
+DR   GeneID; 25497434; -.
+DR   Gramene; KEH21549; KEH21549; MTR_7g007320.
+DR   KEGG; mtr:25497434; -.
+DR   eggNOG; KOG2757; Eukaryota.
+DR   HOGENOM; CLU_026967_0_0_1; -.
+DR   OrthoDB; 1116301at2759; -.
+DR   UniPathway; UPA00126; UER00423.
+DR   Proteomes; UP000002051; Chromosome 7.
+DR   Proteomes; UP000265566; Chromosome 7.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0004476; F:mannose-6-phosphate isomerase activity; IBA:GO_Central.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:InterPro.
+DR   GO; GO:0005975; P:carbohydrate metabolic process; IEA:InterPro.
+DR   GO; GO:0009298; P:GDP-mannose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd07011; cupin_PMI_type_I_N; 1.
+DR   Gene3D; 2.60.120.10; Jelly Rolls; 2.
+DR   Gene3D; 1.10.441.10; Phosphomannose Isomerase, domain 2; 1.
+DR   InterPro; IPR001250; Man6P_Isoase-1.
+DR   InterPro; IPR016305; Mannose-6-P_Isomerase.
+DR   InterPro; IPR018050; Pmannose_isomerase-type1_CS.
+DR   InterPro; IPR046456; PMI_typeI_C.
+DR   InterPro; IPR046457; PMI_typeI_cat.
+DR   InterPro; IPR046458; PMI_typeI_hel.
+DR   InterPro; IPR014710; RmlC-like_jellyroll.
+DR   InterPro; IPR011051; RmlC_Cupin_sf.
+DR   NCBIfam; TIGR00218; manA; 1.
+DR   PANTHER; PTHR10309; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   PANTHER; PTHR10309:SF0; MANNOSE-6-PHOSPHATE ISOMERASE; 1.
+DR   Pfam; PF01238; PMI_typeI_C; 1.
+DR   Pfam; PF20511; PMI_typeI_cat; 1.
+DR   Pfam; PF20512; PMI_typeI_hel; 1.
+DR   PIRSF; PIRSF001480; Mannose-6-phosphate_isomerase; 1.
+DR   PRINTS; PR00714; MAN6PISMRASE.
+DR   SUPFAM; SSF51182; RmlC-like cupins; 1.
+DR   PROSITE; PS00965; PMI_I_1; 1.
+DR   PROSITE; PS00966; PMI_I_2; 1.
+PE   3: Inferred from homology;
+KW   Isomerase {ECO:0000256|ARBA:ARBA00023235, ECO:0000256|RuleBase:RU000611};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR001480-2};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000002051};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PIRSR:PIRSR001480-2}.
+FT   DOMAIN          10..156
+FT                   /note="Phosphomannose isomerase type I catalytic"
+FT                   /evidence="ECO:0000259|Pfam:PF20511"
+FT   DOMAIN          187..260
+FT                   /note="Phosphomannose isomerase type I helical insertion"
+FT                   /evidence="ECO:0000259|Pfam:PF20512"
+FT   DOMAIN          337..376
+FT                   /note="Phosphomannose isomerase type I C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF01238"
+FT   ACT_SITE        298
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-1"
+FT   BINDING         115
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         117
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         142
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+FT   BINDING         279
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR001480-2"
+SQ   SEQUENCE   424 AA;  47104 MW;  B8D0E56CFDB3167F CRC64;
+     MEDSNPNNSL QKLHCSVKNY DWGLPGQLSQ VAKLSELNSG FKFDPMKPYA ELWIGTHDSG
+     PSFLVSDDDG QRISLKDWIF DNPDLLLGHK VVKKWGSDLP FLFKVLSVGK ALSIQAHPDK
+     ELARMLHKLH PDVYKDGNHK PEMALAMTDF EALCGFITLK ELKAVIHTVP EVVNLVGASN
+     ANLVLETSDQ NEEKVKPVLQ AVFTHLMSAS KEIVTDAVNR LINRLHEESE MRHLTEKELL
+     VLRLENQYPS DIGVIAAFFL NHVKLNPGEA LFLGANEPHA YLSGECIECM ATSDNVVRAG
+     LTPKFIDVPT LCSMLTYKQG FPEILRGVSM NPYVNKYIPP FEEFEIDRCI LPKGQTVVFP
+     AVPGPSIFLV TAGEGSMNTG SPKVYEITEG DALFAPAYTE ISVASESELH LYRTGINSKF
+     FEDS
+//
+
