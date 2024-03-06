@@ -64,7 +64,7 @@ uniprot_ids = ['P37869', 'A5FUW3', 'A0A411SXA6', 'A0A0P7YND4', 'B6W7V0', 'Q815K8
 # uniprot_df['pdb_sequence'] = pdb_sequences
 # uniprot_df.to_csv('compare_sequences.csv')
 
-seq_df = pd.read_csv('compare_sequences.csv')
+seq_df = pd.read_csv('../datafiles/compare_sequences.csv')
 
 seq_matches = []
 for i in range(len(seq_df)):

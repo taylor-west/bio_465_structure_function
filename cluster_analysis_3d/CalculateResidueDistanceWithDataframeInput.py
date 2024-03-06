@@ -8,7 +8,7 @@ import pandas as pd
 import ast
 
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
-    residue_codes = pd.read_csv('residue_codes.csv')
+    residue_codes = pd.read_csv('../datafiles/residue_codes.csv')
 
     filepath = '../datafiles/pdb_files/'
     os.makedirs(filepath, exist_ok=True)
@@ -99,7 +99,7 @@ invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
 clusters_df = pd.read_csv('../datafiles/clusters.csv')
 invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 # print(invariant_res_df)
-result = find_clusters(invariant_res_df, 100)
+result = find_clusters(invariant_res_df, 10)
 print(result)
 result2 = filter_interesting_clusters(clusters_df, 20)
 print(result2)
