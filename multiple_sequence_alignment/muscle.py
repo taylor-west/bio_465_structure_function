@@ -229,9 +229,6 @@ def multiple_sequence_alignment(uniprot_ids):
         uniprot_id = retrieve_uniprot_id(f'{PATH_TO_UNIPROT_ENTRIES}/{key}.txt')
         uniprot_invariant_locs_dict[uniprot_id] = val
         invariant_res_df.loc[invariant_res_df['entry_id'] == key, 'uniprot_id'] = uniprot_id
-
+    
+    invariant_res_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
     return invariant_res_df
-
-result_df = multiple_sequence_alignment()
-result_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
-print(result_df)
