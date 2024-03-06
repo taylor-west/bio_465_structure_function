@@ -3,14 +3,12 @@ BIO 465 - Capstone Project
 
 
 ## Setup
-- Install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) if you don't already have it
-- run `conda create --name <env> --file requirements.txt && conda activate <env>`
-
-
-### If not using arm64 architecture
-- create a new conda environement by running `conda create --name <env>`
-- activate this environment with `conda activate <env>`
-- install the following packages:
+- download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) if you don't already have it
+- add conda to PATH (if necessary)
+- create a new conda environement with the target by running `conda create --name <env>` (replace `<env>` with your desired environment name)
+   - you can create the environment with the dependencies found in `requirements.txt` pre-installed by running `conda create --name <env> --file requirements.txt`
+- activate the conda environment `conda activate <env>`
+- install the necessary conda packages manually if needed
    - `conda install python`
    - `conda install requests`
    - `conda install numpy`
@@ -18,7 +16,7 @@ BIO 465 - Capstone Project
    - `conda install -c etetoolkit ete3`
    - `conda install biopython`
 
-[post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica)
+<!-- [post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica) -->
 
 
 
