@@ -96,15 +96,37 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
     return clusters_df
 
 
-# def find_common_clusters(res_clusters_df: pd.DataFrame):
-#     already_searched = []
-#     for i, row in res_clusters_df.iterrows():
-#         MSA_pos = row['MSA_pos']
-#         if MSA_pos in already_searched:
-#             continue
-#         already_searched.append(MSA_pos)
-#         same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
-#     pass
+def find_common_clusters(res_clusters_df: pd.DataFrame):
+    invariant_MSA_positions = set(res_clusters_df['MSA_pos'])
+    MSA_cluster_positions_list = []
+    for i, row in res_clusters_df.iterrows():
+        if row['separated_clusters'] is None:
+            MSA_cluster_positions_list.append(None)
+            continue
+        MSA_cluster_positions = []
+        separated_cluster = row['separated_clusters']
+        if isinstance(separated_cluster, str):
+            separated_cluster = ast.literal_eval(separated_cluster)
+        for pos in separated_cluster:
+            MSA_iteration = 0
+            seq_iteration = 0
+            seq = row['MSA_sequence']
+            for i in range(len(seq)):
+                if seq[i] == '-':
+                    MSA_iteration += 1
+                else:
+                    MSA_iteration += 1
+                    seq_iteration += 1
+                if seq_iteration == pos:
+                    MSA_cluster_positions.append(MSA_iteration)
+        MSA_cluster_positions_list.append(MSA_cluster_positions)
+    res_clusters_df['MSA_cluster_positions'] = MSA_cluster_positions_list
+    res_clusters_df.to_csv('../datafiles/filtered_dataframe.csv')
+    return res_clusters_df
+
+    # for MSA_pos in invariant_MSA_positions:
+    #     same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
+
 
 
 invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
@@ -115,4 +137,5 @@ print(result)
 clusters_df = pd.read_csv('../datafiles/clusters.csv')
 result2 = filter_interesting_clusters(clusters_df, 20)
 print(result2)
+find_common_clusters(result2)
 

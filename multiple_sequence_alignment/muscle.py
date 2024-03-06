@@ -206,7 +206,7 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
     counter_dictionary = make_counter_dictionary_from_alignment_ids(alignment)
     invariant_locations_dict = make_position_dictionary_from_alignment_ids(alignment)
 
-    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue'])
+    invariant_res_df = pd.DataFrame(columns=['entry_id', 'uniprot_id', 'MSA_pos', 'seq_pos', 'residue', 'MSA_sequence'])
 
 
     for i, char in enumerate(column_annotations):
@@ -223,7 +223,7 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
                 counter_dictionary[seq.id] += 1
             if meets_threshold:
                 invariant_locations_dict[seq.id].append((counter_dictionary[seq.id], seq[i]))
-                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i]]
+                invariant_res_df.loc[len(invariant_res_df)] = [seq.id, None, (i + 1), counter_dictionary[seq.id], seq[i], seq.seq]
 
     uniprot_invariant_locs_dict = {}
     for key, val in invariant_locations_dict.items():
@@ -233,22 +233,3 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
     
     invariant_res_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
     return invariant_res_df
-
-uniprot_ids = [
-    'P00397',
-    'P05503',
-    'E9NPC9',
-    'Q9ZZ64',
-    'Q9MIY8',
-    'A0A023UN37',
-    'P00399',
-    'P24893',
-    'A0A126TGS8',
-    'P14578',
-    'P00401',
-    'H9D0P5',
-    'P07657',
-    'O21042'
-]
-
-multiple_sequence_alignment(uniprot_ids)
