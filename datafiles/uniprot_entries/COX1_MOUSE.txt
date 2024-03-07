@@ -1,0 +1,432 @@
+ID   COX1_MOUSE              Reviewed;         514 AA.
+AC   P00397;
+DT   21-JUL-1986, integrated into UniProtKB/Swiss-Prot.
+DT   01-APR-2015, sequence version 2.
+DT   24-JAN-2024, entry version 168.
+DE   RecName: Full=Cytochrome c oxidase subunit 1;
+DE            EC=7.1.1.9;
+DE   AltName: Full=Cytochrome c oxidase polypeptide I;
+GN   Name=Mtco1; Synonyms=COI, mt-Co1;
+OS   Mus musculus (Mouse).
+OG   Mitochondrion.
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae;
+OC   Murinae; Mus; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   PubMed=7332926; DOI=10.1016/0092-8674(81)90300-7;
+RA   Bibb M.J., van Etten R.A., Wright C.T., Walberg M.W., Clayton D.A.;
+RT   "Sequence and gene organization of mouse mitochondrial DNA.";
+RL   Cell 26:167-180(1981).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=C57BL/6J;
+RX   PubMed=12954771; DOI=10.1093/nar/gkg739;
+RA   Bayona-Bafaluy M.P., Acin-Perez R., Mullikin J.C., Park J.S.,
+RA   Moreno-Loshuertos R., Hu P., Perez-Martos A., Fernandez-Silva P., Bai Y.,
+RA   Enriquez J.A.;
+RT   "Revisiting the mouse mitochondrial DNA sequence.";
+RL   Nucleic Acids Res. 31:5349-5355(2003).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-45.
+RC   STRAIN=C57BL/6J; TISSUE=Spleen;
+RX   PubMed=8617953;
+RA   Morse M.C., Bleau G., Dabhi V.M., Hetu F., Drobetsky E.A., Lindahl K.F.,
+RA   Perreault C.;
+RT   "The COI mitochondrial gene encodes a minor histocompatibility antigen
+RT   presented by H2-M3.";
+RL   J. Immunol. 156:3301-3307(1996).
+RN   [4]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Brain, Brown adipose tissue, Heart, Kidney, Liver, Lung,
+RC   Spleen, and Testis;
+RX   PubMed=21183079; DOI=10.1016/j.cell.2010.12.001;
+RA   Huttlin E.L., Jedrychowski M.P., Elias J.E., Goswami T., Rad R.,
+RA   Beausoleil S.A., Villen J., Haas W., Sowa M.E., Gygi S.P.;
+RT   "A tissue-specific atlas of mouse protein phosphorylation and expression.";
+RL   Cell 143:1174-1189(2010).
+CC   -!- FUNCTION: Component of the cytochrome c oxidase, the last enzyme in the
+CC       mitochondrial electron transport chain which drives oxidative
+CC       phosphorylation. The respiratory chain contains 3 multisubunit
+CC       complexes succinate dehydrogenase (complex II, CII), ubiquinol-
+CC       cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III,
+CC       CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to
+CC       transfer electrons derived from NADH and succinate to molecular oxygen,
+CC       creating an electrochemical gradient over the inner membrane that
+CC       drives transmembrane transport and the ATP synthase. Cytochrome c
+CC       oxidase is the component of the respiratory chain that catalyzes the
+CC       reduction of oxygen to water. Electrons originating from reduced
+CC       cytochrome c in the intermembrane space (IMS) are transferred via the
+CC       dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1
+CC       to the active site in subunit 1, a binuclear center (BNC) formed by
+CC       heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2
+CC       water molecules using 4 electrons from cytochrome c in the IMS and 4
+CC       protons from the mitochondrial matrix. {ECO:0000250|UniProtKB:P00401}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=4 Fe(II)-[cytochrome c] + 8 H(+)(in) + O2 = 4 Fe(III)-
+CC         [cytochrome c] + 4 H(+)(out) + 2 H2O; Xref=Rhea:RHEA:11436,
+CC         Rhea:RHEA-COMP:10350, Rhea:RHEA-COMP:14399, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:15379, ChEBI:CHEBI:29033,
+CC         ChEBI:CHEBI:29034; EC=7.1.1.9;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:11437;
+CC         Evidence={ECO:0000250|UniProtKB:P00401};
+CC   -!- COFACTOR:
+CC       Name=heme; Xref=ChEBI:CHEBI:30413;
+CC         Evidence={ECO:0000250|UniProtKB:P00396};
+CC       Note=Binds 2 heme A groups non-covalently per subunit.
+CC       {ECO:0000250|UniProtKB:P00396};
+CC   -!- COFACTOR:
+CC       Name=Cu cation; Xref=ChEBI:CHEBI:23378;
+CC         Evidence={ECO:0000250|UniProtKB:P00396};
+CC       Note=Binds a copper B center. {ECO:0000250|UniProtKB:P00396};
+CC   -!- PATHWAY: Energy metabolism; oxidative phosphorylation.
+CC       {ECO:0000250|UniProtKB:P00401}.
+CC   -!- SUBUNIT: Component of the cytochrome c oxidase (complex IV, CIV), a
+CC       multisubunit enzyme composed of 14 subunits. The complex is composed of
+CC       a catalytic core of 3 subunits MT-CO1, MT-CO2 and MT-CO3, encoded in
+CC       the mitochondrial DNA, and 11 supernumerary subunits COX4I, COX5A,
+CC       COX5B, COX6A, COX6B, COX6C, COX7A, COX7B, COX7C, COX8 and NDUFA4, which
+CC       are encoded in the nuclear genome. The complex exists as a monomer or a
+CC       dimer and forms supercomplexes (SCs) in the inner mitochondrial
+CC       membrane with NADH-ubiquinone oxidoreductase (complex I, CI) and
+CC       ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex
+CC       III, CIII), resulting in different assemblies (supercomplex
+CC       SCI(1)III(2)IV(1) and megacomplex MCI(2)III(2)IV(2)) (By similarity).
+CC       As a newly synthesized protein, rapidly incorporates into a multi-
+CC       subunit assembly intermediate in the inner membrane, called MITRAC
+CC       (mitochondrial translation regulation assembly intermediate of
+CC       cytochrome c oxidase) complex, whose core components are COA3/MITRAC12
+CC       and COX14. Within the MITRAC complex, interacts with COA3 and with
+CC       SMIM20/MITRAC7; the interaction with SMIM20 stabilizes the newly
+CC       synthesized MT-CO1 and prevents its premature turnover. Interacts with
+CC       TMEM177 in a COX20-dependent manner (By similarity).
+CC       {ECO:0000250|UniProtKB:P00395, ECO:0000250|UniProtKB:P00396}.
+CC   -!- SUBCELLULAR LOCATION: Mitochondrion inner membrane
+CC       {ECO:0000250|UniProtKB:P00396}; Multi-pass membrane protein
+CC       {ECO:0000250|UniProtKB:P00396}.
+CC   -!- SIMILARITY: Belongs to the heme-copper respiratory oxidase family.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; J01420; AAB48646.1; -; Genomic_DNA.
+DR   EMBL; V00711; CAA24082.1; -; Genomic_DNA.
+DR   EMBL; AY172335; AAN85124.1; -; Genomic_DNA.
+DR   EMBL; U39315; AAA85227.1; -; Genomic_DNA.
+DR   PIR; A00465; ODMS1.
+DR   RefSeq; NP_904330.1; NC_005089.1.
+DR   PDB; 7O37; EM; 3.20 A; a=1-514.
+DR   PDB; 7O3C; EM; 3.30 A; a=1-514.
+DR   PDB; 7O3E; EM; 3.60 A; a=1-514.
+DR   PDBsum; 7O37; -.
+DR   PDBsum; 7O3C; -.
+DR   PDBsum; 7O3E; -.
+DR   AlphaFoldDB; P00397; -.
+DR   EMDB; EMD-12702; -.
+DR   EMDB; EMD-12703; -.
+DR   EMDB; EMD-12705; -.
+DR   SMR; P00397; -.
+DR   DIP; DIP-61656N; -.
+DR   IntAct; P00397; 3.
+DR   MINT; P00397; -.
+DR   STRING; 10090.ENSMUSP00000080993; -.
+DR   GlyGen; P00397; 2 sites, 1 O-linked glycan (2 sites).
+DR   iPTMnet; P00397; -.
+DR   MetOSite; P00397; -.
+DR   PhosphoSitePlus; P00397; -.
+DR   SwissPalm; P00397; -.
+DR   jPOST; P00397; -.
+DR   PaxDb; 10090-ENSMUSP00000080993; -.
+DR   PeptideAtlas; P00397; -.
+DR   ProteomicsDB; 284149; -.
+DR   Pumba; P00397; -.
+DR   Antibodypedia; 4261; 258 antibodies from 32 providers.
+DR   Ensembl; ENSMUST00000082402.1; ENSMUSP00000080993.1; ENSMUSG00000064351.1.
+DR   GeneID; 17708; -.
+DR   KEGG; mmu:17708; -.
+DR   AGR; MGI:102504; -.
+DR   CTD; 4512; -.
+DR   MGI; MGI:102504; mt-Co1.
+DR   VEuPathDB; HostDB:ENSMUSG00000064351; -.
+DR   eggNOG; KOG4769; Eukaryota.
+DR   GeneTree; ENSGT00390000001518; -.
+DR   HOGENOM; CLU_011899_7_3_1; -.
+DR   InParanoid; P00397; -.
+DR   OMA; WAMMSIG; -.
+DR   OrthoDB; 5387269at2759; -.
+DR   PhylomeDB; P00397; -.
+DR   Reactome; R-MMU-5628897; TP53 Regulates Metabolic Genes.
+DR   Reactome; R-MMU-611105; Respiratory electron transport.
+DR   Reactome; R-MMU-9707564; Cytoprotection by HMOX1.
+DR   UniPathway; UPA00705; -.
+DR   ChiTaRS; mt-Co1; mouse.
+DR   PRO; PR:P00397; -.
+DR   Proteomes; UP000000589; Mitochondrion.
+DR   RNAct; P00397; Protein.
+DR   Bgee; ENSMUSG00000064351; Expressed in dentate gyrus of hippocampal formation granule cell and 64 other cell types or tissues.
+DR   ExpressionAtlas; P00397; baseline and differential.
+DR   GO; GO:0005743; C:mitochondrial inner membrane; IDA:MGI.
+DR   GO; GO:0031966; C:mitochondrial membrane; ISO:MGI.
+DR   GO; GO:0005750; C:mitochondrial respiratory chain complex III; ISO:MGI.
+DR   GO; GO:0005751; C:mitochondrial respiratory chain complex IV; IDA:MGI.
+DR   GO; GO:0005739; C:mitochondrion; IDA:MGI.
+DR   GO; GO:0045277; C:respiratory chain complex IV; ISS:UniProtKB.
+DR   GO; GO:0004129; F:cytochrome-c oxidase activity; IDA:MGI.
+DR   GO; GO:0020037; F:heme binding; IEA:InterPro.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0021549; P:cerebellum development; IEA:Ensembl.
+DR   GO; GO:0015990; P:electron transport coupled proton transport; IBA:GO_Central.
+DR   GO; GO:0006123; P:mitochondrial electron transport, cytochrome c to oxygen; IBA:GO_Central.
+DR   GO; GO:0046688; P:response to copper ion; IEA:Ensembl.
+DR   GO; GO:0051602; P:response to electrical stimulus; IEA:Ensembl.
+DR   GO; GO:0001666; P:response to hypoxia; IEA:Ensembl.
+DR   GO; GO:0006979; P:response to oxidative stress; ISO:MGI.
+DR   CDD; cd01663; Cyt_c_Oxidase_I; 1.
+DR   Gene3D; 1.20.210.10; Cytochrome c oxidase-like, subunit I domain; 1.
+DR   InterPro; IPR023616; Cyt_c_oxase-like_su1_dom.
+DR   InterPro; IPR036927; Cyt_c_oxase-like_su1_sf.
+DR   InterPro; IPR000883; Cyt_C_Oxase_1.
+DR   InterPro; IPR023615; Cyt_c_Oxase_su1_BS.
+DR   InterPro; IPR033944; Cyt_c_oxase_su1_dom.
+DR   PANTHER; PTHR10422; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   PANTHER; PTHR10422:SF18; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   Pfam; PF00115; COX1; 1.
+DR   PRINTS; PR01165; CYCOXIDASEI.
+DR   SUPFAM; SSF81442; Cytochrome c oxidase subunit I-like; 1.
+DR   PROSITE; PS50855; COX1; 1.
+DR   PROSITE; PS00077; COX1_CUB; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Calcium; Copper; Electron transport; Heme; Iron; Magnesium;
+KW   Membrane; Metal-binding; Mitochondrion; Mitochondrion inner membrane;
+KW   Reference proteome; Respiratory chain; Sodium; Translocase; Transmembrane;
+KW   Transmembrane helix; Transport.
+FT   CHAIN           1..514
+FT                   /note="Cytochrome c oxidase subunit 1"
+FT                   /id="PRO_0000183363"
+FT   TOPO_DOM        1..11
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        12..40
+FT                   /note="Helical; Name=I"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        41..50
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        51..86
+FT                   /note="Helical; Name=II"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        87..94
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        95..117
+FT                   /note="Helical; Name=III"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        118..140
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        141..170
+FT                   /note="Helical; Name=IV"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        171..182
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        183..212
+FT                   /note="Helical; Name=V"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        213..227
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        228..261
+FT                   /note="Helical; Name=VI"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        262..269
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        270..286
+FT                   /note="Helical; Name=VII"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        287..298
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        299..327
+FT                   /note="Helical; Name=VIII"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        328..335
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        336..357
+FT                   /note="Helical; Name=IX"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        358..370
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        371..400
+FT                   /note="Helical; Name=X"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        401..406
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        407..433
+FT                   /note="Helical; Name=XI"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        434..446
+FT                   /note="Mitochondrial intermembrane"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TRANSMEM        447..478
+FT                   /note="Helical; Name=XII"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   TOPO_DOM        479..514
+FT                   /note="Mitochondrial matrix"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         40
+FT                   /ligand="Na(+)"
+FT                   /ligand_id="ChEBI:CHEBI:29101"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         45
+FT                   /ligand="Na(+)"
+FT                   /ligand_id="ChEBI:CHEBI:29101"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         61
+FT                   /ligand="Fe(II)-heme a"
+FT                   /ligand_id="ChEBI:CHEBI:61715"
+FT                   /ligand_note="low-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         240
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         244
+FT                   /ligand="O2"
+FT                   /ligand_id="ChEBI:CHEBI:15379"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         290
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         291
+FT                   /ligand="Cu cation"
+FT                   /ligand_id="ChEBI:CHEBI:23378"
+FT                   /ligand_label="B"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         368
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_note="ligand shared with MT-CO2"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         369
+FT                   /ligand="Mg(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:18420"
+FT                   /ligand_note="ligand shared with MT-CO2"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         376
+FT                   /ligand="heme a3"
+FT                   /ligand_id="ChEBI:CHEBI:83282"
+FT                   /ligand_note="high-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         378
+FT                   /ligand="Fe(II)-heme a"
+FT                   /ligand_id="ChEBI:CHEBI:61715"
+FT                   /ligand_note="low-spin"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   BINDING         441
+FT                   /ligand="Na(+)"
+FT                   /ligand_id="ChEBI:CHEBI:29101"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   CROSSLNK        240..244
+FT                   /note="1'-histidyl-3'-tyrosine (His-Tyr)"
+FT                   /evidence="ECO:0000250|UniProtKB:P00396"
+FT   CONFLICT        136
+FT                   /note="L -> P (in Ref. 1; AAB48646/CAA24082)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        137
+FT                   /note="A -> V (in Ref. 1; AAB48646/CAA24082)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        304
+FT                   /note="Y -> C (in Ref. 1; AAB48646/CAA24082)"
+FT                   /evidence="ECO:0000305"
+FT   HELIX           3..7
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           12..40
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   STRAND          43..45
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   STRAND          47..50
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           51..67
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           70..86
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           95..115
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   STRAND          118..120
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   TURN            130..133
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   TURN            135..138
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           142..170
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           178..180
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           183..214
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           222..224
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           228..261
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           270..283
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           288..291
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           299..326
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   TURN            327..329
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           336..359
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           361..367
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           371..400
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           407..425
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           427..434
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   STRAND          437..439
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           445..447
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           448..478
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   STRAND          482..484
+FT                   /evidence="ECO:0007829|PDB:7O3C"
+FT   TURN            486..490
+FT                   /evidence="ECO:0007829|PDB:7O37"
+FT   HELIX           492..494
+FT                   /evidence="ECO:0007829|PDB:7O37"
+SQ   SEQUENCE   514 AA;  56910 MW;  9F7FB173ED6A9763 CRC64;
+     MFINRWLFST NHKDIGTLYL LFGAWAGMVG TALSILIRAE LGQPGALLGD DQIYNVIVTA
+     HAFVMIFFMV MPMMIGGFGN WLVPLMIGAP DMAFPRMNNM SFWLLPPSFL LLLASSMVEA
+     GAGTGWTVYP PLAGNLAHAG ASVDLTIFSL HLAGVSSILG AINFITTIIN MKPPAMTQYQ
+     TPLFVWSVLI TAVLLLLSLP VLAAGITMLL TDRNLNTTFF DPAGGGDPIL YQHLFWFFGH
+     PEVYILILPG FGIISHVVTY YSGKKEPFGY MGMVWAMMSI GFLGFIVWAH HMFTVGLDVD
+     TRAYFTSATM IIAIPTGVKV FSWLATLHGG NIKWSPAMLW ALGFIFLFTV GGLTGIVLSN
+     SSLDIVLHDT YYVVAHFHYV LSMGAVFAIM AGFVHWFPLF SGFTLDDTWA KAHFAIMFVG
+     VNMTFFPQHF LGLSGMPRRY SDYPDAYTTW NTVSSMGSFI SLTAVLIMIF MIWEAFASKR
+     EVMSVSYAST NLEWLHGCPP PYHTFEEPTY VKVK
+//
+

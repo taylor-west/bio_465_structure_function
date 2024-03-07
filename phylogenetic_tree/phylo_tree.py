@@ -5,13 +5,16 @@ import ete3
 import requests
 from ete3 import faces, NodeStyle
 
-PATH_TO_PARENT = os.path.dirname(os.getcwd())
-PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "datafiles")
+CWD = os.getcwd()
+PATH_TO_DATAFILES = os.path.join(CWD, "../datafiles")
+PATH_TO_TREE_DATA = os.path.join(PATH_TO_DATAFILES, "tree_data")
+PATH_TO_MUSCLE_DATA = os.path.join(PATH_TO_DATAFILES, "muscle_data")
+PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
 
 def make_tree_with_species_names():
     idDict = {}
-    names = open(os.path.join(PATH_TO_DATAFILES, "organisms.txt"), "r")
+    names = open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), "r")
     lines = names.readlines()
     for line in lines:
         line = line.strip().split()
@@ -22,7 +25,7 @@ def make_tree_with_species_names():
 
     #get_newick_tree()
 
-    file_path = os.path.join(PATH_TO_DATAFILES, "newick.txt")
+    file_path = os.path.join(PATH_TO_TREE_DATA, "newick.txt")
     tree = ete3.Tree(file_path)
 
     #change nodes to be labeled with species names instead of protein IDs
@@ -128,7 +131,7 @@ def my_layout(node):
 def get_newick_tree():
     email = "alexwalbom@gmail.com"
     title = "Eukaryotes"
-    with open(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), 'r') as inF:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "alignment.aln"), 'r') as inF:
         sequence = inF.read()
     clustering = "UPGMA"
     data = {
@@ -152,11 +155,11 @@ def get_newick_tree():
     getURL = f"https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/result/{jobID}/{resultType}"
     response = requests.get(getURL)
     newick_tree = response.text
-    with open(os.path.join(PATH_TO_DATAFILES, "newick.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_TREE_DATA, "newick.txt"), 'w') as outF:
         outF.write(newick_tree)
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
-    subdirectoryPath = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
+    subdirectoryPath = PATH_TO_UNIPROT_ENTRIES
     fileList = os.listdir(subdirectoryPath)
     organisms = []
     ids = []
@@ -175,7 +178,7 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
             else:
                 print(f"Match failed in file {fileName}")
 
-    with open(os.path.join(PATH_TO_DATAFILES, "organisms.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), 'w') as outF:
                 i = 0
                 for organism in organisms:
                     outF.write(str(ids[i]) + " " + organism + "\n")
