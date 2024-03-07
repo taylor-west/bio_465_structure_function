@@ -79,8 +79,8 @@ def evaluate_results(dataframe):
     results_df.drop('MSA_sequence', axis=1, inplace=True)
     results_df.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'analyzed_clusters.csv'))
 
-invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-clusters_df = pd.read_csv('../datafiles/clusters.csv')
+invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
+clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
 invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 
 result = find_clusters(invariant_res_df, 10)

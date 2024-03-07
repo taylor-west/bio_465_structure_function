@@ -2,6 +2,7 @@ import os
 import sys
 from ortholog_identification.kegg_orthologs import find_ortholog_uniprots_by_pathway, find_ortholog_uniprots_by_ko_id
 from multiple_sequence_alignment.muscle import multiple_sequence_alignment
+import paths
 
 if __name__ == "__main__":
     num_cmdline_args = len(sys.argv)-1
@@ -9,6 +10,8 @@ if __name__ == "__main__":
     target_organisms_filepath = sys.argv[2]
     target_ko_id = (sys.argv[3] if num_cmdline_args > 2 else None)
 
+    if not os.path.exists(paths.PATH_TO_DATAFILES):
+        os.makedirs(paths.PATH_TO_DATAFILES)
 
     # generate the list of uniprot ids for the given pathway and organisms (and optionally a ko_id value)
     if target_ko_id is None:

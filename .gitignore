@@ -162,3 +162,6 @@ cython_debug/
 
 # Mac misc
 .DS_Store
+
+# Project Files
+.datafiles/

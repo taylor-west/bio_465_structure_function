@@ -7,7 +7,7 @@ from ete3 import faces, NodeStyle
 
 CWD = os.getcwd()
 PATH_TO_DATAFILES = os.path.join(CWD, "../datafiles")
-PATH_TO_TREE_DATA = os.path.join(PATH_TO_DATAFILES, "tree_data")
+PATH_TO_FIGURE1 = os.path.join(PATH_TO_DATAFILES, "figure1")
 PATH_TO_MUSCLE_DATA = os.path.join(PATH_TO_DATAFILES, "muscle_data")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
@@ -25,7 +25,7 @@ def make_tree_with_species_names():
 
     #get_newick_tree()
 
-    file_path = os.path.join(PATH_TO_TREE_DATA, "newick.txt")
+    file_path = os.path.join(PATH_TO_FIGURE1, "newick.txt")
     tree = ete3.Tree(file_path)
 
     #change nodes to be labeled with species names instead of protein IDs
@@ -48,9 +48,10 @@ def make_tree_with_species_names():
     ts.show_scale = False
     ts.layout_fn = my_layout
     ts.allow_face_overlap = True
+    # may or may not work
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render("tree.png", tree_style=ts)
+    tree.render(os.path.join(PATH_TO_FIGURE1, "tree.png"), tree_style=ts, w=1400, h=1200)
 
 def set_styles_for_each_group(tree):
     # NOTE: THESE NAMES MUST MATCH THE NAMES IN THE UNIPROT ENTRIES FILES
@@ -155,7 +156,7 @@ def get_newick_tree():
     getURL = f"https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/result/{jobID}/{resultType}"
     response = requests.get(getURL)
     newick_tree = response.text
-    with open(os.path.join(PATH_TO_TREE_DATA, "newick.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_FIGURE1, "newick.txt"), 'w') as outF:
         outF.write(newick_tree)
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
