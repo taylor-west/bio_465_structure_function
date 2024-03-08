@@ -3,14 +3,26 @@ BIO 465 - Capstone Project
 
 
 ## Setup
-- Install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) if you don't already have it
-- run `conda create --name <env> --file requirements.txt && conda activate <env>`
+- download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) if you don't already have it
+- add conda to PATH (if necessary)
+- create a new conda environement with the target by running `conda create --name <env>` (replace `<env>` with your desired environment name)
+   - you can create the environment with the dependencies found in `requirements.txt` pre-installed by running `conda create --name <env> --file requirements.txt`
+- activate the conda environment `conda activate <env>`
+- install the necessary conda packages manually if needed
+   - `conda install python`
+   - `conda install requests`
+   - `conda install numpy`
+   - `conda install pandas`
+   - `conda install -c etetoolkit ete3`
+   - `conda install biopython`
+
+<!-- [post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica) -->
 
 
-### If not using arm64 architecture
-- run `conda create --name <env> python requests numpy pandas && activate <env>`
-
-[post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica)
+## To Run
+The main script for running the pipeline is found in `structure_function_pipeline.py`. Running this file can be running using the commandline arguments of the KEGG id target pathway , the filepath of a csv file containing a list of KEGG organism codes for target organisms, and an optional KEGG id for a target KEGG Ortholog.
+   - e.g. `python structure_function_pipeline.py "hsa00051" "$./target_organisms.csv"`
+   - e.g. `python structure_function_pipeline.py "hsa00051" "$./target_organisms.csv" "K03841"`
 
 
 ## Guidelines
