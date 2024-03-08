@@ -26,6 +26,7 @@ if __name__ == "__main__":
             # extract the uniprot ids for all of that ortholog
             extracted_ids = ortholog_uniprot_dict[ortholog]
             mds_df_dict[ortholog] = multiple_sequence_alignment(extracted_ids)
+            
             #continue to 3d
     else:
         # takes a filepath pointing to a csv file containing the target organisms and the KEGG Ortholog ID value for the genes of interest
@@ -36,4 +37,4 @@ if __name__ == "__main__":
         # generates a multiple sequence alignment from the uniprot ids
         msa_df = multiple_sequence_alignment(uniprots)
 
-        #continue to 3d
+        # TODO: continue to 3d
