@@ -19,6 +19,11 @@ BIO 465 - Capstone Project
 <!-- [post about conditional requirements files](https://stackoverflow.com/questions/29222269/is-there-a-way-to-have-a-conditional-requirements-txt-file-for-my-python-applica) -->
 
 
+## To Run
+The main script for running the pipeline is found in `structure_function_pipeline.py`. Running this file can be running using the commandline arguments of the KEGG id target pathway , the filepath of a csv file containing a list of KEGG organism codes for target organisms, and an optional KEGG id for a target KEGG Ortholog.
+   - e.g. `python structure_function_pipeline.py "hsa00051" "$./target_organisms.csv"`
+   - e.g. `python structure_function_pipeline.py "hsa00051" "$./target_organisms.csv" "K03841"`
+
 
 ## Guidelines
 ### Branches
