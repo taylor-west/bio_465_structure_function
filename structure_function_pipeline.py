@@ -2,6 +2,7 @@ import os
 import sys
 from ortholog_identification.kegg_orthologs import find_ortholog_uniprots_by_pathway, find_ortholog_uniprots_by_ko_id
 from multiple_sequence_alignment.muscle import multiple_sequence_alignment
+import paths
 
 if __name__ == "__main__":
     num_cmdline_args = len(sys.argv)-1
@@ -9,6 +10,8 @@ if __name__ == "__main__":
     target_organisms_filepath = sys.argv[2]
     target_ko_id = (sys.argv[3] if num_cmdline_args > 2 else None)
 
+    if not os.path.exists(paths.PATH_TO_DATAFILES):
+        os.makedirs(paths.PATH_TO_DATAFILES)
 
     # generate the list of uniprot ids for the given pathway and organisms (and optionally a ko_id value)
     if target_ko_id is None:
@@ -23,6 +26,7 @@ if __name__ == "__main__":
             # extract the uniprot ids for all of that ortholog
             extracted_ids = ortholog_uniprot_dict[ortholog]
             mds_df_dict[ortholog] = multiple_sequence_alignment(extracted_ids)
+            
             #continue to 3d
     else:
         # takes a filepath pointing to a csv file containing the target organisms and the KEGG Ortholog ID value for the genes of interest
@@ -33,4 +37,4 @@ if __name__ == "__main__":
         # generates a multiple sequence alignment from the uniprot ids
         msa_df = multiple_sequence_alignment(uniprots)
 
-        #continue to 3d
+        # TODO: continue to 3d

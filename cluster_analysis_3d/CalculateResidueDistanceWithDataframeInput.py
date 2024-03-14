@@ -6,10 +6,9 @@ from urllib.request import urlretrieve
 import os
 import pandas as pd
 import ast
-import numpy as np
 
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
-    residue_codes = pd.read_csv('residue_codes.csv')
+    residue_codes = pd.read_csv('../datafiles/cluster_data/residue_codes.csv')
 
     filepath = '../datafiles/pdb_files/'
     os.makedirs(filepath, exist_ok=True)
@@ -66,8 +65,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                     for pos2 in locs_3d_dict:
                         if pos != pos2:
                             # calculate distance between residues
-                            diff = locs_3d_dict[pos] - locs_3d_dict[pos2]
-                            distance = np.sqrt(np.sum(diff * diff))
+                            distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
                             if distance <= distance_threshold:
                                 clusters_list.append(pos2)
                     if len(clusters_list) > 0:
@@ -75,7 +73,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                         invariant_res_df.at[index, 'clusters'] = clusters_list
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-    invariant_res_df.to_csv('../datafiles/clusters.csv', index=False)
+    invariant_res_df.to_csv('../datafiles/cluster_data/clusters.csv', index=False)
     return invariant_res_df
 
 def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
@@ -94,7 +92,7 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
             if len(interesting_clusters_list) > 0:
                 clusters_df.at[i, 'separated_clusters'] = str(interesting_clusters_list)
     clusters_df.dropna(inplace=True, ignore_index=True)
-    clusters_df.to_csv('../datafiles/interesting_clusters.csv')
+    clusters_df.to_csv('../datafiles/cluster_data/interesting_clusters.csv')
     return clusters_df
 
 
@@ -123,7 +121,7 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
                     MSA_cluster_positions.append(MSA_iteration)
         MSA_cluster_positions_list.append(MSA_cluster_positions)
     res_clusters_df['MSA_cluster_positions'] = MSA_cluster_positions_list
-    res_clusters_df.to_csv('../datafiles/filtered_dataframe.csv')
+    res_clusters_df.to_csv('../datafiles/cluster_data/filtered_dataframe.csv')
     return res_clusters_df
 
     # for MSA_pos in invariant_MSA_positions:
@@ -131,13 +129,18 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
 
 
 
-invariant_res_df = pd.read_csv('../datafiles/MSA_results.csv')
-invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 
-result = find_clusters(invariant_res_df, 6)
-print(result)
-clusters_df = pd.read_csv('../datafiles/clusters.csv')
-result2 = filter_interesting_clusters(clusters_df, 20)
-print(result2)
-find_common_clusters(result2)
+
+def get_clusters_dataframe():
+    invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
+    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
+    result = find_clusters(invariant_res_df, 6)
+    # print(result)
+    clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
+    result2 = filter_interesting_clusters(clusters_df, 20)
+    # print(result2)
+    interesting_dataframe = pd.read_csv('../datafiles/cluster_data/interesting_clusters.csv')
+    find_common_clusters(interesting_dataframe)
+
+get_clusters_dataframe()
 

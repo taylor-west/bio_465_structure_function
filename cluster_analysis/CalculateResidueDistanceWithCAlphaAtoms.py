@@ -15,7 +15,7 @@ with open('../datafiles/3d-cluster-test-data.txt', 'r') as file:
 
 
 def find_clusters(invariant_locs_dict: dict, distance_threshold: float):
-    residue_codes = pd.read_csv('residue_codes.csv')
+    residue_codes = pd.read_csv('../datafiles/cluster_data/residue_codes.csv')
 
     clusters_for_prots = {}
     filepath = '../datafiles/pdb_files/'

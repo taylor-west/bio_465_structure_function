@@ -3,11 +3,12 @@ import time
 import os
 from Bio import AlignIO
 import pandas as pd
+import paths
 
-# PATH_TO_PARENT = os.path.dirname(os.getcwd())
-PATH_TO_PARENT = os.getcwd()
-PATH_TO_DATAFILES = os.path.join(PATH_TO_PARENT, "../datafiles")
+CWD = os.getcwd()
+PATH_TO_DATAFILES = os.path.join(CWD, "../datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
+PATH_TO_MUSCLE_DATA = os.path.join(PATH_TO_DATAFILES, "muscle_data")
 
 KO_ID = "K01809"
 # K03841
@@ -136,21 +137,25 @@ def get_uniprot_ids(file_path, codes):
                 used_codes.append(line[5])
                 uniprot_id = line[6].strip()
                 uniprot_ids.append(uniprot_id)
-    with open(os.path.join(PATH_TO_DATAFILES, "unused_codes.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "unused_codes.txt"), 'w') as outF:
         outF.write(str(unused_codes))
-    with open(os.path.join(PATH_TO_DATAFILES, "used_codes.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "used_codes.txt"), 'w') as outF:
         outF.write(str(used_codes))
     return uniprot_ids
 
 
 def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
-    print(f'HERE IS THE CWD: {PATH_TO_PARENT}')
+    print(f'HERE IS THE CWD: {CWD}')
     folder_path = PATH_TO_UNIPROT_ENTRIES
+    if not os.path.exists(PATH_TO_UNIPROT_ENTRIES):
+        os.makedirs(PATH_TO_UNIPROT_ENTRIES)
+    if not os.path.exists(PATH_TO_MUSCLE_DATA):
+        os.makedirs(PATH_TO_MUSCLE_DATA)
     if len(os.listdir(folder_path)) > 0:
         remove_files_in_subfolder(folder_path)
-    # codes = get_organism_code(os.path.join(PATH_TO_DATAFILES, "top_20_eukaryotes.csv"))
+    # codes = get_organism_code(os.path.join(PATH_TO_MUSCLE_DATA, "top_20_eukaryotes.csv"))
     # codes = ['mmu', 'rno', 'hgl', 'cfa', 'tgu', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'cre', 'sce', 'ani', 'spo', 'ddi']
-    # uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_DATAFILES, "input.csv"), codes)
+    # uniprot_ids = get_uniprot_ids(os.path.join(PATH_TO_MUSCLE_DATA, "input.csv"), codes)
 
     # uniprot_ids = ['P34949', 'A5A6K3', 'G3RFM0', 'G7MYC5', 'A0A2K6DHS4', 'A0A096NMS2', 'A0A2K5JTJ0', 'U3CWX3', 'A0A2K6T9B3',
     #     'A0A1U7UAV0', 'A0A8B7E9X4', 'Q924M7', 'A0A6P5Q4Y5', 'Q68FX1', 'G3I837', 'A0A1U7QCS9', 'A0A8C6R367', 'G5AL67',
@@ -173,7 +178,7 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
 
     sequences = readDirectoryContents(folder_path)
 
-    with open(os.path.join(PATH_TO_DATAFILES, "sequenceFile.txt"), 'w') as myFile:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "sequenceFile.txt"), 'w') as myFile:
         myFile.write(sequences)
 
     data = {
@@ -194,12 +199,12 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
 
     getURL2 = f"https://www.ebi.ac.uk/Tools/services/rest/muscle/result/{jobID}/{format}"
     alignment = requests.get(getURL2)
-    file = open(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "w")
+    file = open(os.path.join(PATH_TO_MUSCLE_DATA, "alignment.aln"), "w")
     file.write(alignment.text)
     file.close()
 
     # Parse the Clustal format alignment
-    alignment = AlignIO.read(os.path.join(PATH_TO_DATAFILES, "alignment.aln"), "clustal")
+    alignment = AlignIO.read(os.path.join(PATH_TO_MUSCLE_DATA, "alignment.aln"), "clustal")
 
     column_annotations = alignment.column_annotations['clustal_consensus']
     # Identify invariant locations
@@ -231,8 +236,9 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
         uniprot_invariant_locs_dict[uniprot_id] = val
         invariant_res_df.loc[invariant_res_df['entry_id'] == key, 'uniprot_id'] = uniprot_id
     
-    invariant_res_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
+    invariant_res_df.to_csv(os.path.join(PATH_TO_MUSCLE_DATA, 'MSA_results.csv'))
     return invariant_res_df
+
 
 uniprot_ids = [
     "P00397",
@@ -251,4 +257,7 @@ uniprot_ids = [
     "O21042",
     "P00395"
 ]
+
 multiple_sequence_alignment(uniprot_ids)
+
+

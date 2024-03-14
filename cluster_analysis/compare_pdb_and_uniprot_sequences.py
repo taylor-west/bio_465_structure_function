@@ -125,7 +125,7 @@ def download_pdb_files(pdb_ids: list, uniprot_id: str):
     return successful_filepaths
 
 def find_pdb_sequences(pdb_filepaths, uniprot_id):
-    residue_codes = pd.read_csv('residue_codes.csv')
+    residue_codes = pd.read_csv('../datafiles/cluster_data/residue_codes.csv')
 
     pdb_sequences = []
     for pdb_filepath in pdb_filepaths:

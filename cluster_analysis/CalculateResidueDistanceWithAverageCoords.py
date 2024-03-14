@@ -28,7 +28,7 @@ def download_alphafold_data(uniprot_id):
         pdb_url = alphafold_json[0]['pdbUrl']
         print(pdb_url)
 
-        filepath = '../3d_cluster_analysis/'
+        filepath = '/'
         filename = f'alphafold_{uniprot_id}.pdb'
         if os.path.exists(filepath):
             urlretrieve(pdb_url, filepath + filename)
