@@ -1,3 +1,12 @@
+# files we generate each time we run our code
+datafiles/cluster_data
+datafiles/eval_files
+datafiles/muscle_data/alignment.aln
+datafiles/muscle_data/MSA_results.csv
+datafiles/muscle_data/sequenceFile.txt
+datafiles/uniprot_entries
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
