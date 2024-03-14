@@ -233,3 +233,22 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
     
     invariant_res_df.to_csv(os.path.join(PATH_TO_DATAFILES, 'MSA_results.csv'))
     return invariant_res_df
+
+uniprot_ids = [
+    "P00397",
+    "P05503",
+    "E9NPC9",
+    "Q9ZZ64",
+    "Q9MIY8",
+    "A0A023UN37",
+    "P00399",
+    "P24893",
+    "A0A126TGS8",
+    "P14578",
+    "P00401",
+    "H9D0P5",
+    "P07657",
+    "O21042",
+    "P00395"
+]
+multiple_sequence_alignment(uniprot_ids)

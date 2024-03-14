@@ -1,0 +1,162 @@
+ID   E9NPC9_HETGA            Unreviewed;       513 AA.
+AC   E9NPC9;
+DT   05-APR-2011, integrated into UniProtKB/TrEMBL.
+DT   05-APR-2011, sequence version 1.
+DT   24-JAN-2024, entry version 64.
+DE   RecName: Full=Cytochrome c oxidase subunit 1 {ECO:0000256|ARBA:ARBA00015947, ECO:0000256|RuleBase:RU000369};
+DE            EC=7.1.1.9 {ECO:0000256|ARBA:ARBA00012949, ECO:0000256|RuleBase:RU000369};
+GN   Name=COX1 {ECO:0000313|EMBL:ADU57098.1};
+OS   Heterocephalus glaber (Naked mole rat).
+OG   Mitochondrion {ECO:0000313|EMBL:ADU57098.1}.
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Bathyergidae;
+OC   Heterocephalus.
+OX   NCBI_TaxID=10181 {ECO:0000313|EMBL:ADU57098.1};
+RN   [1] {ECO:0000313|EMBL:ADU57098.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Kraytsberg Y., Popadin K., Buffenstein R., Khrapko K.;
+RT   "Complete Mitochondrial Genome of the Naked Mole Rat Heterocephalus
+RT   glaber.";
+RL   Submitted (DEC-2010) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Component of the cytochrome c oxidase, the last enzyme in the
+CC       mitochondrial electron transport chain which drives oxidative
+CC       phosphorylation. The respiratory chain contains 3 multisubunit
+CC       complexes succinate dehydrogenase (complex II, CII), ubiquinol-
+CC       cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III,
+CC       CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to
+CC       transfer electrons derived from NADH and succinate to molecular oxygen,
+CC       creating an electrochemical gradient over the inner membrane that
+CC       drives transmembrane transport and the ATP synthase. Cytochrome c
+CC       oxidase is the component of the respiratory chain that catalyzes the
+CC       reduction of oxygen to water. Electrons originating from reduced
+CC       cytochrome c in the intermembrane space (IMS) are transferred via the
+CC       dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1
+CC       to the active site in subunit 1, a binuclear center (BNC) formed by
+CC       heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2
+CC       water molecules using 4 electrons from cytochrome c in the IMS and 4
+CC       protons from the mitochondrial matrix. {ECO:0000256|RuleBase:RU000369}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=4 Fe(II)-[cytochrome c] + 8 H(+)(in) + O2 = 4 Fe(III)-
+CC         [cytochrome c] + 4 H(+)(out) + 2 H2O; Xref=Rhea:RHEA:11436,
+CC         Rhea:RHEA-COMP:10350, Rhea:RHEA-COMP:14399, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:15379, ChEBI:CHEBI:29033,
+CC         ChEBI:CHEBI:29034; EC=7.1.1.9;
+CC         Evidence={ECO:0000256|ARBA:ARBA00029331};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:11437;
+CC         Evidence={ECO:0000256|ARBA:ARBA00029331};
+CC   -!- COFACTOR:
+CC       Name=Cu cation; Xref=ChEBI:CHEBI:23378;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001935};
+CC   -!- COFACTOR:
+CC       Name=heme; Xref=ChEBI:CHEBI:30413;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001971};
+CC   -!- PATHWAY: Energy metabolism; oxidative phosphorylation.
+CC       {ECO:0000256|ARBA:ARBA00004673, ECO:0000256|RuleBase:RU000369}.
+CC   -!- SUBCELLULAR LOCATION: Membrane {ECO:0000256|ARBA:ARBA00004141}; Multi-
+CC       pass membrane protein {ECO:0000256|ARBA:ARBA00004141}. Mitochondrion
+CC       inner membrane {ECO:0000256|RuleBase:RU000369}; Multi-pass membrane
+CC       protein {ECO:0000256|RuleBase:RU000369}.
+CC   -!- SIMILARITY: Belongs to the heme-copper respiratory oxidase family.
+CC       {ECO:0000256|ARBA:ARBA00009578, ECO:0000256|RuleBase:RU000369}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; HQ689652; ADU57098.1; -; Genomic_DNA.
+DR   RefSeq; YP_004222614.1; NC_015112.1.
+DR   AlphaFoldDB; E9NPC9; -.
+DR   Ensembl; ENSHGLT00100000016; ENSHGLP00100000003; ENSHGLG00100000016.
+DR   GeneID; 10201216; -.
+DR   KEGG; hgl:10201216; -.
+DR   CTD; 4512; -.
+DR   OMA; WAMMSIG; -.
+DR   OrthoDB; 5387269at2759; -.
+DR   UniPathway; UPA00705; -.
+DR   Bgee; ENSHGLG00000000016; Expressed in heart and 10 other cell types or tissues.
+DR   GO; GO:0005750; C:mitochondrial respiratory chain complex III; IEA:Ensembl.
+DR   GO; GO:0005751; C:mitochondrial respiratory chain complex IV; IEA:Ensembl.
+DR   GO; GO:0004129; F:cytochrome-c oxidase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0020037; F:heme binding; IEA:InterPro.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006119; P:oxidative phosphorylation; IEA:UniProtKB-UniPathway.
+DR   CDD; cd01663; Cyt_c_Oxidase_I; 1.
+DR   Gene3D; 1.20.210.10; Cytochrome c oxidase-like, subunit I domain; 1.
+DR   InterPro; IPR023616; Cyt_c_oxase-like_su1_dom.
+DR   InterPro; IPR036927; Cyt_c_oxase-like_su1_sf.
+DR   InterPro; IPR000883; Cyt_C_Oxase_1.
+DR   InterPro; IPR023615; Cyt_c_Oxase_su1_BS.
+DR   InterPro; IPR033944; Cyt_c_oxase_su1_dom.
+DR   PANTHER; PTHR10422; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   PANTHER; PTHR10422:SF18; CYTOCHROME C OXIDASE SUBUNIT 1; 1.
+DR   Pfam; PF00115; COX1; 1.
+DR   PRINTS; PR01165; CYCOXIDASEI.
+DR   SUPFAM; SSF81442; Cytochrome c oxidase subunit I-like; 1.
+DR   PROSITE; PS50855; COX1; 1.
+DR   PROSITE; PS00077; COX1_CUB; 1.
+PE   3: Inferred from homology;
+KW   Calcium {ECO:0000256|ARBA:ARBA00022837};
+KW   Copper {ECO:0000256|RuleBase:RU000369};
+KW   Electron transport {ECO:0000256|RuleBase:RU000369};
+KW   Heme {ECO:0000256|RuleBase:RU000369}; Iron {ECO:0000256|RuleBase:RU000369};
+KW   Magnesium {ECO:0000256|ARBA:ARBA00022842};
+KW   Membrane {ECO:0000256|ARBA:ARBA00023136, ECO:0000256|RuleBase:RU000369};
+KW   Metal-binding {ECO:0000256|RuleBase:RU000369};
+KW   Mitochondrion {ECO:0000256|RuleBase:RU000369, ECO:0000313|EMBL:ADU57098.1};
+KW   Mitochondrion inner membrane {ECO:0000256|RuleBase:RU000369};
+KW   Respiratory chain {ECO:0000256|RuleBase:RU000369};
+KW   Sodium {ECO:0000256|ARBA:ARBA00023053};
+KW   Transmembrane {ECO:0000256|ARBA:ARBA00022692,
+KW   ECO:0000256|RuleBase:RU000369};
+KW   Transmembrane helix {ECO:0000256|ARBA:ARBA00022989,
+KW   ECO:0000256|SAM:Phobius}; Transport {ECO:0000256|RuleBase:RU000369}.
+FT   TRANSMEM        18..37
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        57..83
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        104..128
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        148..171
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        183..210
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        243..261
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        268..291
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        303..325
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        337..359
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        379..400
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        412..433
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   TRANSMEM        453..477
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000256|SAM:Phobius"
+FT   DOMAIN          1..513
+FT                   /note="Cytochrome oxidase subunit I profile"
+FT                   /evidence="ECO:0000259|PROSITE:PS50855"
+SQ   SEQUENCE   513 AA;  57099 MW;  312D529099B1E7F0 CRC64;
+     MFINRWLFST NHKDIGTLYL LFGAWAGMTG TALSILIRTE LGQPGTLLGD DQIYNVIVTA
+     HAFIMIFFMV MPIMIGGFGN WLVPLMIGAP DMAFPRMNNM SFWLLPPSFL LLLASSMVEA
+     GAGTGWTVYP PLAGNLAHAG ASVDLTIFSL HLAGVSSILG AINFITTIIN MKPPAMSQYQ
+     TPLFVWSVLI TAVLLLLSLP VLAAGITMLL TDRNLNTTFF DPAGGGDPIL YQHLFWFFGH
+     PEVYILILPG FGMISHIVTY YSGKKEPFGY MGMVWAMMSI GFLGFIVWAH HMFTVGMDVD
+     TRAYFTSATM IIAIPTGVKV FSWLATLHGG DIKWSPAMLW ALGFIFLFTV GGLTGIVLAN
+     SSLDIVLHDT YYVVAHFHYV LSMGAVFAIM AGFVHWFPLF SGYTLDPTWA KIQFFVMFIG
+     VNMTFFPQHF LGLSGMPRRY SDYPDAYTMW NTLSSMGSLI SLTAVMMMVF MIWEAFASKR
+     EVLMTEMTST NLEWIHGCPP PFHTFEEPTY IKM
+//
+

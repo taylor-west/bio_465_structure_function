@@ -6,6 +6,7 @@ from urllib.request import urlretrieve
 import os
 import pandas as pd
 import ast
+import numpy as np
 
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
     residue_codes = pd.read_csv('residue_codes.csv')
@@ -65,7 +66,8 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                     for pos2 in locs_3d_dict:
                         if pos != pos2:
                             # calculate distance between residues
-                            distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
+                            diff = locs_3d_dict[pos] - locs_3d_dict[pos2]
+                            distance = np.sqrt(np.sum(diff * diff))
                             if distance <= distance_threshold:
                                 clusters_list.append(pos2)
                     if len(clusters_list) > 0:
