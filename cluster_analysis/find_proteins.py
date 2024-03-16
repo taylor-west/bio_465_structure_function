@@ -5,13 +5,15 @@ url = "https://rest.uniprot.org/uniprotkb/search?query=accession:A6TG88+OR+acces
 response = requests.get(url)
 if response.status_code == 200:
     print(response.text)
-    filepath = '/datafiles/results.tsv'
+    filepath = 'datafiles/results.tsv'
     with open (filepath, 'w') as file:
         file.write(response.text)
         file.close()
 else:
     print('failed')
 
+#running the code with K01834 when running the structure_function_pipeline.py file
+# commandline arguments: structure_function_pipeline.py eco00010 target_prokaryotes.csv K01834 
 def find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_filepath, num_valid_prots_threshold = 20, annotation_score_threshold=3.0):
     orthologs_df = pd.read_csv(pathway_orthologs_filepath)
     ortholog_ids = set(orthologs_df['ko_id'])
@@ -53,8 +55,11 @@ def find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_
 
     return filtered_orthologs_df
   
-pathway_orthologs_filepath = '/datafiles/ortholog_uniprots/pathways/uniprot_ids_eco00010.csv'
-temporary_results_filepath = '/datafiles/results.tsv'
+pathway_orthologs_filepath = 'datafiles/ortholog_uniprots/pathways/uniprot_ids_eco00010.csv'
+temporary_results_filepath = 'datafiles/results.tsv'
 results = find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_filepath, annotation_score_threshold=3.0)
-print(results)
+final_result_filepath = 'datafiles/lists.tsv'
+results.to_csv(final_result_filepath, sep='\t', index=False)
+print("result written to: ", final_result_filepath)
+# print(results)
 
