@@ -53,7 +53,7 @@ def find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_
 
     return filtered_orthologs_df
   
-pathway_orthologs_filepath = '/content/sample_data/uniprot_ids_eco00010.csv'
+pathway_orthologs_filepath = '/datafiles/ortholog_uniprots/pathways/uniprot_ids_eco00010.csv'
 temporary_results_filepath = '/datafiles/results.tsv'
 results = find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_filepath, annotation_score_threshold=3.0)
 print(results)
