@@ -86,7 +86,7 @@ def analyze_key_locations(dataframe):
         except ZeroDivisionError as e:
             percent_of_cluster_expected = "No cluster"
         if len(expected_positions) == 0:
-            percent_of_cluster_expected = "No expected residues"
+            percent_of_cluster_expected = "No cluster"
             percent_expected_found = "No expected residues"
         else:
             percent_expected_found = len(common_positions) / len(expected_positions)
@@ -103,6 +103,21 @@ def evaluate_results(dataframe):
     # Modifies the original DataFrame
     # results_df.drop('MSA_sequence', axis=1, inplace=True)
     results_df.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'analyzed_clusters.csv'))
+
+    # drops rows without any clusters
+    only_rows_with_clusters = results_df.dropna(subset=['clusters'])
+    only_rows_with_clusters.reset_index(drop=True, inplace=True)
+    only_rows_with_clusters.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'only_rows_with_clusters.csv'))
+
+    # Filter rows where 'expected_residues' column contains an empty list
+    intermediate_df = only_rows_with_clusters.dropna(subset=['expected_residues'])
+    only_rows_with_expected = intermediate_df[intermediate_df['expected_residues'].apply(lambda x: len(x) != 0)]
+
+    # Reset the index to make it continuous
+    only_rows_with_expected.reset_index(drop=True, inplace=True)
+    # save to file
+    only_rows_with_expected.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'only_rows_with_expected.csv'))
+
 
 # invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
 # # clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
