@@ -1,0 +1,101 @@
+ID   A0A8C0ME46_CANLF        Unreviewed;       339 AA.
+AC   A0A8C0ME46;
+DT   19-JAN-2022, integrated into UniProtKB/TrEMBL.
+DT   19-JAN-2022, sequence version 1.
+DT   24-JAN-2024, entry version 8.
+DE   RecName: Full=Fructose-1,6-bisphosphatase isozyme 2 {ECO:0000256|ARBA:ARBA00040321};
+DE            EC=3.1.3.11 {ECO:0000256|ARBA:ARBA00013093};
+DE   AltName: Full=D-fructose-1,6-bisphosphate 1-phosphohydrolase 2 {ECO:0000256|ARBA:ARBA00042757};
+DE   AltName: Full=Muscle FBPase {ECO:0000256|ARBA:ARBA00043165};
+GN   Name=FBP2 {ECO:0000313|Ensembl:ENSCAFP00030010329.1};
+OS   Canis lupus familiaris (Dog) (Canis familiaris).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Canis.
+OX   NCBI_TaxID=9615 {ECO:0000313|Ensembl:ENSCAFP00030010329.1, ECO:0000313|Proteomes:UP000694429};
+RN   [1] {ECO:0000313|Ensembl:ENSCAFP00030010329.1}
+RP   IDENTIFICATION.
+RG   Ensembl;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Catalyzes the hydrolysis of fructose 1,6-bisphosphate to
+CC       fructose 6-phosphate in the presence of divalent cations and probably
+CC       participates in glycogen synthesis from carbohydrate precursors, such
+CC       as lactate. {ECO:0000256|ARBA:ARBA00037516}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=beta-D-fructose 1,6-bisphosphate + H2O = beta-D-fructose 6-
+CC         phosphate + phosphate; Xref=Rhea:RHEA:11064, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:32966, ChEBI:CHEBI:43474, ChEBI:CHEBI:57634; EC=3.1.3.11;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001273};
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001946};
+CC   -!- PATHWAY: Carbohydrate biosynthesis; gluconeogenesis.
+CC       {ECO:0000256|ARBA:ARBA00004742}.
+CC   -!- SUBUNIT: Homotetramer. Interacts with ALDOA; the interaction blocks
+CC       inhibition by physiological concentrations of AMP and reduces
+CC       inhibition by Ca(2+). Interacts with alpha-actinin and F-actin.
+CC       {ECO:0000256|ARBA:ARBA00038670}.
+CC   -!- SUBCELLULAR LOCATION: Cell junction {ECO:0000256|ARBA:ARBA00004282}.
+CC       Cytoplasm, myofibril, sarcomere, Z line
+CC       {ECO:0000256|ARBA:ARBA00004216}. Nucleus
+CC       {ECO:0000256|ARBA:ARBA00004123}.
+CC   -!- SIMILARITY: Belongs to the FBPase class 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010941, ECO:0000256|RuleBase:RU000508}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   RefSeq; XP_533504.2; XM_533504.5.
+DR   SMR; A0A8C0ME46; -.
+DR   Ensembl; ENSCAFT00030011790.1; ENSCAFP00030010329.1; ENSCAFG00030006378.1.
+DR   GeneID; 476300; -.
+DR   KEGG; cfa:476300; -.
+DR   CTD; 8789; -.
+DR   OMA; HEKSECY; -.
+DR   UniPathway; UPA00138; -.
+DR   Proteomes; UP000694429; Chromosome 1.
+DR   GO; GO:0042132; F:fructose 1,6-bisphosphate 1-phosphatase activity; IEA:InterPro.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006094; P:gluconeogenesis; IEA:UniProtKB-UniPathway.
+DR   CDD; cd00354; FBPase; 1.
+DR   Gene3D; 3.40.190.80; -; 1.
+DR   Gene3D; 3.30.540.10; Fructose-1,6-Bisphosphatase, subunit A, domain 1; 1.
+DR   HAMAP; MF_01855; FBPase_class1; 1.
+DR   InterPro; IPR044015; FBPase_C_dom.
+DR   InterPro; IPR000146; FBPase_class-1.
+DR   InterPro; IPR033391; FBPase_N.
+DR   InterPro; IPR028343; FBPtase.
+DR   InterPro; IPR020548; Fructose_bisphosphatase_AS.
+DR   PANTHER; PTHR11556:SF13; FRUCTOSE-1,6-BISPHOSPHATASE ISOZYME 2; 1.
+DR   PANTHER; PTHR11556; FRUCTOSE-1,6-BISPHOSPHATASE-RELATED; 1.
+DR   Pfam; PF00316; FBPase; 1.
+DR   Pfam; PF18913; FBPase_C; 1.
+DR   PIRSF; PIRSF500210; FBPtase; 1.
+DR   PIRSF; PIRSF000904; FBPtase_SBPase; 1.
+DR   PRINTS; PR00115; F16BPHPHTASE.
+DR   SUPFAM; SSF56655; Carbohydrate phosphatase; 1.
+DR   PROSITE; PS00124; FBPASE; 1.
+PE   3: Inferred from homology;
+KW   Calcium {ECO:0000256|ARBA:ARBA00022837};
+KW   Carbohydrate metabolism {ECO:0000256|ARBA:ARBA00023277,
+KW   ECO:0000256|RuleBase:RU000508};
+KW   Cell junction {ECO:0000256|ARBA:ARBA00022949};
+KW   Gluconeogenesis {ECO:0000256|ARBA:ARBA00022432};
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801, ECO:0000256|RuleBase:RU000508};
+KW   Magnesium {ECO:0000256|ARBA:ARBA00022842};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Nucleus {ECO:0000256|ARBA:ARBA00023242}.
+FT   DOMAIN          13..198
+FT                   /note="Fructose-1-6-bisphosphatase class I N-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF00316"
+FT   DOMAIN          203..332
+FT                   /note="Fructose-1-6-bisphosphatase class 1 C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF18913"
+SQ   SEQUENCE   339 AA;  36791 MW;  BD9EFC8140F3CDEF CRC64;
+     MSDRSPFETD MLTLTRYVME KGRQAKGTGE LTQLLNSMLT AIKAISSAVR KAGLAHLYGI
+     AGTVNVTGDE VKKLDVLSNA LVINMLQSSY STCVLVSEEN KDAIITPKEK RGKYVVCFDP
+     LDGSSNIDCL ASIGTIFAIY RKTSEDEPSE KDALQPGRNI VAAGYALYGS ATLVALSTGQ
+     GVDLFMLDPA LGEFVLVEKD VKIKQKGKIY SLNEGYAKYF DAATSEYVQK KKFPEDGSAP
+     YGARYVGSMV ADVHRTLVYG GVFLYPANQK SPKGKLRLLY ECNPVAYIIE QAGGLATTGT
+     QPVLDVKPET IHQRVPLILG SPDDVQEYLT CVQKSQAGR
+//
+

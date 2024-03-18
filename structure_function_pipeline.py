@@ -2,6 +2,8 @@ import os
 import sys
 from ortholog_identification.kegg_orthologs import find_ortholog_uniprots_by_pathway, find_ortholog_uniprots_by_ko_id
 from multiple_sequence_alignment.muscle import multiple_sequence_alignment
+from cluster_analysis_3d import CalculateResidueDistanceWithDataframeInput
+from eval import eval
 import paths
 
 if __name__ == "__main__":
@@ -32,8 +34,12 @@ if __name__ == "__main__":
         # returns a list of uniprot ids for the given KEGG Ortholog ID value
         uniprots = find_ortholog_uniprots_by_ko_id(target_organisms_filepath, target_ko_id)
         print(f'located {len(uniprots)} UniProt IDs')
+        print(uniprots)
 
         # generates a multiple sequence alignment from the uniprot ids
         msa_df = multiple_sequence_alignment(uniprots)
-
-        #continue to 3d
+        print("done with alignment")
+        invariant_res_df = CalculateResidueDistanceWithDataframeInput.make_expected_cluster_lists_and_find_actual_clusters(msa_df, 7)
+        print("done with distance calculations")
+        eval.evaluate_results(invariant_res_df)
+        print("done with evaluation")

@@ -9,7 +9,7 @@ from Bio.PDB import PDBParser
 import cluster_analysis_3d.CalculateResidueDistanceWithDataframeInput
 
 CWD = os.getcwd()
-PATH_TO_DATAFILES = os.path.join(CWD, "../datafiles")
+PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 PATH_TO_EVAL_FILES = os.path.join(PATH_TO_DATAFILES, "eval_files")
 
@@ -58,25 +58,39 @@ def get_key_rows_only(dataframe):
 
 def analyze_key_locations(dataframe):
     # key_results_df = get_key_rows_only(dataframe)
+    # creating new columns
     key_results_df = dataframe
     key_results_df['common_positions'] = None
     key_results_df['num_key_present'] = 0
     key_results_df['percent_of_cluster_expected'] = None
     key_results_df['percent_expected_found'] = None
+    # for each row, access relevant info from dataframe
     for index, row in key_results_df.iterrows():
-        cluster_positions = set(row['clusters'])
-        expected_positions = set(row['expected_residues'])
+        # if there is nothing in clusters this throws an error
+        try:
+            cluster_positions = set(row['clusters'])
+        except TypeError as e:
+            cluster_positions = set("X")
+        try:
+            expected_positions = set(row['expected_residues'])
+        except TypeError as e:
+            expected_positions = set("Y")
         common_positions = list(cluster_positions.intersection(expected_positions))
         if not common_positions:
             key_results_df.at[index, 'common_positions'] = []
         key_results_df.at[index, 'common_positions'] = common_positions
         num_key_present = len(common_positions)
-        percent_of_cluster_expected = len(common_positions) / len(cluster_positions)
+        # handle case where there might not be clusters or expected residues
+        try:
+            percent_of_cluster_expected = len(common_positions) / len(cluster_positions)
+        except ZeroDivisionError as e:
+            percent_of_cluster_expected = "No cluster"
         if len(expected_positions) == 0:
-            percent_of_cluster_expected = -1
-            percent_expected_found = -1
+            percent_of_cluster_expected = "No expected residues"
+            percent_expected_found = "No expected residues"
         else:
             percent_expected_found = len(common_positions) / len(expected_positions)
+        # assign data to our cells
         key_results_df.at[index, 'num_key_present'] = num_key_present
         key_results_df.at[index, 'percent_of_cluster_expected'] = percent_of_cluster_expected
         key_results_df.at[index, 'percent_expected_found'] = percent_expected_found
@@ -90,15 +104,15 @@ def evaluate_results(dataframe):
     # results_df.drop('MSA_sequence', axis=1, inplace=True)
     results_df.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'analyzed_clusters.csv'))
 
-invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
-# clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
-# invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-
-result = cluster_analysis_3d.CalculateResidueDistanceWithDataframeInput.make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df, 10)
+# invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
+# # clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
+# # invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
+#
+# result = cluster_analysis_3d.CalculateResidueDistanceWithDataframeInput.make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df, 10)
 
 #result2 = cluster.filter_interesting_clusters(clusters_df, 20)
 # print(result.dtypes)
-evaluate_results(result)
+# evaluate_results(result)
 
 
 

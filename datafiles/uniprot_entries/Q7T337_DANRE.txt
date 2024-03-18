@@ -1,0 +1,255 @@
+ID   Q7T337_DANRE            Unreviewed;       337 AA.
+AC   Q7T337; A0A8M1PEL5;
+DT   01-OCT-2003, integrated into UniProtKB/TrEMBL.
+DT   01-OCT-2003, sequence version 1.
+DT   24-JAN-2024, entry version 150.
+DE   RecName: Full=Fructose-1,6-bisphosphatase 1 {ECO:0000256|ARBA:ARBA00040734};
+DE            EC=3.1.3.11 {ECO:0000256|ARBA:ARBA00013093};
+DE   AltName: Full=D-fructose-1,6-bisphosphate 1-phosphohydrolase 1 {ECO:0000256|ARBA:ARBA00042758};
+DE   AltName: Full=Liver FBPase {ECO:0000256|ARBA:ARBA00042792};
+GN   Name=cb598 {ECO:0000313|RefSeq:NP_998297.1};
+GN   Synonyms=fb17g10 {ECO:0000313|RefSeq:NP_998297.1}, fb57b01
+GN   {ECO:0000313|RefSeq:NP_998297.1}, fbp1
+GN   {ECO:0000313|RefSeq:NP_998297.1}, id:ibd1091
+GN   {ECO:0000313|RefSeq:NP_998297.1}, wu:fb17g10
+GN   {ECO:0000313|RefSeq:NP_998297.1}, wu:fb57b01
+GN   {ECO:0000313|RefSeq:NP_998297.1}, zgc:64127
+GN   {ECO:0000313|RefSeq:NP_998297.1};
+GN   OrderedLocusNames=fbp1b {ECO:0000313|EMBL:AAH53267.1,
+GN   ECO:0000313|Ensembl:ENSDARP00000153048,
+GN   ECO:0000313|ZFIN:ZDB-GENE-021206-11};
+OS   Danio rerio (Zebrafish) (Brachydanio rerio).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Ostariophysi; Cypriniformes;
+OC   Danionidae; Danioninae; Danio.
+OX   NCBI_TaxID=7955 {ECO:0000313|EMBL:AAH53267.1};
+RN   [1] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=11731487;
+RA   Kudoh T., Tsang M., Hukriede N.A., Chen X., Dedekian M., Clarke C.J.,
+RA   Kiang A., Schultz S., Epstein J.A., Toyama R., Dawid I.B.;
+RT   "A gene expression screen in zebrafish embryogenesis.";
+RL   Genome Res. 11:1979-1987(2001).
+RN   [2] {ECO:0000313|EMBL:AAH53267.1}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   TISSUE=Kidney {ECO:0000313|EMBL:AAH53267.1};
+RG   NIH - Zebrafish Gene Collection (ZGC) project;
+RL   Submitted (JUN-2003) to the EMBL/GenBank/DDBJ databases.
+RN   [3] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=16109975;
+RA   Woods I.G., Wilson C., Friedlander B., Chang P., Reyes D.K., Nix R.,
+RA   Kelly P.D., Chu F., Postlethwait J.H., Talbot W.S.;
+RT   "The zebrafish gene map defines ancestral vertebrate chromosomes.";
+RL   Genome Res. 15:1307-1314(2005).
+RN   [4] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=16631158;
+RA   Cheng W., Guo L., Zhang Z., Soo H.M., Wen C., Wu W., Peng J.;
+RT   "HNF factors form a network to regulate liver-enriched genes in
+RT   zebrafish.";
+RL   Dev. Biol. 294:482-496(2006).
+RN   [5] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=18618001;
+RA   Lam S.H., Mathavan S., Tong Y., Li H., Karuturi R.K., Wu Y., Vega V.B.,
+RA   Liu E.T., Gong Z.;
+RT   "Zebrafish whole-adult-organism chemogenomics for large-scale predictive
+RT   and discovery chemical biology.";
+RL   PLoS Genet. 4:e1000121-e1000121(2008).
+RN   [6] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=20206250;
+RA   Wu Z., Zhang W., Lu Y., Lu C.;
+RT   "Transcriptome profiling of zebrafish infected with Streptococcus suis.";
+RL   Microb. Pathog. 48:178-187(2010).
+RN   [7] {ECO:0000313|Ensembl:ENSDARP00000051312}
+RP   IDENTIFICATION.
+RC   STRAIN=Tuebingen {ECO:0000313|Ensembl:ENSDARP00000051312};
+RG   Ensembl;
+RL   Submitted (FEB-2012) to UniProtKB.
+RN   [8] {ECO:0000313|Ensembl:ENSDARP00000051312, ECO:0000313|Proteomes:UP000000437}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Tuebingen {ECO:0000313|Ensembl:ENSDARP00000051312};
+RX   PubMed=23594743; DOI=10.1038/nature12111;
+RG   Genome Reference Consortium Zebrafish;
+RA   Howe K., Clark M.D., Torroja C.F., Torrance J., Berthelot C., Muffato M.,
+RA   Collins J.E., Humphray S., McLaren K., Matthews L., McLaren S., Sealy I.,
+RA   Caccamo M., Churcher C., Scott C., Barrett J.C., Koch R., Rauch G.J.,
+RA   White S., Chow W., Kilian B., Quintais L.T., Guerra-Assuncao J.A., Zhou Y.,
+RA   Gu Y., Yen J., Vogel J.H., Eyre T., Redmond S., Banerjee R., Chi J., Fu B.,
+RA   Langley E., Maguire S.F., Laird G.K., Lloyd D., Kenyon E., Donaldson S.,
+RA   Sehra H., Almeida-King J., Loveland J., Trevanion S., Jones M., Quail M.,
+RA   Willey D., Hunt A., Burton J., Sims S., McLay K., Plumb B., Davis J.,
+RA   Clee C., Oliver K., Clark R., Riddle C., Elliot D., Eliott D.,
+RA   Threadgold G., Harden G., Ware D., Begum S., Mortimore B., Mortimer B.,
+RA   Kerry G., Heath P., Phillimore B., Tracey A., Corby N., Dunn M.,
+RA   Johnson C., Wood J., Clark S., Pelan S., Griffiths G., Smith M.,
+RA   Glithero R., Howden P., Barker N., Lloyd C., Stevens C., Harley J.,
+RA   Holt K., Panagiotidis G., Lovell J., Beasley H., Henderson C., Gordon D.,
+RA   Auger K., Wright D., Collins J., Raisen C., Dyer L., Leung K.,
+RA   Robertson L., Ambridge K., Leongamornlert D., McGuire S., Gilderthorp R.,
+RA   Griffiths C., Manthravadi D., Nichol S., Barker G., Whitehead S., Kay M.,
+RA   Brown J., Murnane C., Gray E., Humphries M., Sycamore N., Barker D.,
+RA   Saunders D., Wallis J., Babbage A., Hammond S., Mashreghi-Mohammadi M.,
+RA   Barr L., Martin S., Wray P., Ellington A., Matthews N., Ellwood M.,
+RA   Woodmansey R., Clark G., Cooper J., Cooper J., Tromans A., Grafham D.,
+RA   Skuce C., Pandian R., Andrews R., Harrison E., Kimberley A., Garnett J.,
+RA   Fosker N., Hall R., Garner P., Kelly D., Bird C., Palmer S., Gehring I.,
+RA   Berger A., Dooley C.M., Ersan-Urun Z., Eser C., Geiger H., Geisler M.,
+RA   Karotki L., Kirn A., Konantz J., Konantz M., Oberlander M.,
+RA   Rudolph-Geiger S., Teucke M., Lanz C., Raddatz G., Osoegawa K., Zhu B.,
+RA   Rapp A., Widaa S., Langford C., Yang F., Schuster S.C., Carter N.P.,
+RA   Harrow J., Ning Z., Herrero J., Searle S.M., Enright A., Geisler R.,
+RA   Plasterk R.H., Lee C., Westerfield M., de Jong P.J., Zon L.I.,
+RA   Postlethwait J.H., Nusslein-Volhard C., Hubbard T.J., Roest Crollius H.,
+RA   Rogers J., Stemple D.L.;
+RT   "The zebrafish reference genome sequence and its relationship to the human
+RT   genome.";
+RL   Nature 496:498-503(2013).
+RN   [9] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=26499117;
+RA   Bui-Nguyen T.M., Baer C.E., Lewis J.A., Yang D., Lein P.J., Jackson D.A.;
+RT   "Dichlorvos exposure results in large scale disruption of energy metabolism
+RT   in the liver of the zebrafish, Danio rerio.";
+RL   BMC Genomics 16:853-853(2015).
+RN   [10] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=25711926;
+RA   Oka Y., Sato T.N.;
+RT   "Whole-mount single molecule FISH method for zebrafish embryo.";
+RL   Sci. Rep. 5:8571-8571(2015).
+RN   [11] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=27356472;
+RA   Hu P., Liu M., Liu Y., Wang J., Zhang D., Niu H., Jiang S., Wang J.,
+RA   Zhang D., Han B., Xu Q., Chen L.;
+RT   "Transcriptome comparison reveals a genetic network regulating the lower
+RT   temperature limit in fish.";
+RL   Sci. Rep. 6:28952-28952(2016).
+RN   [12] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=28789986;
+RA   Pereiro P., Forn-Cuni G., Dios S., Coll J., Figueras A., Novoa B.;
+RT   "Interferon-independent antiviral activity of 25-hydroxycholesterol in a
+RT   teleost fish.";
+RL   Antiviral Res. 145:146-159(2017).
+RN   [13] {ECO:0000313|RefSeq:NP_998297.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=29897731;
+RA   Basu S., Jalodia K., Ranjan S., Yeh J.J., Peterson R.T., Sachidanandan C.;
+RT   "Small Molecule Inhibitors of NFkB Reverse Iron Overload and Hepcidin
+RT   Deregulation in a Zebrafish Model for Hereditary Hemochromatosis Type 3.";
+RL   ACS Chem. Biol. 13:2143-2152(2018).
+RN   [14] {ECO:0000313|Ensembl:ENSDARP00000153048}
+RP   IDENTIFICATION.
+RC   STRAIN=Tuebingen {ECO:0000313|Ensembl:ENSDARP00000153048};
+RG   Ensembl;
+RL   Submitted (APR-2018) to UniProtKB.
+RN   [15] {ECO:0000313|RefSeq:NP_998297.1}
+RP   IDENTIFICATION.
+RG   RefSeq;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Catalyzes the hydrolysis of fructose 1,6-bisphosphate to
+CC       fructose 6-phosphate in the presence of divalent cations, acting as a
+CC       rate-limiting enzyme in gluconeogenesis. Plays a role in regulating
+CC       glucose sensing and insulin secretion of pancreatic beta-cells. Appears
+CC       to modulate glycerol gluconeogenesis in liver. Important regulator of
+CC       appetite and adiposity; increased expression of the protein in liver
+CC       after nutrient excess increases circulating satiety hormones and
+CC       reduces appetite-stimulating neuropeptides and thus seems to provide a
+CC       feedback mechanism to limit weight gain.
+CC       {ECO:0000256|ARBA:ARBA00037308}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=beta-D-fructose 1,6-bisphosphate + H2O = beta-D-fructose 6-
+CC         phosphate + phosphate; Xref=Rhea:RHEA:11064, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:32966, ChEBI:CHEBI:43474, ChEBI:CHEBI:57634; EC=3.1.3.11;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001273};
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001946};
+CC   -!- PATHWAY: Carbohydrate biosynthesis; gluconeogenesis.
+CC       {ECO:0000256|ARBA:ARBA00004742}.
+CC   -!- SUBUNIT: Homotetramer. {ECO:0000256|ARBA:ARBA00011881}.
+CC   -!- SIMILARITY: Belongs to the FBPase class 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010941, ECO:0000256|RuleBase:RU000508}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CR762390; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; BC053267; AAH53267.1; -; mRNA.
+DR   RefSeq; NP_998297.1; NM_213132.1.
+DR   STRING; 7955.ENSDARP00000051312; -.
+DR   PaxDb; 7955-ENSDARP00000051312; -.
+DR   Ensembl; ENSDART00000051313.7; ENSDARP00000051312.5; ENSDARG00000020364.12.
+DR   Ensembl; ENSDART00000182643.1; ENSDARP00000153048.1; ENSDARG00000111266.1.
+DR   GeneID; 282672; -.
+DR   KEGG; dre:282672; -.
+DR   CTD; 282672; -.
+DR   ZFIN; ZDB-GENE-021206-11; fbp1b.
+DR   eggNOG; KOG1458; Eukaryota.
+DR   HOGENOM; CLU_039977_1_0_1; -.
+DR   OMA; YIPENCP; -.
+DR   OrthoDB; 292at2759; -.
+DR   TreeFam; TF314824; -.
+DR   Reactome; R-DRE-70263; Gluconeogenesis.
+DR   UniPathway; UPA00138; -.
+DR   Proteomes; UP000000437; Alternate scaffold 5.
+DR   Proteomes; UP000000437; Chromosome 5.
+DR   Bgee; ENSDARG00000020364; Expressed in liver and 17 other cell types or tissues.
+DR   GO; GO:0005737; C:cytoplasm; IBA:GO_Central.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0042132; F:fructose 1,6-bisphosphate 1-phosphatase activity; IBA:GO_Central.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0071391; P:cellular response to estrogen stimulus; IDA:ZFIN.
+DR   GO; GO:0030388; P:fructose 1,6-bisphosphate metabolic process; IBA:GO_Central.
+DR   GO; GO:0006002; P:fructose 6-phosphate metabolic process; IBA:GO_Central.
+DR   GO; GO:0006000; P:fructose metabolic process; IBA:GO_Central.
+DR   GO; GO:0006094; P:gluconeogenesis; IBA:GO_Central.
+DR   GO; GO:0005986; P:sucrose biosynthetic process; IBA:GO_Central.
+DR   CDD; cd00354; FBPase; 1.
+DR   Gene3D; 3.40.190.80; -; 1.
+DR   Gene3D; 3.30.540.10; Fructose-1,6-Bisphosphatase, subunit A, domain 1; 1.
+DR   HAMAP; MF_01855; FBPase_class1; 1.
+DR   InterPro; IPR044015; FBPase_C_dom.
+DR   InterPro; IPR000146; FBPase_class-1.
+DR   InterPro; IPR033391; FBPase_N.
+DR   InterPro; IPR028343; FBPtase.
+DR   InterPro; IPR020548; Fructose_bisphosphatase_AS.
+DR   PANTHER; PTHR11556:SF11; FRUCTOSE-1,6-BISPHOSPHATASE 1; 1.
+DR   PANTHER; PTHR11556; FRUCTOSE-1,6-BISPHOSPHATASE-RELATED; 1.
+DR   Pfam; PF00316; FBPase; 1.
+DR   Pfam; PF18913; FBPase_C; 1.
+DR   PIRSF; PIRSF500210; FBPtase; 1.
+DR   PIRSF; PIRSF000904; FBPtase_SBPase; 1.
+DR   PRINTS; PR00115; F16BPHPHTASE.
+DR   SUPFAM; SSF56655; Carbohydrate phosphatase; 1.
+DR   PROSITE; PS00124; FBPASE; 1.
+PE   1: Evidence at protein level;
+KW   Acetylation {ECO:0000256|ARBA:ARBA00022990};
+KW   Carbohydrate metabolism {ECO:0000256|ARBA:ARBA00023277,
+KW   ECO:0000256|RuleBase:RU000508};
+KW   Gluconeogenesis {ECO:0000256|ARBA:ARBA00022432};
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801, ECO:0000256|RuleBase:RU000508};
+KW   Magnesium {ECO:0000256|ARBA:ARBA00022842};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Phosphoprotein {ECO:0000256|ARBA:ARBA00022553};
+KW   Proteomics identification {ECO:0007829|PeptideAtlas:Q7T337};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000000437}.
+FT   DOMAIN          13..198
+FT                   /note="Fructose-1-6-bisphosphatase class I N-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF00316"
+FT   DOMAIN          203..332
+FT                   /note="Fructose-1-6-bisphosphatase class 1 C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF18913"
+SQ   SEQUENCE   337 AA;  36805 MW;  9FCAAB1DCB45B18E CRC64;
+     MSDRGAFDTN VVTLTRFVLE EGRKAKGTGE LTTLLNSMCT AIKAISTAVR KAGIANLYGI
+     AGSTNVTGDQ VKKLDVLSND LVINMIKSSF TSCVLVSEED EKAVIIEPEK RGKYVVCFDP
+     LDGSSNIDCL ASIGTIFAIY RKETDDEPSE KDALRSGRHI VAAGYALYGS ATMLVLSTGQ
+     GVNCFMLDPA IGEFILVDRD VRIKKKGKIY SLNEGYAQQF YPDVTEYLQK KKFPEDGSSP
+     YGGRYVGSMV ADVHRTLVYG GIFLYPANVK SPKGKLRLLY ECNPMAFIME QAGGMATTGA
+     MNVLDIQPES IHQRVPVVLG SPDDVKEYIS IYKKHAK
+//
+

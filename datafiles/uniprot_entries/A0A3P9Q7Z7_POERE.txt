@@ -1,0 +1,112 @@
+ID   A0A3P9Q7Z7_POERE        Unreviewed;       337 AA.
+AC   A0A3P9Q7Z7;
+DT   13-FEB-2019, integrated into UniProtKB/TrEMBL.
+DT   13-FEB-2019, sequence version 1.
+DT   24-JAN-2024, entry version 24.
+DE   RecName: Full=Fructose-1,6-bisphosphatase 1 {ECO:0000256|ARBA:ARBA00040734};
+DE            EC=3.1.3.11 {ECO:0000256|ARBA:ARBA00013093};
+DE   AltName: Full=D-fructose-1,6-bisphosphate 1-phosphohydrolase 1 {ECO:0000256|ARBA:ARBA00042758};
+DE   AltName: Full=Liver FBPase {ECO:0000256|ARBA:ARBA00042792};
+OS   Poecilia reticulata (Guppy) (Acanthophacelus reticulatus).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Neoteleostei; Acanthomorphata;
+OC   Ovalentaria; Atherinomorphae; Cyprinodontiformes; Poeciliidae; Poeciliinae;
+OC   Poecilia.
+OX   NCBI_TaxID=8081 {ECO:0000313|Ensembl:ENSPREP00000030296.1, ECO:0000313|Proteomes:UP000242638};
+RN   [1] {ECO:0000313|Proteomes:UP000242638}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Guanapo {ECO:0000313|Proteomes:UP000242638};
+RA   Kuenstner A., Dreyer C.;
+RT   "The genomic landscape of the Guanapo guppy.";
+RL   Submitted (NOV-2013) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|Ensembl:ENSPREP00000030296.1}
+RP   IDENTIFICATION.
+RC   STRAIN=Guanapo {ECO:0000313|Ensembl:ENSPREP00000030296.1};
+RG   Ensembl;
+RL   Submitted (SEP-2023) to UniProtKB.
+CC   -!- FUNCTION: Catalyzes the hydrolysis of fructose 1,6-bisphosphate to
+CC       fructose 6-phosphate in the presence of divalent cations, acting as a
+CC       rate-limiting enzyme in gluconeogenesis. Plays a role in regulating
+CC       glucose sensing and insulin secretion of pancreatic beta-cells. Appears
+CC       to modulate glycerol gluconeogenesis in liver. Important regulator of
+CC       appetite and adiposity; increased expression of the protein in liver
+CC       after nutrient excess increases circulating satiety hormones and
+CC       reduces appetite-stimulating neuropeptides and thus seems to provide a
+CC       feedback mechanism to limit weight gain.
+CC       {ECO:0000256|ARBA:ARBA00037308}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=beta-D-fructose 1,6-bisphosphate + H2O = beta-D-fructose 6-
+CC         phosphate + phosphate; Xref=Rhea:RHEA:11064, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:32966, ChEBI:CHEBI:43474, ChEBI:CHEBI:57634; EC=3.1.3.11;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001273};
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420;
+CC         Evidence={ECO:0000256|ARBA:ARBA00001946};
+CC   -!- PATHWAY: Carbohydrate biosynthesis; gluconeogenesis.
+CC       {ECO:0000256|ARBA:ARBA00004742}.
+CC   -!- SUBUNIT: Homotetramer. {ECO:0000256|ARBA:ARBA00011881}.
+CC   -!- SIMILARITY: Belongs to the FBPase class 1 family.
+CC       {ECO:0000256|ARBA:ARBA00010941, ECO:0000256|RuleBase:RU000508}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   RefSeq; XP_008421737.1; XM_008423515.1.
+DR   STRING; 8081.ENSPREP00000030296; -.
+DR   Ensembl; ENSPRET00000030640.1; ENSPREP00000030296.1; ENSPREG00000020518.1.
+DR   Ensembl; ENSPRET00000030656.1; ENSPREP00000030312.1; ENSPREG00000020518.1.
+DR   GeneID; 103473350; -.
+DR   KEGG; pret:103473350; -.
+DR   CTD; 282672; -.
+DR   GeneTree; ENSGT00390000015513; -.
+DR   OMA; YIPENCP; -.
+DR   OrthoDB; 292at2759; -.
+DR   UniPathway; UPA00138; -.
+DR   Proteomes; UP000242638; Unassembled WGS sequence.
+DR   GO; GO:0042132; F:fructose 1,6-bisphosphate 1-phosphatase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0046872; F:metal ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0071391; P:cellular response to estrogen stimulus; IEA:Ensembl.
+DR   GO; GO:0006094; P:gluconeogenesis; IEA:UniProtKB-UniPathway.
+DR   CDD; cd00354; FBPase; 1.
+DR   Gene3D; 3.40.190.80; -; 1.
+DR   Gene3D; 3.30.540.10; Fructose-1,6-Bisphosphatase, subunit A, domain 1; 1.
+DR   HAMAP; MF_01855; FBPase_class1; 1.
+DR   InterPro; IPR044015; FBPase_C_dom.
+DR   InterPro; IPR000146; FBPase_class-1.
+DR   InterPro; IPR033391; FBPase_N.
+DR   InterPro; IPR028343; FBPtase.
+DR   InterPro; IPR020548; Fructose_bisphosphatase_AS.
+DR   PANTHER; PTHR11556:SF11; FRUCTOSE-1,6-BISPHOSPHATASE 1; 1.
+DR   PANTHER; PTHR11556; FRUCTOSE-1,6-BISPHOSPHATASE-RELATED; 1.
+DR   Pfam; PF00316; FBPase; 1.
+DR   Pfam; PF18913; FBPase_C; 1.
+DR   PIRSF; PIRSF500210; FBPtase; 1.
+DR   PIRSF; PIRSF000904; FBPtase_SBPase; 1.
+DR   PRINTS; PR00115; F16BPHPHTASE.
+DR   SUPFAM; SSF56655; Carbohydrate phosphatase; 1.
+DR   PROSITE; PS00124; FBPASE; 1.
+PE   3: Inferred from homology;
+KW   Acetylation {ECO:0000256|ARBA:ARBA00022990};
+KW   Carbohydrate metabolism {ECO:0000256|ARBA:ARBA00023277,
+KW   ECO:0000256|RuleBase:RU000508};
+KW   Gluconeogenesis {ECO:0000256|ARBA:ARBA00022432};
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801, ECO:0000256|RuleBase:RU000508};
+KW   Magnesium {ECO:0000256|ARBA:ARBA00022842};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Phosphoprotein {ECO:0000256|ARBA:ARBA00022553};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000242638}.
+FT   DOMAIN          13..198
+FT                   /note="Fructose-1-6-bisphosphatase class I N-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF00316"
+FT   DOMAIN          203..332
+FT                   /note="Fructose-1-6-bisphosphatase class 1 C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF18913"
+SQ   SEQUENCE   337 AA;  36683 MW;  049676CABE9AA16F CRC64;
+     MSDRGAFDTN VVTLTRFVLE EGRKAQGTGE LTTLLNSICT AVKAISSAVR KAGIANLYGI
+     AGSTNVTGDQ VKKLDILSND LVINMIKSSF TSCVLVSEED EKAIIVEPDK RGKYIVCFDP
+     LDGSSNIDCL VSIGTIFAIY KKTTAGEPCE QDALQPGRNI VAAGYALYGS ATMMVISTGQ
+     GVNGFMLDPA IGEFILVDRD VKIKKKGKIY SLNEGYAQHF YPDVTEYLHK KKHPEDGSAP
+     YGSRYIGSMV ADVHRTLVYG GIFLYPANVK SPKGKLRLLY ECNPMAFIME QAGGKATTGS
+     ENVLDIQPTN IHQRVPVILG SPDDVQEYLS MYKKHNK
+//
+
