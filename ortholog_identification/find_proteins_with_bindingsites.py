@@ -1,18 +1,6 @@
 import requests
 import pandas as pd
 
-# TAB SEPARATED VALUES
-url = "https://rest.uniprot.org/uniprotkb/search?query=accession:A6TG88+OR+accession:P0A798+OR+accession:P43863+OR+accession:Q8ZJL6&fields=accession,gene_names,protein_name,organism_name,annotation_score,ft_binding&format=tsv"
-response = requests.get(url)
-if response.status_code == 200:
-    # print(response.text)
-    filepath = 'datafiles/results.tsv'
-    with open (filepath, 'w') as file:
-        file.write(response.text)
-        file.close()
-else:
-    print('failed')
-
 def find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_filepath, num_valid_prots_threshold = 20, annotation_score_threshold=3.0):
     orthologs_df = pd.read_csv(pathway_orthologs_filepath)
     print(orthologs_df)
