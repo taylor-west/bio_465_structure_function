@@ -9,7 +9,7 @@ import ast
 import re
 
 CWD = os.getcwd()
-PATH_TO_DATAFILES = os.path.join(CWD, "../datafiles")
+PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 PATH_TO_EVAL_FILES = os.path.join(PATH_TO_DATAFILES, "eval_files")
 
