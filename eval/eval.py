@@ -88,7 +88,7 @@ def analyze_key_locations(dataframe):
         except ZeroDivisionError as e:
             percent_of_cluster_expected = "No cluster"
         if len(expected_positions) == 0:
-            percent_of_cluster_expected = "No cluster"
+            percent_of_cluster_expected = ""
             percent_expected_found = "No expected residues"
         else:
             percent_expected_found = len(common_positions) / len(expected_positions)
