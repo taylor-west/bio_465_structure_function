@@ -67,17 +67,19 @@ def analyze_key_locations(dataframe):
     # for each row, access relevant info from dataframe
     for index, row in key_results_df.iterrows():
         # if there is nothing in clusters this throws an error
+        if row['has_pdb_data'] == 'No':
+            continue
         try:
             cluster_positions = set(row['clusters'])
         except TypeError as e:
-            cluster_positions = set("X")
+            cluster_positions = set()
         try:
             expected_positions = set(row['expected_residues'])
         except TypeError as e:
-            expected_positions = set("Y")
+            expected_positions = set()
         common_positions = list(cluster_positions.intersection(expected_positions))
         if not common_positions:
-            key_results_df.at[index, 'common_positions'] = []
+            key_results_df.at[index, 'common_positions'] = None
         key_results_df.at[index, 'common_positions'] = common_positions
         num_key_present = len(common_positions)
         # handle case where there might not be clusters or expected residues
@@ -104,15 +106,20 @@ def evaluate_results(dataframe):
     # results_df.drop('MSA_sequence', axis=1, inplace=True)
     results_df.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'analyzed_clusters.csv'))
 
+    # drop all rows with no pdb data available
+    only_rows_with_pdb_data = results_df[results_df['has_pdb_data'] != 'No']
+    only_rows_with_pdb_data.reset_index(drop=True, inplace=True)
+    only_rows_with_pdb_data.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'only_rows_with_pdb_data.csv'))
+
     # drops rows without any clusters
-    only_rows_with_clusters = results_df.dropna(subset=['clusters'])
+    only_rows_with_clusters = only_rows_with_pdb_data.dropna(subset=['clusters'])
+    only_rows_with_clusters = only_rows_with_clusters[only_rows_with_clusters['clusters'].apply(lambda x: len(x) != 0)]
     only_rows_with_clusters.reset_index(drop=True, inplace=True)
     only_rows_with_clusters.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'only_rows_with_clusters.csv'))
 
     # Filter rows where 'expected_residues' column contains an empty list
     intermediate_df = only_rows_with_clusters.dropna(subset=['expected_residues'])
     only_rows_with_expected = intermediate_df[intermediate_df['expected_residues'].apply(lambda x: len(x) != 0)]
-
     # Reset the index to make it continuous
     only_rows_with_expected.reset_index(drop=True, inplace=True)
     # save to file

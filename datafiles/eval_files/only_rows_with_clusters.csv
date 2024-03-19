@@ -1,625 +1,625 @@
-,entry_id,uniprot_id,MSA_pos,seq_pos,residue,clusters,expected_residues,common_positions,num_key_present,percent_of_cluster_expected,percent_expected_found
-0,MPG1_YEAST,P41940,104,85,G,[88],[],[],0,No cluster,No expected residues
-1,A8J3F9_CHLRE,A8J3F9,104,85,G,[88],[],[],0,No cluster,No expected residues
-2,GMPP3_ARATH,Q8H1Q7,104,66,G,[69],[],[],0,No cluster,No expected residues
-3,D8RTK5_SELML,D8RTK5,104,85,G,[88],[],[],0,No cluster,No expected residues
-4,D8T5L0_SELML,D8T5L0,104,85,G,[88],[],[],0,No cluster,No expected residues
-5,D8R6R6_SELML,D8R6R6,104,85,G,[88],[],[],0,No cluster,No expected residues
-6,GMPP2_ARATH,Q9M2S0,104,88,G,[91],[],[],0,No cluster,No expected residues
-7,G7KGV6_MEDTR,G7KGV6,104,85,G,[88],[],[],0,No cluster,No expected residues
-8,GMPP1_ARATH,O22287,104,85,G,[88],[],[],0,No cluster,No expected residues
-9,B4G0L2_MAIZE,B4G0L2,104,85,G,[88],[],[],0,No cluster,No expected residues
-10,GMPP1_ORYSJ,Q84JH5,104,85,G,[88],[],[],0,No cluster,No expected residues
-11,B4FEP8_MAIZE,B4FEP8,104,85,G,[88],[],[],0,No cluster,No expected residues
-12,C4JAC1_MAIZE,C4JAC1,104,85,G,[88],[],[],0,No cluster,No expected residues
-13,GMPP2_ORYSJ,Q941T9,104,85,G,[88],[],[],0,No cluster,No expected residues
-14,GMPP3_ORYSJ,Q6Z9A3,104,85,G,[88],[],[],0,No cluster,No expected residues
-15,GMPPB_CAEEL,A3QMC8,104,85,G,[88],[],[],0,No cluster,No expected residues
-16,GMPPB_DROME,Q7JZB4,104,95,G,[98],[],[],0,No cluster,No expected residues
-17,G5BZX1_HETGA,G5BZX1,104,85,G,[88],[],[],0,No cluster,No expected residues
-18,GMPPB_MOUSE,Q8BTZ7,104,85,G,[88],[],[],0,No cluster,No expected residues
-19,A0A3P9QHR2_POERE,A0A3P9QHR2,104,85,G,[88],[],[],0,No cluster,No expected residues
-20,F1R683_DANRE,F1R683,104,85,G,[88],[],[],0,No cluster,No expected residues
-21,YBB2_SCHPO,O60064,104,92,G,[95],[],[],0,No cluster,No expected residues
-22,D8RZ45_SELML,D8RZ45,104,95,G,[98],[],[],0,No cluster,No expected residues
-23,D8SV91_SELML,D8SV91,104,95,G,[98],[],[],0,No cluster,No expected residues
-24,A0A1P8AZM7_ARATH,A0A1P8AZM7,104,81,G,[84],[],[],0,No cluster,No expected residues
-25,A0A072UZU5_MEDTR,A0A072UZU5,104,95,G,[98],[],[],0,No cluster,No expected residues
-26,G7KJH0_MEDTR,G7KJH0,104,94,G,[97],[],[],0,No cluster,No expected residues
-27,Q9C9P3_ARATH,Q9C9P3,104,96,G,[99],[],[],0,No cluster,No expected residues
-28,B4FCE5_MAIZE,B4FCE5,104,31,G,[34],[],[],0,No cluster,No expected residues
-29,B4FQP6_MAIZE,B4FQP6,104,95,G,[98],[],[],0,No cluster,No expected residues
-30,Q9N4V3_CAEEL,Q9N4V3,104,90,G,[93],[],[],0,No cluster,No expected residues
-31,Q8SXU3_DROME,Q8SXU3,104,92,G,[95],[],[],0,No cluster,No expected residues
-32,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,104,90,G,[93],[],[],0,No cluster,No expected residues
-33,GMPPA_MOUSE,Q922H4,104,90,G,[93],[],[],0,No cluster,No expected residues
-34,GMPPA_RAT,Q5XIC1,104,90,G,[93],[],[],0,No cluster,No expected residues
-35,GMPAB_DANRE,Q7SXP8,104,90,G,[93],[],[],0,No cluster,No expected residues
-36,A0A674HLF9_TAEGU,A0A674HLF9,104,91,G,[94],[],[],0,No cluster,No expected residues
-37,A0A3P9PHF0_POERE,A0A3P9PHF0,104,90,G,[93],[],[],0,No cluster,No expected residues
-38,GMPAA_DANRE,Q6GMK8,104,90,G,[93],[],[],0,No cluster,No expected residues
-39,MPG1_YEAST,P41940,107,88,G,[85],[],[],0,No cluster,No expected residues
-40,A8J3F9_CHLRE,A8J3F9,107,88,G,[85],[],[],0,No cluster,No expected residues
-41,GMPP3_ARATH,Q8H1Q7,107,69,G,[66],[],[],0,No cluster,No expected residues
-42,D8RTK5_SELML,D8RTK5,107,88,G,[85],[],[],0,No cluster,No expected residues
-43,D8T5L0_SELML,D8T5L0,107,88,G,[85],[],[],0,No cluster,No expected residues
-44,D8R6R6_SELML,D8R6R6,107,88,G,[85],[],[],0,No cluster,No expected residues
-45,GMPP2_ARATH,Q9M2S0,107,91,G,[88],[],[],0,No cluster,No expected residues
-46,G7KGV6_MEDTR,G7KGV6,107,88,G,[85],[],[],0,No cluster,No expected residues
-47,GMPP1_ARATH,O22287,107,88,G,[85],[],[],0,No cluster,No expected residues
-48,B4G0L2_MAIZE,B4G0L2,107,88,G,[85],[],[],0,No cluster,No expected residues
-49,GMPP1_ORYSJ,Q84JH5,107,88,G,[85],[],[],0,No cluster,No expected residues
-50,B4FEP8_MAIZE,B4FEP8,107,88,G,[85],[],[],0,No cluster,No expected residues
-51,C4JAC1_MAIZE,C4JAC1,107,88,G,[85],[],[],0,No cluster,No expected residues
-52,GMPP2_ORYSJ,Q941T9,107,88,G,[85],[],[],0,No cluster,No expected residues
-53,GMPP3_ORYSJ,Q6Z9A3,107,88,G,[85],[],[],0,No cluster,No expected residues
-54,GMPPB_CAEEL,A3QMC8,107,88,G,[85],[],[],0,No cluster,No expected residues
-55,GMPPB_DROME,Q7JZB4,107,98,G,[95],[],[],0,No cluster,No expected residues
-56,G5BZX1_HETGA,G5BZX1,107,88,G,[85],[],[],0,No cluster,No expected residues
-57,GMPPB_MOUSE,Q8BTZ7,107,88,G,[85],[],[],0,No cluster,No expected residues
-58,A0A3P9QHR2_POERE,A0A3P9QHR2,107,88,G,[85],[],[],0,No cluster,No expected residues
-59,F1R683_DANRE,F1R683,107,88,G,[85],[],[],0,No cluster,No expected residues
-60,YBB2_SCHPO,O60064,107,95,G,[92],[],[],0,No cluster,No expected residues
-61,D8RZ45_SELML,D8RZ45,107,98,G,[95],[],[],0,No cluster,No expected residues
-62,D8SV91_SELML,D8SV91,107,98,G,[95],[],[],0,No cluster,No expected residues
-63,A0A1P8AZM7_ARATH,A0A1P8AZM7,107,84,G,[81],[],[],0,No cluster,No expected residues
-64,A0A072UZU5_MEDTR,A0A072UZU5,107,98,G,[95],[],[],0,No cluster,No expected residues
-65,G7KJH0_MEDTR,G7KJH0,107,97,G,[94],[],[],0,No cluster,No expected residues
-66,Q9C9P3_ARATH,Q9C9P3,107,99,G,[96],[],[],0,No cluster,No expected residues
-67,B4FCE5_MAIZE,B4FCE5,107,34,G,[31],[],[],0,No cluster,No expected residues
-68,B4FQP6_MAIZE,B4FQP6,107,98,G,[95],[],[],0,No cluster,No expected residues
-69,Q9N4V3_CAEEL,Q9N4V3,107,93,G,[90],[],[],0,No cluster,No expected residues
-70,Q8SXU3_DROME,Q8SXU3,107,95,G,[92],[],[],0,No cluster,No expected residues
-71,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,107,93,G,[90],[],[],0,No cluster,No expected residues
-72,GMPPA_MOUSE,Q922H4,107,93,G,[90],[],[],0,No cluster,No expected residues
-73,GMPPA_RAT,Q5XIC1,107,93,G,[90],[],[],0,No cluster,No expected residues
-74,GMPAB_DANRE,Q7SXP8,107,93,G,[90],[],[],0,No cluster,No expected residues
-75,A0A674HLF9_TAEGU,A0A674HLF9,107,94,G,[91],[],[],0,No cluster,No expected residues
-76,A0A3P9PHF0_POERE,A0A3P9PHF0,107,93,G,[90],[],[],0,No cluster,No expected residues
-77,GMPAA_DANRE,Q6GMK8,107,93,G,[90],[],[],0,No cluster,No expected residues
-78,MPG1_YEAST,P41940,130,110,D,[111],[],[],0,No cluster,No expected residues
-79,A8J3F9_CHLRE,A8J3F9,130,111,D,[112],[],[],0,No cluster,No expected residues
-80,GMPP3_ARATH,Q8H1Q7,130,92,D,[93],[],[],0,No cluster,No expected residues
-81,D8RTK5_SELML,D8RTK5,130,111,D,[112],[],[],0,No cluster,No expected residues
-82,D8T5L0_SELML,D8T5L0,130,111,D,[112],[],[],0,No cluster,No expected residues
-83,D8R6R6_SELML,D8R6R6,130,111,D,[112],[],[],0,No cluster,No expected residues
-84,GMPP2_ARATH,Q9M2S0,130,114,D,[115],[],[],0,No cluster,No expected residues
-85,G7KGV6_MEDTR,G7KGV6,130,111,D,[112],[],[],0,No cluster,No expected residues
-86,GMPP1_ARATH,O22287,130,111,D,[112],[],[],0,No cluster,No expected residues
-87,B4G0L2_MAIZE,B4G0L2,130,111,D,[112],[],[],0,No cluster,No expected residues
-88,GMPP1_ORYSJ,Q84JH5,130,111,D,[112],[],[],0,No cluster,No expected residues
-89,B4FEP8_MAIZE,B4FEP8,130,111,D,[112],[],[],0,No cluster,No expected residues
-90,C4JAC1_MAIZE,C4JAC1,130,111,D,[112],[],[],0,No cluster,No expected residues
-91,GMPP2_ORYSJ,Q941T9,130,111,D,[112],[],[],0,No cluster,No expected residues
-92,GMPP3_ORYSJ,Q6Z9A3,130,111,D,[112],[],[],0,No cluster,No expected residues
-93,GMPPB_CAEEL,A3QMC8,130,109,D,[110],[],[],0,No cluster,No expected residues
-94,GMPPB_DROME,Q7JZB4,130,120,D,[121],[],[],0,No cluster,No expected residues
-95,G5BZX1_HETGA,G5BZX1,130,110,D,[111],[],[],0,No cluster,No expected residues
-96,GMPPB_MOUSE,Q8BTZ7,130,110,D,[111],[],[],0,No cluster,No expected residues
-97,A0A3P9QHR2_POERE,A0A3P9QHR2,130,110,D,[111],[],[],0,No cluster,No expected residues
-98,F1R683_DANRE,F1R683,130,110,D,[111],[],[],0,No cluster,No expected residues
-99,YBB2_SCHPO,O60064,130,118,D,[119],[],[],0,No cluster,No expected residues
-100,D8RZ45_SELML,D8RZ45,130,121,D,[122],[],[],0,No cluster,No expected residues
-101,D8SV91_SELML,D8SV91,130,121,D,[122],[],[],0,No cluster,No expected residues
-102,A0A1P8AZM7_ARATH,A0A1P8AZM7,130,107,D,[108],[],[],0,No cluster,No expected residues
-103,A0A072UZU5_MEDTR,A0A072UZU5,130,121,D,[122],[],[],0,No cluster,No expected residues
-104,G7KJH0_MEDTR,G7KJH0,130,120,D,[121],[],[],0,No cluster,No expected residues
-105,Q9C9P3_ARATH,Q9C9P3,130,122,D,[123],[],[],0,No cluster,No expected residues
-106,B4FCE5_MAIZE,B4FCE5,130,57,D,[58],[],[],0,No cluster,No expected residues
-107,B4FQP6_MAIZE,B4FQP6,130,121,D,[122],[],[],0,No cluster,No expected residues
-108,Q9N4V3_CAEEL,Q9N4V3,130,116,D,[117],[],[],0,No cluster,No expected residues
-109,Q8SXU3_DROME,Q8SXU3,130,118,D,[119],[],[],0,No cluster,No expected residues
-110,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,130,116,D,[117],[],[],0,No cluster,No expected residues
-111,GMPPA_MOUSE,Q922H4,130,116,D,[117],[],[],0,No cluster,No expected residues
-112,GMPPA_RAT,Q5XIC1,130,116,D,[117],[],[],0,No cluster,No expected residues
-113,GMPAB_DANRE,Q7SXP8,130,116,D,[117],[],[],0,No cluster,No expected residues
-114,A0A674HLF9_TAEGU,A0A674HLF9,130,117,D,[118],[],[],0,No cluster,No expected residues
-115,A0A3P9PHF0_POERE,A0A3P9PHF0,130,116,D,[117],[],[],0,No cluster,No expected residues
-116,GMPAA_DANRE,Q6GMK8,130,116,D,[117],[],[],0,No cluster,No expected residues
-117,MPG1_YEAST,P41940,131,111,V,"[110, 175]",[],[],0,No cluster,No expected residues
-118,A8J3F9_CHLRE,A8J3F9,131,112,V,"[111, 174]",[],[],0,No cluster,No expected residues
-119,GMPP3_ARATH,Q8H1Q7,131,93,V,[92],[],[],0,No cluster,No expected residues
-120,D8RTK5_SELML,D8RTK5,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-121,D8T5L0_SELML,D8T5L0,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-122,D8R6R6_SELML,D8R6R6,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-123,GMPP2_ARATH,Q9M2S0,131,115,V,"[114, 178]",[],[],0,No cluster,No expected residues
-124,G7KGV6_MEDTR,G7KGV6,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-125,GMPP1_ARATH,O22287,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-126,B4G0L2_MAIZE,B4G0L2,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-127,GMPP1_ORYSJ,Q84JH5,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-128,B4FEP8_MAIZE,B4FEP8,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-129,C4JAC1_MAIZE,C4JAC1,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-130,GMPP2_ORYSJ,Q941T9,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-131,GMPP3_ORYSJ,Q6Z9A3,131,112,V,"[111, 175]",[],[],0,No cluster,No expected residues
-132,GMPPB_CAEEL,A3QMC8,131,110,V,"[109, 173]",[],[],0,No cluster,No expected residues
-133,GMPPB_DROME,Q7JZB4,131,121,V,"[120, 183]",[],[],0,No cluster,No expected residues
-134,G5BZX1_HETGA,G5BZX1,131,111,V,"[110, 174]",[],[],0,No cluster,No expected residues
-135,GMPPB_MOUSE,Q8BTZ7,131,111,V,"[110, 174]",[],[],0,No cluster,No expected residues
-136,A0A3P9QHR2_POERE,A0A3P9QHR2,131,111,V,"[110, 174]",[],[],0,No cluster,No expected residues
-137,F1R683_DANRE,F1R683,131,111,V,"[110, 174]",[],[],0,No cluster,No expected residues
-138,YBB2_SCHPO,O60064,131,119,V,[118],[],[],0,No cluster,No expected residues
-139,D8RZ45_SELML,D8RZ45,131,122,V,[121],[],[],0,No cluster,No expected residues
-140,D8SV91_SELML,D8SV91,131,122,V,"[121, 187]",[],[],0,No cluster,No expected residues
-141,A0A1P8AZM7_ARATH,A0A1P8AZM7,131,108,V,[107],[],[],0,No cluster,No expected residues
-142,A0A072UZU5_MEDTR,A0A072UZU5,131,122,V,"[121, 187]",[],[],0,No cluster,No expected residues
-143,G7KJH0_MEDTR,G7KJH0,131,121,V,"[120, 186]",[],[],0,No cluster,No expected residues
-144,Q9C9P3_ARATH,Q9C9P3,131,123,V,"[122, 188]",[],[],0,No cluster,No expected residues
-145,B4FCE5_MAIZE,B4FCE5,131,58,V,"[57, 123]",[],[],0,No cluster,No expected residues
-146,B4FQP6_MAIZE,B4FQP6,131,122,V,[121],[],[],0,No cluster,No expected residues
-147,Q9N4V3_CAEEL,Q9N4V3,131,117,V,"[116, 182]",[],[],0,No cluster,No expected residues
-148,Q8SXU3_DROME,Q8SXU3,131,119,V,"[118, 186]",[],[],0,No cluster,No expected residues
-149,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,131,117,V,"[116, 182]",[],[],0,No cluster,No expected residues
-150,GMPPA_MOUSE,Q922H4,131,117,V,[116],[],[],0,No cluster,No expected residues
-151,GMPPA_RAT,Q5XIC1,131,117,V,"[116, 182]",[],[],0,No cluster,No expected residues
-152,GMPAB_DANRE,Q7SXP8,131,117,V,"[116, 184]",[],[],0,No cluster,No expected residues
-153,A0A674HLF9_TAEGU,A0A674HLF9,131,118,V,"[117, 185]",[],[],0,No cluster,No expected residues
-154,A0A3P9PHF0_POERE,A0A3P9PHF0,131,117,V,"[116, 184]",[],[],0,No cluster,No expected residues
-155,GMPAA_DANRE,Q6GMK8,131,117,V,"[116, 184]",[],[],0,No cluster,No expected residues
-156,MPG1_YEAST,P41940,170,145,G,"[163, 172]",[],[],0,No cluster,No expected residues
-157,A8J3F9_CHLRE,A8J3F9,170,146,G,"[162, 171]",[],[],0,No cluster,No expected residues
-158,GMPP3_ARATH,Q8H1Q7,170,127,G,"[144, 153]",[],[],0,No cluster,No expected residues
-159,D8RTK5_SELML,D8RTK5,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-160,D8T5L0_SELML,D8T5L0,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-161,D8R6R6_SELML,D8R6R6,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-162,GMPP2_ARATH,Q9M2S0,170,149,G,"[166, 175]",[],[],0,No cluster,No expected residues
-163,G7KGV6_MEDTR,G7KGV6,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-164,GMPP1_ARATH,O22287,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-165,B4G0L2_MAIZE,B4G0L2,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-166,GMPP1_ORYSJ,Q84JH5,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-167,B4FEP8_MAIZE,B4FEP8,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-168,C4JAC1_MAIZE,C4JAC1,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-169,GMPP2_ORYSJ,Q941T9,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-170,GMPP3_ORYSJ,Q6Z9A3,170,146,G,"[163, 172]",[],[],0,No cluster,No expected residues
-171,GMPPB_CAEEL,A3QMC8,170,144,G,"[161, 170]",[],[],0,No cluster,No expected residues
-172,GMPPB_DROME,Q7JZB4,170,155,G,"[171, 180]",[],[],0,No cluster,No expected residues
-173,G5BZX1_HETGA,G5BZX1,170,145,G,"[162, 171]",[],[],0,No cluster,No expected residues
-174,GMPPB_MOUSE,Q8BTZ7,170,145,G,"[162, 171]",[],[],0,No cluster,No expected residues
-175,A0A3P9QHR2_POERE,A0A3P9QHR2,170,145,G,"[162, 171]",[],[],0,No cluster,No expected residues
-176,F1R683_DANRE,F1R683,170,145,G,"[162, 171]",[],[],0,No cluster,No expected residues
-177,YBB2_SCHPO,O60064,170,155,G,"[172, 181]",[],[],0,No cluster,No expected residues
-178,D8RZ45_SELML,D8RZ45,170,158,G,"[175, 184]",[],[],0,No cluster,No expected residues
-179,D8SV91_SELML,D8SV91,170,158,G,"[175, 184]",[],[],0,No cluster,No expected residues
-180,A0A1P8AZM7_ARATH,A0A1P8AZM7,170,144,G,"[161, 170]",[],[],0,No cluster,No expected residues
-181,A0A072UZU5_MEDTR,A0A072UZU5,170,158,G,"[175, 184]",[],[],0,No cluster,No expected residues
-182,G7KJH0_MEDTR,G7KJH0,170,157,G,"[174, 183]",[],[],0,No cluster,No expected residues
-183,Q9C9P3_ARATH,Q9C9P3,170,159,G,"[176, 185]",[],[],0,No cluster,No expected residues
-184,B4FCE5_MAIZE,B4FCE5,170,94,G,"[111, 120]",[],[],0,No cluster,No expected residues
-185,B4FQP6_MAIZE,B4FQP6,170,158,G,"[175, 184]",[],[],0,No cluster,No expected residues
-186,Q9N4V3_CAEEL,Q9N4V3,170,154,G,"[170, 179]",[],[],0,No cluster,No expected residues
-187,Q8SXU3_DROME,Q8SXU3,170,157,G,"[174, 183]",[],[],0,No cluster,No expected residues
-188,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,170,153,G,"[170, 179]",[],[],0,No cluster,No expected residues
-189,GMPPA_MOUSE,Q922H4,170,153,G,"[170, 179]",[],[],0,No cluster,No expected residues
-190,GMPPA_RAT,Q5XIC1,170,153,G,"[170, 179]",[],[],0,No cluster,No expected residues
-191,GMPAB_DANRE,Q7SXP8,170,155,G,"[172, 181]",[],[],0,No cluster,No expected residues
-192,A0A674HLF9_TAEGU,A0A674HLF9,170,156,G,"[173, 182]",[],[],0,No cluster,No expected residues
-193,A0A3P9PHF0_POERE,A0A3P9PHF0,170,155,G,"[172, 181]",[],[],0,No cluster,No expected residues
-194,GMPAA_DANRE,Q6GMK8,170,155,G,"[172, 181]",[],[],0,No cluster,No expected residues
-195,MPG1_YEAST,P41940,188,163,K,"[145, 164]",[],[],0,No cluster,No expected residues
-196,A8J3F9_CHLRE,A8J3F9,188,162,K,"[146, 163]",[],[],0,No cluster,No expected residues
-197,GMPP3_ARATH,Q8H1Q7,188,144,K,"[127, 145]",[],[],0,No cluster,No expected residues
-198,D8RTK5_SELML,D8RTK5,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-199,D8T5L0_SELML,D8T5L0,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-200,D8R6R6_SELML,D8R6R6,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-201,GMPP2_ARATH,Q9M2S0,188,166,K,"[149, 167]",[],[],0,No cluster,No expected residues
-202,G7KGV6_MEDTR,G7KGV6,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-203,GMPP1_ARATH,O22287,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-204,B4G0L2_MAIZE,B4G0L2,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-205,GMPP1_ORYSJ,Q84JH5,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-206,B4FEP8_MAIZE,B4FEP8,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-207,C4JAC1_MAIZE,C4JAC1,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-208,GMPP2_ORYSJ,Q941T9,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-209,GMPP3_ORYSJ,Q6Z9A3,188,163,K,"[146, 164]",[],[],0,No cluster,No expected residues
-210,GMPPB_CAEEL,A3QMC8,188,161,K,"[144, 162]",[],[],0,No cluster,No expected residues
-211,GMPPB_DROME,Q7JZB4,188,171,K,"[155, 172]",[],[],0,No cluster,No expected residues
-212,G5BZX1_HETGA,G5BZX1,188,162,K,"[145, 163]",[],[],0,No cluster,No expected residues
-213,GMPPB_MOUSE,Q8BTZ7,188,162,K,"[145, 163]",[],[],0,No cluster,No expected residues
-214,A0A3P9QHR2_POERE,A0A3P9QHR2,188,162,K,"[145, 163]",[],[],0,No cluster,No expected residues
-215,F1R683_DANRE,F1R683,188,162,K,"[145, 163]",[],[],0,No cluster,No expected residues
-216,YBB2_SCHPO,O60064,188,172,K,"[155, 173]",[],[],0,No cluster,No expected residues
-217,D8RZ45_SELML,D8RZ45,188,175,K,"[158, 176]",[],[],0,No cluster,No expected residues
-218,D8SV91_SELML,D8SV91,188,175,K,"[158, 176]",[],[],0,No cluster,No expected residues
-219,A0A1P8AZM7_ARATH,A0A1P8AZM7,188,161,K,"[144, 162]",[],[],0,No cluster,No expected residues
-220,A0A072UZU5_MEDTR,A0A072UZU5,188,175,K,"[158, 176]",[],[],0,No cluster,No expected residues
-221,G7KJH0_MEDTR,G7KJH0,188,174,K,"[157, 175]",[],[],0,No cluster,No expected residues
-222,Q9C9P3_ARATH,Q9C9P3,188,176,K,"[159, 177]",[],[],0,No cluster,No expected residues
-223,B4FCE5_MAIZE,B4FCE5,188,111,K,"[94, 112]",[],[],0,No cluster,No expected residues
-224,B4FQP6_MAIZE,B4FQP6,188,175,K,"[158, 176]",[],[],0,No cluster,No expected residues
-225,Q9N4V3_CAEEL,Q9N4V3,188,170,K,"[154, 171]",[],[],0,No cluster,No expected residues
-226,Q8SXU3_DROME,Q8SXU3,188,174,K,"[157, 175]",[],[],0,No cluster,No expected residues
-227,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,188,170,K,"[153, 171]",[],[],0,No cluster,No expected residues
-228,GMPPA_MOUSE,Q922H4,188,170,K,"[153, 171]",[],[],0,No cluster,No expected residues
-229,GMPPA_RAT,Q5XIC1,188,170,K,"[153, 171]",[],[],0,No cluster,No expected residues
-230,GMPAB_DANRE,Q7SXP8,188,172,K,"[155, 173]",[],[],0,No cluster,No expected residues
-231,A0A674HLF9_TAEGU,A0A674HLF9,188,173,K,"[156, 174]",[],[],0,No cluster,No expected residues
-232,A0A3P9PHF0_POERE,A0A3P9PHF0,188,172,K,"[155, 173]",[],[],0,No cluster,No expected residues
-233,GMPAA_DANRE,Q6GMK8,188,172,K,"[155, 173]",[],[],0,No cluster,No expected residues
-234,MPG1_YEAST,P41940,189,164,P,[163],[],[],0,No cluster,No expected residues
-235,A8J3F9_CHLRE,A8J3F9,189,163,P,[162],[],[],0,No cluster,No expected residues
-236,GMPP3_ARATH,Q8H1Q7,189,145,P,[144],[],[],0,No cluster,No expected residues
-237,D8RTK5_SELML,D8RTK5,189,164,P,[163],[],[],0,No cluster,No expected residues
-238,D8T5L0_SELML,D8T5L0,189,164,P,[163],[],[],0,No cluster,No expected residues
-239,D8R6R6_SELML,D8R6R6,189,164,P,[163],[],[],0,No cluster,No expected residues
-240,GMPP2_ARATH,Q9M2S0,189,167,P,[166],[],[],0,No cluster,No expected residues
-241,G7KGV6_MEDTR,G7KGV6,189,164,P,[163],[],[],0,No cluster,No expected residues
-242,GMPP1_ARATH,O22287,189,164,P,[163],[],[],0,No cluster,No expected residues
-243,B4G0L2_MAIZE,B4G0L2,189,164,P,[163],[],[],0,No cluster,No expected residues
-244,GMPP1_ORYSJ,Q84JH5,189,164,P,[163],[],[],0,No cluster,No expected residues
-245,B4FEP8_MAIZE,B4FEP8,189,164,P,[163],[],[],0,No cluster,No expected residues
-246,C4JAC1_MAIZE,C4JAC1,189,164,P,[163],[],[],0,No cluster,No expected residues
-247,GMPP2_ORYSJ,Q941T9,189,164,P,[163],[],[],0,No cluster,No expected residues
-248,GMPP3_ORYSJ,Q6Z9A3,189,164,P,[163],[],[],0,No cluster,No expected residues
-249,GMPPB_CAEEL,A3QMC8,189,162,P,[161],[],[],0,No cluster,No expected residues
-250,GMPPB_DROME,Q7JZB4,189,172,P,[171],[],[],0,No cluster,No expected residues
-251,G5BZX1_HETGA,G5BZX1,189,163,P,[162],[],[],0,No cluster,No expected residues
-252,GMPPB_MOUSE,Q8BTZ7,189,163,P,[162],[],[],0,No cluster,No expected residues
-253,A0A3P9QHR2_POERE,A0A3P9QHR2,189,163,P,[162],[],[],0,No cluster,No expected residues
-254,F1R683_DANRE,F1R683,189,163,P,[162],[],[],0,No cluster,No expected residues
-255,YBB2_SCHPO,O60064,189,173,P,[172],[],[],0,No cluster,No expected residues
-256,D8RZ45_SELML,D8RZ45,189,176,P,[175],[],[],0,No cluster,No expected residues
-257,D8SV91_SELML,D8SV91,189,176,P,[175],[],[],0,No cluster,No expected residues
-258,A0A1P8AZM7_ARATH,A0A1P8AZM7,189,162,P,[161],[],[],0,No cluster,No expected residues
-259,A0A072UZU5_MEDTR,A0A072UZU5,189,176,P,[175],[],[],0,No cluster,No expected residues
-260,G7KJH0_MEDTR,G7KJH0,189,175,P,[174],[],[],0,No cluster,No expected residues
-261,Q9C9P3_ARATH,Q9C9P3,189,177,P,[176],[],[],0,No cluster,No expected residues
-262,B4FCE5_MAIZE,B4FCE5,189,112,P,[111],[],[],0,No cluster,No expected residues
-263,B4FQP6_MAIZE,B4FQP6,189,176,P,[175],[],[],0,No cluster,No expected residues
-264,Q9N4V3_CAEEL,Q9N4V3,189,171,P,[170],[],[],0,No cluster,No expected residues
-265,Q8SXU3_DROME,Q8SXU3,189,175,P,[174],[],[],0,No cluster,No expected residues
-266,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,189,171,P,[170],[],[],0,No cluster,No expected residues
-267,GMPPA_MOUSE,Q922H4,189,171,P,[170],[],[],0,No cluster,No expected residues
-268,GMPPA_RAT,Q5XIC1,189,171,P,[170],[],[],0,No cluster,No expected residues
-269,GMPAB_DANRE,Q7SXP8,189,173,P,[172],[],[],0,No cluster,No expected residues
-270,A0A674HLF9_TAEGU,A0A674HLF9,189,174,P,[173],[],[],0,No cluster,No expected residues
-271,A0A3P9PHF0_POERE,A0A3P9PHF0,189,173,P,[172],[],[],0,No cluster,No expected residues
-272,GMPAA_DANRE,Q6GMK8,189,173,P,[172],[],[],0,No cluster,No expected residues
-273,MPG1_YEAST,P41940,197,172,I,[145],[],[],0,No cluster,No expected residues
-274,A8J3F9_CHLRE,A8J3F9,197,171,I,[146],[],[],0,No cluster,No expected residues
-275,GMPP3_ARATH,Q8H1Q7,197,153,I,[127],[],[],0,No cluster,No expected residues
-276,D8RTK5_SELML,D8RTK5,197,172,I,[146],[],[],0,No cluster,No expected residues
-277,D8T5L0_SELML,D8T5L0,197,172,I,[146],[],[],0,No cluster,No expected residues
-278,D8R6R6_SELML,D8R6R6,197,172,I,[146],[],[],0,No cluster,No expected residues
-279,GMPP2_ARATH,Q9M2S0,197,175,I,[149],[],[],0,No cluster,No expected residues
-280,G7KGV6_MEDTR,G7KGV6,197,172,I,[146],[],[],0,No cluster,No expected residues
-281,GMPP1_ARATH,O22287,197,172,I,[146],[],[],0,No cluster,No expected residues
-282,B4G0L2_MAIZE,B4G0L2,197,172,I,[146],[],[],0,No cluster,No expected residues
-283,GMPP1_ORYSJ,Q84JH5,197,172,I,[146],[],[],0,No cluster,No expected residues
-284,B4FEP8_MAIZE,B4FEP8,197,172,I,[146],[],[],0,No cluster,No expected residues
-285,C4JAC1_MAIZE,C4JAC1,197,172,I,[146],[],[],0,No cluster,No expected residues
-286,GMPP2_ORYSJ,Q941T9,197,172,I,[146],[],[],0,No cluster,No expected residues
-287,GMPP3_ORYSJ,Q6Z9A3,197,172,I,[146],[],[],0,No cluster,No expected residues
-288,GMPPB_CAEEL,A3QMC8,197,170,I,[144],[],[],0,No cluster,No expected residues
-289,GMPPB_DROME,Q7JZB4,197,180,I,[155],[],[],0,No cluster,No expected residues
-290,G5BZX1_HETGA,G5BZX1,197,171,I,[145],[],[],0,No cluster,No expected residues
-291,GMPPB_MOUSE,Q8BTZ7,197,171,I,[145],[],[],0,No cluster,No expected residues
-292,A0A3P9QHR2_POERE,A0A3P9QHR2,197,171,I,[145],[],[],0,No cluster,No expected residues
-293,F1R683_DANRE,F1R683,197,171,I,[145],[],[],0,No cluster,No expected residues
-294,YBB2_SCHPO,O60064,197,181,I,[155],[],[],0,No cluster,No expected residues
-295,D8RZ45_SELML,D8RZ45,197,184,I,[158],[],[],0,No cluster,No expected residues
-296,D8SV91_SELML,D8SV91,197,184,I,[158],[],[],0,No cluster,No expected residues
-297,A0A1P8AZM7_ARATH,A0A1P8AZM7,197,170,I,[144],[],[],0,No cluster,No expected residues
-298,A0A072UZU5_MEDTR,A0A072UZU5,197,184,I,[158],[],[],0,No cluster,No expected residues
-299,G7KJH0_MEDTR,G7KJH0,197,183,I,[157],[],[],0,No cluster,No expected residues
-300,Q9C9P3_ARATH,Q9C9P3,197,185,I,[159],[],[],0,No cluster,No expected residues
-301,B4FCE5_MAIZE,B4FCE5,197,120,I,[94],[],[],0,No cluster,No expected residues
-302,B4FQP6_MAIZE,B4FQP6,197,184,I,[158],[],[],0,No cluster,No expected residues
-303,Q9N4V3_CAEEL,Q9N4V3,197,179,I,[154],[],[],0,No cluster,No expected residues
-304,Q8SXU3_DROME,Q8SXU3,197,183,I,[157],[],[],0,No cluster,No expected residues
-305,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,197,179,I,[153],[],[],0,No cluster,No expected residues
-306,GMPPA_MOUSE,Q922H4,197,179,I,[153],[],[],0,No cluster,No expected residues
-307,GMPPA_RAT,Q5XIC1,197,179,I,[153],[],[],0,No cluster,No expected residues
-308,GMPAB_DANRE,Q7SXP8,197,181,I,[155],[],[],0,No cluster,No expected residues
-309,A0A674HLF9_TAEGU,A0A674HLF9,197,182,I,[156],[],[],0,No cluster,No expected residues
-310,A0A3P9PHF0_POERE,A0A3P9PHF0,197,181,I,[155],[],[],0,No cluster,No expected residues
-311,GMPAA_DANRE,Q6GMK8,197,181,I,[155],[],[],0,No cluster,No expected residues
-312,MPG1_YEAST,P41940,200,175,G,"[111, 177]",[],[],0,No cluster,No expected residues
-313,A8J3F9_CHLRE,A8J3F9,200,174,G,"[112, 176]",[],[],0,No cluster,No expected residues
-314,GMPP3_ARATH,Q8H1Q7,200,156,G,[158],[],[],0,No cluster,No expected residues
-315,D8RTK5_SELML,D8RTK5,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-316,D8T5L0_SELML,D8T5L0,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-317,D8R6R6_SELML,D8R6R6,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-318,GMPP2_ARATH,Q9M2S0,200,178,G,"[115, 180]",[],[],0,No cluster,No expected residues
-319,G7KGV6_MEDTR,G7KGV6,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-320,GMPP1_ARATH,O22287,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-321,B4G0L2_MAIZE,B4G0L2,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-322,GMPP1_ORYSJ,Q84JH5,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-323,B4FEP8_MAIZE,B4FEP8,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-324,C4JAC1_MAIZE,C4JAC1,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-325,GMPP2_ORYSJ,Q941T9,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-326,GMPP3_ORYSJ,Q6Z9A3,200,175,G,"[112, 177]",[],[],0,No cluster,No expected residues
-327,GMPPB_CAEEL,A3QMC8,200,173,G,"[110, 175]",[],[],0,No cluster,No expected residues
-328,GMPPB_DROME,Q7JZB4,200,183,G,"[121, 185]",[],[],0,No cluster,No expected residues
-329,G5BZX1_HETGA,G5BZX1,200,174,G,"[111, 176]",[],[],0,No cluster,No expected residues
-330,GMPPB_MOUSE,Q8BTZ7,200,174,G,"[111, 176]",[],[],0,No cluster,No expected residues
-331,A0A3P9QHR2_POERE,A0A3P9QHR2,200,174,G,"[111, 176]",[],[],0,No cluster,No expected residues
-332,F1R683_DANRE,F1R683,200,174,G,"[111, 176]",[],[],0,No cluster,No expected residues
-333,YBB2_SCHPO,O60064,200,184,G,[186],[],[],0,No cluster,No expected residues
-334,D8RZ45_SELML,D8RZ45,200,187,G,[189],[],[],0,No cluster,No expected residues
-335,D8SV91_SELML,D8SV91,200,187,G,"[122, 189]",[],[],0,No cluster,No expected residues
-336,A0A1P8AZM7_ARATH,A0A1P8AZM7,200,173,G,[175],[],[],0,No cluster,No expected residues
-337,A0A072UZU5_MEDTR,A0A072UZU5,200,187,G,"[122, 189]",[],[],0,No cluster,No expected residues
-338,G7KJH0_MEDTR,G7KJH0,200,186,G,"[121, 188]",[],[],0,No cluster,No expected residues
-339,Q9C9P3_ARATH,Q9C9P3,200,188,G,"[123, 190]",[],[],0,No cluster,No expected residues
-340,B4FCE5_MAIZE,B4FCE5,200,123,G,"[58, 125]",[],[],0,No cluster,No expected residues
-341,B4FQP6_MAIZE,B4FQP6,200,187,G,[189],[],[],0,No cluster,No expected residues
-342,Q9N4V3_CAEEL,Q9N4V3,200,182,G,"[117, 184]",[],[],0,No cluster,No expected residues
-343,Q8SXU3_DROME,Q8SXU3,200,186,G,"[119, 188]",[],[],0,No cluster,No expected residues
-344,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,200,182,G,"[117, 184]",[],[],0,No cluster,No expected residues
-345,GMPPA_MOUSE,Q922H4,200,182,G,[184],[],[],0,No cluster,No expected residues
-346,GMPPA_RAT,Q5XIC1,200,182,G,"[117, 184]",[],[],0,No cluster,No expected residues
-347,GMPAB_DANRE,Q7SXP8,200,184,G,"[117, 186]",[],[],0,No cluster,No expected residues
-348,A0A674HLF9_TAEGU,A0A674HLF9,200,185,G,"[118, 187]",[],[],0,No cluster,No expected residues
-349,A0A3P9PHF0_POERE,A0A3P9PHF0,200,184,G,"[117, 186]",[],[],0,No cluster,No expected residues
-350,GMPAA_DANRE,Q6GMK8,200,184,G,"[117, 186]",[],[],0,No cluster,No expected residues
-351,MPG1_YEAST,P41940,202,177,Y,[175],[],[],0,No cluster,No expected residues
-352,A8J3F9_CHLRE,A8J3F9,202,176,Y,[174],[],[],0,No cluster,No expected residues
-353,GMPP3_ARATH,Q8H1Q7,202,158,Y,[156],[],[],0,No cluster,No expected residues
-354,D8RTK5_SELML,D8RTK5,202,177,Y,[175],[],[],0,No cluster,No expected residues
-355,D8T5L0_SELML,D8T5L0,202,177,Y,[175],[],[],0,No cluster,No expected residues
-356,D8R6R6_SELML,D8R6R6,202,177,Y,[175],[],[],0,No cluster,No expected residues
-357,GMPP2_ARATH,Q9M2S0,202,180,Y,[178],[],[],0,No cluster,No expected residues
-358,G7KGV6_MEDTR,G7KGV6,202,177,Y,[175],[],[],0,No cluster,No expected residues
-359,GMPP1_ARATH,O22287,202,177,Y,[175],[],[],0,No cluster,No expected residues
-360,B4G0L2_MAIZE,B4G0L2,202,177,Y,[175],[],[],0,No cluster,No expected residues
-361,GMPP1_ORYSJ,Q84JH5,202,177,Y,[175],[],[],0,No cluster,No expected residues
-362,B4FEP8_MAIZE,B4FEP8,202,177,Y,[175],[],[],0,No cluster,No expected residues
-363,C4JAC1_MAIZE,C4JAC1,202,177,Y,[175],[],[],0,No cluster,No expected residues
-364,GMPP2_ORYSJ,Q941T9,202,177,Y,[175],[],[],0,No cluster,No expected residues
-365,GMPP3_ORYSJ,Q6Z9A3,202,177,Y,[175],[],[],0,No cluster,No expected residues
-366,GMPPB_CAEEL,A3QMC8,202,175,Y,[173],[],[],0,No cluster,No expected residues
-367,GMPPB_DROME,Q7JZB4,202,185,Y,[183],[],[],0,No cluster,No expected residues
-368,G5BZX1_HETGA,G5BZX1,202,176,Y,[174],[],[],0,No cluster,No expected residues
-369,GMPPB_MOUSE,Q8BTZ7,202,176,Y,[174],[],[],0,No cluster,No expected residues
-370,A0A3P9QHR2_POERE,A0A3P9QHR2,202,176,Y,[174],[],[],0,No cluster,No expected residues
-371,F1R683_DANRE,F1R683,202,176,Y,[174],[],[],0,No cluster,No expected residues
-372,YBB2_SCHPO,O60064,202,186,Y,[184],[],[],0,No cluster,No expected residues
-373,D8RZ45_SELML,D8RZ45,202,189,Y,[187],[],[],0,No cluster,No expected residues
-374,D8SV91_SELML,D8SV91,202,189,Y,[187],[],[],0,No cluster,No expected residues
-375,A0A1P8AZM7_ARATH,A0A1P8AZM7,202,175,Y,[173],[],[],0,No cluster,No expected residues
-376,A0A072UZU5_MEDTR,A0A072UZU5,202,189,Y,[187],[],[],0,No cluster,No expected residues
-377,G7KJH0_MEDTR,G7KJH0,202,188,Y,[186],[],[],0,No cluster,No expected residues
-378,Q9C9P3_ARATH,Q9C9P3,202,190,Y,[188],[],[],0,No cluster,No expected residues
-379,B4FCE5_MAIZE,B4FCE5,202,125,Y,[123],[],[],0,No cluster,No expected residues
-380,B4FQP6_MAIZE,B4FQP6,202,189,Y,[187],[],[],0,No cluster,No expected residues
-381,Q9N4V3_CAEEL,Q9N4V3,202,184,Y,[182],[],[],0,No cluster,No expected residues
-382,Q8SXU3_DROME,Q8SXU3,202,188,Y,[186],[],[],0,No cluster,No expected residues
-383,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,202,184,Y,[182],[],[],0,No cluster,No expected residues
-384,GMPPA_MOUSE,Q922H4,202,184,Y,[182],[],[],0,No cluster,No expected residues
-385,GMPPA_RAT,Q5XIC1,202,184,Y,[182],[],[],0,No cluster,No expected residues
-386,GMPAB_DANRE,Q7SXP8,202,186,Y,[184],[],[],0,No cluster,No expected residues
-387,A0A674HLF9_TAEGU,A0A674HLF9,202,187,Y,[185],[],[],0,No cluster,No expected residues
-388,A0A3P9PHF0_POERE,A0A3P9PHF0,202,186,Y,[184],[],[],0,No cluster,No expected residues
-389,GMPAA_DANRE,Q6GMK8,202,186,Y,[184],[],[],0,No cluster,No expected residues
-390,MPG1_YEAST,P41940,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-391,A8J3F9_CHLRE,A8J3F9,341,269,G,"[270, 272]",[],[],0,No cluster,No expected residues
-392,GMPP3_ARATH,Q8H1Q7,341,251,G,"[252, 254]",[],[],0,No cluster,No expected residues
-393,D8RTK5_SELML,D8RTK5,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-394,D8T5L0_SELML,D8T5L0,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-395,D8R6R6_SELML,D8R6R6,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-396,GMPP2_ARATH,Q9M2S0,341,273,G,"[274, 276]",[],[],0,No cluster,No expected residues
-397,G7KGV6_MEDTR,G7KGV6,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-398,GMPP1_ARATH,O22287,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-399,B4G0L2_MAIZE,B4G0L2,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-400,GMPP1_ORYSJ,Q84JH5,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-401,B4FEP8_MAIZE,B4FEP8,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-402,C4JAC1_MAIZE,C4JAC1,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-403,GMPP2_ORYSJ,Q941T9,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-404,GMPP3_ORYSJ,Q6Z9A3,341,270,G,"[271, 273]",[],[],0,No cluster,No expected residues
-405,GMPPB_CAEEL,A3QMC8,341,274,G,"[275, 277]",[],[],0,No cluster,No expected residues
-406,GMPPB_DROME,Q7JZB4,341,278,G,"[279, 281]",[],[],0,No cluster,No expected residues
-407,G5BZX1_HETGA,G5BZX1,341,269,G,"[270, 272]",[],[],0,No cluster,No expected residues
-408,GMPPB_MOUSE,Q8BTZ7,341,269,G,"[270, 272]",[],[],0,No cluster,No expected residues
-409,A0A3P9QHR2_POERE,A0A3P9QHR2,341,269,G,"[270, 272]",[],[],0,No cluster,No expected residues
-410,F1R683_DANRE,F1R683,341,269,G,"[270, 272]",[],[],0,No cluster,No expected residues
-411,YBB2_SCHPO,O60064,341,303,G,"[304, 306]",[],[],0,No cluster,No expected residues
-412,D8RZ45_SELML,D8RZ45,341,315,G,"[316, 318]",[],[],0,No cluster,No expected residues
-413,D8SV91_SELML,D8SV91,341,315,G,"[316, 318]",[],[],0,No cluster,No expected residues
-414,A0A1P8AZM7_ARATH,A0A1P8AZM7,341,295,G,"[296, 298]",[],[],0,No cluster,No expected residues
-415,A0A072UZU5_MEDTR,A0A072UZU5,341,316,G,"[317, 319]",[],[],0,No cluster,No expected residues
-416,G7KJH0_MEDTR,G7KJH0,341,315,G,"[316, 318]",[],[],0,No cluster,No expected residues
-417,Q9C9P3_ARATH,Q9C9P3,341,316,G,"[317, 319]",[],[],0,No cluster,No expected residues
-418,B4FCE5_MAIZE,B4FCE5,341,252,G,"[253, 255]",[],[],0,No cluster,No expected residues
-419,B4FQP6_MAIZE,B4FQP6,341,316,G,"[317, 319]",[],[],0,No cluster,No expected residues
-420,Q9N4V3_CAEEL,Q9N4V3,341,282,G,"[283, 285]",[],[],0,No cluster,No expected residues
-421,Q8SXU3_DROME,Q8SXU3,341,319,G,"[320, 322]",[],[],0,No cluster,No expected residues
-422,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,341,302,G,"[303, 305]",[],[],0,No cluster,No expected residues
-423,GMPPA_MOUSE,Q922H4,341,302,G,"[303, 305]",[],[],0,No cluster,No expected residues
-424,GMPPA_RAT,Q5XIC1,341,302,G,"[303, 305]",[],[],0,No cluster,No expected residues
-425,GMPAB_DANRE,Q7SXP8,341,304,G,"[305, 307]",[],[],0,No cluster,No expected residues
-426,A0A674HLF9_TAEGU,A0A674HLF9,341,305,G,"[306, 308]",[],[],0,No cluster,No expected residues
-427,A0A3P9PHF0_POERE,A0A3P9PHF0,341,309,G,"[310, 312]",[],[],0,No cluster,No expected residues
-428,GMPAA_DANRE,Q6GMK8,341,304,G,"[305, 307]",[],[],0,No cluster,No expected residues
-429,MPG1_YEAST,P41940,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-430,A8J3F9_CHLRE,A8J3F9,342,270,P,"[269, 272]",[],[],0,No cluster,No expected residues
-431,GMPP3_ARATH,Q8H1Q7,342,252,P,"[251, 254]",[],[],0,No cluster,No expected residues
-432,D8RTK5_SELML,D8RTK5,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-433,D8T5L0_SELML,D8T5L0,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-434,D8R6R6_SELML,D8R6R6,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-435,GMPP2_ARATH,Q9M2S0,342,274,P,"[273, 276]",[],[],0,No cluster,No expected residues
-436,G7KGV6_MEDTR,G7KGV6,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-437,GMPP1_ARATH,O22287,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-438,B4G0L2_MAIZE,B4G0L2,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-439,GMPP1_ORYSJ,Q84JH5,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-440,B4FEP8_MAIZE,B4FEP8,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-441,C4JAC1_MAIZE,C4JAC1,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-442,GMPP2_ORYSJ,Q941T9,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-443,GMPP3_ORYSJ,Q6Z9A3,342,271,P,"[270, 273]",[],[],0,No cluster,No expected residues
-444,GMPPB_CAEEL,A3QMC8,342,275,P,"[274, 277]",[],[],0,No cluster,No expected residues
-445,GMPPB_DROME,Q7JZB4,342,279,P,"[278, 281]",[],[],0,No cluster,No expected residues
-446,G5BZX1_HETGA,G5BZX1,342,270,P,"[269, 272]",[],[],0,No cluster,No expected residues
-447,GMPPB_MOUSE,Q8BTZ7,342,270,P,"[269, 272]",[],[],0,No cluster,No expected residues
-448,A0A3P9QHR2_POERE,A0A3P9QHR2,342,270,P,"[269, 272]",[],[],0,No cluster,No expected residues
-449,F1R683_DANRE,F1R683,342,270,P,"[269, 272]",[],[],0,No cluster,No expected residues
-450,YBB2_SCHPO,O60064,342,304,P,"[303, 306]",[],[],0,No cluster,No expected residues
-451,D8RZ45_SELML,D8RZ45,342,316,P,"[315, 318]",[],[],0,No cluster,No expected residues
-452,D8SV91_SELML,D8SV91,342,316,P,"[315, 318]",[],[],0,No cluster,No expected residues
-453,A0A1P8AZM7_ARATH,A0A1P8AZM7,342,296,P,"[295, 298]",[],[],0,No cluster,No expected residues
-454,A0A072UZU5_MEDTR,A0A072UZU5,342,317,P,"[316, 319]",[],[],0,No cluster,No expected residues
-455,G7KJH0_MEDTR,G7KJH0,342,316,P,"[315, 318]",[],[],0,No cluster,No expected residues
-456,Q9C9P3_ARATH,Q9C9P3,342,317,P,"[316, 319]",[],[],0,No cluster,No expected residues
-457,B4FCE5_MAIZE,B4FCE5,342,253,P,"[252, 255]",[],[],0,No cluster,No expected residues
-458,B4FQP6_MAIZE,B4FQP6,342,317,P,"[316, 319]",[],[],0,No cluster,No expected residues
-459,Q9N4V3_CAEEL,Q9N4V3,342,283,P,"[282, 285]",[],[],0,No cluster,No expected residues
-460,Q8SXU3_DROME,Q8SXU3,342,320,P,"[319, 322]",[],[],0,No cluster,No expected residues
-461,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,342,303,P,"[302, 305]",[],[],0,No cluster,No expected residues
-462,GMPPA_MOUSE,Q922H4,342,303,P,"[302, 305]",[],[],0,No cluster,No expected residues
-463,GMPPA_RAT,Q5XIC1,342,303,P,"[302, 305]",[],[],0,No cluster,No expected residues
-464,GMPAB_DANRE,Q7SXP8,342,305,P,"[304, 307]",[],[],0,No cluster,No expected residues
-465,A0A674HLF9_TAEGU,A0A674HLF9,342,306,P,"[305, 308]",[],[],0,No cluster,No expected residues
-466,A0A3P9PHF0_POERE,A0A3P9PHF0,342,310,P,"[309, 312]",[],[],0,No cluster,No expected residues
-467,GMPAA_DANRE,Q6GMK8,342,305,P,"[304, 307]",[],[],0,No cluster,No expected residues
-468,MPG1_YEAST,P41940,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-469,A8J3F9_CHLRE,A8J3F9,344,272,V,"[269, 270]",[],[],0,No cluster,No expected residues
-470,GMPP3_ARATH,Q8H1Q7,344,254,V,"[251, 252]",[],[],0,No cluster,No expected residues
-471,D8RTK5_SELML,D8RTK5,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-472,D8T5L0_SELML,D8T5L0,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-473,D8R6R6_SELML,D8R6R6,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-474,GMPP2_ARATH,Q9M2S0,344,276,V,"[273, 274]",[],[],0,No cluster,No expected residues
-475,G7KGV6_MEDTR,G7KGV6,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-476,GMPP1_ARATH,O22287,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-477,B4G0L2_MAIZE,B4G0L2,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-478,GMPP1_ORYSJ,Q84JH5,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-479,B4FEP8_MAIZE,B4FEP8,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-480,C4JAC1_MAIZE,C4JAC1,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-481,GMPP2_ORYSJ,Q941T9,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-482,GMPP3_ORYSJ,Q6Z9A3,344,273,V,"[270, 271]",[],[],0,No cluster,No expected residues
-483,GMPPB_CAEEL,A3QMC8,344,277,V,"[274, 275]",[],[],0,No cluster,No expected residues
-484,GMPPB_DROME,Q7JZB4,344,281,V,"[278, 279]",[],[],0,No cluster,No expected residues
-485,G5BZX1_HETGA,G5BZX1,344,272,V,"[269, 270]",[],[],0,No cluster,No expected residues
-486,GMPPB_MOUSE,Q8BTZ7,344,272,V,"[269, 270]",[],[],0,No cluster,No expected residues
-487,A0A3P9QHR2_POERE,A0A3P9QHR2,344,272,V,"[269, 270]",[],[],0,No cluster,No expected residues
-488,F1R683_DANRE,F1R683,344,272,V,"[269, 270]",[],[],0,No cluster,No expected residues
-489,YBB2_SCHPO,O60064,344,306,V,"[303, 304]",[],[],0,No cluster,No expected residues
-490,D8RZ45_SELML,D8RZ45,344,318,V,"[315, 316]",[],[],0,No cluster,No expected residues
-491,D8SV91_SELML,D8SV91,344,318,V,"[315, 316]",[],[],0,No cluster,No expected residues
-492,A0A1P8AZM7_ARATH,A0A1P8AZM7,344,298,V,"[295, 296]",[],[],0,No cluster,No expected residues
-493,A0A072UZU5_MEDTR,A0A072UZU5,344,319,V,"[316, 317]",[],[],0,No cluster,No expected residues
-494,G7KJH0_MEDTR,G7KJH0,344,318,V,"[315, 316]",[],[],0,No cluster,No expected residues
-495,Q9C9P3_ARATH,Q9C9P3,344,319,V,"[316, 317]",[],[],0,No cluster,No expected residues
-496,B4FCE5_MAIZE,B4FCE5,344,255,V,"[252, 253]",[],[],0,No cluster,No expected residues
-497,B4FQP6_MAIZE,B4FQP6,344,319,V,"[316, 317]",[],[],0,No cluster,No expected residues
-498,Q9N4V3_CAEEL,Q9N4V3,344,285,V,"[282, 283]",[],[],0,No cluster,No expected residues
-499,Q8SXU3_DROME,Q8SXU3,344,322,V,"[319, 320]",[],[],0,No cluster,No expected residues
-500,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,344,305,V,"[302, 303]",[],[],0,No cluster,No expected residues
-501,GMPPA_MOUSE,Q922H4,344,305,V,"[302, 303]",[],[],0,No cluster,No expected residues
-502,GMPPA_RAT,Q5XIC1,344,305,V,"[302, 303]",[],[],0,No cluster,No expected residues
-503,GMPAB_DANRE,Q7SXP8,344,307,V,"[304, 305]",[],[],0,No cluster,No expected residues
-504,A0A674HLF9_TAEGU,A0A674HLF9,344,308,V,"[305, 306]",[],[],0,No cluster,No expected residues
-505,A0A3P9PHF0_POERE,A0A3P9PHF0,344,312,V,"[309, 310]",[],[],0,No cluster,No expected residues
-506,GMPAA_DANRE,Q6GMK8,344,307,V,"[304, 305]",[],[],0,No cluster,No expected residues
-507,MPG1_YEAST,P41940,387,316,G,[318],[],[],0,No cluster,No expected residues
-508,A8J3F9_CHLRE,A8J3F9,387,315,G,[317],[],[],0,No cluster,No expected residues
-509,GMPP3_ARATH,Q8H1Q7,387,297,G,[299],[],[],0,No cluster,No expected residues
-510,D8RTK5_SELML,D8RTK5,387,316,G,[318],[],[],0,No cluster,No expected residues
-511,D8T5L0_SELML,D8T5L0,387,316,G,[318],[],[],0,No cluster,No expected residues
-512,D8R6R6_SELML,D8R6R6,387,316,G,[318],[],[],0,No cluster,No expected residues
-513,GMPP2_ARATH,Q9M2S0,387,319,G,[321],[],[],0,No cluster,No expected residues
-514,G7KGV6_MEDTR,G7KGV6,387,316,G,[318],[],[],0,No cluster,No expected residues
-515,GMPP1_ARATH,O22287,387,316,G,[318],[],[],0,No cluster,No expected residues
-516,B4G0L2_MAIZE,B4G0L2,387,316,G,[318],[],[],0,No cluster,No expected residues
-517,GMPP1_ORYSJ,Q84JH5,387,316,G,[318],[],[],0,No cluster,No expected residues
-518,B4FEP8_MAIZE,B4FEP8,387,316,G,[318],[],[],0,No cluster,No expected residues
-519,C4JAC1_MAIZE,C4JAC1,387,316,G,[318],[],[],0,No cluster,No expected residues
-520,GMPP2_ORYSJ,Q941T9,387,316,G,[318],[],[],0,No cluster,No expected residues
-521,GMPP3_ORYSJ,Q6Z9A3,387,316,G,[318],[],[],0,No cluster,No expected residues
-522,GMPPB_CAEEL,A3QMC8,387,320,G,[322],[],[],0,No cluster,No expected residues
-523,GMPPB_DROME,Q7JZB4,387,324,G,[326],[],[],0,No cluster,No expected residues
-524,G5BZX1_HETGA,G5BZX1,387,315,G,[317],[],[],0,No cluster,No expected residues
-525,GMPPB_MOUSE,Q8BTZ7,387,315,G,[317],[],[],0,No cluster,No expected residues
-526,A0A3P9QHR2_POERE,A0A3P9QHR2,387,315,G,[317],[],[],0,No cluster,No expected residues
-527,F1R683_DANRE,F1R683,387,315,G,[317],[],[],0,No cluster,No expected residues
-528,YBB2_SCHPO,O60064,387,349,G,[351],[],[],0,No cluster,No expected residues
-529,D8RZ45_SELML,D8RZ45,387,361,G,[363],[],[],0,No cluster,No expected residues
-530,D8SV91_SELML,D8SV91,387,361,G,[363],[],[],0,No cluster,No expected residues
-531,A0A1P8AZM7_ARATH,A0A1P8AZM7,387,341,G,[343],[],[],0,No cluster,No expected residues
-532,A0A072UZU5_MEDTR,A0A072UZU5,387,362,G,[364],[],[],0,No cluster,No expected residues
-533,G7KJH0_MEDTR,G7KJH0,387,361,G,[363],[],[],0,No cluster,No expected residues
-534,Q9C9P3_ARATH,Q9C9P3,387,362,G,[364],[],[],0,No cluster,No expected residues
-535,B4FCE5_MAIZE,B4FCE5,387,298,G,[300],[],[],0,No cluster,No expected residues
-536,B4FQP6_MAIZE,B4FQP6,387,362,G,[364],[],[],0,No cluster,No expected residues
-537,Q9N4V3_CAEEL,Q9N4V3,387,328,G,[330],[],[],0,No cluster,No expected residues
-538,Q8SXU3_DROME,Q8SXU3,387,365,G,[367],[],[],0,No cluster,No expected residues
-539,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,387,348,G,[350],[],[],0,No cluster,No expected residues
-540,GMPPA_MOUSE,Q922H4,387,348,G,[350],[],[],0,No cluster,No expected residues
-541,GMPPA_RAT,Q5XIC1,387,348,G,[350],[],[],0,No cluster,No expected residues
-542,GMPAB_DANRE,Q7SXP8,387,350,G,[352],[],[],0,No cluster,No expected residues
-543,A0A674HLF9_TAEGU,A0A674HLF9,387,351,G,[353],[],[],0,No cluster,No expected residues
-544,A0A3P9PHF0_POERE,A0A3P9PHF0,387,355,G,[357],[],[],0,No cluster,No expected residues
-545,GMPAA_DANRE,Q6GMK8,387,350,G,[352],[],[],0,No cluster,No expected residues
-546,MPG1_YEAST,P41940,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-547,A8J3F9_CHLRE,A8J3F9,389,317,W,"[315, 319]",[],[],0,No cluster,No expected residues
-548,GMPP3_ARATH,Q8H1Q7,389,299,W,"[297, 301]",[],[],0,No cluster,No expected residues
-549,D8RTK5_SELML,D8RTK5,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-550,D8T5L0_SELML,D8T5L0,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-551,D8R6R6_SELML,D8R6R6,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-552,GMPP2_ARATH,Q9M2S0,389,321,W,"[319, 323]",[],[],0,No cluster,No expected residues
-553,G7KGV6_MEDTR,G7KGV6,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-554,GMPP1_ARATH,O22287,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-555,B4G0L2_MAIZE,B4G0L2,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-556,GMPP1_ORYSJ,Q84JH5,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-557,B4FEP8_MAIZE,B4FEP8,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-558,C4JAC1_MAIZE,C4JAC1,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-559,GMPP2_ORYSJ,Q941T9,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-560,GMPP3_ORYSJ,Q6Z9A3,389,318,W,"[316, 320]",[],[],0,No cluster,No expected residues
-561,GMPPB_CAEEL,A3QMC8,389,322,W,"[320, 324]",[],[],0,No cluster,No expected residues
-562,GMPPB_DROME,Q7JZB4,389,326,W,"[324, 328]",[],[],0,No cluster,No expected residues
-563,G5BZX1_HETGA,G5BZX1,389,317,W,"[315, 319]",[],[],0,No cluster,No expected residues
-564,GMPPB_MOUSE,Q8BTZ7,389,317,W,"[315, 319]",[],[],0,No cluster,No expected residues
-565,A0A3P9QHR2_POERE,A0A3P9QHR2,389,317,W,"[315, 319]",[],[],0,No cluster,No expected residues
-566,F1R683_DANRE,F1R683,389,317,W,"[315, 319]",[],[],0,No cluster,No expected residues
-567,YBB2_SCHPO,O60064,389,351,W,"[349, 353]",[],[],0,No cluster,No expected residues
-568,D8RZ45_SELML,D8RZ45,389,363,W,"[361, 365]",[],[],0,No cluster,No expected residues
-569,D8SV91_SELML,D8SV91,389,363,W,"[361, 365]",[],[],0,No cluster,No expected residues
-570,A0A1P8AZM7_ARATH,A0A1P8AZM7,389,343,W,"[341, 345]",[],[],0,No cluster,No expected residues
-571,A0A072UZU5_MEDTR,A0A072UZU5,389,364,W,"[362, 366]",[],[],0,No cluster,No expected residues
-572,G7KJH0_MEDTR,G7KJH0,389,363,W,"[361, 365]",[],[],0,No cluster,No expected residues
-573,Q9C9P3_ARATH,Q9C9P3,389,364,W,"[362, 366]",[],[],0,No cluster,No expected residues
-574,B4FCE5_MAIZE,B4FCE5,389,300,W,"[298, 302]",[],[],0,No cluster,No expected residues
-575,B4FQP6_MAIZE,B4FQP6,389,364,W,"[362, 366]",[],[],0,No cluster,No expected residues
-576,Q9N4V3_CAEEL,Q9N4V3,389,330,W,"[328, 332]",[],[],0,No cluster,No expected residues
-577,Q8SXU3_DROME,Q8SXU3,389,367,W,"[365, 369]",[],[],0,No cluster,No expected residues
-578,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,389,350,W,"[348, 352]",[],[],0,No cluster,No expected residues
-579,GMPPA_MOUSE,Q922H4,389,350,W,"[348, 352]",[],[],0,No cluster,No expected residues
-580,GMPPA_RAT,Q5XIC1,389,350,W,"[348, 352]",[],[],0,No cluster,No expected residues
-581,GMPAB_DANRE,Q7SXP8,389,352,W,"[350, 354]",[],[],0,No cluster,No expected residues
-582,A0A674HLF9_TAEGU,A0A674HLF9,389,353,W,"[351, 355]",[],[],0,No cluster,No expected residues
-583,A0A3P9PHF0_POERE,A0A3P9PHF0,389,357,W,"[355, 359]",[],[],0,No cluster,No expected residues
-584,GMPAA_DANRE,Q6GMK8,389,352,W,"[350, 354]",[],[],0,No cluster,No expected residues
-585,MPG1_YEAST,P41940,391,320,R,[318],[],[],0,No cluster,No expected residues
-586,A8J3F9_CHLRE,A8J3F9,391,319,R,[317],[],[],0,No cluster,No expected residues
-587,GMPP3_ARATH,Q8H1Q7,391,301,R,[299],[],[],0,No cluster,No expected residues
-588,D8RTK5_SELML,D8RTK5,391,320,R,[318],[],[],0,No cluster,No expected residues
-589,D8T5L0_SELML,D8T5L0,391,320,R,[318],[],[],0,No cluster,No expected residues
-590,D8R6R6_SELML,D8R6R6,391,320,R,[318],[],[],0,No cluster,No expected residues
-591,GMPP2_ARATH,Q9M2S0,391,323,R,[321],[],[],0,No cluster,No expected residues
-592,G7KGV6_MEDTR,G7KGV6,391,320,R,[318],[],[],0,No cluster,No expected residues
-593,GMPP1_ARATH,O22287,391,320,R,[318],[],[],0,No cluster,No expected residues
-594,B4G0L2_MAIZE,B4G0L2,391,320,R,[318],[],[],0,No cluster,No expected residues
-595,GMPP1_ORYSJ,Q84JH5,391,320,R,[318],[],[],0,No cluster,No expected residues
-596,B4FEP8_MAIZE,B4FEP8,391,320,R,[318],[],[],0,No cluster,No expected residues
-597,C4JAC1_MAIZE,C4JAC1,391,320,R,[318],[],[],0,No cluster,No expected residues
-598,GMPP2_ORYSJ,Q941T9,391,320,R,[318],[],[],0,No cluster,No expected residues
-599,GMPP3_ORYSJ,Q6Z9A3,391,320,R,[318],[],[],0,No cluster,No expected residues
-600,GMPPB_CAEEL,A3QMC8,391,324,R,[322],[],[],0,No cluster,No expected residues
-601,GMPPB_DROME,Q7JZB4,391,328,R,[326],[],[],0,No cluster,No expected residues
-602,G5BZX1_HETGA,G5BZX1,391,319,R,[317],[],[],0,No cluster,No expected residues
-603,GMPPB_MOUSE,Q8BTZ7,391,319,R,[317],[],[],0,No cluster,No expected residues
-604,A0A3P9QHR2_POERE,A0A3P9QHR2,391,319,R,[317],[],[],0,No cluster,No expected residues
-605,F1R683_DANRE,F1R683,391,319,R,[317],[],[],0,No cluster,No expected residues
-606,YBB2_SCHPO,O60064,391,353,R,[351],[],[],0,No cluster,No expected residues
-607,D8RZ45_SELML,D8RZ45,391,365,R,[363],[],[],0,No cluster,No expected residues
-608,D8SV91_SELML,D8SV91,391,365,R,[363],[],[],0,No cluster,No expected residues
-609,A0A1P8AZM7_ARATH,A0A1P8AZM7,391,345,R,[343],[],[],0,No cluster,No expected residues
-610,A0A072UZU5_MEDTR,A0A072UZU5,391,366,R,[364],[],[],0,No cluster,No expected residues
-611,G7KJH0_MEDTR,G7KJH0,391,365,R,[363],[],[],0,No cluster,No expected residues
-612,Q9C9P3_ARATH,Q9C9P3,391,366,R,[364],[],[],0,No cluster,No expected residues
-613,B4FCE5_MAIZE,B4FCE5,391,302,R,[300],[],[],0,No cluster,No expected residues
-614,B4FQP6_MAIZE,B4FQP6,391,366,R,[364],[],[],0,No cluster,No expected residues
-615,Q9N4V3_CAEEL,Q9N4V3,391,332,R,[330],[],[],0,No cluster,No expected residues
-616,Q8SXU3_DROME,Q8SXU3,391,369,R,[367],[],[],0,No cluster,No expected residues
-617,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,391,352,R,[350],[],[],0,No cluster,No expected residues
-618,GMPPA_MOUSE,Q922H4,391,352,R,[350],[],[],0,No cluster,No expected residues
-619,GMPPA_RAT,Q5XIC1,391,352,R,[350],[],[],0,No cluster,No expected residues
-620,GMPAB_DANRE,Q7SXP8,391,354,R,[352],[],[],0,No cluster,No expected residues
-621,A0A674HLF9_TAEGU,A0A674HLF9,391,355,R,[353],[],[],0,No cluster,No expected residues
-622,A0A3P9PHF0_POERE,A0A3P9PHF0,391,359,R,[357],[],[],0,No cluster,No expected residues
-623,GMPAA_DANRE,Q6GMK8,391,354,R,[352],[],[],0,No cluster,No expected residues
+,entry_id,uniprot_id,MSA_pos,seq_pos,residue,clusters,expected_residues,has_pdb_data,common_positions,num_key_present,percent_of_cluster_expected,percent_expected_found
+0,MPG1_YEAST,P41940,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+1,A8J3F9_CHLRE,A8J3F9,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+2,GMPP3_ARATH,Q8H1Q7,104,66,G,[69],[],Yes,[],0,No cluster,No expected residues
+3,D8RTK5_SELML,D8RTK5,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+4,D8T5L0_SELML,D8T5L0,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+5,D8R6R6_SELML,D8R6R6,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+6,GMPP2_ARATH,Q9M2S0,104,88,G,[91],[],Yes,[],0,No cluster,No expected residues
+7,G7KGV6_MEDTR,G7KGV6,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+8,GMPP1_ARATH,O22287,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+9,B4G0L2_MAIZE,B4G0L2,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+10,GMPP1_ORYSJ,Q84JH5,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+11,B4FEP8_MAIZE,B4FEP8,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+12,C4JAC1_MAIZE,C4JAC1,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+13,GMPP2_ORYSJ,Q941T9,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+14,GMPP3_ORYSJ,Q6Z9A3,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+15,GMPPB_CAEEL,A3QMC8,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+16,GMPPB_DROME,Q7JZB4,104,95,G,[98],[],Yes,[],0,No cluster,No expected residues
+17,G5BZX1_HETGA,G5BZX1,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+18,GMPPB_MOUSE,Q8BTZ7,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+19,A0A3P9QHR2_POERE,A0A3P9QHR2,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+20,F1R683_DANRE,F1R683,104,85,G,[88],[],Yes,[],0,No cluster,No expected residues
+21,YBB2_SCHPO,O60064,104,92,G,[95],[],Yes,[],0,No cluster,No expected residues
+22,D8RZ45_SELML,D8RZ45,104,95,G,[98],[],Yes,[],0,No cluster,No expected residues
+23,D8SV91_SELML,D8SV91,104,95,G,[98],[],Yes,[],0,No cluster,No expected residues
+24,A0A1P8AZM7_ARATH,A0A1P8AZM7,104,81,G,[84],[],Yes,[],0,No cluster,No expected residues
+25,A0A072UZU5_MEDTR,A0A072UZU5,104,95,G,[98],[],Yes,[],0,No cluster,No expected residues
+26,G7KJH0_MEDTR,G7KJH0,104,94,G,[97],[],Yes,[],0,No cluster,No expected residues
+27,Q9C9P3_ARATH,Q9C9P3,104,96,G,[99],[],Yes,[],0,No cluster,No expected residues
+28,B4FCE5_MAIZE,B4FCE5,104,31,G,[34],[],Yes,[],0,No cluster,No expected residues
+29,B4FQP6_MAIZE,B4FQP6,104,95,G,[98],[],Yes,[],0,No cluster,No expected residues
+30,Q9N4V3_CAEEL,Q9N4V3,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+31,Q8SXU3_DROME,Q8SXU3,104,92,G,[95],[],Yes,[],0,No cluster,No expected residues
+32,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+33,GMPPA_MOUSE,Q922H4,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+34,GMPPA_RAT,Q5XIC1,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+35,GMPAB_DANRE,Q7SXP8,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+36,A0A674HLF9_TAEGU,A0A674HLF9,104,91,G,[94],[],Yes,[],0,No cluster,No expected residues
+37,A0A3P9PHF0_POERE,A0A3P9PHF0,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+38,GMPAA_DANRE,Q6GMK8,104,90,G,[93],[],Yes,[],0,No cluster,No expected residues
+39,MPG1_YEAST,P41940,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+40,A8J3F9_CHLRE,A8J3F9,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+41,GMPP3_ARATH,Q8H1Q7,107,69,G,[66],[],Yes,[],0,No cluster,No expected residues
+42,D8RTK5_SELML,D8RTK5,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+43,D8T5L0_SELML,D8T5L0,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+44,D8R6R6_SELML,D8R6R6,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+45,GMPP2_ARATH,Q9M2S0,107,91,G,[88],[],Yes,[],0,No cluster,No expected residues
+46,G7KGV6_MEDTR,G7KGV6,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+47,GMPP1_ARATH,O22287,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+48,B4G0L2_MAIZE,B4G0L2,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+49,GMPP1_ORYSJ,Q84JH5,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+50,B4FEP8_MAIZE,B4FEP8,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+51,C4JAC1_MAIZE,C4JAC1,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+52,GMPP2_ORYSJ,Q941T9,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+53,GMPP3_ORYSJ,Q6Z9A3,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+54,GMPPB_CAEEL,A3QMC8,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+55,GMPPB_DROME,Q7JZB4,107,98,G,[95],[],Yes,[],0,No cluster,No expected residues
+56,G5BZX1_HETGA,G5BZX1,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+57,GMPPB_MOUSE,Q8BTZ7,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+58,A0A3P9QHR2_POERE,A0A3P9QHR2,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+59,F1R683_DANRE,F1R683,107,88,G,[85],[],Yes,[],0,No cluster,No expected residues
+60,YBB2_SCHPO,O60064,107,95,G,[92],[],Yes,[],0,No cluster,No expected residues
+61,D8RZ45_SELML,D8RZ45,107,98,G,[95],[],Yes,[],0,No cluster,No expected residues
+62,D8SV91_SELML,D8SV91,107,98,G,[95],[],Yes,[],0,No cluster,No expected residues
+63,A0A1P8AZM7_ARATH,A0A1P8AZM7,107,84,G,[81],[],Yes,[],0,No cluster,No expected residues
+64,A0A072UZU5_MEDTR,A0A072UZU5,107,98,G,[95],[],Yes,[],0,No cluster,No expected residues
+65,G7KJH0_MEDTR,G7KJH0,107,97,G,[94],[],Yes,[],0,No cluster,No expected residues
+66,Q9C9P3_ARATH,Q9C9P3,107,99,G,[96],[],Yes,[],0,No cluster,No expected residues
+67,B4FCE5_MAIZE,B4FCE5,107,34,G,[31],[],Yes,[],0,No cluster,No expected residues
+68,B4FQP6_MAIZE,B4FQP6,107,98,G,[95],[],Yes,[],0,No cluster,No expected residues
+69,Q9N4V3_CAEEL,Q9N4V3,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+70,Q8SXU3_DROME,Q8SXU3,107,95,G,[92],[],Yes,[],0,No cluster,No expected residues
+71,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+72,GMPPA_MOUSE,Q922H4,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+73,GMPPA_RAT,Q5XIC1,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+74,GMPAB_DANRE,Q7SXP8,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+75,A0A674HLF9_TAEGU,A0A674HLF9,107,94,G,[91],[],Yes,[],0,No cluster,No expected residues
+76,A0A3P9PHF0_POERE,A0A3P9PHF0,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+77,GMPAA_DANRE,Q6GMK8,107,93,G,[90],[],Yes,[],0,No cluster,No expected residues
+78,MPG1_YEAST,P41940,130,110,D,[111],[],Yes,[],0,No cluster,No expected residues
+79,A8J3F9_CHLRE,A8J3F9,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+80,GMPP3_ARATH,Q8H1Q7,130,92,D,[93],[],Yes,[],0,No cluster,No expected residues
+81,D8RTK5_SELML,D8RTK5,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+82,D8T5L0_SELML,D8T5L0,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+83,D8R6R6_SELML,D8R6R6,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+84,GMPP2_ARATH,Q9M2S0,130,114,D,[115],[],Yes,[],0,No cluster,No expected residues
+85,G7KGV6_MEDTR,G7KGV6,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+86,GMPP1_ARATH,O22287,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+87,B4G0L2_MAIZE,B4G0L2,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+88,GMPP1_ORYSJ,Q84JH5,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+89,B4FEP8_MAIZE,B4FEP8,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+90,C4JAC1_MAIZE,C4JAC1,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+91,GMPP2_ORYSJ,Q941T9,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+92,GMPP3_ORYSJ,Q6Z9A3,130,111,D,[112],[],Yes,[],0,No cluster,No expected residues
+93,GMPPB_CAEEL,A3QMC8,130,109,D,[110],[],Yes,[],0,No cluster,No expected residues
+94,GMPPB_DROME,Q7JZB4,130,120,D,[121],[],Yes,[],0,No cluster,No expected residues
+95,G5BZX1_HETGA,G5BZX1,130,110,D,[111],[],Yes,[],0,No cluster,No expected residues
+96,GMPPB_MOUSE,Q8BTZ7,130,110,D,[111],[],Yes,[],0,No cluster,No expected residues
+97,A0A3P9QHR2_POERE,A0A3P9QHR2,130,110,D,[111],[],Yes,[],0,No cluster,No expected residues
+98,F1R683_DANRE,F1R683,130,110,D,[111],[],Yes,[],0,No cluster,No expected residues
+99,YBB2_SCHPO,O60064,130,118,D,[119],[],Yes,[],0,No cluster,No expected residues
+100,D8RZ45_SELML,D8RZ45,130,121,D,[122],[],Yes,[],0,No cluster,No expected residues
+101,D8SV91_SELML,D8SV91,130,121,D,[122],[],Yes,[],0,No cluster,No expected residues
+102,A0A1P8AZM7_ARATH,A0A1P8AZM7,130,107,D,[108],[],Yes,[],0,No cluster,No expected residues
+103,A0A072UZU5_MEDTR,A0A072UZU5,130,121,D,[122],[],Yes,[],0,No cluster,No expected residues
+104,G7KJH0_MEDTR,G7KJH0,130,120,D,[121],[],Yes,[],0,No cluster,No expected residues
+105,Q9C9P3_ARATH,Q9C9P3,130,122,D,[123],[],Yes,[],0,No cluster,No expected residues
+106,B4FCE5_MAIZE,B4FCE5,130,57,D,[58],[],Yes,[],0,No cluster,No expected residues
+107,B4FQP6_MAIZE,B4FQP6,130,121,D,[122],[],Yes,[],0,No cluster,No expected residues
+108,Q9N4V3_CAEEL,Q9N4V3,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+109,Q8SXU3_DROME,Q8SXU3,130,118,D,[119],[],Yes,[],0,No cluster,No expected residues
+110,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+111,GMPPA_MOUSE,Q922H4,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+112,GMPPA_RAT,Q5XIC1,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+113,GMPAB_DANRE,Q7SXP8,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+114,A0A674HLF9_TAEGU,A0A674HLF9,130,117,D,[118],[],Yes,[],0,No cluster,No expected residues
+115,A0A3P9PHF0_POERE,A0A3P9PHF0,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+116,GMPAA_DANRE,Q6GMK8,130,116,D,[117],[],Yes,[],0,No cluster,No expected residues
+117,MPG1_YEAST,P41940,131,111,V,"[110, 175]",[],Yes,[],0,No cluster,No expected residues
+118,A8J3F9_CHLRE,A8J3F9,131,112,V,"[111, 174]",[],Yes,[],0,No cluster,No expected residues
+119,GMPP3_ARATH,Q8H1Q7,131,93,V,[92],[],Yes,[],0,No cluster,No expected residues
+120,D8RTK5_SELML,D8RTK5,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+121,D8T5L0_SELML,D8T5L0,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+122,D8R6R6_SELML,D8R6R6,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+123,GMPP2_ARATH,Q9M2S0,131,115,V,"[114, 178]",[],Yes,[],0,No cluster,No expected residues
+124,G7KGV6_MEDTR,G7KGV6,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+125,GMPP1_ARATH,O22287,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+126,B4G0L2_MAIZE,B4G0L2,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+127,GMPP1_ORYSJ,Q84JH5,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+128,B4FEP8_MAIZE,B4FEP8,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+129,C4JAC1_MAIZE,C4JAC1,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+130,GMPP2_ORYSJ,Q941T9,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+131,GMPP3_ORYSJ,Q6Z9A3,131,112,V,"[111, 175]",[],Yes,[],0,No cluster,No expected residues
+132,GMPPB_CAEEL,A3QMC8,131,110,V,"[109, 173]",[],Yes,[],0,No cluster,No expected residues
+133,GMPPB_DROME,Q7JZB4,131,121,V,"[120, 183]",[],Yes,[],0,No cluster,No expected residues
+134,G5BZX1_HETGA,G5BZX1,131,111,V,"[110, 174]",[],Yes,[],0,No cluster,No expected residues
+135,GMPPB_MOUSE,Q8BTZ7,131,111,V,"[110, 174]",[],Yes,[],0,No cluster,No expected residues
+136,A0A3P9QHR2_POERE,A0A3P9QHR2,131,111,V,"[110, 174]",[],Yes,[],0,No cluster,No expected residues
+137,F1R683_DANRE,F1R683,131,111,V,"[110, 174]",[],Yes,[],0,No cluster,No expected residues
+138,YBB2_SCHPO,O60064,131,119,V,[118],[],Yes,[],0,No cluster,No expected residues
+139,D8RZ45_SELML,D8RZ45,131,122,V,[121],[],Yes,[],0,No cluster,No expected residues
+140,D8SV91_SELML,D8SV91,131,122,V,"[121, 187]",[],Yes,[],0,No cluster,No expected residues
+141,A0A1P8AZM7_ARATH,A0A1P8AZM7,131,108,V,[107],[],Yes,[],0,No cluster,No expected residues
+142,A0A072UZU5_MEDTR,A0A072UZU5,131,122,V,"[121, 187]",[],Yes,[],0,No cluster,No expected residues
+143,G7KJH0_MEDTR,G7KJH0,131,121,V,"[120, 186]",[],Yes,[],0,No cluster,No expected residues
+144,Q9C9P3_ARATH,Q9C9P3,131,123,V,"[122, 188]",[],Yes,[],0,No cluster,No expected residues
+145,B4FCE5_MAIZE,B4FCE5,131,58,V,"[57, 123]",[],Yes,[],0,No cluster,No expected residues
+146,B4FQP6_MAIZE,B4FQP6,131,122,V,[121],[],Yes,[],0,No cluster,No expected residues
+147,Q9N4V3_CAEEL,Q9N4V3,131,117,V,"[116, 182]",[],Yes,[],0,No cluster,No expected residues
+148,Q8SXU3_DROME,Q8SXU3,131,119,V,"[118, 186]",[],Yes,[],0,No cluster,No expected residues
+149,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,131,117,V,"[116, 182]",[],Yes,[],0,No cluster,No expected residues
+150,GMPPA_MOUSE,Q922H4,131,117,V,[116],[],Yes,[],0,No cluster,No expected residues
+151,GMPPA_RAT,Q5XIC1,131,117,V,"[116, 182]",[],Yes,[],0,No cluster,No expected residues
+152,GMPAB_DANRE,Q7SXP8,131,117,V,"[116, 184]",[],Yes,[],0,No cluster,No expected residues
+153,A0A674HLF9_TAEGU,A0A674HLF9,131,118,V,"[117, 185]",[],Yes,[],0,No cluster,No expected residues
+154,A0A3P9PHF0_POERE,A0A3P9PHF0,131,117,V,"[116, 184]",[],Yes,[],0,No cluster,No expected residues
+155,GMPAA_DANRE,Q6GMK8,131,117,V,"[116, 184]",[],Yes,[],0,No cluster,No expected residues
+156,MPG1_YEAST,P41940,170,145,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+157,A8J3F9_CHLRE,A8J3F9,170,146,G,"[162, 171]",[],Yes,[],0,No cluster,No expected residues
+158,GMPP3_ARATH,Q8H1Q7,170,127,G,"[144, 153]",[],Yes,[],0,No cluster,No expected residues
+159,D8RTK5_SELML,D8RTK5,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+160,D8T5L0_SELML,D8T5L0,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+161,D8R6R6_SELML,D8R6R6,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+162,GMPP2_ARATH,Q9M2S0,170,149,G,"[166, 175]",[],Yes,[],0,No cluster,No expected residues
+163,G7KGV6_MEDTR,G7KGV6,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+164,GMPP1_ARATH,O22287,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+165,B4G0L2_MAIZE,B4G0L2,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+166,GMPP1_ORYSJ,Q84JH5,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+167,B4FEP8_MAIZE,B4FEP8,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+168,C4JAC1_MAIZE,C4JAC1,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+169,GMPP2_ORYSJ,Q941T9,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+170,GMPP3_ORYSJ,Q6Z9A3,170,146,G,"[163, 172]",[],Yes,[],0,No cluster,No expected residues
+171,GMPPB_CAEEL,A3QMC8,170,144,G,"[161, 170]",[],Yes,[],0,No cluster,No expected residues
+172,GMPPB_DROME,Q7JZB4,170,155,G,"[171, 180]",[],Yes,[],0,No cluster,No expected residues
+173,G5BZX1_HETGA,G5BZX1,170,145,G,"[162, 171]",[],Yes,[],0,No cluster,No expected residues
+174,GMPPB_MOUSE,Q8BTZ7,170,145,G,"[162, 171]",[],Yes,[],0,No cluster,No expected residues
+175,A0A3P9QHR2_POERE,A0A3P9QHR2,170,145,G,"[162, 171]",[],Yes,[],0,No cluster,No expected residues
+176,F1R683_DANRE,F1R683,170,145,G,"[162, 171]",[],Yes,[],0,No cluster,No expected residues
+177,YBB2_SCHPO,O60064,170,155,G,"[172, 181]",[],Yes,[],0,No cluster,No expected residues
+178,D8RZ45_SELML,D8RZ45,170,158,G,"[175, 184]",[],Yes,[],0,No cluster,No expected residues
+179,D8SV91_SELML,D8SV91,170,158,G,"[175, 184]",[],Yes,[],0,No cluster,No expected residues
+180,A0A1P8AZM7_ARATH,A0A1P8AZM7,170,144,G,"[161, 170]",[],Yes,[],0,No cluster,No expected residues
+181,A0A072UZU5_MEDTR,A0A072UZU5,170,158,G,"[175, 184]",[],Yes,[],0,No cluster,No expected residues
+182,G7KJH0_MEDTR,G7KJH0,170,157,G,"[174, 183]",[],Yes,[],0,No cluster,No expected residues
+183,Q9C9P3_ARATH,Q9C9P3,170,159,G,"[176, 185]",[],Yes,[],0,No cluster,No expected residues
+184,B4FCE5_MAIZE,B4FCE5,170,94,G,"[111, 120]",[],Yes,[],0,No cluster,No expected residues
+185,B4FQP6_MAIZE,B4FQP6,170,158,G,"[175, 184]",[],Yes,[],0,No cluster,No expected residues
+186,Q9N4V3_CAEEL,Q9N4V3,170,154,G,"[170, 179]",[],Yes,[],0,No cluster,No expected residues
+187,Q8SXU3_DROME,Q8SXU3,170,157,G,"[174, 183]",[],Yes,[],0,No cluster,No expected residues
+188,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,170,153,G,"[170, 179]",[],Yes,[],0,No cluster,No expected residues
+189,GMPPA_MOUSE,Q922H4,170,153,G,"[170, 179]",[],Yes,[],0,No cluster,No expected residues
+190,GMPPA_RAT,Q5XIC1,170,153,G,"[170, 179]",[],Yes,[],0,No cluster,No expected residues
+191,GMPAB_DANRE,Q7SXP8,170,155,G,"[172, 181]",[],Yes,[],0,No cluster,No expected residues
+192,A0A674HLF9_TAEGU,A0A674HLF9,170,156,G,"[173, 182]",[],Yes,[],0,No cluster,No expected residues
+193,A0A3P9PHF0_POERE,A0A3P9PHF0,170,155,G,"[172, 181]",[],Yes,[],0,No cluster,No expected residues
+194,GMPAA_DANRE,Q6GMK8,170,155,G,"[172, 181]",[],Yes,[],0,No cluster,No expected residues
+195,MPG1_YEAST,P41940,188,163,K,"[145, 164]",[],Yes,[],0,No cluster,No expected residues
+196,A8J3F9_CHLRE,A8J3F9,188,162,K,"[146, 163]",[],Yes,[],0,No cluster,No expected residues
+197,GMPP3_ARATH,Q8H1Q7,188,144,K,"[127, 145]",[],Yes,[],0,No cluster,No expected residues
+198,D8RTK5_SELML,D8RTK5,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+199,D8T5L0_SELML,D8T5L0,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+200,D8R6R6_SELML,D8R6R6,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+201,GMPP2_ARATH,Q9M2S0,188,166,K,"[149, 167]",[],Yes,[],0,No cluster,No expected residues
+202,G7KGV6_MEDTR,G7KGV6,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+203,GMPP1_ARATH,O22287,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+204,B4G0L2_MAIZE,B4G0L2,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+205,GMPP1_ORYSJ,Q84JH5,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+206,B4FEP8_MAIZE,B4FEP8,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+207,C4JAC1_MAIZE,C4JAC1,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+208,GMPP2_ORYSJ,Q941T9,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+209,GMPP3_ORYSJ,Q6Z9A3,188,163,K,"[146, 164]",[],Yes,[],0,No cluster,No expected residues
+210,GMPPB_CAEEL,A3QMC8,188,161,K,"[144, 162]",[],Yes,[],0,No cluster,No expected residues
+211,GMPPB_DROME,Q7JZB4,188,171,K,"[155, 172]",[],Yes,[],0,No cluster,No expected residues
+212,G5BZX1_HETGA,G5BZX1,188,162,K,"[145, 163]",[],Yes,[],0,No cluster,No expected residues
+213,GMPPB_MOUSE,Q8BTZ7,188,162,K,"[145, 163]",[],Yes,[],0,No cluster,No expected residues
+214,A0A3P9QHR2_POERE,A0A3P9QHR2,188,162,K,"[145, 163]",[],Yes,[],0,No cluster,No expected residues
+215,F1R683_DANRE,F1R683,188,162,K,"[145, 163]",[],Yes,[],0,No cluster,No expected residues
+216,YBB2_SCHPO,O60064,188,172,K,"[155, 173]",[],Yes,[],0,No cluster,No expected residues
+217,D8RZ45_SELML,D8RZ45,188,175,K,"[158, 176]",[],Yes,[],0,No cluster,No expected residues
+218,D8SV91_SELML,D8SV91,188,175,K,"[158, 176]",[],Yes,[],0,No cluster,No expected residues
+219,A0A1P8AZM7_ARATH,A0A1P8AZM7,188,161,K,"[144, 162]",[],Yes,[],0,No cluster,No expected residues
+220,A0A072UZU5_MEDTR,A0A072UZU5,188,175,K,"[158, 176]",[],Yes,[],0,No cluster,No expected residues
+221,G7KJH0_MEDTR,G7KJH0,188,174,K,"[157, 175]",[],Yes,[],0,No cluster,No expected residues
+222,Q9C9P3_ARATH,Q9C9P3,188,176,K,"[159, 177]",[],Yes,[],0,No cluster,No expected residues
+223,B4FCE5_MAIZE,B4FCE5,188,111,K,"[94, 112]",[],Yes,[],0,No cluster,No expected residues
+224,B4FQP6_MAIZE,B4FQP6,188,175,K,"[158, 176]",[],Yes,[],0,No cluster,No expected residues
+225,Q9N4V3_CAEEL,Q9N4V3,188,170,K,"[154, 171]",[],Yes,[],0,No cluster,No expected residues
+226,Q8SXU3_DROME,Q8SXU3,188,174,K,"[157, 175]",[],Yes,[],0,No cluster,No expected residues
+227,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,188,170,K,"[153, 171]",[],Yes,[],0,No cluster,No expected residues
+228,GMPPA_MOUSE,Q922H4,188,170,K,"[153, 171]",[],Yes,[],0,No cluster,No expected residues
+229,GMPPA_RAT,Q5XIC1,188,170,K,"[153, 171]",[],Yes,[],0,No cluster,No expected residues
+230,GMPAB_DANRE,Q7SXP8,188,172,K,"[155, 173]",[],Yes,[],0,No cluster,No expected residues
+231,A0A674HLF9_TAEGU,A0A674HLF9,188,173,K,"[156, 174]",[],Yes,[],0,No cluster,No expected residues
+232,A0A3P9PHF0_POERE,A0A3P9PHF0,188,172,K,"[155, 173]",[],Yes,[],0,No cluster,No expected residues
+233,GMPAA_DANRE,Q6GMK8,188,172,K,"[155, 173]",[],Yes,[],0,No cluster,No expected residues
+234,MPG1_YEAST,P41940,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+235,A8J3F9_CHLRE,A8J3F9,189,163,P,[162],[],Yes,[],0,No cluster,No expected residues
+236,GMPP3_ARATH,Q8H1Q7,189,145,P,[144],[],Yes,[],0,No cluster,No expected residues
+237,D8RTK5_SELML,D8RTK5,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+238,D8T5L0_SELML,D8T5L0,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+239,D8R6R6_SELML,D8R6R6,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+240,GMPP2_ARATH,Q9M2S0,189,167,P,[166],[],Yes,[],0,No cluster,No expected residues
+241,G7KGV6_MEDTR,G7KGV6,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+242,GMPP1_ARATH,O22287,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+243,B4G0L2_MAIZE,B4G0L2,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+244,GMPP1_ORYSJ,Q84JH5,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+245,B4FEP8_MAIZE,B4FEP8,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+246,C4JAC1_MAIZE,C4JAC1,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+247,GMPP2_ORYSJ,Q941T9,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+248,GMPP3_ORYSJ,Q6Z9A3,189,164,P,[163],[],Yes,[],0,No cluster,No expected residues
+249,GMPPB_CAEEL,A3QMC8,189,162,P,[161],[],Yes,[],0,No cluster,No expected residues
+250,GMPPB_DROME,Q7JZB4,189,172,P,[171],[],Yes,[],0,No cluster,No expected residues
+251,G5BZX1_HETGA,G5BZX1,189,163,P,[162],[],Yes,[],0,No cluster,No expected residues
+252,GMPPB_MOUSE,Q8BTZ7,189,163,P,[162],[],Yes,[],0,No cluster,No expected residues
+253,A0A3P9QHR2_POERE,A0A3P9QHR2,189,163,P,[162],[],Yes,[],0,No cluster,No expected residues
+254,F1R683_DANRE,F1R683,189,163,P,[162],[],Yes,[],0,No cluster,No expected residues
+255,YBB2_SCHPO,O60064,189,173,P,[172],[],Yes,[],0,No cluster,No expected residues
+256,D8RZ45_SELML,D8RZ45,189,176,P,[175],[],Yes,[],0,No cluster,No expected residues
+257,D8SV91_SELML,D8SV91,189,176,P,[175],[],Yes,[],0,No cluster,No expected residues
+258,A0A1P8AZM7_ARATH,A0A1P8AZM7,189,162,P,[161],[],Yes,[],0,No cluster,No expected residues
+259,A0A072UZU5_MEDTR,A0A072UZU5,189,176,P,[175],[],Yes,[],0,No cluster,No expected residues
+260,G7KJH0_MEDTR,G7KJH0,189,175,P,[174],[],Yes,[],0,No cluster,No expected residues
+261,Q9C9P3_ARATH,Q9C9P3,189,177,P,[176],[],Yes,[],0,No cluster,No expected residues
+262,B4FCE5_MAIZE,B4FCE5,189,112,P,[111],[],Yes,[],0,No cluster,No expected residues
+263,B4FQP6_MAIZE,B4FQP6,189,176,P,[175],[],Yes,[],0,No cluster,No expected residues
+264,Q9N4V3_CAEEL,Q9N4V3,189,171,P,[170],[],Yes,[],0,No cluster,No expected residues
+265,Q8SXU3_DROME,Q8SXU3,189,175,P,[174],[],Yes,[],0,No cluster,No expected residues
+266,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,189,171,P,[170],[],Yes,[],0,No cluster,No expected residues
+267,GMPPA_MOUSE,Q922H4,189,171,P,[170],[],Yes,[],0,No cluster,No expected residues
+268,GMPPA_RAT,Q5XIC1,189,171,P,[170],[],Yes,[],0,No cluster,No expected residues
+269,GMPAB_DANRE,Q7SXP8,189,173,P,[172],[],Yes,[],0,No cluster,No expected residues
+270,A0A674HLF9_TAEGU,A0A674HLF9,189,174,P,[173],[],Yes,[],0,No cluster,No expected residues
+271,A0A3P9PHF0_POERE,A0A3P9PHF0,189,173,P,[172],[],Yes,[],0,No cluster,No expected residues
+272,GMPAA_DANRE,Q6GMK8,189,173,P,[172],[],Yes,[],0,No cluster,No expected residues
+273,MPG1_YEAST,P41940,197,172,I,[145],[],Yes,[],0,No cluster,No expected residues
+274,A8J3F9_CHLRE,A8J3F9,197,171,I,[146],[],Yes,[],0,No cluster,No expected residues
+275,GMPP3_ARATH,Q8H1Q7,197,153,I,[127],[],Yes,[],0,No cluster,No expected residues
+276,D8RTK5_SELML,D8RTK5,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+277,D8T5L0_SELML,D8T5L0,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+278,D8R6R6_SELML,D8R6R6,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+279,GMPP2_ARATH,Q9M2S0,197,175,I,[149],[],Yes,[],0,No cluster,No expected residues
+280,G7KGV6_MEDTR,G7KGV6,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+281,GMPP1_ARATH,O22287,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+282,B4G0L2_MAIZE,B4G0L2,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+283,GMPP1_ORYSJ,Q84JH5,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+284,B4FEP8_MAIZE,B4FEP8,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+285,C4JAC1_MAIZE,C4JAC1,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+286,GMPP2_ORYSJ,Q941T9,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+287,GMPP3_ORYSJ,Q6Z9A3,197,172,I,[146],[],Yes,[],0,No cluster,No expected residues
+288,GMPPB_CAEEL,A3QMC8,197,170,I,[144],[],Yes,[],0,No cluster,No expected residues
+289,GMPPB_DROME,Q7JZB4,197,180,I,[155],[],Yes,[],0,No cluster,No expected residues
+290,G5BZX1_HETGA,G5BZX1,197,171,I,[145],[],Yes,[],0,No cluster,No expected residues
+291,GMPPB_MOUSE,Q8BTZ7,197,171,I,[145],[],Yes,[],0,No cluster,No expected residues
+292,A0A3P9QHR2_POERE,A0A3P9QHR2,197,171,I,[145],[],Yes,[],0,No cluster,No expected residues
+293,F1R683_DANRE,F1R683,197,171,I,[145],[],Yes,[],0,No cluster,No expected residues
+294,YBB2_SCHPO,O60064,197,181,I,[155],[],Yes,[],0,No cluster,No expected residues
+295,D8RZ45_SELML,D8RZ45,197,184,I,[158],[],Yes,[],0,No cluster,No expected residues
+296,D8SV91_SELML,D8SV91,197,184,I,[158],[],Yes,[],0,No cluster,No expected residues
+297,A0A1P8AZM7_ARATH,A0A1P8AZM7,197,170,I,[144],[],Yes,[],0,No cluster,No expected residues
+298,A0A072UZU5_MEDTR,A0A072UZU5,197,184,I,[158],[],Yes,[],0,No cluster,No expected residues
+299,G7KJH0_MEDTR,G7KJH0,197,183,I,[157],[],Yes,[],0,No cluster,No expected residues
+300,Q9C9P3_ARATH,Q9C9P3,197,185,I,[159],[],Yes,[],0,No cluster,No expected residues
+301,B4FCE5_MAIZE,B4FCE5,197,120,I,[94],[],Yes,[],0,No cluster,No expected residues
+302,B4FQP6_MAIZE,B4FQP6,197,184,I,[158],[],Yes,[],0,No cluster,No expected residues
+303,Q9N4V3_CAEEL,Q9N4V3,197,179,I,[154],[],Yes,[],0,No cluster,No expected residues
+304,Q8SXU3_DROME,Q8SXU3,197,183,I,[157],[],Yes,[],0,No cluster,No expected residues
+305,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,197,179,I,[153],[],Yes,[],0,No cluster,No expected residues
+306,GMPPA_MOUSE,Q922H4,197,179,I,[153],[],Yes,[],0,No cluster,No expected residues
+307,GMPPA_RAT,Q5XIC1,197,179,I,[153],[],Yes,[],0,No cluster,No expected residues
+308,GMPAB_DANRE,Q7SXP8,197,181,I,[155],[],Yes,[],0,No cluster,No expected residues
+309,A0A674HLF9_TAEGU,A0A674HLF9,197,182,I,[156],[],Yes,[],0,No cluster,No expected residues
+310,A0A3P9PHF0_POERE,A0A3P9PHF0,197,181,I,[155],[],Yes,[],0,No cluster,No expected residues
+311,GMPAA_DANRE,Q6GMK8,197,181,I,[155],[],Yes,[],0,No cluster,No expected residues
+312,MPG1_YEAST,P41940,200,175,G,"[111, 177]",[],Yes,[],0,No cluster,No expected residues
+313,A8J3F9_CHLRE,A8J3F9,200,174,G,"[112, 176]",[],Yes,[],0,No cluster,No expected residues
+314,GMPP3_ARATH,Q8H1Q7,200,156,G,[158],[],Yes,[],0,No cluster,No expected residues
+315,D8RTK5_SELML,D8RTK5,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+316,D8T5L0_SELML,D8T5L0,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+317,D8R6R6_SELML,D8R6R6,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+318,GMPP2_ARATH,Q9M2S0,200,178,G,"[115, 180]",[],Yes,[],0,No cluster,No expected residues
+319,G7KGV6_MEDTR,G7KGV6,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+320,GMPP1_ARATH,O22287,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+321,B4G0L2_MAIZE,B4G0L2,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+322,GMPP1_ORYSJ,Q84JH5,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+323,B4FEP8_MAIZE,B4FEP8,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+324,C4JAC1_MAIZE,C4JAC1,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+325,GMPP2_ORYSJ,Q941T9,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+326,GMPP3_ORYSJ,Q6Z9A3,200,175,G,"[112, 177]",[],Yes,[],0,No cluster,No expected residues
+327,GMPPB_CAEEL,A3QMC8,200,173,G,"[110, 175]",[],Yes,[],0,No cluster,No expected residues
+328,GMPPB_DROME,Q7JZB4,200,183,G,"[121, 185]",[],Yes,[],0,No cluster,No expected residues
+329,G5BZX1_HETGA,G5BZX1,200,174,G,"[111, 176]",[],Yes,[],0,No cluster,No expected residues
+330,GMPPB_MOUSE,Q8BTZ7,200,174,G,"[111, 176]",[],Yes,[],0,No cluster,No expected residues
+331,A0A3P9QHR2_POERE,A0A3P9QHR2,200,174,G,"[111, 176]",[],Yes,[],0,No cluster,No expected residues
+332,F1R683_DANRE,F1R683,200,174,G,"[111, 176]",[],Yes,[],0,No cluster,No expected residues
+333,YBB2_SCHPO,O60064,200,184,G,[186],[],Yes,[],0,No cluster,No expected residues
+334,D8RZ45_SELML,D8RZ45,200,187,G,[189],[],Yes,[],0,No cluster,No expected residues
+335,D8SV91_SELML,D8SV91,200,187,G,"[122, 189]",[],Yes,[],0,No cluster,No expected residues
+336,A0A1P8AZM7_ARATH,A0A1P8AZM7,200,173,G,[175],[],Yes,[],0,No cluster,No expected residues
+337,A0A072UZU5_MEDTR,A0A072UZU5,200,187,G,"[122, 189]",[],Yes,[],0,No cluster,No expected residues
+338,G7KJH0_MEDTR,G7KJH0,200,186,G,"[121, 188]",[],Yes,[],0,No cluster,No expected residues
+339,Q9C9P3_ARATH,Q9C9P3,200,188,G,"[123, 190]",[],Yes,[],0,No cluster,No expected residues
+340,B4FCE5_MAIZE,B4FCE5,200,123,G,"[58, 125]",[],Yes,[],0,No cluster,No expected residues
+341,B4FQP6_MAIZE,B4FQP6,200,187,G,[189],[],Yes,[],0,No cluster,No expected residues
+342,Q9N4V3_CAEEL,Q9N4V3,200,182,G,"[117, 184]",[],Yes,[],0,No cluster,No expected residues
+343,Q8SXU3_DROME,Q8SXU3,200,186,G,"[119, 188]",[],Yes,[],0,No cluster,No expected residues
+344,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,200,182,G,"[117, 184]",[],Yes,[],0,No cluster,No expected residues
+345,GMPPA_MOUSE,Q922H4,200,182,G,[184],[],Yes,[],0,No cluster,No expected residues
+346,GMPPA_RAT,Q5XIC1,200,182,G,"[117, 184]",[],Yes,[],0,No cluster,No expected residues
+347,GMPAB_DANRE,Q7SXP8,200,184,G,"[117, 186]",[],Yes,[],0,No cluster,No expected residues
+348,A0A674HLF9_TAEGU,A0A674HLF9,200,185,G,"[118, 187]",[],Yes,[],0,No cluster,No expected residues
+349,A0A3P9PHF0_POERE,A0A3P9PHF0,200,184,G,"[117, 186]",[],Yes,[],0,No cluster,No expected residues
+350,GMPAA_DANRE,Q6GMK8,200,184,G,"[117, 186]",[],Yes,[],0,No cluster,No expected residues
+351,MPG1_YEAST,P41940,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+352,A8J3F9_CHLRE,A8J3F9,202,176,Y,[174],[],Yes,[],0,No cluster,No expected residues
+353,GMPP3_ARATH,Q8H1Q7,202,158,Y,[156],[],Yes,[],0,No cluster,No expected residues
+354,D8RTK5_SELML,D8RTK5,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+355,D8T5L0_SELML,D8T5L0,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+356,D8R6R6_SELML,D8R6R6,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+357,GMPP2_ARATH,Q9M2S0,202,180,Y,[178],[],Yes,[],0,No cluster,No expected residues
+358,G7KGV6_MEDTR,G7KGV6,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+359,GMPP1_ARATH,O22287,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+360,B4G0L2_MAIZE,B4G0L2,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+361,GMPP1_ORYSJ,Q84JH5,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+362,B4FEP8_MAIZE,B4FEP8,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+363,C4JAC1_MAIZE,C4JAC1,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+364,GMPP2_ORYSJ,Q941T9,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+365,GMPP3_ORYSJ,Q6Z9A3,202,177,Y,[175],[],Yes,[],0,No cluster,No expected residues
+366,GMPPB_CAEEL,A3QMC8,202,175,Y,[173],[],Yes,[],0,No cluster,No expected residues
+367,GMPPB_DROME,Q7JZB4,202,185,Y,[183],[],Yes,[],0,No cluster,No expected residues
+368,G5BZX1_HETGA,G5BZX1,202,176,Y,[174],[],Yes,[],0,No cluster,No expected residues
+369,GMPPB_MOUSE,Q8BTZ7,202,176,Y,[174],[],Yes,[],0,No cluster,No expected residues
+370,A0A3P9QHR2_POERE,A0A3P9QHR2,202,176,Y,[174],[],Yes,[],0,No cluster,No expected residues
+371,F1R683_DANRE,F1R683,202,176,Y,[174],[],Yes,[],0,No cluster,No expected residues
+372,YBB2_SCHPO,O60064,202,186,Y,[184],[],Yes,[],0,No cluster,No expected residues
+373,D8RZ45_SELML,D8RZ45,202,189,Y,[187],[],Yes,[],0,No cluster,No expected residues
+374,D8SV91_SELML,D8SV91,202,189,Y,[187],[],Yes,[],0,No cluster,No expected residues
+375,A0A1P8AZM7_ARATH,A0A1P8AZM7,202,175,Y,[173],[],Yes,[],0,No cluster,No expected residues
+376,A0A072UZU5_MEDTR,A0A072UZU5,202,189,Y,[187],[],Yes,[],0,No cluster,No expected residues
+377,G7KJH0_MEDTR,G7KJH0,202,188,Y,[186],[],Yes,[],0,No cluster,No expected residues
+378,Q9C9P3_ARATH,Q9C9P3,202,190,Y,[188],[],Yes,[],0,No cluster,No expected residues
+379,B4FCE5_MAIZE,B4FCE5,202,125,Y,[123],[],Yes,[],0,No cluster,No expected residues
+380,B4FQP6_MAIZE,B4FQP6,202,189,Y,[187],[],Yes,[],0,No cluster,No expected residues
+381,Q9N4V3_CAEEL,Q9N4V3,202,184,Y,[182],[],Yes,[],0,No cluster,No expected residues
+382,Q8SXU3_DROME,Q8SXU3,202,188,Y,[186],[],Yes,[],0,No cluster,No expected residues
+383,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,202,184,Y,[182],[],Yes,[],0,No cluster,No expected residues
+384,GMPPA_MOUSE,Q922H4,202,184,Y,[182],[],Yes,[],0,No cluster,No expected residues
+385,GMPPA_RAT,Q5XIC1,202,184,Y,[182],[],Yes,[],0,No cluster,No expected residues
+386,GMPAB_DANRE,Q7SXP8,202,186,Y,[184],[],Yes,[],0,No cluster,No expected residues
+387,A0A674HLF9_TAEGU,A0A674HLF9,202,187,Y,[185],[],Yes,[],0,No cluster,No expected residues
+388,A0A3P9PHF0_POERE,A0A3P9PHF0,202,186,Y,[184],[],Yes,[],0,No cluster,No expected residues
+389,GMPAA_DANRE,Q6GMK8,202,186,Y,[184],[],Yes,[],0,No cluster,No expected residues
+390,MPG1_YEAST,P41940,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+391,A8J3F9_CHLRE,A8J3F9,341,269,G,"[270, 272]",[],Yes,[],0,No cluster,No expected residues
+392,GMPP3_ARATH,Q8H1Q7,341,251,G,"[252, 254]",[],Yes,[],0,No cluster,No expected residues
+393,D8RTK5_SELML,D8RTK5,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+394,D8T5L0_SELML,D8T5L0,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+395,D8R6R6_SELML,D8R6R6,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+396,GMPP2_ARATH,Q9M2S0,341,273,G,"[274, 276]",[],Yes,[],0,No cluster,No expected residues
+397,G7KGV6_MEDTR,G7KGV6,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+398,GMPP1_ARATH,O22287,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+399,B4G0L2_MAIZE,B4G0L2,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+400,GMPP1_ORYSJ,Q84JH5,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+401,B4FEP8_MAIZE,B4FEP8,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+402,C4JAC1_MAIZE,C4JAC1,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+403,GMPP2_ORYSJ,Q941T9,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+404,GMPP3_ORYSJ,Q6Z9A3,341,270,G,"[271, 273]",[],Yes,[],0,No cluster,No expected residues
+405,GMPPB_CAEEL,A3QMC8,341,274,G,"[275, 277]",[],Yes,[],0,No cluster,No expected residues
+406,GMPPB_DROME,Q7JZB4,341,278,G,"[279, 281]",[],Yes,[],0,No cluster,No expected residues
+407,G5BZX1_HETGA,G5BZX1,341,269,G,"[270, 272]",[],Yes,[],0,No cluster,No expected residues
+408,GMPPB_MOUSE,Q8BTZ7,341,269,G,"[270, 272]",[],Yes,[],0,No cluster,No expected residues
+409,A0A3P9QHR2_POERE,A0A3P9QHR2,341,269,G,"[270, 272]",[],Yes,[],0,No cluster,No expected residues
+410,F1R683_DANRE,F1R683,341,269,G,"[270, 272]",[],Yes,[],0,No cluster,No expected residues
+411,YBB2_SCHPO,O60064,341,303,G,"[304, 306]",[],Yes,[],0,No cluster,No expected residues
+412,D8RZ45_SELML,D8RZ45,341,315,G,"[316, 318]",[],Yes,[],0,No cluster,No expected residues
+413,D8SV91_SELML,D8SV91,341,315,G,"[316, 318]",[],Yes,[],0,No cluster,No expected residues
+414,A0A1P8AZM7_ARATH,A0A1P8AZM7,341,295,G,"[296, 298]",[],Yes,[],0,No cluster,No expected residues
+415,A0A072UZU5_MEDTR,A0A072UZU5,341,316,G,"[317, 319]",[],Yes,[],0,No cluster,No expected residues
+416,G7KJH0_MEDTR,G7KJH0,341,315,G,"[316, 318]",[],Yes,[],0,No cluster,No expected residues
+417,Q9C9P3_ARATH,Q9C9P3,341,316,G,"[317, 319]",[],Yes,[],0,No cluster,No expected residues
+418,B4FCE5_MAIZE,B4FCE5,341,252,G,"[253, 255]",[],Yes,[],0,No cluster,No expected residues
+419,B4FQP6_MAIZE,B4FQP6,341,316,G,"[317, 319]",[],Yes,[],0,No cluster,No expected residues
+420,Q9N4V3_CAEEL,Q9N4V3,341,282,G,"[283, 285]",[],Yes,[],0,No cluster,No expected residues
+421,Q8SXU3_DROME,Q8SXU3,341,319,G,"[320, 322]",[],Yes,[],0,No cluster,No expected residues
+422,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,341,302,G,"[303, 305]",[],Yes,[],0,No cluster,No expected residues
+423,GMPPA_MOUSE,Q922H4,341,302,G,"[303, 305]",[],Yes,[],0,No cluster,No expected residues
+424,GMPPA_RAT,Q5XIC1,341,302,G,"[303, 305]",[],Yes,[],0,No cluster,No expected residues
+425,GMPAB_DANRE,Q7SXP8,341,304,G,"[305, 307]",[],Yes,[],0,No cluster,No expected residues
+426,A0A674HLF9_TAEGU,A0A674HLF9,341,305,G,"[306, 308]",[],Yes,[],0,No cluster,No expected residues
+427,A0A3P9PHF0_POERE,A0A3P9PHF0,341,309,G,"[310, 312]",[],Yes,[],0,No cluster,No expected residues
+428,GMPAA_DANRE,Q6GMK8,341,304,G,"[305, 307]",[],Yes,[],0,No cluster,No expected residues
+429,MPG1_YEAST,P41940,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+430,A8J3F9_CHLRE,A8J3F9,342,270,P,"[269, 272]",[],Yes,[],0,No cluster,No expected residues
+431,GMPP3_ARATH,Q8H1Q7,342,252,P,"[251, 254]",[],Yes,[],0,No cluster,No expected residues
+432,D8RTK5_SELML,D8RTK5,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+433,D8T5L0_SELML,D8T5L0,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+434,D8R6R6_SELML,D8R6R6,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+435,GMPP2_ARATH,Q9M2S0,342,274,P,"[273, 276]",[],Yes,[],0,No cluster,No expected residues
+436,G7KGV6_MEDTR,G7KGV6,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+437,GMPP1_ARATH,O22287,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+438,B4G0L2_MAIZE,B4G0L2,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+439,GMPP1_ORYSJ,Q84JH5,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+440,B4FEP8_MAIZE,B4FEP8,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+441,C4JAC1_MAIZE,C4JAC1,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+442,GMPP2_ORYSJ,Q941T9,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+443,GMPP3_ORYSJ,Q6Z9A3,342,271,P,"[270, 273]",[],Yes,[],0,No cluster,No expected residues
+444,GMPPB_CAEEL,A3QMC8,342,275,P,"[274, 277]",[],Yes,[],0,No cluster,No expected residues
+445,GMPPB_DROME,Q7JZB4,342,279,P,"[278, 281]",[],Yes,[],0,No cluster,No expected residues
+446,G5BZX1_HETGA,G5BZX1,342,270,P,"[269, 272]",[],Yes,[],0,No cluster,No expected residues
+447,GMPPB_MOUSE,Q8BTZ7,342,270,P,"[269, 272]",[],Yes,[],0,No cluster,No expected residues
+448,A0A3P9QHR2_POERE,A0A3P9QHR2,342,270,P,"[269, 272]",[],Yes,[],0,No cluster,No expected residues
+449,F1R683_DANRE,F1R683,342,270,P,"[269, 272]",[],Yes,[],0,No cluster,No expected residues
+450,YBB2_SCHPO,O60064,342,304,P,"[303, 306]",[],Yes,[],0,No cluster,No expected residues
+451,D8RZ45_SELML,D8RZ45,342,316,P,"[315, 318]",[],Yes,[],0,No cluster,No expected residues
+452,D8SV91_SELML,D8SV91,342,316,P,"[315, 318]",[],Yes,[],0,No cluster,No expected residues
+453,A0A1P8AZM7_ARATH,A0A1P8AZM7,342,296,P,"[295, 298]",[],Yes,[],0,No cluster,No expected residues
+454,A0A072UZU5_MEDTR,A0A072UZU5,342,317,P,"[316, 319]",[],Yes,[],0,No cluster,No expected residues
+455,G7KJH0_MEDTR,G7KJH0,342,316,P,"[315, 318]",[],Yes,[],0,No cluster,No expected residues
+456,Q9C9P3_ARATH,Q9C9P3,342,317,P,"[316, 319]",[],Yes,[],0,No cluster,No expected residues
+457,B4FCE5_MAIZE,B4FCE5,342,253,P,"[252, 255]",[],Yes,[],0,No cluster,No expected residues
+458,B4FQP6_MAIZE,B4FQP6,342,317,P,"[316, 319]",[],Yes,[],0,No cluster,No expected residues
+459,Q9N4V3_CAEEL,Q9N4V3,342,283,P,"[282, 285]",[],Yes,[],0,No cluster,No expected residues
+460,Q8SXU3_DROME,Q8SXU3,342,320,P,"[319, 322]",[],Yes,[],0,No cluster,No expected residues
+461,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,342,303,P,"[302, 305]",[],Yes,[],0,No cluster,No expected residues
+462,GMPPA_MOUSE,Q922H4,342,303,P,"[302, 305]",[],Yes,[],0,No cluster,No expected residues
+463,GMPPA_RAT,Q5XIC1,342,303,P,"[302, 305]",[],Yes,[],0,No cluster,No expected residues
+464,GMPAB_DANRE,Q7SXP8,342,305,P,"[304, 307]",[],Yes,[],0,No cluster,No expected residues
+465,A0A674HLF9_TAEGU,A0A674HLF9,342,306,P,"[305, 308]",[],Yes,[],0,No cluster,No expected residues
+466,A0A3P9PHF0_POERE,A0A3P9PHF0,342,310,P,"[309, 312]",[],Yes,[],0,No cluster,No expected residues
+467,GMPAA_DANRE,Q6GMK8,342,305,P,"[304, 307]",[],Yes,[],0,No cluster,No expected residues
+468,MPG1_YEAST,P41940,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+469,A8J3F9_CHLRE,A8J3F9,344,272,V,"[269, 270]",[],Yes,[],0,No cluster,No expected residues
+470,GMPP3_ARATH,Q8H1Q7,344,254,V,"[251, 252]",[],Yes,[],0,No cluster,No expected residues
+471,D8RTK5_SELML,D8RTK5,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+472,D8T5L0_SELML,D8T5L0,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+473,D8R6R6_SELML,D8R6R6,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+474,GMPP2_ARATH,Q9M2S0,344,276,V,"[273, 274]",[],Yes,[],0,No cluster,No expected residues
+475,G7KGV6_MEDTR,G7KGV6,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+476,GMPP1_ARATH,O22287,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+477,B4G0L2_MAIZE,B4G0L2,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+478,GMPP1_ORYSJ,Q84JH5,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+479,B4FEP8_MAIZE,B4FEP8,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+480,C4JAC1_MAIZE,C4JAC1,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+481,GMPP2_ORYSJ,Q941T9,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+482,GMPP3_ORYSJ,Q6Z9A3,344,273,V,"[270, 271]",[],Yes,[],0,No cluster,No expected residues
+483,GMPPB_CAEEL,A3QMC8,344,277,V,"[274, 275]",[],Yes,[],0,No cluster,No expected residues
+484,GMPPB_DROME,Q7JZB4,344,281,V,"[278, 279]",[],Yes,[],0,No cluster,No expected residues
+485,G5BZX1_HETGA,G5BZX1,344,272,V,"[269, 270]",[],Yes,[],0,No cluster,No expected residues
+486,GMPPB_MOUSE,Q8BTZ7,344,272,V,"[269, 270]",[],Yes,[],0,No cluster,No expected residues
+487,A0A3P9QHR2_POERE,A0A3P9QHR2,344,272,V,"[269, 270]",[],Yes,[],0,No cluster,No expected residues
+488,F1R683_DANRE,F1R683,344,272,V,"[269, 270]",[],Yes,[],0,No cluster,No expected residues
+489,YBB2_SCHPO,O60064,344,306,V,"[303, 304]",[],Yes,[],0,No cluster,No expected residues
+490,D8RZ45_SELML,D8RZ45,344,318,V,"[315, 316]",[],Yes,[],0,No cluster,No expected residues
+491,D8SV91_SELML,D8SV91,344,318,V,"[315, 316]",[],Yes,[],0,No cluster,No expected residues
+492,A0A1P8AZM7_ARATH,A0A1P8AZM7,344,298,V,"[295, 296]",[],Yes,[],0,No cluster,No expected residues
+493,A0A072UZU5_MEDTR,A0A072UZU5,344,319,V,"[316, 317]",[],Yes,[],0,No cluster,No expected residues
+494,G7KJH0_MEDTR,G7KJH0,344,318,V,"[315, 316]",[],Yes,[],0,No cluster,No expected residues
+495,Q9C9P3_ARATH,Q9C9P3,344,319,V,"[316, 317]",[],Yes,[],0,No cluster,No expected residues
+496,B4FCE5_MAIZE,B4FCE5,344,255,V,"[252, 253]",[],Yes,[],0,No cluster,No expected residues
+497,B4FQP6_MAIZE,B4FQP6,344,319,V,"[316, 317]",[],Yes,[],0,No cluster,No expected residues
+498,Q9N4V3_CAEEL,Q9N4V3,344,285,V,"[282, 283]",[],Yes,[],0,No cluster,No expected residues
+499,Q8SXU3_DROME,Q8SXU3,344,322,V,"[319, 320]",[],Yes,[],0,No cluster,No expected residues
+500,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,344,305,V,"[302, 303]",[],Yes,[],0,No cluster,No expected residues
+501,GMPPA_MOUSE,Q922H4,344,305,V,"[302, 303]",[],Yes,[],0,No cluster,No expected residues
+502,GMPPA_RAT,Q5XIC1,344,305,V,"[302, 303]",[],Yes,[],0,No cluster,No expected residues
+503,GMPAB_DANRE,Q7SXP8,344,307,V,"[304, 305]",[],Yes,[],0,No cluster,No expected residues
+504,A0A674HLF9_TAEGU,A0A674HLF9,344,308,V,"[305, 306]",[],Yes,[],0,No cluster,No expected residues
+505,A0A3P9PHF0_POERE,A0A3P9PHF0,344,312,V,"[309, 310]",[],Yes,[],0,No cluster,No expected residues
+506,GMPAA_DANRE,Q6GMK8,344,307,V,"[304, 305]",[],Yes,[],0,No cluster,No expected residues
+507,MPG1_YEAST,P41940,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+508,A8J3F9_CHLRE,A8J3F9,387,315,G,[317],[],Yes,[],0,No cluster,No expected residues
+509,GMPP3_ARATH,Q8H1Q7,387,297,G,[299],[],Yes,[],0,No cluster,No expected residues
+510,D8RTK5_SELML,D8RTK5,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+511,D8T5L0_SELML,D8T5L0,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+512,D8R6R6_SELML,D8R6R6,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+513,GMPP2_ARATH,Q9M2S0,387,319,G,[321],[],Yes,[],0,No cluster,No expected residues
+514,G7KGV6_MEDTR,G7KGV6,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+515,GMPP1_ARATH,O22287,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+516,B4G0L2_MAIZE,B4G0L2,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+517,GMPP1_ORYSJ,Q84JH5,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+518,B4FEP8_MAIZE,B4FEP8,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+519,C4JAC1_MAIZE,C4JAC1,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+520,GMPP2_ORYSJ,Q941T9,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+521,GMPP3_ORYSJ,Q6Z9A3,387,316,G,[318],[],Yes,[],0,No cluster,No expected residues
+522,GMPPB_CAEEL,A3QMC8,387,320,G,[322],[],Yes,[],0,No cluster,No expected residues
+523,GMPPB_DROME,Q7JZB4,387,324,G,[326],[],Yes,[],0,No cluster,No expected residues
+524,G5BZX1_HETGA,G5BZX1,387,315,G,[317],[],Yes,[],0,No cluster,No expected residues
+525,GMPPB_MOUSE,Q8BTZ7,387,315,G,[317],[],Yes,[],0,No cluster,No expected residues
+526,A0A3P9QHR2_POERE,A0A3P9QHR2,387,315,G,[317],[],Yes,[],0,No cluster,No expected residues
+527,F1R683_DANRE,F1R683,387,315,G,[317],[],Yes,[],0,No cluster,No expected residues
+528,YBB2_SCHPO,O60064,387,349,G,[351],[],Yes,[],0,No cluster,No expected residues
+529,D8RZ45_SELML,D8RZ45,387,361,G,[363],[],Yes,[],0,No cluster,No expected residues
+530,D8SV91_SELML,D8SV91,387,361,G,[363],[],Yes,[],0,No cluster,No expected residues
+531,A0A1P8AZM7_ARATH,A0A1P8AZM7,387,341,G,[343],[],Yes,[],0,No cluster,No expected residues
+532,A0A072UZU5_MEDTR,A0A072UZU5,387,362,G,[364],[],Yes,[],0,No cluster,No expected residues
+533,G7KJH0_MEDTR,G7KJH0,387,361,G,[363],[],Yes,[],0,No cluster,No expected residues
+534,Q9C9P3_ARATH,Q9C9P3,387,362,G,[364],[],Yes,[],0,No cluster,No expected residues
+535,B4FCE5_MAIZE,B4FCE5,387,298,G,[300],[],Yes,[],0,No cluster,No expected residues
+536,B4FQP6_MAIZE,B4FQP6,387,362,G,[364],[],Yes,[],0,No cluster,No expected residues
+537,Q9N4V3_CAEEL,Q9N4V3,387,328,G,[330],[],Yes,[],0,No cluster,No expected residues
+538,Q8SXU3_DROME,Q8SXU3,387,365,G,[367],[],Yes,[],0,No cluster,No expected residues
+539,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,387,348,G,[350],[],Yes,[],0,No cluster,No expected residues
+540,GMPPA_MOUSE,Q922H4,387,348,G,[350],[],Yes,[],0,No cluster,No expected residues
+541,GMPPA_RAT,Q5XIC1,387,348,G,[350],[],Yes,[],0,No cluster,No expected residues
+542,GMPAB_DANRE,Q7SXP8,387,350,G,[352],[],Yes,[],0,No cluster,No expected residues
+543,A0A674HLF9_TAEGU,A0A674HLF9,387,351,G,[353],[],Yes,[],0,No cluster,No expected residues
+544,A0A3P9PHF0_POERE,A0A3P9PHF0,387,355,G,[357],[],Yes,[],0,No cluster,No expected residues
+545,GMPAA_DANRE,Q6GMK8,387,350,G,[352],[],Yes,[],0,No cluster,No expected residues
+546,MPG1_YEAST,P41940,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+547,A8J3F9_CHLRE,A8J3F9,389,317,W,"[315, 319]",[],Yes,[],0,No cluster,No expected residues
+548,GMPP3_ARATH,Q8H1Q7,389,299,W,"[297, 301]",[],Yes,[],0,No cluster,No expected residues
+549,D8RTK5_SELML,D8RTK5,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+550,D8T5L0_SELML,D8T5L0,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+551,D8R6R6_SELML,D8R6R6,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+552,GMPP2_ARATH,Q9M2S0,389,321,W,"[319, 323]",[],Yes,[],0,No cluster,No expected residues
+553,G7KGV6_MEDTR,G7KGV6,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+554,GMPP1_ARATH,O22287,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+555,B4G0L2_MAIZE,B4G0L2,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+556,GMPP1_ORYSJ,Q84JH5,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+557,B4FEP8_MAIZE,B4FEP8,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+558,C4JAC1_MAIZE,C4JAC1,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+559,GMPP2_ORYSJ,Q941T9,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+560,GMPP3_ORYSJ,Q6Z9A3,389,318,W,"[316, 320]",[],Yes,[],0,No cluster,No expected residues
+561,GMPPB_CAEEL,A3QMC8,389,322,W,"[320, 324]",[],Yes,[],0,No cluster,No expected residues
+562,GMPPB_DROME,Q7JZB4,389,326,W,"[324, 328]",[],Yes,[],0,No cluster,No expected residues
+563,G5BZX1_HETGA,G5BZX1,389,317,W,"[315, 319]",[],Yes,[],0,No cluster,No expected residues
+564,GMPPB_MOUSE,Q8BTZ7,389,317,W,"[315, 319]",[],Yes,[],0,No cluster,No expected residues
+565,A0A3P9QHR2_POERE,A0A3P9QHR2,389,317,W,"[315, 319]",[],Yes,[],0,No cluster,No expected residues
+566,F1R683_DANRE,F1R683,389,317,W,"[315, 319]",[],Yes,[],0,No cluster,No expected residues
+567,YBB2_SCHPO,O60064,389,351,W,"[349, 353]",[],Yes,[],0,No cluster,No expected residues
+568,D8RZ45_SELML,D8RZ45,389,363,W,"[361, 365]",[],Yes,[],0,No cluster,No expected residues
+569,D8SV91_SELML,D8SV91,389,363,W,"[361, 365]",[],Yes,[],0,No cluster,No expected residues
+570,A0A1P8AZM7_ARATH,A0A1P8AZM7,389,343,W,"[341, 345]",[],Yes,[],0,No cluster,No expected residues
+571,A0A072UZU5_MEDTR,A0A072UZU5,389,364,W,"[362, 366]",[],Yes,[],0,No cluster,No expected residues
+572,G7KJH0_MEDTR,G7KJH0,389,363,W,"[361, 365]",[],Yes,[],0,No cluster,No expected residues
+573,Q9C9P3_ARATH,Q9C9P3,389,364,W,"[362, 366]",[],Yes,[],0,No cluster,No expected residues
+574,B4FCE5_MAIZE,B4FCE5,389,300,W,"[298, 302]",[],Yes,[],0,No cluster,No expected residues
+575,B4FQP6_MAIZE,B4FQP6,389,364,W,"[362, 366]",[],Yes,[],0,No cluster,No expected residues
+576,Q9N4V3_CAEEL,Q9N4V3,389,330,W,"[328, 332]",[],Yes,[],0,No cluster,No expected residues
+577,Q8SXU3_DROME,Q8SXU3,389,367,W,"[365, 369]",[],Yes,[],0,No cluster,No expected residues
+578,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,389,350,W,"[348, 352]",[],Yes,[],0,No cluster,No expected residues
+579,GMPPA_MOUSE,Q922H4,389,350,W,"[348, 352]",[],Yes,[],0,No cluster,No expected residues
+580,GMPPA_RAT,Q5XIC1,389,350,W,"[348, 352]",[],Yes,[],0,No cluster,No expected residues
+581,GMPAB_DANRE,Q7SXP8,389,352,W,"[350, 354]",[],Yes,[],0,No cluster,No expected residues
+582,A0A674HLF9_TAEGU,A0A674HLF9,389,353,W,"[351, 355]",[],Yes,[],0,No cluster,No expected residues
+583,A0A3P9PHF0_POERE,A0A3P9PHF0,389,357,W,"[355, 359]",[],Yes,[],0,No cluster,No expected residues
+584,GMPAA_DANRE,Q6GMK8,389,352,W,"[350, 354]",[],Yes,[],0,No cluster,No expected residues
+585,MPG1_YEAST,P41940,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+586,A8J3F9_CHLRE,A8J3F9,391,319,R,[317],[],Yes,[],0,No cluster,No expected residues
+587,GMPP3_ARATH,Q8H1Q7,391,301,R,[299],[],Yes,[],0,No cluster,No expected residues
+588,D8RTK5_SELML,D8RTK5,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+589,D8T5L0_SELML,D8T5L0,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+590,D8R6R6_SELML,D8R6R6,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+591,GMPP2_ARATH,Q9M2S0,391,323,R,[321],[],Yes,[],0,No cluster,No expected residues
+592,G7KGV6_MEDTR,G7KGV6,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+593,GMPP1_ARATH,O22287,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+594,B4G0L2_MAIZE,B4G0L2,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+595,GMPP1_ORYSJ,Q84JH5,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+596,B4FEP8_MAIZE,B4FEP8,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+597,C4JAC1_MAIZE,C4JAC1,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+598,GMPP2_ORYSJ,Q941T9,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+599,GMPP3_ORYSJ,Q6Z9A3,391,320,R,[318],[],Yes,[],0,No cluster,No expected residues
+600,GMPPB_CAEEL,A3QMC8,391,324,R,[322],[],Yes,[],0,No cluster,No expected residues
+601,GMPPB_DROME,Q7JZB4,391,328,R,[326],[],Yes,[],0,No cluster,No expected residues
+602,G5BZX1_HETGA,G5BZX1,391,319,R,[317],[],Yes,[],0,No cluster,No expected residues
+603,GMPPB_MOUSE,Q8BTZ7,391,319,R,[317],[],Yes,[],0,No cluster,No expected residues
+604,A0A3P9QHR2_POERE,A0A3P9QHR2,391,319,R,[317],[],Yes,[],0,No cluster,No expected residues
+605,F1R683_DANRE,F1R683,391,319,R,[317],[],Yes,[],0,No cluster,No expected residues
+606,YBB2_SCHPO,O60064,391,353,R,[351],[],Yes,[],0,No cluster,No expected residues
+607,D8RZ45_SELML,D8RZ45,391,365,R,[363],[],Yes,[],0,No cluster,No expected residues
+608,D8SV91_SELML,D8SV91,391,365,R,[363],[],Yes,[],0,No cluster,No expected residues
+609,A0A1P8AZM7_ARATH,A0A1P8AZM7,391,345,R,[343],[],Yes,[],0,No cluster,No expected residues
+610,A0A072UZU5_MEDTR,A0A072UZU5,391,366,R,[364],[],Yes,[],0,No cluster,No expected residues
+611,G7KJH0_MEDTR,G7KJH0,391,365,R,[363],[],Yes,[],0,No cluster,No expected residues
+612,Q9C9P3_ARATH,Q9C9P3,391,366,R,[364],[],Yes,[],0,No cluster,No expected residues
+613,B4FCE5_MAIZE,B4FCE5,391,302,R,[300],[],Yes,[],0,No cluster,No expected residues
+614,B4FQP6_MAIZE,B4FQP6,391,366,R,[364],[],Yes,[],0,No cluster,No expected residues
+615,Q9N4V3_CAEEL,Q9N4V3,391,332,R,[330],[],Yes,[],0,No cluster,No expected residues
+616,Q8SXU3_DROME,Q8SXU3,391,369,R,[367],[],Yes,[],0,No cluster,No expected residues
+617,A0A0N8ETQ1_HETGA,A0A0N8ETQ1,391,352,R,[350],[],Yes,[],0,No cluster,No expected residues
+618,GMPPA_MOUSE,Q922H4,391,352,R,[350],[],Yes,[],0,No cluster,No expected residues
+619,GMPPA_RAT,Q5XIC1,391,352,R,[350],[],Yes,[],0,No cluster,No expected residues
+620,GMPAB_DANRE,Q7SXP8,391,354,R,[352],[],Yes,[],0,No cluster,No expected residues
+621,A0A674HLF9_TAEGU,A0A674HLF9,391,355,R,[353],[],Yes,[],0,No cluster,No expected residues
+622,A0A3P9PHF0_POERE,A0A3P9PHF0,391,359,R,[357],[],Yes,[],0,No cluster,No expected residues
+623,GMPAA_DANRE,Q6GMK8,391,354,R,[352],[],Yes,[],0,No cluster,No expected residues

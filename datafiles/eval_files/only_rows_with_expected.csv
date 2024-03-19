@@ -1,1 +1,1 @@
-,entry_id,uniprot_id,MSA_pos,seq_pos,residue,clusters,expected_residues,common_positions,num_key_present,percent_of_cluster_expected,percent_expected_found
+,entry_id,uniprot_id,MSA_pos,seq_pos,residue,clusters,expected_residues,has_pdb_data,common_positions,num_key_present,percent_of_cluster_expected,percent_expected_found
