@@ -6,18 +6,89 @@ from urllib.request import urlretrieve
 import os
 import pandas as pd
 import ast
+import re
 
-def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
-    residue_codes = pd.read_csv('../datafiles/cluster_data/residue_codes.csv')
+CWD = os.getcwd()
+PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
+PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
+PATH_TO_EVAL_FILES = os.path.join(PATH_TO_DATAFILES, "eval_files")
 
-    filepath = '../datafiles/pdb_files/'
+
+def convert_uniprot_data_to_position(entry):
+    value_str = entry[2]
+    # Check if the value string contains periods
+    if re.search('\.+', value_str):
+        # Split the string using regular expression to handle any number of periods
+        start_str, end_str = re.split('\.+', value_str)
+
+        # Convert the start and end strings to integers
+        start = int(start_str)
+        end = int(end_str)
+
+        # Generate the range of values
+        return list(range(start, end + 1))
+    else:
+        # Convert the string to an integer
+        return int(value_str)
+
+
+def read_uniprot_file_to_analyze_active_sites(directory, filename):
+    important_positions = {}
+    act_str = 'ACT_SITE'
+    bind_str = 'BINDING'
+    important_positions[act_str] = []
+    important_positions[bind_str] = []
+    for file in os.listdir(directory):
+        if file == filename:
+            filepath = os.path.join(directory, filename)
+            with open(filepath, 'r') as inF:
+                for line in inF:
+                    line = line.strip()
+                    if line.startswith('FT'):
+                        entry = line.split()
+                        if entry[1] == act_str:
+                            # due to differing formats we need a function to get the integer positions
+                            position = convert_uniprot_data_to_position(entry)
+                            # handle the cases of receiving one position, or a list of positions
+                            if isinstance(position, list):
+                                important_positions[act_str].extend(position)
+                            else:
+                                important_positions[act_str].append(position)
+                        if entry[1] == bind_str:
+                            position = convert_uniprot_data_to_position(entry)
+                            if isinstance(position, list):
+                                important_positions[act_str].extend(position)
+                            else:
+                                important_positions[act_str].append(position)
+    return important_positions
+
+
+def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
+    residue_codes = pd.read_csv('datafiles/cluster_data/residue_codes.csv')
+
+
+    filepath = 'datafiles/pdb_files/'
     os.makedirs(filepath, exist_ok=True)
 
     uniprot_ids = set(invariant_res_df['uniprot_id'])
     cluster_col = [None for i in range(len(invariant_res_df))]
+
     invariant_res_df['clusters'] = cluster_col
-    for uniprot_id in uniprot_ids:
+    invariant_res_df['expected_residues'] = None
+    # a column to give us info about the analysis
+    invariant_res_df['has_pdb_data'] = ['No' for _ in range(len(invariant_res_df))]
+    # going through every uniprot id in our dataframe
+    grouped_by_uniprot = invariant_res_df.groupby('uniprot_id')
+    for uniprot_id, group in grouped_by_uniprot:
         filtered_by_id_df = invariant_res_df[invariant_res_df['uniprot_id'] == uniprot_id]
+        entry_id = filtered_by_id_df['entry_id'].iloc[0]
+        uniprot_filename = entry_id + ".txt"
+        key_positions = read_uniprot_file_to_analyze_active_sites(PATH_TO_UNIPROT_ENTRIES, uniprot_filename)
+        # Store key_positions in a list
+        act_positions = key_positions.get('ACT_SITE', [])
+        bind_positions = key_positions.get('BINDING', [])
+        all_key_positions = act_positions + bind_positions
+
         clusters_dict = {}
         url = f'https://alphafold.ebi.ac.uk/api/prediction/{uniprot_id}'
 
@@ -53,28 +124,50 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                 model = structure[0]
                 chain = model['A']
 
+                # create a dictionary to hold the 3d positions of every uniprot residue
+                uniprot_residue_3d_positions = {}
+                for position in all_key_positions:
+                    residue = chain[position]
+                    uniprot_residue_3d_positions[position] = residue['CA']
+
                 for i, row in filtered_by_id_df.iterrows():
                     residue = chain[row['seq_pos']]
                     csv_map_row = residue_codes[residue_codes['Three Letter Code'] == residue.get_resname()]
                     single_letter_code = list(csv_map_row['Single Letter Code'])[0]
+
                     if single_letter_code == row['residue']:
                         locs_3d_dict[row['seq_pos']] = residue['CA']
 
                 for pos in locs_3d_dict:
                     clusters_list = []
+                    expected_residues_list = []
+                    # calculate distance between current invariant residue and all key residues for this protein
+                    for uniprot_residue, position_3d in uniprot_residue_3d_positions.items():
+                        distance = locs_3d_dict[pos] - position_3d
+                        if distance <= distance_threshold:
+                            if distance != 0:
+                                expected_residues_list.append(uniprot_residue)
+
                     for pos2 in locs_3d_dict:
                         if pos != pos2:
                             # calculate distance between residues
                             distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
                             if distance <= distance_threshold:
                                 clusters_list.append(pos2)
+
+                    index = invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (
+                            invariant_res_df['seq_pos'] == pos), 'clusters'].index[0]
+
                     if len(clusters_list) > 0:
-                        index = invariant_res_df.loc[(invariant_res_df['uniprot_id'] == uniprot_id) & (invariant_res_df['seq_pos'] == pos), 'clusters'].index[0]
                         invariant_res_df.at[index, 'clusters'] = clusters_list
+                        invariant_res_df.at[index, 'expected_residues'] = expected_residues_list
+                    invariant_res_df.at[index, 'has_pdb_data'] = 'Yes'
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
-    invariant_res_df.to_csv('../datafiles/cluster_data/clusters.csv', index=False)
+    invariant_res_df = invariant_res_df.drop(columns=['MSA_sequence'])
+    invariant_res_df.to_csv('datafiles/cluster_data/clusters.csv', index=False)
     return invariant_res_df
+
 
 def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_threshold: int):
     separated_cluster_col = [None for i in range(len(clusters_df))]
@@ -92,7 +185,7 @@ def filter_interesting_clusters(clusters_df: pd.DataFrame, sequence_separation_t
             if len(interesting_clusters_list) > 0:
                 clusters_df.at[i, 'separated_clusters'] = str(interesting_clusters_list)
     clusters_df.dropna(inplace=True, ignore_index=True)
-    clusters_df.to_csv('../datafiles/cluster_data/interesting_clusters.csv')
+    clusters_df.to_csv('datafiles/cluster_data/interesting_clusters.csv')
     return clusters_df
 
 
@@ -121,26 +214,22 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
                     MSA_cluster_positions.append(MSA_iteration)
         MSA_cluster_positions_list.append(MSA_cluster_positions)
     res_clusters_df['MSA_cluster_positions'] = MSA_cluster_positions_list
-    res_clusters_df.to_csv('../datafiles/cluster_data/filtered_dataframe.csv')
+    res_clusters_df.to_csv('datafiles/cluster_data/filtered_dataframe.csv')
     return res_clusters_df
 
     # for MSA_pos in invariant_MSA_positions:
     #     same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
 
 
-
-
-
 def get_clusters_dataframe():
-    invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
+    invariant_res_df = pd.read_csv('datafiles/muscle_data/MSA_results.csv')
     invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-    result = find_clusters(invariant_res_df, 6)
+    result = make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df, 6)
     # print(result)
-    clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
+    clusters_df = pd.read_csv('datafiles/cluster_data/clusters.csv')
     result2 = filter_interesting_clusters(clusters_df, 20)
     # print(result2)
-    interesting_dataframe = pd.read_csv('../datafiles/cluster_data/interesting_clusters.csv')
+    interesting_dataframe = pd.read_csv('datafiles/cluster_data/interesting_clusters.csv')
     find_common_clusters(interesting_dataframe)
 
-get_clusters_dataframe()
-
+# get_clusters_dataframe()
