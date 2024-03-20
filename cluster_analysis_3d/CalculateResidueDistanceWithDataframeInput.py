@@ -1,4 +1,5 @@
 # If you need to process multiple files, you could use Biopython to parse a PDB structure.
+import numpy as np
 from Bio.PDB import PDBParser
 import requests
 import json
@@ -12,6 +13,20 @@ CWD = os.getcwd()
 PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 PATH_TO_EVAL_FILES = os.path.join(PATH_TO_DATAFILES, "eval_files")
+
+def get_avg_coords(residue):
+    x_coords = []
+    y_coords = []
+    z_coords = []
+    for atom in residue:
+        x_coords.append(atom.get_coord()[0])
+        y_coords.append(atom.get_coord()[1])
+        z_coords.append(atom.get_coord()[2])
+    avg_x = sum(x_coords)/len(x_coords)
+    avg_y = sum(y_coords)/len(y_coords)
+    avg_z = sum(z_coords)/len(z_coords)
+    avg_coords = [avg_x, avg_y, avg_z]
+    return np.array(avg_coords)
 
 
 def convert_uniprot_data_to_position(entry):
@@ -128,7 +143,7 @@ def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.Da
                 uniprot_residue_3d_positions = {}
                 for position in all_key_positions:
                     residue = chain[position]
-                    uniprot_residue_3d_positions[position] = residue['CA']
+                    uniprot_residue_3d_positions[position] = get_avg_coords(residue)
 
                 for i, row in filtered_by_id_df.iterrows():
                     residue = chain[row['seq_pos']]
@@ -136,14 +151,15 @@ def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.Da
                     single_letter_code = list(csv_map_row['Single Letter Code'])[0]
 
                     if single_letter_code == row['residue']:
-                        locs_3d_dict[row['seq_pos']] = residue['CA']
+                        locs_3d_dict[row['seq_pos']] = get_avg_coords(residue)
 
                 for pos in locs_3d_dict:
                     clusters_list = []
                     expected_residues_list = []
                     # calculate distance between current invariant residue and all key residues for this protein
                     for uniprot_residue, position_3d in uniprot_residue_3d_positions.items():
-                        distance = locs_3d_dict[pos] - position_3d
+                        diff = locs_3d_dict[pos] - position_3d
+                        distance = np.sqrt(np.sum(diff * diff))
                         if distance <= distance_threshold:
                             if distance != 0:
                                 expected_residues_list.append(uniprot_residue)
@@ -151,7 +167,8 @@ def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.Da
                     for pos2 in locs_3d_dict:
                         if pos != pos2:
                             # calculate distance between residues
-                            distance = locs_3d_dict[pos] - locs_3d_dict[pos2]
+                            diff = locs_3d_dict[pos] - locs_3d_dict[pos2]
+                            distance = np.sqrt(np.sum(diff * diff))
                             if distance <= distance_threshold:
                                 clusters_list.append(pos2)
 
