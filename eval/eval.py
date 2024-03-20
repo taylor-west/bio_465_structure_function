@@ -57,13 +57,14 @@ def get_key_rows_only(dataframe):
 
 
 def analyze_key_locations(dataframe):
-    # key_results_df = get_key_rows_only(dataframe)
+    key_results_df = get_key_rows_only(dataframe)
     # creating new columns
-    key_results_df = dataframe
+    # key_results = dataframe
     key_results_df['common_positions'] = None
     key_results_df['num_key_present'] = 0
     key_results_df['percent_of_cluster_expected'] = None
     key_results_df['percent_expected_found'] = None
+    key_results_df['score'] = 0.0
     # for each row, access relevant info from dataframe
     for index, row in key_results_df.iterrows():
         # if there is nothing in clusters this throws an error
@@ -84,18 +85,19 @@ def analyze_key_locations(dataframe):
         num_key_present = len(common_positions)
         # handle case where there might not be clusters or expected residues
         try:
-            percent_of_cluster_expected = len(common_positions) / len(cluster_positions)
+            percent_of_cluster_expected = (len(common_positions) + 1) / (len(cluster_positions) + 1)
         except ZeroDivisionError as e:
             percent_of_cluster_expected = "No cluster"
         if len(expected_positions) == 0:
             percent_of_cluster_expected = ""
             percent_expected_found = "No expected residues"
         else:
-            percent_expected_found = len(common_positions) / len(expected_positions)
+            percent_expected_found = (len(common_positions) + 1) / len(expected_positions)
         # assign data to our cells
         key_results_df.at[index, 'num_key_present'] = num_key_present
         key_results_df.at[index, 'percent_of_cluster_expected'] = percent_of_cluster_expected
         key_results_df.at[index, 'percent_expected_found'] = percent_expected_found
+        key_results_df.at[index, 'score'] = float(percent_expected_found * percent_of_cluster_expected)
     return key_results_df
 
 def evaluate_results(dataframe):

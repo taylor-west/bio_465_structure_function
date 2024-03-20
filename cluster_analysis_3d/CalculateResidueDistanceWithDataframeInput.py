@@ -160,7 +160,7 @@ def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.Da
 
                     if len(clusters_list) > 0:
                         invariant_res_df.at[index, 'clusters'] = clusters_list
-                        invariant_res_df.at[index, 'expected_residues'] = expected_residues_list
+                        invariant_res_df.at[index, 'expected_residues'] = all_key_positions
                     invariant_res_df.at[index, 'has_pdb_data'] = 'Yes'
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
