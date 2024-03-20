@@ -49,17 +49,17 @@ def get_key_rows_only(dataframe):
         # makes a dataframe that only includes the rows with key positions
         only_key_rows_df = group[group.seq_pos.isin(all_key_positions)].copy()
 
-        key_positions_list = [all_key_positions] * len(only_key_rows_df)
+        # key_positions_list = [all_key_positions] * len(only_key_rows_df)
         # Add a new column 'key_positions' to the filtered DataFrame
-        only_key_rows_df['key_positions'] = key_positions_list
+        # only_key_rows_df['key_positions'] = key_positions_list
         aggregated_df = pd.concat([aggregated_df, only_key_rows_df], ignore_index=True)
     return aggregated_df
 
 
 def analyze_key_locations(dataframe):
-    key_results_df = get_key_rows_only(dataframe)
+    # key_results_df = get_key_rows_only(dataframe)
     # creating new columns
-    # key_results = dataframe
+    key_results_df = dataframe
     key_results_df['common_positions'] = None
     key_results_df['num_key_present'] = 0
     key_results_df['percent_of_cluster_expected'] = None
@@ -85,14 +85,19 @@ def analyze_key_locations(dataframe):
         num_key_present = len(common_positions)
         # handle case where there might not be clusters or expected residues
         try:
-            percent_of_cluster_expected = (len(common_positions) + 1) / (len(cluster_positions) + 1)
+            percent_of_cluster_expected = len(common_positions) / len(cluster_positions)
         except ZeroDivisionError as e:
-            percent_of_cluster_expected = "No cluster"
+            percent_of_cluster_expected = -1
         if len(expected_positions) == 0:
-            percent_of_cluster_expected = ""
-            percent_expected_found = "No expected residues"
+            percent_of_cluster_expected = -1
+            percent_expected_found = 5.0
         else:
-            percent_expected_found = (len(common_positions) + 1) / len(expected_positions)
+            if key_results_df.at[index, 'seq_pos'] in key_results_df.at[index, 'expected_residues']:
+                # this accounts for the fact that rows where the residue is one of the uniprot residues should be part of their own cluster
+                num_common_pos = len(common_positions) + 1
+            else:
+                num_common_pos = len(common_positions)
+            percent_expected_found = num_common_pos / len(expected_positions)
         # assign data to our cells
         key_results_df.at[index, 'num_key_present'] = num_key_present
         key_results_df.at[index, 'percent_of_cluster_expected'] = percent_of_cluster_expected
@@ -127,6 +132,10 @@ def evaluate_results(dataframe):
     # save to file
     only_rows_with_expected.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'only_rows_with_expected.csv'))
 
+    # only rows which have key residues as the main residue
+    key_rows_only = get_key_rows_only(results_df)
+    key_rows_only.reset_index(drop=True, inplace=True)
+    key_rows_only.to_csv(os.path.join(PATH_TO_EVAL_FILES, 'key_rows_only.csv'))
 
 # invariant_res_df = pd.read_csv('../datafiles/muscle_data/MSA_results.csv')
 # # clusters_df = pd.read_csv('../datafiles/cluster_data/clusters.csv')
