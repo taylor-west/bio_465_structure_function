@@ -1,0 +1,56 @@
+kegg_organism_code,kegg_organism_description
+acr,Acidiphilium cryptum
+ata,Agrobacterium tumefaciens S33
+afa,Alcaligenes faecalis ZD02
+alm,Algoriphagus sanaruensis
+bce,Bacillus cereus ATCC 14579
+bsp,Bacillus subtilis PY79
+bth,Bacteroides thetaiotaomicron VPI-5482
+bbp,Bifidobacterium bifidum PRL2010
+blf,Bifidobacterium longum subsp. infantis 157F
+cje,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819
+cjr,Campylobacter jejuni RM1221
+cga,Cellulomonas gilvus
+cbal,Cellulophaga baltica NN016038
+cio,Chryseobacterium indologenes
+cfd,Citrobacter freundii
+clj,Clostridium ljungdahlii
+ccom,Coprococcus comes
+reh,Cupriavidus necator H16
+dac,Delftia acidovorans
+dfm,Dorea formicigenerans
+fpr,Faecalibacterium prausnitzii L2-6
+fsu,Fibrobacter succinogenes
+lpn,Legionella pneumophila subsp. pneumophila Philadelphia 1 (serogroup 1)
+mlu,Micrococcus luteus
+mxa,Myxococcus xanthus
+ppy,Paenibacillus polymyxa E681
+pde,Paracoccus denitrificans
+ppu,Pseudomonas putida KT2440
+rha,Rhodococcus jostii
+rpa,Rhodopseudomonas palustris CGA009
+sur,Stigmatella aurantiaca
+sags,Streptococcus agalactiae SA20
+sve,Streptomyces venezuelae
+sve,Streptomyces venezuelae
+ddi,Dictyostelium discoideum (cellular slime mold)
+sce,Saccharomyces cerevisiae (budding yeast)
+spo,Schizosaccharomyces pombe (fission yeast)
+ath,Arabidopsis thaliana (thale cress)
+zma,Zea mays (maize)
+mtr,Medicago truncatula (barrel medic)
+osa,Oryza sativa japonica (Japanese rice) (RefSeq)
+dosa,Oryza sativa japonica (Japanese rice) (RAPDB)
+cre,Chlamydomonas reinhardtii
+cel,Caenorhabditis elegans (nematode)
+dme,Drosophila melanogaster (fruit fly)
+cfa,Canis lupus familiaris (dog)
+rno,Rattus norvegicus (rat)
+dre,Danio rerio (zebrafish)
+tgu,zebra finch
+mmu,mouse
+hgl,naked mole-rat
+pret,guppy
+cin,Ciona intestinalis (yellow sea squirt)
+smo,Selaginella moellendorffii
+ani,Aspergillus nidulans
