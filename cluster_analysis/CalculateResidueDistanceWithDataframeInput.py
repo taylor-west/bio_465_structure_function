@@ -8,6 +8,20 @@ import pandas as pd
 import ast
 import numpy as np
 
+def get_avg_coords(residue):
+    x_coords = []
+    y_coords = []
+    z_coords = []
+    for atom in residue:
+        x_coords.append(atom.get_coord()[0])
+        y_coords.append(atom.get_coord()[1])
+        z_coords.append(atom.get_coord()[2])
+    avg_x = sum(x_coords)/len(x_coords)
+    avg_y = sum(y_coords)/len(y_coords)
+    avg_z = sum(z_coords)/len(z_coords)
+    avg_coords = [avg_x, avg_y, avg_z]
+    return np.array(avg_coords)
+
 def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
     residue_codes = pd.read_csv('../datafiles/cluster_data/residue_codes.csv')
 
@@ -59,7 +73,7 @@ def find_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
                     csv_map_row = residue_codes[residue_codes['Three Letter Code'] == residue.get_resname()]
                     single_letter_code = list(csv_map_row['Single Letter Code'])[0]
                     if single_letter_code == row['residue']:
-                        locs_3d_dict[row['seq_pos']] = residue['CA']
+                        locs_3d_dict[row['seq_pos']] = get_avg_coords(residue)
 
                 for pos in locs_3d_dict:
                     clusters_list = []
@@ -128,8 +142,6 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
 
     # for MSA_pos in invariant_MSA_positions:
     #     same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
-
-
 
 
 
