@@ -78,7 +78,10 @@ def read_uniprot_file_to_analyze_active_sites(directory, filename):
     return important_positions
 
 
-def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.DataFrame, distance_threshold: float):
+def make_expected_cluster_lists_and_find_actual_clusters(target_ko_id, distance_threshold: float):
+    invariant_res_df = pd.read_csv(f'datafiles/muscle_data/MSA_results_{target_ko_id}.csv')
+    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
+
     residue_codes = pd.read_csv('datafiles/cluster_data/residue_codes.csv')
 
 
@@ -182,7 +185,7 @@ def make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df: pd.Da
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
     invariant_res_df = invariant_res_df.drop(columns=['MSA_sequence'])
-    invariant_res_df.to_csv('datafiles/cluster_data/clusters.csv', index=False)
+    invariant_res_df.to_csv(f'datafiles/cluster_data/clusters_{target_ko_id}.csv', index=False)
     return invariant_res_df
 
 
@@ -238,10 +241,8 @@ def find_common_clusters(res_clusters_df: pd.DataFrame):
     #     same_pos_df = res_clusters_df[res_clusters_df['MSA_pos'] == MSA_pos]
 
 
-def get_clusters_dataframe():
-    invariant_res_df = pd.read_csv('datafiles/muscle_data/MSA_results.csv')
-    invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
-    result = make_expected_cluster_lists_and_find_actual_clusters(invariant_res_df, 6)
+def get_clusters_dataframe(target_ko_id=None):
+    result = make_expected_cluster_lists_and_find_actual_clusters(target_ko_id, 6)
     # print(result)
     clusters_df = pd.read_csv('datafiles/cluster_data/clusters.csv')
     result2 = filter_interesting_clusters(clusters_df, 20)

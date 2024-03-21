@@ -1,0 +1,26 @@
+Entry	Gene Names	Protein names	Organism	Annotation	Binding site
+P0A6E6	atpC papG uncC b3731 JW3709	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Escherichia coli (strain K12)	5.0	
+P37812	atpC BSU36800	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Bacillus subtilis (strain 168)	3.0	
+A0R1Z9	atpC MSMEG_4935 MSMEI_4808	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155) (Mycobacterium smegmatis)	3.0	
+P58647	atpC YPO4120 y4134 YP_4027	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Yersinia pestis	3.0	
+Q8Y4C2	atpC lmo2528	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Listeria monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e)	3.0	
+Q9CES1	atpC atpE LL1763 L5953	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Lactococcus lactis subsp. lactis (strain IL1403) (Streptococcus lactis)	3.0	
+P43718	atpC HI_0478	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd)	3.0	
+Q8CNJ8	atpC SE_1699	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Staphylococcus epidermidis (strain ATCC 12228 / FDA PCI 1200)	3.0	
+Q9HT21	atpC PA5553	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)	3.0	
+P9WPV1	atpC Rv1311 MTCY373.31	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	3.0	
+Q8RGE3	atpC FN0357	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Fusobacterium nucleatum subsp. nucleatum (strain ATCC 25586 / DSM 15643 / BCRC 10681 / CIP 101130 / JCM 8532 / KCTC 2640 / LMG 13131 / VPI 4355)	3.0	
+P0A6E8	atpC papG uncC SF3811 S3957	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Shigella flexneri	3.0	
+Q9X1U5	atpC TM_1609	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Thermotoga maritima (strain ATCC 43589 / DSM 3109 / JCM 10099 / NBRC 100826 / MSB8)	3.0	
+P56084	atpC HP_1131	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Helicobacter pylori (strain ATCC 700392 / 26695) (Campylobacter pylori)	3.0	
+Q9KNH6	atpC VC_2763	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961)	3.0	
+Q9RGY0	atpC LBA0779	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Lactobacillus acidophilus (strain ATCC 700396 / NCK56 / N2 / NCFM)	3.0	
+Q7VU43	atpC BP3289	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Bordetella pertussis (strain Tohama I / ATCC BAA-589 / NCTC 13251)	2.0	
+Q9A0I6	atpC SPy_0761 M5005_Spy0582	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Streptococcus pyogenes serotype M1	2.0	
+Q9PJ18	atpC Cj0108	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Campylobacter jejuni subsp. jejuni serotype O:2 (strain ATCC 700819 / NCTC 11168)	2.0	
+A6TG35	atpC KPN78578_40950 KPN_04136	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)	2.0	
+A8GTS5	atpC A1G_06755	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Rickettsia rickettsii (strain Sheila Smith)	2.0	
+P63667	atpC SP_1507	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)	2.0	
+Q30QQ2	atpC Suden_1402	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Sulfurimonas denitrificans (strain ATCC 33889 / DSM 1251) (Thiomicrospira denitrificans (strain ATCC 33889 / DSM 1251))	2.0	
+Q81JZ6	atpC BA_5546 GBAA_5546 BAS5154	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Bacillus anthracis	2.0	
+P06542	atpC atpE all5038	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576)	2.0	

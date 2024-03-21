@@ -144,7 +144,7 @@ def get_uniprot_ids(file_path, codes):
     return uniprot_ids
 
 
-def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
+def multiple_sequence_alignment(uniprot_ids, target_ko_id, threshold = 1.0):
     print(f'HERE IS THE CWD: {CWD}')
     folder_path = PATH_TO_UNIPROT_ENTRIES
     if not os.path.exists(PATH_TO_UNIPROT_ENTRIES):
@@ -236,23 +236,5 @@ def multiple_sequence_alignment(uniprot_ids, threshold = 1.0):
         uniprot_invariant_locs_dict[uniprot_id] = val
         invariant_res_df.loc[invariant_res_df['entry_id'] == key, 'uniprot_id'] = uniprot_id
     
-    invariant_res_df.to_csv(os.path.join(PATH_TO_MUSCLE_DATA, 'MSA_results.csv'))
+    invariant_res_df.to_csv(os.path.join(PATH_TO_MUSCLE_DATA, f'MSA_results_{target_ko_id}.csv'))
     return invariant_res_df
-
-# data_list = [
-#     "P00397",
-#     "P05503",
-#     "E9NPC9",
-#     "Q9ZZ64",
-#     "Q9MIY8",
-#     "A0A023UN37",
-#     "P00399",
-#     "P24893",
-#     "A0A126TGS8",
-#     "P14578",
-#     "P00401",
-#     "H9D0P5",
-#     "P07657",
-#     "O21042",
-#     "P00395"
-# ]
