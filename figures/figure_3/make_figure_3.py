@@ -1,23 +1,202 @@
+
 import os
 import math
-import re
 import ast
+import re
+import requests
+from itertools import chain
+import numpy as np
 import pandas as pd
 import networkx as nx
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 
 
 TARGET_UNIPROT_ID = 'P50933'
-PATH_TO_CLUSTERS_DATA = os.path.join(os.getcwd(), "datafiles")
-PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
-CLUSTER_CSV_FILEPATH = '/content/clusters_K00016.csv'
+CLUSTER_CSV_FILENAME = 'clusters_K00016.csv'
+
+FIGURE_3_RESULTS_FILENAME = "figure3_" + TARGET_UNIPROT_ID + ".png"
+CLUSTERS_CSV_FILEPATH = os.path.join(os.getcwd(), "datafiles", "cluster_data", CLUSTER_CSV_FILENAME)
+FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figures", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
+
 
 def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     clusters_df = pd.read_csv(cluster_csv_filepath)
     clusters_df.dropna(inplace=True)
     subset_clusters_df = clusters_df[clusters_df['uniprot_id'] == target_uniprot_id]
 
+    # make the adj_dict
+    adj_dict = make_adj_dict(subset_clusters_df)
+    print(f"adj_dict: {adj_dict}")
+
+    # make the communities
+    G = nx.Graph(adj_dict)
+    communities = make_communities(G)
+    print(f"communities: {communities}")
+
+    # get known binding sites from UniProt
+    known_binding_site_groups_dict = get_known_binding_site_groups(TARGET_UNIPROT_ID)
+    known_binding_sites_flat = list(chain.from_iterable(list(known_binding_site_groups_dict.values()))) # flatten all values from expected_binding_site_groups_dict
+
+    print(f"known_binding_site_groups: {known_binding_site_groups_dict}")
+    print(f"known_binding_sites: {known_binding_sites_flat}")
+
+    # Choose a layout algorithm for positioning nodes
+    pos = nx.spring_layout(G, k=0.15, iterations=20)  # You can choose any layout algorithm you prefer
+
+    labels = {}
+    for node in G.nodes():
+        if node in known_binding_sites_flat:
+            #set the node name as the key and the label as its value
+            labels[node] = node
+
+    # assign colors to the communities
+    color_options = ['orange','magenta','lightgreen','pink','lightblue','black','red','blue', "green", "brown"]
+    current_color_index = 0
+    community_colors = {}
+
+    for community in communities:
+        community_colors[community] = color_options[current_color_index]
+        current_color_index = current_color_index+1
+
+    # adds notes to the graph
+    target_ko_id = get_ko_id_from_cluster_filepath(cluster_csv_filepath)
+    num_known_binding_sites_found = len(labels)
+    num_known_binding_sites = len(known_binding_sites_flat)
+    num_predicted_binding_sites = len(G.nodes)
+    num_known_binding_sites_grouped_correctly = get_num_nodes_grouped_correctly # TODO: actually implement this
+
+    plt.figure()
+    curr_plt = annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, known_binding_site_groups_dict)
+    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
+
+
+    # Draw the graph with colors based on community
+    nx.draw(
+        G,
+        pos,
+        with_labels=False,
+        node_size=150,
+        node_color=[get_color_for_node(node, communities, community_colors) for node in G.nodes()]
+    )
+
+    # Add labels to nodes in binding_site
+    nx.draw_networkx_labels(G, pos, labels, font_size=10)
+    plt.show()
+    plt.savefig(FIGURE_3_RESULTS_FILEPATH)
+
+    return
+
+
+def make_adj_dict(subset_clusters_df):
+  adj_dict = {}
+  for i, row in subset_clusters_df.iterrows():
+      cluster = ast.literal_eval(row['clusters'])
+      adj_dict[row['seq_pos']] = cluster
+  return adj_dict
+
+def make_communities(G):
+  return list(nx.community.greedy_modularity_communities(G))
+
+# get known binding sites from UniProt
+def get_known_binding_site_groups(uniprot_id):
+  url = f'https://www.ebi.ac.uk/proteins/api/proteins?offset=0&size=100&accession={uniprot_id}'
+
+  response = requests.get(url, headers={ "Accept" : "application/json"})
+
+  if response.status_code == 200:
+      with open ('results.json', 'w') as file:
+          file.write(response.text)
+          file.close()
+  else:
+      print(f'failed to retrieve uniprot data for ortholog id {uniprot_id}')
+
+
+  entry_data_df = pd.read_json('results.json')
+
+  site_dict = {}
+
+  for i in entry_data_df['features'][0]:
+    if i['category'] == 'DOMAINS_AND_SITES':
+      if i['type'] == 'BINDING':
+        if i['ligand']['name'] not in site_dict.keys():
+          site_dict[i['ligand']['name']] = [i]
+        else:
+          site_dict[i['ligand']['name']] += [i]
+
+      # uncomment if you also want to look for active sites
+      # else:
+      #   if i['type'] not in site_dict.keys():
+      #     site_dict[i['type']] = [i]
+      #   else:
+      #     site_dict[i['type']] += [i]
+
+  known_binding_sites_dict = {}
+  
+  for ligand in site_dict:
+    for residue in site_dict[ligand]:
+      if ligand not in known_binding_sites_dict.keys():
+        known_binding_sites_dict[ligand] = list(range(int(residue['begin']),int(residue['end'])+1))
+      else:
+        known_binding_sites_dict[ligand] += list(range(int(residue['begin']),int(residue['end'])+1))
+
+  return known_binding_sites_dict
+
+# assignes a color to each node based on the node's community
+def get_color_for_node(target_node, communities, community_colors_dict):
+  for community in communities:
+    if target_node in community:
+      return community_colors_dict[community]
+
+# parses the KO_ID from the cluster filepath
+def get_ko_id_from_cluster_filepath(cluster_csv_filepath):
+  return re.findall('.*_(K.*).csv', cluster_csv_filepath)[0]
+
+# TODO: actually implement this
+def get_num_nodes_grouped_correctly(communities, known_binding_site_groups):
+  # TODO: yeah, this doesn't work.
+  # for community in communities:
+  #   group = []
+  #   known_group_name = ""
+  #   for node in community:
+  #     if len(group) == 0:
+  #       # figure out which known_group we are checking
+  #       for known_group in known_binding_site_groups.keys():
+  #         if node in known_binding_site_groups[known_group]:
+  #           known_group_name = known_group 
+  #           group.append(node)
+  #           break
+  #     elif known_group_name != "": # make sure that the known_group_name has been set
+  #         if node in known_binding_site_groups[known_group_name]:
+  #           group.append(node)
+   return 0
+   
+
+def annotate_graph(figure, target_uniprot_id, target_ko_id, known_binding_site_groups_dict,num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly):
+  # top left corner
+  figure.text(0.0, 1.0, f"uniprot_id={TARGET_UNIPROT_ID}",
+      transform=plt.gca().transAxes)
+
+  # top center
+  figure.text(0.75, 1.0, f"ko_id={target_ko_id}",
+      transform=plt.gca().transAxes)
+
+  # bottom left corner
+  figure.text(0.0, 0.00, f"organisms_list='diverse_prokaryotes.csv'",
+    transform=plt.gca().transAxes)
+  figure.text(0.0, -0.05, f"known_binding_sites{known_binding_site_groups_dict}",
+      transform=plt.gca().transAxes)
+  
+  figure.text(0.0, 0.-0.2, f"{len(communities)} groups found ({len(known_binding_site_groups_dict.keys())} expected)",
+      transform=plt.gca().transAxes)
+  figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({round((num_known_binding_sites_found/num_known_binding_sites)*100,1)}%) known sites found",
+      transform=plt.gca().transAxes)
+  figure.text(0.0, -0.3, f"{num_known_binding_sites_found}/{num_predicted_binding_sites} ({round((num_known_binding_sites_found/num_predicted_binding_sites)*100,1)}%) predicted sites are known",
+      transform=plt.gca().transAxes)
+  figure.text(0.0, -0.35, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({round((num_known_binding_sites_grouped_correctly/num_known_binding_sites_found)*100,1)}%) known sites grouped correctly",
+      transform=plt.gca().transAxes)
+  return figure
+
 
 if __name__ == "__main__":
-    generate_figure_3(TARGET_UNIPROT_ID, CLUSTER_CSV_FILEPATH)
+    generate_figure_3(TARGET_UNIPROT_ID, CLUSTERS_CSV_FILEPATH)
