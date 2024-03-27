@@ -64,11 +64,12 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     num_known_binding_sites_found = len(labels)
     num_known_binding_sites = len(known_binding_sites_flat)
     num_predicted_binding_sites = len(G.nodes)
-    num_known_binding_sites_grouped_correctly = get_num_nodes_grouped_correctly # TODO: actually implement this
+    num_known_binding_sites_grouped_correctly = get_num_nodes_grouped_correctly(communities, known_binding_site_groups_dict)
+    num_communities_found = len(communities)
 
     plt.figure()
     curr_plt = annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, known_binding_site_groups_dict)
-    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
+    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
 
 
     # Draw the graph with colors based on community
@@ -152,29 +153,49 @@ def get_color_for_node(target_node, communities, community_colors_dict):
 def get_ko_id_from_cluster_filepath(cluster_csv_filepath):
   return re.findall('.*_(K.*).csv', cluster_csv_filepath)[0]
 
-# TODO: actually implement this
+# returns the sum of the number of nodes correctly grouped into the community with the largest number of nodes belonging to each binding site
 def get_num_nodes_grouped_correctly(communities, known_binding_site_groups):
-  # TODO: yeah, this doesn't work.
-  # for community in communities:
-  #   group = []
-  #   known_group_name = ""
-  #   for node in community:
-  #     if len(group) == 0:
-  #       # figure out which known_group we are checking
-  #       for known_group in known_binding_site_groups.keys():
-  #         if node in known_binding_site_groups[known_group]:
-  #           known_group_name = known_group 
-  #           group.append(node)
-  #           break
-  #     elif known_group_name != "": # make sure that the known_group_name has been set
-  #         if node in known_binding_site_groups[known_group_name]:
-  #           group.append(node)
-   return 0
+  # loop through known binding site groups and count the largest group of that site in a single community
+  binding_sites_biggest_correct_grouping = {}
+  
+  for binding_site_group_name in known_binding_site_groups.keys():
+    curr_binding_site_group = known_binding_site_groups[binding_site_group_name]
+    print(f"binding_site_group: {binding_site_group_name}  ({len(curr_binding_site_group)} nodes total)") # TODO: remove
+
+    community_node_grouping_count_dict = {}
+    for community in communities:
+      community_node_grouping_count_dict[community] = 0
+
+    print(f"  community_node_grouping_count_dict: {community_node_grouping_count_dict}") # TODO: remove
+
+    # loop through nodes in the binding_site_group
+    for node in curr_binding_site_group:
+
+      # loop through communities and find nodes that are both known and predicted (same as labels)
+      for community in communities:
+        if node in community:
+          community_node_grouping_count_dict[community] += 1 #community_node_grouping_count_dict[community] + 1
+    
+    # finds the community with the largest number of correctly grouped nodes for this binding site groups
+    largest_correctly_grouped_community_name = max(community_node_grouping_count_dict, key=community_node_grouping_count_dict.get)
+    num_largest_correctly_grouped = community_node_grouping_count_dict[largest_correctly_grouped_community_name]
+
+    
+    print(f"  winning community: {largest_correctly_grouped_community_name}") # TODO: remove
+    print(f"  winning count: {num_largest_correctly_grouped}") # TODO: remove
+
+    # sets the winning count for this binding site
+    binding_sites_biggest_correct_grouping[binding_site_group_name] = num_largest_correctly_grouped
+  
+  total_correct_sum = sum(binding_sites_biggest_correct_grouping.values())
+  print(f"binding_sites_biggest_correct_grouping = {binding_sites_biggest_correct_grouping}") # TODO: remove
+  print(f"total_correct_sum = {total_correct_sum}") # TODO: remove
+  return total_correct_sum
    
 
-def annotate_graph(figure, target_uniprot_id, target_ko_id, known_binding_site_groups_dict,num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly):
+def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly):
   # top left corner
-  figure.text(0.0, 1.0, f"uniprot_id={TARGET_UNIPROT_ID}",
+  figure.text(0.0, 1.0, f"uniprot_id={target_uniprot_id}",
       transform=plt.gca().transAxes)
 
   # top center
@@ -186,8 +207,8 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, known_binding_site_g
     transform=plt.gca().transAxes)
   figure.text(0.0, -0.05, f"known_binding_sites{known_binding_site_groups_dict}",
       transform=plt.gca().transAxes)
-  
-  figure.text(0.0, 0.-0.2, f"{len(communities)} groups found ({len(known_binding_site_groups_dict.keys())} expected)",
+
+  figure.text(0.0, 0.-0.2, f"{len(num_communities_found)} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
       transform=plt.gca().transAxes)
   figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({round((num_known_binding_sites_found/num_known_binding_sites)*100,1)}%) known sites found",
       transform=plt.gca().transAxes)
