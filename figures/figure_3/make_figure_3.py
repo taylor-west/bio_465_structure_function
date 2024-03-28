@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 
 
 
-TARGET_UNIPROT_ID = 'P50933'
-CLUSTER_CSV_FILENAME = 'clusters_K00016.csv'
+TARGET_UNIPROT_ID = 'O25654'
+CLUSTER_CSV_FILENAME = 'clusters_K00937.csv'
 
 FIGURE_3_RESULTS_FILENAME = "figure3_" + TARGET_UNIPROT_ID + ".png"
 CLUSTERS_CSV_FILEPATH = os.path.join(os.getcwd(), "datafiles", "cluster_data", CLUSTER_CSV_FILENAME)
