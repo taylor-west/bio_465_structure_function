@@ -8,17 +8,9 @@
             "name": "Python Debugger: structure_function_pipeline",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/structure_function_pipeline.py",
-            "console": "integratedTerminal",
-            "args": ["eco00190", "${workspaceFolder}/target_organisms.csv"]
-        },
-        {
-            "name": "Python Debugger: structure_function_pipeline with ko_id",
-            "type": "debugpy",
-            "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["eco00190", "${workspaceFolder}/diverse_target_prokaryotes.csv", "K00937"]
+            "args": ["${workspaceFolder}/diverse_target_prokaryotes.csv", "K00937"]
         }
     ]
 }
