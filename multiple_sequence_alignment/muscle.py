@@ -3,7 +3,6 @@ import time
 import os
 from Bio import AlignIO
 import pandas as pd
-import paths
 
 CWD = os.getcwd()
 PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")

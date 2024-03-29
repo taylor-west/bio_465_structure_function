@@ -55,7 +55,7 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
     uniprot_ids_df = temp_uniprot_df.dropna(subset=["uniprot_id"]) 
 
     #write uniprot ids to a file
-    uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", "ko_ids", f'ko_uniprots_{ko_id}.csv')
+    uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", f'ko_uniprots_{ko_id}.csv')
     uniprot_ids_df.to_csv(uniprots_filepath)
 
     if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
