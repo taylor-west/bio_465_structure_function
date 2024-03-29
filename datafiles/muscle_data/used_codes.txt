@@ -1,1 +1,0 @@
-['mmu', 'rno', 'hgl', 'cfa', 'dre', 'pret', 'dme', 'cel', 'ath', 'mtr', 'osa', 'zma', 'smo', 'sce', 'ani', 'spo', 'ddi']

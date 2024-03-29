@@ -1,6 +1,10 @@
 import pandas as pd
 import requests
 
+###################################################
+# TODO: combine this with the kegg_ortholog.py file
+###################################################
+
 def find_uniprot_gene_collections(pathway_orthologs_filepath, temporary_results_filepath, num_valid_prots_threshold = 20, annotation_score_threshold=3.0):
     orthologs_df = pd.read_csv(pathway_orthologs_filepath)
     ortholog_ids = set(orthologs_df['ko_id'])
