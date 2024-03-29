@@ -12,13 +12,12 @@ import matplotlib.pyplot as plt
 
 
 
-TARGET_UNIPROT_ID = 'O25654'
-CLUSTER_CSV_FILENAME = 'clusters_K00937.csv'
+TARGET_UNIPROT_ID = 'P50933'
+CLUSTER_CSV_FILENAME = 'clusters_K00016.csv'
 
 FIGURE_3_RESULTS_FILENAME = "figure3_" + TARGET_UNIPROT_ID + ".png"
 CLUSTERS_CSV_FILEPATH = os.path.join(os.getcwd(), "datafiles", "cluster_data", CLUSTER_CSV_FILENAME)
-FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figures", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
-
+FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figure_3", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
 
 def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     clusters_df = pd.read_csv(cluster_csv_filepath)
@@ -68,7 +67,6 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     num_communities_found = len(communities)
 
     plt.figure()
-    curr_plt = annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, known_binding_site_groups_dict)
     annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
 
 
@@ -83,7 +81,6 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
 
     # Add labels to nodes in binding_site
     nx.draw_networkx_labels(G, pos, labels, font_size=10)
-    plt.show()
     plt.savefig(FIGURE_3_RESULTS_FILEPATH)
 
     return
@@ -208,7 +205,7 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_foun
   figure.text(0.0, -0.05, f"known_binding_sites{known_binding_site_groups_dict}",
       transform=plt.gca().transAxes)
 
-  figure.text(0.0, 0.-0.2, f"{len(num_communities_found)} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
+  figure.text(0.0, 0.-0.2, f"{num_communities_found} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
       transform=plt.gca().transAxes)
   figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({round((num_known_binding_sites_found/num_known_binding_sites)*100,1)}%) known sites found",
       transform=plt.gca().transAxes)
@@ -216,7 +213,7 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_foun
       transform=plt.gca().transAxes)
   figure.text(0.0, -0.35, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({round((num_known_binding_sites_grouped_correctly/num_known_binding_sites_found)*100,1)}%) known sites grouped correctly",
       transform=plt.gca().transAxes)
-  return figure
+  return
 
 
 if __name__ == "__main__":
