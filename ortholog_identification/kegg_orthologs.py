@@ -11,7 +11,8 @@ DATAFILES_FILEPATH = os.path.join(os.path.abspath(os.path.join(CURR_DIRECTORY_PA
 TARGET_ORTHOLOGS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_orthologs.csv')
 TARGET_ORGANISMS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_organisms.csv')
 TARGET_GENES_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_genes.csv')
-TEMP_GENES_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'temp', 'temp_genes.csv')
+TEMP_GENES_DIRECTORY= os.path.join(CURR_DIRECTORY_PATH, 'out', 'temp')
+TEMP_GENES_FILEPATH = os.path.join(TEMP_GENES_DIRECTORY 'temp_genes.csv')
 
 ORTHOLOGS_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'orthologs_results.csv')
 GENES_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'genes_results.csv')
@@ -36,6 +37,9 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
 
 
     # creates a temporary save file for the uniprots (so you don't have to start completely over if it crashes)
+    if not os.path.exists(TEMP_GENES_DIRECTORY):
+        os.mkdir(TEMP_GENES_DIRECTORY)
+        
     if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
         temp_uniprot_df = pd.read_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
         unprocessed_genes = filtered_genes.loc[filtered_genes['gene_name'].isin(temp_uniprot_df['gene_name']) == False] # only iterate over genes that haven't been already processed
