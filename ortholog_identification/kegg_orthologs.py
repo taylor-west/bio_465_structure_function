@@ -53,6 +53,8 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
 
 
     uniprot_ids_df = temp_uniprot_df.dropna(subset=["uniprot_id"]) 
+    organisms_list_filename = os.path.split(target_organisms_filepath)[-1]
+    uniprot_ids_df["organisms_list"] = organisms_list_filename  # adds the name of the organisms list file as a new column in the df
 
     #write uniprot ids to a file
     uniprots_filepath = os.path.join(DATAFILES_FILEPATH, "ortholog_uniprots", f'ko_uniprots_{ko_id}.csv')

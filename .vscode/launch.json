@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         // Basic
@@ -9,15 +6,15 @@
             "name": "Python Debugger: structure_function_pipeline",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/run_pipeline.py",
             "console": "integratedTerminal",
-            "args": ["${workspaceFolder}/diverse_target_prokaryotes.csv", "K00937"]
+            "args": ["${workspaceFolder}/ortholog_identification/data/new_combined_organisms.csv", "K00937"]
         },
         {
             "name": "Python Debugger: figure_3",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/figures/figure_3/make_figure_3.py",
             "console": "integratedTerminal",
             "args": ["P50933", "${workspaceFolder}/datafiles/cluster_data/clusters_K00016.csv"]
         },
