@@ -8,7 +8,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/run_pipeline.py",
             "console": "integratedTerminal",
-            "args": ["${workspaceFolder}/ortholog_identification/data/new_combined_organisms.csv", "K00937"]
+            "args": ["K00937", "${workspaceFolder}/ortholog_identification/data/new_combined_organisms.csv"]
         },
         {
             "name": "Python Debugger: figure_3",
@@ -25,7 +25,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/run_pipeline.py",
             "console": "integratedTerminal",
-            "args": ["${workspaceFolder}/diverse_target_prokaryotes.csv", "K01809"]
+            "args": [ "K01809", "${workspaceFolder}/diverse_target_prokaryotes.csv"]
         },
         {
             "name": "Python Debugger: figure_3 manA",
