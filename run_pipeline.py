@@ -11,7 +11,6 @@ CWD = os.getcwd()
 PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 
 if __name__ == "__main__":
-    num_cmdline_args = len(sys.argv)-1
     target_organisms_filepath = sys.argv[1]
     target_ko_id = sys.argv[2]
 

@@ -1,5 +1,6 @@
 
 import os
+import sys
 import math
 import ast
 import re
@@ -217,4 +218,7 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_foun
 
 
 if __name__ == "__main__":
-    generate_figure_3(TARGET_UNIPROT_ID, CLUSTERS_CSV_FILEPATH)
+    target_uniprot_id = sys.argv[1]
+    cluster_csv_filepath = sys.argv[2]
+
+    generate_figure_3(target_uniprot_id, cluster_csv_filepath)
