@@ -31,7 +31,7 @@ if __name__ == "__main__":
         # generates a multiple sequence alignment from the uniprot ids
         msa_df = multiple_sequence_alignment(uniprots, ortholog)
         print("done with alignment")
-        invariant_res_df = CalculateResidueDistanceWithDataframeInput.make_expected_cluster_lists_and_find_actual_clusters(ortholog, 7)
+        invariant_res_df = CalculateResidueDistanceWithDataframeInput.make_expected_cluster_lists_and_find_actual_clusters(ortholog, 7, target_organisms_filepath)
         print(f"done with distance calculations for {ortholog}")
         # eval.evaluate_results(invariant_res_df) # TODO: decide if needed
         print("done with evaluation")

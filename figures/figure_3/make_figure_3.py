@@ -61,6 +61,7 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
 
     # adds notes to the graph
     target_ko_id = get_ko_id_from_cluster_filepath(cluster_csv_filepath)
+    organisms_list_filename = clusters_df.organisms_list.unique()[0]
     num_known_binding_sites_found = len(labels)
     num_known_binding_sites = len(known_binding_sites_flat)
     num_predicted_binding_sites = len(G.nodes)
@@ -68,7 +69,7 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     num_communities_found = len(communities)
 
     plt.figure()
-    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
+    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
 
 
     # Draw the graph with colors based on community
@@ -191,7 +192,7 @@ def get_num_nodes_grouped_correctly(communities, known_binding_site_groups):
   return total_correct_sum
    
 
-def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly):
+def annotate_graph(figure, target_uniprot_id, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly):
   # top left corner
   figure.text(0.0, 1.0, f"uniprot_id={target_uniprot_id}",
       transform=plt.gca().transAxes)
@@ -201,18 +202,25 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, num_communities_foun
       transform=plt.gca().transAxes)
 
   # bottom left corner
-  figure.text(0.0, 0.00, f"organisms_list='diverse_prokaryotes.csv'",
+  figure.text(0.0, 0.00, f"organisms_list='{organisms_list_filename}'",
     transform=plt.gca().transAxes)
+  
   figure.text(0.0, -0.05, f"known_binding_sites{known_binding_site_groups_dict}",
       transform=plt.gca().transAxes)
 
   figure.text(0.0, 0.-0.2, f"{num_communities_found} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
       transform=plt.gca().transAxes)
-  figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({round((num_known_binding_sites_found/num_known_binding_sites)*100,1)}%) known sites found",
+  
+  percent_known_found = (round((num_known_binding_sites_found/num_known_binding_sites)*100,1) if num_known_binding_sites != 0 else "--")
+  figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({percent_known_found}%) known sites found",
       transform=plt.gca().transAxes)
-  figure.text(0.0, -0.3, f"{num_known_binding_sites_found}/{num_predicted_binding_sites} ({round((num_known_binding_sites_found/num_predicted_binding_sites)*100,1)}%) predicted sites are known",
+  
+  percent_predicted_known = (round((num_known_binding_sites_found/num_predicted_binding_sites)*100,1) if num_predicted_binding_sites != 0 else "--")
+  figure.text(0.0, -0.3, f"{num_known_binding_sites_found}/{num_predicted_binding_sites} ({percent_predicted_known}%) predicted sites are known",
       transform=plt.gca().transAxes)
-  figure.text(0.0, -0.35, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({round((num_known_binding_sites_grouped_correctly/num_known_binding_sites_found)*100,1)}%) known sites grouped correctly",
+  
+  percent_known_grouped_correctly = (round((num_known_binding_sites_grouped_correctly/num_known_binding_sites_found)*100,1) if num_known_binding_sites_found != 0 else "--")
+  figure.text(0.0, -0.35, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({percent_known_grouped_correctly}%) known sites grouped correctly",
       transform=plt.gca().transAxes)
   return
 

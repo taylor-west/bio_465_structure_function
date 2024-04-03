@@ -78,7 +78,7 @@ def read_uniprot_file_to_analyze_active_sites(directory, filename):
     return important_positions
 
 
-def make_expected_cluster_lists_and_find_actual_clusters(target_ko_id, distance_threshold: float):
+def make_expected_cluster_lists_and_find_actual_clusters(target_ko_id, distance_threshold: float, organisms_list_filepath):
     invariant_res_df = pd.read_csv(f'datafiles/muscle_data/MSA_results_{target_ko_id}.csv')
     invariant_res_df.drop(columns='Unnamed: 0', inplace=True)
 
@@ -185,6 +185,7 @@ def make_expected_cluster_lists_and_find_actual_clusters(target_ko_id, distance_
         for file in os.listdir(filepath):
             os.remove(f'{filepath}{file}')
     invariant_res_df = invariant_res_df.drop(columns=['MSA_sequence'])
+    invariant_res_df['organisms_list'] = os.path.split(organisms_list_filepath)[-1]
     invariant_res_df.to_csv(f'datafiles/cluster_data/clusters_{target_ko_id}.csv', index=False)
     return invariant_res_df
 

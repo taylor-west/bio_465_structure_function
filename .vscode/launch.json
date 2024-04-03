@@ -16,7 +16,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/figures/figure_3/make_figure_3.py",
             "console": "integratedTerminal",
-            "args": ["P50933", "${workspaceFolder}/datafiles/cluster_data/clusters_K00016.csv"]
+            "args": ["A0A2U2BKG4", "${workspaceFolder}/datafiles/cluster_data/clusters_K00937.csv"]
         },
         // manA
         {
