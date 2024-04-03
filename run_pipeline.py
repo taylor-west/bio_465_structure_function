@@ -11,8 +11,9 @@ CWD = os.getcwd()
 PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 
 if __name__ == "__main__":
-    target_organisms_filepath = sys.argv[1]
-    target_ko_id = sys.argv[2]
+    target_ko_id = sys.argv[1]
+    target_organisms_filepath = sys.argv[2]
+    
 
     if not os.path.exists(PATH_TO_DATAFILES):
         os.makedirs(PATH_TO_DATAFILES)
