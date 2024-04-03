@@ -12,7 +12,7 @@ TARGET_ORTHOLOGS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_orth
 TARGET_ORGANISMS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_organisms.csv')
 TARGET_GENES_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'in', 'target_genes.csv')
 TEMP_GENES_DIRECTORY= os.path.join(CURR_DIRECTORY_PATH, 'out', 'temp')
-TEMP_GENES_FILEPATH = os.path.join(TEMP_GENES_DIRECTORY 'temp_genes.csv')
+TEMP_GENES_FILEPATH = os.path.join(TEMP_GENES_DIRECTORY, 'temp_genes.csv')
 
 ORTHOLOGS_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'orthologs_results.csv')
 GENES_RESULTS_FILEPATH = os.path.join(CURR_DIRECTORY_PATH, 'out', 'genes_results.csv')

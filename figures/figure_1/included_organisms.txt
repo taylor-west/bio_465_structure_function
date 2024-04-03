@@ -1,0 +1,15 @@
+A0A3P9PED3_POERE Poecilia reticulata 
+B4FPI5_MAIZE Zea mays 
+F7B5B2_CIOIN Ciona intestinalis 
+MPI1_ARATH Arabidopsis thaliana 
+MPI2_ARATH Arabidopsis thaliana 
+MPI_CAEEL Caenorhabditis elegans
+MPI_DICDI Dictyostelium discoideum 
+MPI_EMENI Emericella nidulans 
+MPI_MOUSE Mus musculus 
+MPI_RAT Rattus norvegicus 
+MPI_SCHPO Schizosaccharomyces pombe 
+MPI_YEAST Saccharomyces cerevisiae 
+O16315_CAEEL Caenorhabditis elegans
+Q3ZB95_DANRE Danio rerio 
+Q9VH77_DROME Drosophila melanogaster 

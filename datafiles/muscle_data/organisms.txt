@@ -1,0 +1,23 @@
+A0A0H2V1A9_SHIFL Shigella flexneri
+A0A1Z1NLC2_AERSA Aeromonas salmonicida
+A0QUZ3_MYCS2 Mycolicibacterium smegmatis 
+A4FMN8_SACEN Saccharopolyspora erythraea 
+A6TCB5_KLEP7 Klebsiella pneumoniae 
+PPK1_BACAN Bacillus anthracis
+PPK1_CAMJE Campylobacter jejuni 
+PPK1_ECOLI Escherichia coli 
+PPK1_HELPY Helicobacter pylori 
+PPK1_MYCTU Mycobacterium tuberculosis 
+PPK1_NEIG1 Neisseria gonorrhoeae 
+PPK1_PSEAE Pseudomonas aeruginosa 
+PPK1_STAES Staphylococcus epidermidis 
+PPK1_VIBCH Vibrio cholerae serotype O1 
+PPK1_YERPE Yersinia pestis
+Q1ISW2_KORVE Koribacter versatilis 
+Q1MIW6_RHIJ3 Rhizobium johnstonii 
+Q30Q76_SULDN Sulfurimonas denitrificans 
+Q64PX4_BACFR Bacteroides fragilis 
+Q64SY4_BACFR Bacteroides fragilis 2
+Q6AAW8_CUTAK Cutibacterium acnes 
+Q7VZ62_BORPE Bordetella pertussis 
+Q8YR57_NOSS1 Nostoc sp

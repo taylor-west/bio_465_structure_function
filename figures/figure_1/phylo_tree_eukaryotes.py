@@ -5,20 +5,19 @@ import ete3
 import requests
 from ete3 import faces, NodeStyle
 
-
+# CWD should be figure_1 folder
 CWD = os.getcwd()
-PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
-PATH_TO_MUSCLE_DATA = os.path.join(CWD, "datafiles", "muscle_data")
-PATH_TO_UNIPROT_ENTRIES = os.path.join(CWD, "datafiles", "uniprot_entries")
+PATH_TO_DATAFILES = os.path.join(CWD, "../../datafiles")
+PATH_TO_MUSCLE_DATA = os.path.join(PATH_TO_DATAFILES, "muscle_data")
+PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 
-FIGURE_1_RESULTS_FILENAME = "figure1.png"
-FIGURE_1_RESULTS__DIRECTORY_FILEPATH = os.path.join(os.getcwd(), "figures", "figure_1", "figure_1_results")
-FIGURE_1_RESULTS_FILE_FILEPATH = os.path.join(FIGURE_1_RESULTS__DIRECTORY_FILEPATH, FIGURE_1_RESULTS_FILENAME)
+FIGURE_1_RESULTS_FILENAME = "eukaryote_tree.png"
+FIGURE_1_RESULTS_DIRECTORY_FILEPATH = os.path.join(CWD, "figure_1_results")
 
 
 def make_tree_with_species_names():
     idDict = {}
-    names = open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), "r")
+    names = open("included_organisms.txt", "r")
     lines = names.readlines()
     for line in lines:
         line = line.strip().split()
@@ -27,9 +26,9 @@ def make_tree_with_species_names():
         idDict[id] = str(" " + organism)
     names.close()
 
-    #get_newick_tree()
+    get_newick_tree()
 
-    file_path = os.path.join(FIGURE_1_RESULTS__DIRECTORY_FILEPATH, "newick.txt")
+    file_path = "eukaryote_newick.txt"
     tree = ete3.Tree(file_path)
 
     #change nodes to be labeled with species names instead of protein IDs
@@ -55,10 +54,11 @@ def make_tree_with_species_names():
     # may or may not work
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render(os.path.join(FIGURE_1_RESULTS__DIRECTORY_FILEPATH, "tree.png"), tree_style=ts, w=1400, h=1200)
+    tree.render(os.path.join(FIGURE_1_RESULTS_DIRECTORY_FILEPATH, FIGURE_1_RESULTS_FILENAME), tree_style=ts, w=1400, h=1200)
 
 def set_styles_for_each_group(tree):
-    # NOTE: THESE NAMES MUST MATCH THE NAMES IN THE UNIPROT ENTRIES FILES
+    # NOTE: This format is for K01809 run with eukaryote_shortlist.csv
+
     # Vertebrates
     v_style = NodeStyle()
     v_style["bgcolor"] = "lightblue"
@@ -108,6 +108,8 @@ def set_styles_for_each_group(tree):
     dme_node.set_style(i_style)
     cel_node = tree.search_nodes(name=" Caenorhabditis elegans")[0]
     cel_node.set_style(i_style)
+    cin_node = tree.search_nodes(name=" Ciona intestinalis")[0]
+    cin_node.set_style(i_style)
     # Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
     # Invertebrate_root.set_style(i_style)
 
@@ -160,7 +162,7 @@ def get_newick_tree():
     getURL = f"https://www.ebi.ac.uk/Tools/services/rest/simple_phylogeny/result/{jobID}/{resultType}"
     response = requests.get(getURL)
     newick_tree = response.text
-    with open(os.path.join(FIGURE_1_RESULTS__DIRECTORY_FILEPATH, "newick.txt"), 'w') as outF:
+    with open("eukaryote_newick.txt", 'w') as outF:
         outF.write(newick_tree)
 
 def get_species_names_and_uniprot_ids_from_uniprot_entries():
@@ -183,7 +185,7 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
             else:
                 print(f"Match failed in file {fileName}")
 
-    with open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), 'w') as outF:
+    with open(os.path.join(os.getcwd(), "included_organisms.txt"), 'w') as outF:
                 i = 0
                 for organism in organisms:
                     outF.write(str(ids[i]) + " " + organism + "\n")
@@ -191,4 +193,4 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
 
 if __name__ == "__main__":
     get_species_names_and_uniprot_ids_from_uniprot_entries()
-    make_tree_with_species_names()
+    # make_tree_with_species_names()
