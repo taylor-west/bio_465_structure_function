@@ -26,7 +26,7 @@ def make_tree_with_species_names():
         idDict[id] = str(" " + organism)
     names.close()
 
-    get_newick_tree()
+    #get_newick_tree()
 
     file_path = os.path.join(os.getcwd(), "newick.txt")
     tree = ete3.Tree(file_path)
@@ -54,7 +54,7 @@ def make_tree_with_species_names():
     # may or may not work
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render(os.path.join(os.getcwd(), "figure_1_results/tree.png"), tree_style=ts, w=700, h=1000)
+    tree.render(os.path.join(os.getcwd(), "figure_1_results/prokaryote_tree.png"), tree_style=ts, w=700, h=1000)
 
 # psuedomoadota / gammaproteobacteria / enterobacterales (eco) Escherichia coli
 # actinomycetota / actinomycetes / mycobacteriales (mtu) Mycobacterium tuberculosis
@@ -82,9 +82,23 @@ def make_tree_with_species_names():
 def set_styles_for_each_group(tree):
     # NOTE: This format is for K00937 run with diverse_target_prokaryotes.csv
 
+    # White(  # FFFFFF)
+    #     Pale
+    # Blue(  # B0E0E6)
+    #     Light
+    # Green(  # 90EE90)
+    #     Lavender(  # E6E6FA)
+    #         Peach(  # FFDAB9)
+    #             Pale
+    # Yellow(  # FFFFE0)
+    #     Misty
+    # Rose(  # FFE4E1)
+    #     Light
+    # Gray(  # D3D3D3)
+
     # Bacilli
     bci_style = NodeStyle()
-    bci_style["bgcolor"] = "lightblue"
+    bci_style["bgcolor"] = "#B0E0E6" #"lightblue"
     bci_style["fgcolor"] = "black"
     Bacilli_list = [" Bacillus anthracis", " Staphylococcus epidermidis"]
     Bacilli_root = tree.get_common_ancestor(Bacilli_list)
@@ -93,16 +107,16 @@ def set_styles_for_each_group(tree):
 
     # gammaproteobacteria (enterobacterales)
     g_style = NodeStyle()
-    g_style["bgcolor"] = "tan"
+    g_style["bgcolor"] = "lightsteelblue" #"tan"
     g_style["fgcolor"] = "black"
     Gamma_list = [" Escherichia coli", " Yersinia pestis", " Shigella flexneri", " Klebsiella pneumoniae"]
     Gamma_root = tree.get_common_ancestor(Gamma_list)
     Gamma_root.set_style(g_style)
 
     # gammaproteobacteria (Other)
-    g_style = NodeStyle()
-    g_style["bgcolor"] = "tan"
-    g_style["fgcolor"] = "black"
+    # g_style = NodeStyle()
+    # g_style["bgcolor"] = "tan"
+    # g_style["fgcolor"] = "black"
     GammaO_list = [" Pseudomonas aeruginosa", " Koribacter versatilis"]
     for node_name in GammaO_list:
         node = tree.search_nodes(name=node_name)[0]
@@ -110,17 +124,16 @@ def set_styles_for_each_group(tree):
 
     # actinomycetes
     act_style = NodeStyle()
-    act_style["bgcolor"] = "palegoldenrod"
+    act_style["bgcolor"] = "#E6E6FA" #"palegoldenrod"
     act_style["fgcolor"] = "black"
     Actinomycetes_list = [" Mycobacterium tuberculosis", " Cutibacterium acnes"]
-    # act_node = tree.search_nodes(name=" Dictyostelium discoideum")[0]
-    # act_node.set_style(act_style)
-    Actinomycetes_root = tree.get_common_ancestor(Actinomycetes_list)
-    Actinomycetes_root.set_style(act_style)
+    for node_name in Actinomycetes_list:
+        node = tree.search_nodes(name=node_name)[0]
+        node.set_style(act_style)
 
     # epsilonproteobacteria
     e_style = NodeStyle()
-    e_style["bgcolor"] = "#a2e57b"
+    e_style["bgcolor"] = "mediumslateblue" #"#a2e57b"
     e_style["fgcolor"] = "black"
     Epsilon_list = [" Helicobacter pylori", " Campylobacter jejuni"]
     for node_name in Epsilon_list:
@@ -129,7 +142,7 @@ def set_styles_for_each_group(tree):
 
     # betaproteobacteria
     b_style = NodeStyle()
-    b_style["bgcolor"] = "#ffcc80"
+    b_style["bgcolor"] = "lightcyan" #"#ffcc80"
     b_style["fgcolor"] = "black"
     Beta_list = [" Bordetella pertussis", " Neisseria gonorrhoeae"]
     Beta_root = tree.get_common_ancestor(Beta_list)
@@ -137,7 +150,7 @@ def set_styles_for_each_group(tree):
 
     # bacteroides
     bac_style = NodeStyle()
-    bac_style["bgcolor"] = "#c3a1f7"
+    bac_style["bgcolor"] = "#FFE4E1" #"#c3a1f7"
     bac_style["fgcolor"] = "black"
     Bacteroides_list = [" Bacteroides fragilis", " Bacteroides fragilis 2"]  # there are two of these so this might cause issues...
     for node_name in Bacteroides_list:
@@ -165,7 +178,7 @@ def set_styles_for_each_group(tree):
 
     # alphaproteobacteria
     a_style = NodeStyle()
-    a_style["bgcolor"] = "gold"
+    a_style["bgcolor"] = "#D3D3D3" #"gold"
     a_style["fgcolor"] = "black"
     Alpha_node = " Rhizobium johnstonii"
     node = tree.search_nodes(name=Alpha_node)[0]
@@ -201,7 +214,7 @@ def get_newick_tree():
         response = requests.get(statusURL)
         if response.text == "FINISHED":
             break
-        print("Waiting for Tree...")
+        print(f"Status: {response.text}")
         time.sleep(5)
 
     resultType = "tree"
@@ -245,5 +258,5 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
                     i += 1
 
 if __name__ == "__main__":
-    get_species_names_and_uniprot_ids_from_uniprot_entries()
+    #get_species_names_and_uniprot_ids_from_uniprot_entries()
     make_tree_with_species_names()
