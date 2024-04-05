@@ -12,15 +12,11 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
+FIGURE_3_RESULTS_DIRECTORY_PATH = os.path.join(os.getcwd(), "figures", "figure_3", "figure_3_results")
+COMMUNITY_COLOR_OPTIONS = ['orange','magenta','lightgreen','pink','lightblue','black','red','blue', "green", "brown"]
 
-TARGET_UNIPROT_ID = 'P50933'
-CLUSTER_CSV_FILENAME = 'clusters_K00016.csv'
 
-FIGURE_3_RESULTS_FILENAME = "figure3_" + TARGET_UNIPROT_ID + ".png"
-CLUSTERS_CSV_FILEPATH = os.path.join(os.getcwd(), "datafiles", "cluster_data", CLUSTER_CSV_FILENAME)
-FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figure_3", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
-
-def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
+def generate_figure_3(target_uniprot_id, cluster_csv_filepath, add_notes_to_fig: False):
     clusters_df = pd.read_csv(cluster_csv_filepath)
     clusters_df.dropna(inplace=True)
     subset_clusters_df = clusters_df[clusters_df['uniprot_id'] == target_uniprot_id]
@@ -34,43 +30,44 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     communities = make_communities(G)
     print(f"communities: {communities}")
 
+    # assign colors to the communities
+    current_color_index = 0
+    community_colors = {}
+
+    for community in communities:
+        community_colors[community] = COMMUNITY_COLOR_OPTIONS[current_color_index]
+        current_color_index = current_color_index+1
+
     # get known binding sites from UniProt
-    known_binding_site_groups_dict = get_known_binding_site_groups(TARGET_UNIPROT_ID)
+    known_binding_site_groups_dict = get_known_binding_site_groups(target_uniprot_id)
     known_binding_sites_flat = list(chain.from_iterable(list(known_binding_site_groups_dict.values()))) # flatten all values from expected_binding_site_groups_dict
 
     print(f"known_binding_site_groups: {known_binding_site_groups_dict}")
     print(f"known_binding_sites: {known_binding_sites_flat}")
 
-    # Choose a layout algorithm for positioning nodes
-    pos = nx.spring_layout(G, k=0.15, iterations=20)  # You can choose any layout algorithm you prefer
-
+    # add labels to known binding sites that were predicted
     labels = {}
     for node in G.nodes():
         if node in known_binding_sites_flat:
             #set the node name as the key and the label as its value
             labels[node] = node
 
-    # assign colors to the communities
-    color_options = ['orange','magenta','lightgreen','pink','lightblue','black','red','blue', "green", "brown"]
-    current_color_index = 0
-    community_colors = {}
-
-    for community in communities:
-        community_colors[community] = color_options[current_color_index]
-        current_color_index = current_color_index+1
-
     # adds notes to the graph
-    target_ko_id = get_ko_id_from_cluster_filepath(cluster_csv_filepath)
-    organisms_list_filename = clusters_df.organisms_list.unique()[0]
-    num_known_binding_sites_found = len(labels)
-    num_known_binding_sites = len(known_binding_sites_flat)
-    num_predicted_binding_sites = len(G.nodes)
-    num_known_binding_sites_grouped_correctly = get_num_nodes_grouped_correctly(communities, known_binding_site_groups_dict)
-    num_communities_found = len(communities)
+    if add_notes_to_fig.lower() == 'true':
+      target_ko_id = get_ko_id_from_cluster_filepath(cluster_csv_filepath)
+      organisms_list_filename = clusters_df.organisms_list.unique()[0]
+      num_known_binding_sites_found = len(labels)
+      num_known_binding_sites = len(known_binding_sites_flat)
+      num_predicted_binding_sites = len(G.nodes)
+      num_known_binding_sites_grouped_correctly = get_num_nodes_grouped_correctly(communities, known_binding_site_groups_dict)
+      num_communities_found = len(communities)
 
-    plt.figure()
-    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
+      plt.figure()
+      annotate_graph(plt.gca(), target_uniprot_id, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
 
+
+    # Choose a layout algorithm for positioning nodes
+    pos = nx.spring_layout(G, k=0.15, iterations=20)  # You can choose any layout algorithm you prefer
 
     # Draw the graph with colors based on community
     nx.draw(
@@ -83,7 +80,11 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
 
     # Add labels to nodes in binding_site
     nx.draw_networkx_labels(G, pos, labels, font_size=10)
-    plt.savefig(FIGURE_3_RESULTS_FILEPATH)
+
+    # save the figure to a png
+    save_file_name = "figure3_" + target_uniprot_id + ".png"
+    save_file_path = os.path.join(FIGURE_3_RESULTS_DIRECTORY_PATH, save_file_name)
+    plt.savefig(save_file_path)
 
     return
 
@@ -208,19 +209,19 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, organisms_list_filen
   figure.text(0.0, -0.05, f"known_binding_sites{known_binding_site_groups_dict}",
       transform=plt.gca().transAxes)
 
-  figure.text(0.0, 0.-0.2, f"{num_communities_found} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
+  figure.text(0.0, -0.125, f"{num_communities_found} communities found ({len(known_binding_site_groups_dict.keys())} binding site groups known)",
       transform=plt.gca().transAxes)
   
   percent_known_found = (round((num_known_binding_sites_found/num_known_binding_sites)*100,1) if num_known_binding_sites != 0 else "--")
-  figure.text(0.0, -0.25, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({percent_known_found}%) known sites found",
+  figure.text(0.0, -0.175, f"{num_known_binding_sites_found}/{num_known_binding_sites} ({percent_known_found}%) known sites found",
       transform=plt.gca().transAxes)
   
   percent_predicted_known = (round((num_known_binding_sites_found/num_predicted_binding_sites)*100,1) if num_predicted_binding_sites != 0 else "--")
-  figure.text(0.0, -0.3, f"{num_known_binding_sites_found}/{num_predicted_binding_sites} ({percent_predicted_known}%) predicted sites are known",
+  figure.text(0.0, -0.225, f"{num_known_binding_sites_found}/{num_predicted_binding_sites} ({percent_predicted_known}%) predicted sites are known",
       transform=plt.gca().transAxes)
   
   percent_known_grouped_correctly = (round((num_known_binding_sites_grouped_correctly/num_known_binding_sites_found)*100,1) if num_known_binding_sites_found != 0 else "--")
-  figure.text(0.0, -0.35, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({percent_known_grouped_correctly}%) known sites grouped correctly",
+  figure.text(0.0, -0.275, f"{num_known_binding_sites_grouped_correctly}/{num_known_binding_sites_found} ({percent_known_grouped_correctly}%) known sites grouped correctly",
       transform=plt.gca().transAxes)
   return
 
@@ -228,5 +229,6 @@ def annotate_graph(figure, target_uniprot_id, target_ko_id, organisms_list_filen
 if __name__ == "__main__":
     target_uniprot_id = sys.argv[1]
     cluster_csv_filepath = sys.argv[2]
+    add_notes_to_fig = (sys.argv[3] if len(sys.argv) > 2 else None)
 
-    generate_figure_3(target_uniprot_id, cluster_csv_filepath)
+    generate_figure_3(target_uniprot_id, cluster_csv_filepath, add_notes_to_fig)

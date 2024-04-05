@@ -8,7 +8,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/run_pipeline.py",
             "console": "integratedTerminal",
-            "args": ["K00937", "${workspaceFolder}/ortholog_identification/data/new_combined_organisms.csv"]
+            "args": ["K00937", "${workspaceFolder}/target_prokaryotes.csv"]
         },
         {
             "name": "Python Debugger: figure_3",
@@ -16,7 +16,15 @@
             "request": "launch",
             "program": "${workspaceFolder}/figures/figure_3/make_figure_3.py",
             "console": "integratedTerminal",
-            "args": ["A0A2U2BKG4", "${workspaceFolder}/datafiles/cluster_data/clusters_K00937.csv"]
+            "args": ["Q9PMU0", "${workspaceFolder}/datafiles/cluster_data/clusters_K00937.csv"]
+        },
+        {
+            "name": "Python Debugger: figure_3 w/notes",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/figures/figure_3/make_figure_3.py",
+            "console": "integratedTerminal",
+            "args": ["Q9PMU0", "${workspaceFolder}/datafiles/cluster_data/clusters_K00937.csv", "True"]
         },
         // manA
         {
