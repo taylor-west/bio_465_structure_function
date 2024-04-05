@@ -22,7 +22,8 @@ if __name__ == "__main__":
     # returns a list of uniprot ids for the given KEGG Ortholog ID value
     uniprots = find_ortholog_uniprots_by_ko_id(target_organisms_filepath, target_ko_id)
     kegg_results_df = find_uniprot_gene_collections(f'datafiles/ortholog_uniprots/ko_uniprots_{target_ko_id}.csv', f'datafiles/ortholog_uniprots/temp.tsv')
-    print(kegg_results_df)
+    if kegg_results_df.empty:
+        print("ERROR: Not enough data for this ortholog. Please enter a different K0ID")
     unique_orthologs = set(kegg_results_df['ko_id'])
     for ortholog in unique_orthologs:
         subset_df = kegg_results_df[kegg_results_df['ko_id'] == ortholog]
