@@ -80,7 +80,7 @@ def make_tree_with_species_names():
 # actinomycetota / actinomycetes / propionibacteriales (pac) Cutibacterium acnes
 
 def set_styles_for_each_group(tree):
-    # NOTE: This format is for K00937 run with diverse_target_prokaryotes.csv
+    # NOTE: This format is for K00937 run with target_prokaryotes.csv
 
     # Bacilli
     bci_style = NodeStyle()

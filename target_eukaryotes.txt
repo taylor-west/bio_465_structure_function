@@ -1,0 +1,61 @@
+kegg_organism_code,kegg_organism_description
+ddi,Dictyostelium discoideum (cellular slime mold)
+tet,Tetrahymena thermophila
+ngr,Naegleria gruberi
+ehx,Emiliania huxleyi
+tps,Thalassiosira pseudonana
+ani,Aspergillus nidulans
+cne,Cryptococcus neoformans var. neoformans JEC21
+cnb,Cryptococcus neoformans var. neoformans B-3501A
+cng,Cryptococcus neoformans var. grubii H99
+ncr,Neurospora crassa
+ppa,Komagataella phaffii
+sce,Saccharomyces cerevisiae (budding yeast)
+scm,Schizophyllum commune
+spo,Schizosaccharomyces pombe (fission yeast)
+uma,Ustilago maydis
+ath,Arabidopsis thaliana (thale cress)
+smo,Selaginella moellendorffii
+bdi,Brachypodium distachyon (stiff brome)
+svs,Setaria viridis (green foxtail)
+lja,Lotus japonicus
+zma,Zea mays (maize)
+mtr,Medicago truncatula (barrel medic)
+osa,Oryza sativa japonica (Japanese rice) (RefSeq)
+dosa,Oryza sativa japonica (Japanese rice) (RAPDB)
+cre,Chlamydomonas reinhardtii
+aqu,Amphimedon queenslandica (sponge)
+bfo,Branchiostoma floridae (Florida lancelet)
+cel,Caenorhabditis elegans (nematode)
+cin,Ciona intestinalis (yellow sea squirt)
+dpx,Daphnia pulex (common water flea)
+dme,Drosophila melanogaster (fruit fly)
+hmg,Hydra vulgaris (swiftwater hydra)
+msex,Manduca sexta (tobacco hornworm)
+nve,Nematostella vectensis (starlet sea anemone)
+spu,Strongylocentrotus purpuratus (purple sea urchin)
+tca,Tribolium castaneum (red flour beetle)
+tad,Trichoplax adhaerens (placozoan)
+cfa,Canis lupus familiaris (dog)
+fca,Felis catus (domestic cat)
+mpuf,Mustela putorius furo (domestic ferret)
+acs,Anolis carolinensis (green anole)
+gga,Gallus gallus (chicken)
+maua,Mesocricetus auratus (golden hamster)
+cpoc,Cavia porcellus (domestic guinea pig)
+mlf,Myotis lucifugus (little brown bat)
+ola,Oryzias latipes (Japanese medaka)
+mmu,Mus musculus (house mouse)
+hgl,Heterocephalus glaber (naked mole-rat)
+nfu,Nothobranchius furzeri (turquoise killifish)
+amex,Astyanax mexicanus (Mexican tetra)
+clv,Columba livia (rock pigeon)
+pret,Poecilia reticulata (guppy)
+rno,Rattus norvegicus (rat)
+mcc,Macaca mulatta (rhesus monkey)
+pmrn,Petromyzon marinus (sea lamprey)
+tru,Takifugu rubripes (torafugu)
+gat,Gasterosteus aculeatus (three-spined stickleback)
+xla,Xenopus laevis (African clawed frog)
+tgu,Taeniopygia guttata (zebra finch)
+dre,Danio rerio (zebrafish)

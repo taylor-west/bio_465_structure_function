@@ -24,7 +24,7 @@ The main script for running the pipeline is found in `run_pipeline.py`. This fil
 The `launch.json` file contains a configuration that should run the pipeline for KEGG Ortholog `K00937` with the organism list found in  `diverse_target_prokaryotes.csv`. This file can be updated to point to your desired KO ID and organism list, or you can simply run the pipeline from the command line.
 
    ##### KEGG Ortholog ID
-   The first arguement that will be passed into the pipeline is the [KEGG Ortholog ID](https://www.genome.jp/kegg/ko.html) of the ortholog that you want to study. These ID's are formatted as 'K0#####' (that is a zero and not the letter O). This project focused on orthologs in metabolic pathways, as these are most likely to have conserved orthologs across a broad range of organisms.
+   The first argument that will be passed into the pipeline is the [KEGG Ortholog ID](https://www.genome.jp/kegg/ko.html) of the ortholog that you want to study. These ID's are formatted as 'K0#####' (that is a zero and not the letter O). This project focused on orthologs in metabolic pathways, as these are most likely to have conserved orthologs across a broad range of organisms.
    
    Example orthologs to use for a specific pathway can be found by:
    1. Visiting [KEGG Pathways](https://www.genome.jp/kegg/pathway.html) and selecting a pathway of choice (e.g. [map01200 - 'Carbon Metabolism'](https://www.genome.jp/pathway/map01200))
