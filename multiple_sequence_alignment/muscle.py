@@ -9,11 +9,6 @@ PATH_TO_DATAFILES = os.path.join(CWD, "datafiles")
 PATH_TO_UNIPROT_ENTRIES = os.path.join(PATH_TO_DATAFILES, "uniprot_entries")
 PATH_TO_MUSCLE_DATA = os.path.join(PATH_TO_DATAFILES, "muscle_data")
 
-KO_ID = "K01809"
-# K03841
-# K01809
-# K00966
-
 # makes a dictionary to keep track of what position we are at for each protein
 def make_counter_dictionary_from_alignment_ids(alignment):
     protein_position_counter = {}
