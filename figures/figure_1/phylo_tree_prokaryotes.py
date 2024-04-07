@@ -26,7 +26,7 @@ def make_tree_with_species_names():
         idDict[id] = str(" " + organism)
     names.close()
 
-    #get_newick_tree()
+    get_newick_tree()
 
     file_path = os.path.join(os.getcwd(), "newick.txt")
     tree = ete3.Tree(file_path)
@@ -258,5 +258,5 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
                     i += 1
 
 if __name__ == "__main__":
-    #get_species_names_and_uniprot_ids_from_uniprot_entries()
+    get_species_names_and_uniprot_ids_from_uniprot_entries()
     make_tree_with_species_names()

@@ -1,15 +1,24 @@
-A0A3P9PED3_POERE Poecilia reticulata 
+A0A0D1BUK2_USTMA Ustilago maydis 
+A0A1A8VDA8_NOTFU Nothobranchius furzeri 
+B3S7P3_TRIAD Trichoplax adhaerens 
 B4FPI5_MAIZE Zea mays 
+C3Y7W9_BRAFL Branchiostoma floridae 
 F7B5B2_CIOIN Ciona intestinalis 
+G7MYC5_MACMU Macaca mulatta 
+H9GNX5_ANOCA Anolis carolinensis 
+J9VS07_CRYNH Cryptococcus neoformans var
 MPI1_ARATH Arabidopsis thaliana 
 MPI2_ARATH Arabidopsis thaliana 
 MPI_CAEEL Caenorhabditis elegans
+MPI_CRYNJ Cryptococcus neoformans var
 MPI_DICDI Dictyostelium discoideum 
 MPI_EMENI Emericella nidulans 
 MPI_MOUSE Mus musculus 
+MPI_NEUCR Neurospora crassa 
 MPI_RAT Rattus norvegicus 
 MPI_SCHPO Schizosaccharomyces pombe 
 MPI_YEAST Saccharomyces cerevisiae 
 O16315_CAEEL Caenorhabditis elegans
 Q3ZB95_DANRE Danio rerio 
+Q7S4U2_NEUCR Neurospora crassa 
 Q9VH77_DROME Drosophila melanogaster 

@@ -17,7 +17,7 @@ FIGURE_1_RESULTS_DIRECTORY_FILEPATH = os.path.join(CWD, "figure_1_results")
 
 def make_tree_with_species_names():
     idDict = {}
-    names = open("included_organisms.txt", "r")
+    names = open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), "r")
     lines = names.readlines()
     for line in lines:
         line = line.strip().split()
@@ -54,72 +54,104 @@ def make_tree_with_species_names():
     # may or may not work
 
     # Render the tree to a file (e.g., tree.png)
-    tree.render(os.path.join(FIGURE_1_RESULTS_DIRECTORY_FILEPATH, FIGURE_1_RESULTS_FILENAME), tree_style=ts, w=1400, h=1200)
+    tree.render(os.path.join(FIGURE_1_RESULTS_DIRECTORY_FILEPATH, FIGURE_1_RESULTS_FILENAME), tree_style=ts, w=700, h=1000)
+
+# Ustilago maydis - basidiomycota; ustilaginomycetes; ustilaginales; ustilaginaceae
+# Nothobranchius furzeri - chordata; actinopteri; zyprinodontisor; noprobrachiidae;
+# Trichoplax adhaerens - Placozoa; uniplacotomia; trichoplacita; trichoplacidae;
+# zea mays - streptophyta; magnoliopsida; poales; poaceae;
+# Branchiostoma floridae  - chordata; leptocardii; amphioxyformes; bronchiostomatidae
+# Ciona intestinalis - chordata; ascidiacea; phlebobronchia; cionidae
+# Macaca mulatta - chordata; mammalia; primates; cercopithecidae
+# Anolis carolinensis - chordata; lepidosauria; squamata; dactyloidae
+# Cryptococcus neoformans var - basidiomycota; tremellomycetes; tremellales; cryptococcaceae 2x
+# Arabidopsis thaliana - streptophyta; magnoliopsida; brassicales; brassicaceae 2x
+# Caenorhabditis elegans - nematoda; chromadorea; rhabditida; rhabditidae; 2x
+# Dictyostelium discoideum - evosea; eumycetozoa; dictyosteliales; dictyosteliaceae
+# Emericella nidulans - ascomycota; eurotiomycetes; eurotiales; aspergillaceae
+# Mus musculus - chordata; mammalia; rodentia; muridae
+# Neurospora crassa - ascomycota; sordariomycetes; sordariales; sordariaceae 2x
+# Rattus norvegicus - chordata; mammalia; rodentia; murdiae
+# Schizosaccharomyces pombe - ascomycota; schizosaccharomycetes; schizosaccharomycetales; schizosaccharomycetaceae
+# Saccharomyces cerevisiae - ascomycota; saccharomycetes; saccharomycetales; saccharomycetaceae
+# Danio rerio - chordata; actinopteri; cypriniformes; danionidae
+# Drosophila melanogaster - arthropoda; insecta; diptera; drosophilidae
 
 def set_styles_for_each_group(tree):
-    # NOTE: This format is for K01809 run with eukaryote_shortlist.csv
+    # NOTE: This format is for K01809 run with target_eukaryotes.csv
 
-    # Vertebrates
-    v_style = NodeStyle()
-    v_style["bgcolor"] = "lightblue"
-    v_style["fgcolor"] = "black"
-    Vertebrate_list = [" Canis lupus familiaris", " Rattus norvegicus", " Danio rerio", " Mus musculus", " Heterocephalus glaber", " Poecilia reticulata"]
-    Vertebrate_root = tree.get_common_ancestor(Vertebrate_list)
-    Vertebrate_root.set_style(v_style)
+    # Chordata
+    c_style = NodeStyle()
+    c_style["bgcolor"] = "#FBE665"
+    c_style["fgcolor"] = "black"
+    Chordata_list = [" Nothobranchius furzeri", " Branchiostoma floridae", " Macaca mulatta", " Anolis carolinensis",
+                       " Mus musculus", " Rattus norvegicus", " Danio rerio"]
+    Chordata_root = tree.get_common_ancestor(Chordata_list)
+    Chordata_root.set_style(c_style)
+
+    # ciona
+    cio_node = tree.search_nodes(name=" Ciona intestinalis")[0]
+    cio_node.set_style(c_style)
 
 
-    # Fungi
-    f_style = NodeStyle()
-    f_style["bgcolor"] = "tan"
-    f_style["fgcolor"] = "black"
-    Fungi_list = [" Saccharomyces cerevisiae", " Schizosaccharomyces pombe", " Emericella nidulans"]
-    # col_node = tree.search_nodes(name=colobus)[0]
-    # pap_node = tree.search_nodes(name=papio)[0]
-    # col_node.set_style(c_style)
-    # pap_node.set_style(c_style)
-    Fungi_root = tree.get_common_ancestor(Fungi_list)
-    Fungi_root.set_style(f_style)
+    # basidiomycota
+    b_style = NodeStyle()
+    b_style["bgcolor"] = "#F8D9FA"
+    b_style["fgcolor"] = "black"
+    b_list = [" Ustilago maydis", " Cryptococcus neoformans var", " Cryptococcus neoformans var 2"]
+    Fungi_root = tree.get_common_ancestor(b_list)
+    Fungi_root.set_style(b_style)
 
-    # Protists
+    # Placozoa
     p_style = NodeStyle()
-    p_style["bgcolor"] = "palegoldenrod"
+    p_style["bgcolor"] = "#BAEDE6"
     p_style["fgcolor"] = "black"
-    Protist_list = [" Dictyostelium discoideum"]
-    ddi_node = tree.search_nodes(name=" Dictyostelium discoideum")[0]
+    ddi_node = tree.search_nodes(name=" Trichoplax adhaerens")[0]
     ddi_node.set_style(p_style)
-    # Protist_root = tree.get_common_ancestor(Protist_list)
-    # Protist_root.set_style(p_style)
 
-    # Vascular Plants
-    v_style = NodeStyle()
-    v_style["bgcolor"] = "#a2e57b"
-    v_style["fgcolor"] = "black"
-    vascular_list = [" Arabidopsis thaliana", " Zea mays", " Medicago truncatula", " Oryza sativa", " Selaginella moellendorffii"]
-    vascular_root = tree.get_common_ancestor(vascular_list)
-    vascular_root.set_style(v_style)
+    # streptophyta
+    s_style = NodeStyle()
+    s_style["bgcolor"] = "lightpink" # "#FCFBB8"
+    s_style["fgcolor"] = "black"
+    s_list = [" Zea mays", " Arabidopsis thaliana", " Arabidopsis thaliana 2"]
+    s_root = tree.get_common_ancestor(s_list)
+    s_root.set_style(s_style)
 
-    # Invertebrates
-    i_style = NodeStyle()
-    i_style["bgcolor"] = "#c3a1f7"
-    i_style["fgcolor"] = "black"
-    #F5F5DC
-    Invertebrate_list = [" Drosophila melanogaster"," Caenorhabditis elegans"]
-    dme_node = tree.search_nodes(name=" Drosophila melanogaster")[0]
-    dme_node.set_style(i_style)
-    cel_node = tree.search_nodes(name=" Caenorhabditis elegans")[0]
-    cel_node.set_style(i_style)
-    cin_node = tree.search_nodes(name=" Ciona intestinalis")[0]
-    cin_node.set_style(i_style)
-    # Invertebrate_root = tree.get_common_ancestor(Invertebrate_list)
-    # Invertebrate_root.set_style(i_style)
+    # Nematoda
+    n_style = NodeStyle()
+    n_style["bgcolor"] = "#E3CCA9"
+    n_style["fgcolor"] = "black"
+    n_list = [" Caenorhabditis elegans", " Caenorhabditis elegans 2"]
+    for node_name in n_list:
+        node = tree.search_nodes(name=node_name)[0]
+        node.set_style(n_style)
 
-    # Archaeplastida
+    # evosea
+    e_style = NodeStyle()
+    e_style["bgcolor"] = "#BAF1B4"
+    e_style["fgcolor"] = "black"
+    e_node = tree.search_nodes(name=" Dictyostelium discoideum")[0]
+    e_node.set_style(e_style)
+
+    #ascomycota
     a_style = NodeStyle()
-    a_style["bgcolor"] = "#ffcc80"
+    a_style["bgcolor"] = "#FDCE67"
     a_style["fgcolor"] = "black"
-    # Arch_list = ["Chlamydomonas reinhardtii"]
-    # Arch_root = tree.get_common_ancestor(Arch_list)
-    # Arch_root.set_style(a_style)
+    a_list = [" Emericella nidulans", " Neurospora crassa", " Schizosaccharomyces pombe", " Saccharomyces cerevisiae"]
+    a_root = tree.get_common_ancestor(a_list)
+    a_root.set_style(a_style)
+
+    # Neurospora crassa 2
+    n2_node = tree.search_nodes(name=" Neurospora crassa 2")[0]
+    n2_node.set_style(a_style)
+
+    #arthopoda
+    arth_style = NodeStyle()
+    arth_style["bgcolor"] = "#FCEDA8"
+    arth_style["fgcolor"] = "black"
+    arth_node = tree.search_nodes(name=" Drosophila melanogaster")[0]
+    arth_node.set_style(arth_style)
+
 
     # # None
     # no_style = NodeStyle()
@@ -155,7 +187,7 @@ def get_newick_tree():
         response = requests.get(statusURL)
         if response.text == "FINISHED":
             break
-        print("Waiting for Tree...")
+        print(f"Status: {response.text}")
         time.sleep(5)
 
     resultType = "tree"
@@ -170,6 +202,7 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
     fileList = os.listdir(subdirectoryPath)
     organisms = []
     ids = []
+    name_dictionary = {}
     pattern = re.compile(r'OS\s+((?:(?!subsp\.)[^(.])+)?\s*')
     for fileName in fileList:
         filePath = os.path.join(subdirectoryPath, fileName)
@@ -181,11 +214,18 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
             match = pattern.search(content)
             if match:
                 organism = match.group(1)
-                organisms.append(organism)
+                organism = organism.strip()
+                if organism not in name_dictionary:
+                    name_dictionary[organism] = 1
+                    organisms.append(organism)
+                else:
+                    name_dictionary[organism] += 1
+                    organism += (" " + str(name_dictionary[organism]))
+                    organisms.append(organism)
             else:
                 print(f"Match failed in file {fileName}")
 
-    with open(os.path.join(os.getcwd(), "included_organisms.txt"), 'w') as outF:
+    with open(os.path.join(PATH_TO_MUSCLE_DATA, "organisms.txt"), 'w') as outF:
                 i = 0
                 for organism in organisms:
                     outF.write(str(ids[i]) + " " + organism + "\n")
@@ -193,4 +233,4 @@ def get_species_names_and_uniprot_ids_from_uniprot_entries():
 
 if __name__ == "__main__":
     get_species_names_and_uniprot_ids_from_uniprot_entries()
-    # make_tree_with_species_names()
+    make_tree_with_species_names()
