@@ -162,7 +162,7 @@ The Rest of Figure 1
 
 #### **Figure 2**
 
-**Data used: **
+**Data used:**
 
 _Eukaryotes_: Binding site of mannose-6-phosphate isomerase (ManA)
 Homologs from: 
