@@ -101,15 +101,15 @@ The `get_cluster_dataframe() `executes the pipeline in the script, calling other
 
 #### **Figure 1**
 
-Make sure you have the ete3 python package installed
+Make sure you have the ete3 python package installed from the setup code at the top.
 
 To replicate our Phylogenetic Tree Figures follow these steps:
 
 
 
 1. Run the pipeline with desired K0 id and organisms depending on if you want to generate the prokaryote or eukaryote tree. Use the respective command line arguments listed below for each.
-    1. Prokaryotes: K00937 target_prokaryotes.csv
-    2. Eukaryotes: K01809 target_eukaryotes.csv
+    1. Prokaryotes: `K00937 target_prokaryotes.csv`
+    2. Eukaryotes: `K01809 target_eukaryotes.csv`
 2. Go to either `figures/figure_1/phylo_tree_prokaryotes.py` or `figures/figure_1/phylo_tree_eukaryotes.py`. Respectively they are the files to generate our trees using prokaryotes and eukaryotes
 3. Run the `main` function at the bottom of the file.
 4. Go to `figures/figure_1/figure_1_results`
@@ -145,6 +145,12 @@ NOTE: This will take quite a long time (at least 1.5 hours) . Please do not do t
 11. Once you have decided how you want to group them, open `figures/figure_1/phylo_tree.py` again.
 12. Go to the `set_styles_for_each_group()` function. You will be modifying this function.
 13. Follow the detailed instructions at the top of the function for how to write this code.
+14. The rest of our figure 1 was created with data from `datafiles/muscle_data/alignment.aln` which shows the alignment for the K0 id that was last run. 
+15. The tree you generated and the data from this file were put together in Microsoft Word. The alignment was spliced and rearranged to show uniprot listed residues, match the order of the tree, and then edited to add aesthetic details. 
+16. Uniprot residues
+    1. K01809: Mus musculus; UniProtID Q924M7; residues Q110, H112, E137, and H276
+    2. K00937: Helicobacter pylori; UniProtID O25654; residues N42, Y464, R558, and H586
+17. The above residues are the reference residues and all corresponding invariant residues according to the alignment are used in the figure.
 
 
 #### **Figure 2**
