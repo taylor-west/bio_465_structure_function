@@ -35,7 +35,9 @@ The `launch.json` file contains an IDE configuration that will run the pipeline 
 
 The first argument that will be passed into the pipeline is the [KEGG Ortholog ID](https://www.genome.jp/kegg/ko.html) of the ortholog that you want to study. These ID's are formatted as 'K#####'. This project focused on orthologs in metabolic pathways, as these are most likely to have conserved orthologs across a broad range of organisms.
 
-Example orthologs to use for a specific pathway can be found by:
+The two KO IDs that were used for figure generation were **K01809 (ManA)** for eukaryotes and **K00937 (PPK)** for prokaryotes.
+
+Other example orthologs to use for a specific pathway can be found by:
 
 
 
