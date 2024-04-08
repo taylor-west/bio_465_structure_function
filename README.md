@@ -182,11 +182,9 @@ This can be done with the following conda command:
 
 See for additional instructions if necessary:
 
+For Windows: (https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
 
-    [For Windows](https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
-
-
-    [For MacOS](https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
+For MacOS: (https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
 
 Install Pymol plugin to import 3D protein structures from Alphafold2
 
@@ -241,7 +239,7 @@ To get images like those included in figure 2:
     Example for Q9VH77:
 
 
-    	`fetchAF2 Q9V77`
+    	`fetchAF2 Q9VH77`
 
 
             ```
