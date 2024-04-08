@@ -1,24 +1,23 @@
-A0A0D1BUK2_USTMA Ustilago maydis
-A0A1A8VDA8_NOTFU Nothobranchius furzeri
-B3S7P3_TRIAD Trichoplax adhaerens
-B4FPI5_MAIZE Zea mays
-C3Y7W9_BRAFL Branchiostoma floridae
-F7B5B2_CIOIN Ciona intestinalis
-G7MYC5_MACMU Macaca mulatta
-H9GNX5_ANOCA Anolis carolinensis
-J9VS07_CRYNH Cryptococcus neoformans var
-MPI1_ARATH Arabidopsis thaliana
-MPI2_ARATH Arabidopsis thaliana 2
-MPI_CAEEL Caenorhabditis elegans
-MPI_CRYNJ Cryptococcus neoformans var 2
-MPI_DICDI Dictyostelium discoideum
-MPI_EMENI Emericella nidulans
-MPI_MOUSE Mus musculus
-MPI_NEUCR Neurospora crassa
-MPI_RAT Rattus norvegicus
-MPI_SCHPO Schizosaccharomyces pombe
-MPI_YEAST Saccharomyces cerevisiae
-O16315_CAEEL Caenorhabditis elegans 2
-Q3ZB95_DANRE Danio rerio
-Q7S4U2_NEUCR Neurospora crassa 2
-Q9VH77_DROME Drosophila melanogaster
+A0A0H2V1A9_SHIFL Shigella flexneri
+A0A1Z1NLC2_AERSA Aeromonas salmonicida
+A0QUZ3_MYCS2 Mycolicibacterium smegmatis 
+A4FMN8_SACEN Saccharopolyspora erythraea 
+A6TCB5_KLEP7 Klebsiella pneumoniae 
+PPK1_BACAN Bacillus anthracis
+PPK1_CAMJE Campylobacter jejuni 
+PPK1_ECOLI Escherichia coli 
+PPK1_HELPY Helicobacter pylori 
+PPK1_MYCTU Mycobacterium tuberculosis 
+PPK1_NEIG1 Neisseria gonorrhoeae 
+PPK1_PSEAE Pseudomonas aeruginosa 
+PPK1_STAES Staphylococcus epidermidis 
+PPK1_VIBCH Vibrio cholerae serotype O1 
+PPK1_YERPE Yersinia pestis
+Q1ISW2_KORVE Koribacter versatilis 
+Q1MIW6_RHIJ3 Rhizobium johnstonii 
+Q30Q76_SULDN Sulfurimonas denitrificans 
+Q64PX4_BACFR Bacteroides fragilis 
+Q64SY4_BACFR Bacteroides fragilis 2
+Q6AAW8_CUTAK Cutibacterium acnes 
+Q7VZ62_BORPE Bordetella pertussis 
+Q8YR57_NOSS1 Nostoc sp
