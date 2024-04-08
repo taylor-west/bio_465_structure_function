@@ -185,13 +185,13 @@ Install open source Pymol from GitHub: [github.com/schrodinger/pymol-open-source
 
 This can be done with the following conda command:
 
-	`conda install conda-forge::pymol-open-source`
+ 	conda install conda-forge::pymol-open-source
 
 See for additional instructions if necessary:
 
-For Windows: (https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
+[For Windows](https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
 
-For MacOS: (https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
+[For MacOS](https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
 
 Install Pymol plugin to import 3D protein structures from Alphafold2
 
@@ -203,13 +203,13 @@ Once Pymol is installed, simply run Pymol by typing `pymol `into the command lin
 
 Make sure to return to the Alphafold2 plugin instructions and install the plugin through the Pymol window configurations.
 
-**Generating images with Pymol: **
+**Generating images with Pymol:**
 
 (for the remainder of figure 2 creation, the commands are individually run in the Pymol window command line)
 
 Import an individual homolog with the following command:
 
-	`fetchAF2 [UniProt_ID]`
+	fetchAF2 [UniProt_ID]
 
 To get images like those included in figure 2:
 
@@ -217,45 +217,31 @@ To get images like those included in figure 2:
 
 1. Set the following global variables:
 
-        ```
         set dot_density, 4
         set dot_color, gray
-        ```
 
 
 2. For each protein homolog, 
 
-    	`show cartoon`, [UniProt_ID]
+    	show cartoon, [UniProt_ID]
+    	color gray, [UniProt_ID]
+    	select [bind_site_name], resi [list of residues, concatenated by ‘+’]
 
-
-    	`color gray`, [UniProt_ID]
-
-
-    	`select` [bind_site_name], `resi` [list of residues, concatenated by ‘+’] 
-
-
-(note: if multiple proteins are loaded into the Pymol project, the above command will highlight the indicated residues in all the loaded proteins)
-
-
-    	`show sticks`, [bind_site_name]
-
-
-    	`show dots`, [bind_site_name]
+(note: if multiple proteins are loaded into the Pymol project, the above command will highlight the indicated residues in all the loaded proteins; you can remove residues from the selection by clicking each one where they appear on the protein model in the Pymol window)
+    	
+     	show sticks, [bind_site_name]
+     	show dots, [bind_site_name]
 
 
 Example for Q9VH77:
 
+    	fetchAF2 Q9VH77
 
-    	`fetchAF2 Q9VH77`
-
-
-            ```
             show cartoon, Q9VH77
             color gray, Q9VH77
             select Q9VH77_bind_site, resi 86+88+113+241
             show sticks, Q9VH77_bind_site
             show dots, Q9VH77_bind_site
-            ```
 
 
 3. On the right hand side, click the A button next to the bind_site name, then click the option labeled “center” to center the camera on the binding site.
