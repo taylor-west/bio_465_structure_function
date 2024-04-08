@@ -107,6 +107,7 @@ Within the `figures` folder of this GitHub, there are code files to generate the
 Make sure you have the ete3 python package installed from the setup code at the top.
 
 To replicate our Phylogenetic Tree Figures follow these steps:
+
 (*note: if running from the command line, these files must be run within the `figures/figure_1` folder where they are located)
 
 Prokaryote Figure
