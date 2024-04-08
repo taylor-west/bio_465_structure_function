@@ -105,17 +105,21 @@ Make sure you have the ete3 python package installed from the setup code at the 
 
 To replicate our Phylogenetic Tree Figures follow these steps:
 
-
-
-1. Run the pipeline with desired K0 id and organisms depending on if you want to generate the prokaryote or eukaryote tree. Use the respective command line arguments listed below for each.
-    1. Prokaryotes: `K00937 target_prokaryotes.csv`
-    2. Eukaryotes: `K01809 target_eukaryotes.csv`
-2. Go to either `figures/figure_1/phylo_tree_prokaryotes.py` or `figures/figure_1/phylo_tree_eukaryotes.py`. Respectively they are the files to generate our trees using prokaryotes and eukaryotes
+Prokaryote Figure
+1. Run the pipeline with `K00937 target_prokaryotes.csv` as commandline arguments
+2. Go to `figures/figure_1/phylo_tree_prokaryotes.py`. 
 3. Run the `main` function at the bottom of the file.
 4. Go to `figures/figure_1/figure_1_results`
-5. In this directory you will see the tree you have created as either `eukaryote_tree.png` or `prokaryote_tree.png`
+5. In this directory you will see the tree you have created as `prokaryote_tree.png`.
 
-To generate your own Figure 1 Phylogenetic Tree follow these steps:
+Eukaryote Figure
+1. Run the pipeline with `K01809 target_eukaryotes.csv` as commandline arguments
+2. Go to `figures/figure_1/phylo_tree_eukaryotes.py`. This file generates the eukaryote phylogenetic tree.
+3. Run the `main` function at the bottom of the file.
+4. Go to `figures/figure_1/figure_1_results`
+5. In this directory you will see the tree you have created as `eukaryote_tree.png`.
+
+**To generate your own Figure 1 Phylogenetic Tree follow these steps:**
 
 NOTE: This will take quite a long time (at least 1.5 hours) . Please do not do this during the Reproducibility challenge. Feel free to read it though.
 
@@ -147,10 +151,10 @@ NOTE: This will take quite a long time (at least 1.5 hours) . Please do not do t
 13. Follow the detailed instructions at the top of the function for how to write this code.
 14. The rest of our figure 1 was created with data from `datafiles/muscle_data/alignment.aln` which shows the alignment for the K0 id that was last run. 
 15. The tree you generated and the data from this file were put together in Microsoft Word. The alignment was spliced and rearranged to show uniprot listed residues, match the order of the tree, and then edited to add aesthetic details. 
-16. Uniprot residues
-    1. K01809: Mus musculus; UniProtID Q924M7; residues Q110, H112, E137, and H276
-    2. K00937: Helicobacter pylori; UniProtID O25654; residues N42, Y464, R558, and H586
-17. The above residues are the reference residues and all corresponding invariant residues according to the alignment are used in the figure.
+16. Uniprot residues used for invariant reference in alignment
+    1. Eukaryotes: K01809; Mus musculus; UniProtID Q924M7; residues Q110, H112, E137, and H276
+    2. Prokaryotes: K00937; Helicobacter pylori; UniProtID O25654; residues N42, Y464, R558, and H586
+17. The above residues are the reference residues and all corresponding invariant residues according to the alignment are emphasized in the figure.
 
 
 #### **Figure 2**
