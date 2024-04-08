@@ -38,7 +38,7 @@ def find_ortholog_uniprots_by_ko_id(target_organisms_filepath, ko_id):
 
     # creates a temporary save file for the uniprots (so you don't have to start completely over if it crashes)
     if not os.path.exists(TEMP_GENES_DIRECTORY):
-        os.mkdirs(TEMP_GENES_DIRECTORY)
+        os.makedirs(TEMP_GENES_DIRECTORY)
         
     if os.path.exists(TEMP_UNIPROT_IDS_RESULTS_FILEPATH):
         temp_uniprot_df = pd.read_csv(TEMP_UNIPROT_IDS_RESULTS_FILEPATH)
