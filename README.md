@@ -99,9 +99,9 @@ The `get_cluster_dataframe() `executes the pipeline in the script, calling other
 
 
 ### **Figures**
+Within the `figures` folder of this GitHub, there are code files to generate the data elements of each figure, as well as examples of the full figures used in the manuscript.
 
-
-#### **Figure 1**
+#### **Figure 1**--Example of full figure: figure_1_complete.png
 
 Make sure you have the ete3 python package installed from the setup code at the top.
 
@@ -162,7 +162,7 @@ The Rest of Figure 1
 4. The above residues are the reference residues and all corresponding invariant residues according to the alignment are emphasized in the figure.
 
 
-#### **Figure 2**
+#### **Figure 2**--Example of full figure: figure_2_1.png and figure_2_2.png
 
 **Data used:**
 
@@ -249,7 +249,7 @@ Example for Q9VH77:
 5. Export the image by clicking File > Export image > PNG > Capture current display > Save PNG image as…
 
 
-#### **Figure 3**
+#### **Figure 3**--Example of full figure: figure_2_complete.png
 
 To generate Figure 3, run the file `figures/figure_3/make_figure_3.py` with 2 commandline arguments:
 
