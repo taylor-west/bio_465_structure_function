@@ -152,22 +152,14 @@ NOTE: This will take quite a long time (at least 1.5 hours) . Please do not do t
 **Data used: **
 
 _Eukaryotes_: Binding site of mannose-6-phosphate isomerase (ManA)
-
 Homologs from: 
-
-
-
 1. D. melanogaster (Fruit fly), UniProtID Q9VH77, shown with Q86, H88, E113, and H241 
 2. S. pombe (strain 972 / ATCC 24843) (Fission yeast), UniProtID O43014, shown with Q99, H101, E126, and H265
 3. D. rerio (Zebrafish) UniProtID Q3ZB95, shown with Q110, H112, E137, and H275 
 4. M. musculus (Mouse), UniProtID Q924M7, shown with Q110, H112, E137, and H276
 
 _Prokaryotes_: Binding sites of polyphosphate kinase (PPK)
-
 Homologs from:
-
-
-
 1. H. pylori (strain ATCC 700392 / 26695) (Campylobacter pylori), UniProtID O25654, shown with N42, Y464, R558, and H586 in the ATP binding site, as well as R372 and R401 in the Mg<sup>2+</sup> binding site
 2. C. jejuni subsp. jejuni serotype O:2 (strain ATCC 700819 / NCTC 11168), UniProtID Q9PMU0, shown with N45, Y460, R553, and H580 in the ATP binding site, as well as R367 and R397 in the Mg<sup>2+</sup> binding site
 3. B. anthracis, UniProtID Q81MN9, shown with N55, Y482, R578, and H606 in the ATP binding site, as well as R389 and R419 in the Mg<sup>2+</sup> binding site
