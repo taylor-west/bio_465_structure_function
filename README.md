@@ -23,7 +23,8 @@ The main script for running the pipeline is found in `run_pipeline.py`. This fil
 
 
 
-* e.g. `python run_pipeline.py "K03841" "target_organisms.csv"` 
+* e.g. `python run_pipeline.py "K00937" "target_prokaryotes.csv"` 
+or `python run_pipeline.py "K01809" "target_eukaryotes.csv"`
 
 The `launch.json` file contains an IDE configuration that will run the pipeline for KEGG Ortholog `K00937` with the organism list found in `target_prokaryotes.csv`. This file can be updated to point to your desired KO ID and organism list, or you can simply run the pipeline from the command line. 
 
