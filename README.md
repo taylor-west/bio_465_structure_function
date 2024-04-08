@@ -243,7 +243,7 @@ To get images like those included in figure 2:
     	`show dots`, [bind_site_name]
 
 
-    Example for Q9VH77:
+Example for Q9VH77:
 
 
     	`fetchAF2 Q9VH77`
