@@ -71,12 +71,12 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
         G,
         pos,
         with_labels=False,
-        node_size=150,
+        node_size=250,
         node_color=[get_color_for_node(node, communities, community_colors) for node in G.nodes()]
     )
 
     # Add labels to nodes in binding_site
-    nx.draw_networkx_labels(G, pos, labels, font_size=10)
+    nx.draw_networkx_labels(G, pos, labels, font_size=8)
     plt.savefig(FIGURE_3_RESULTS_FILEPATH)
 
     return
