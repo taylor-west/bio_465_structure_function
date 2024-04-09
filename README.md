@@ -202,7 +202,7 @@ Follow the instructions in the Readme of the following Github repository:
 
 [github.com/APAJanssen/Alphafold2import.git](http://github.com/APAJanssen/Alphafold2import.git)
 
-Once Pymol is installed, simply run Pymol by typing `pymol `into the command line.
+Once Pymol is installed, simply run Pymol by typing `pymol` into the command line.
 
 Make sure to return to the Alphafold2 plugin instructions and install the plugin through the Pymol window configurations.
 
@@ -247,12 +247,14 @@ Example for Q9VH77:
             show dots, Q9VH77_bind_site
 
 
-3. On the right hand side, click the A button next to the bind_site name, then click the option labeled “center” to center the camera on the binding site.
-4. Click and drag on the display window to rotate the camera until reaching a desired image.
-5. Export the image by clicking File > Export image > PNG > Capture current display > Save PNG image as…
+3. On the right hand side, click the A button next to the bind_site name, then click the option labeled `center` to center the camera on the binding site.
+4. Four buttons to the left, click the colored button C, then find the option `by element` then click the second option from the top to color the residues and highlight the atoms that participate in binding.
+5. Zoom into the binding site using the scroll wheel. Click and drag on the display window to rotate the camera until reaching a desired image.
+6. Change the background color through the Display settings: `Display > Background > White`
+7. Export the image by clicking `File > Export image > PNG > Capture current display > Save PNG image as…`
 
 
-#### **Figure 3**--Example of full figure: figure_2_complete.png
+#### **Figure 3**--Example of full figure: figure_3_complete.png
 
 To generate Figure 3, run the file `figures/figure_3/make_figure_3.py` with 2 commandline arguments:
 
