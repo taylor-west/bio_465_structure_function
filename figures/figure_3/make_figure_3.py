@@ -11,16 +11,10 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-
-
-TARGET_UNIPROT_ID = 'P50933'
-CLUSTER_CSV_FILENAME = 'clusters_K00016.csv'
-
-FIGURE_3_RESULTS_FILENAME = "figure3_" + TARGET_UNIPROT_ID + ".png"
-CLUSTERS_CSV_FILEPATH = os.path.join(os.getcwd(), "datafiles", "cluster_data", CLUSTER_CSV_FILENAME)
-FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figure_3", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
-
 def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
+    FIGURE_3_RESULTS_FILENAME = "figure3_" + target_uniprot_id + ".png"
+    FIGURE_3_RESULTS_FILEPATH = os.path.join(os.getcwd(), "figures", "figure_3", "figure_3_results", FIGURE_3_RESULTS_FILENAME)
+    
     clusters_df = pd.read_csv(cluster_csv_filepath)
     clusters_df.dropna(inplace=True)
     subset_clusters_df = clusters_df[clusters_df['uniprot_id'] == target_uniprot_id]
@@ -35,7 +29,7 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     print(f"communities: {communities}")
 
     # get known binding sites from UniProt
-    known_binding_site_groups_dict = get_known_binding_site_groups(TARGET_UNIPROT_ID)
+    known_binding_site_groups_dict = get_known_binding_site_groups(target_uniprot_id)
     known_binding_sites_flat = list(chain.from_iterable(list(known_binding_site_groups_dict.values()))) # flatten all values from expected_binding_site_groups_dict
 
     print(f"known_binding_site_groups: {known_binding_site_groups_dict}")
@@ -51,7 +45,7 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
             labels[node] = node
 
     # assign colors to the communities
-    color_options = ['orange','magenta','lightgreen','pink','lightblue','black','red','blue', "green", "brown"]
+    color_options = ['orange','magenta','lightgreen','pink','lightblue','gray','red','blue', "green", "brown"]
     current_color_index = 0
     community_colors = {}
 
@@ -69,7 +63,7 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
     num_communities_found = len(communities)
 
     plt.figure()
-    annotate_graph(plt.gca(), TARGET_UNIPROT_ID, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
+    annotate_graph(plt.gca(), target_uniprot_id, target_ko_id, organisms_list_filename, num_communities_found, known_binding_site_groups_dict, num_known_binding_sites_found, num_known_binding_sites, num_predicted_binding_sites, num_known_binding_sites_grouped_correctly)
 
 
     # Draw the graph with colors based on community
@@ -77,12 +71,12 @@ def generate_figure_3(target_uniprot_id, cluster_csv_filepath):
         G,
         pos,
         with_labels=False,
-        node_size=150,
+        node_size=250,
         node_color=[get_color_for_node(node, communities, community_colors) for node in G.nodes()]
     )
 
     # Add labels to nodes in binding_site
-    nx.draw_networkx_labels(G, pos, labels, font_size=10)
+    nx.draw_networkx_labels(G, pos, labels, font_size=8)
     plt.savefig(FIGURE_3_RESULTS_FILEPATH)
 
     return

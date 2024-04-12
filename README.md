@@ -23,7 +23,8 @@ The main script for running the pipeline is found in `run_pipeline.py`. This fil
 
 
 
-* e.g. `python run_pipeline.py "K03841" "target_organisms.csv"` 
+* e.g. `python run_pipeline.py "K00937" "target_prokaryotes.csv"` 
+or `python run_pipeline.py "K01809" "target_eukaryotes.csv"`
 
 The `launch.json` file contains an IDE configuration that will run the pipeline for KEGG Ortholog `K00937` with the organism list found in `target_prokaryotes.csv`. This file can be updated to point to your desired KO ID and organism list, or you can simply run the pipeline from the command line. 
 
@@ -35,7 +36,9 @@ The `launch.json` file contains an IDE configuration that will run the pipeline 
 
 The first argument that will be passed into the pipeline is the [KEGG Ortholog ID](https://www.genome.jp/kegg/ko.html) of the ortholog that you want to study. These ID's are formatted as 'K#####'. This project focused on orthologs in metabolic pathways, as these are most likely to have conserved orthologs across a broad range of organisms.
 
-Example orthologs to use for a specific pathway can be found by:
+The two KO IDs that were used for figure generation were **K01809 (ManA)** for eukaryotes and **K00937 (PPK)** for prokaryotes.
+
+Other example orthologs to use for a specific pathway can be found by:
 
 
 
@@ -97,13 +100,15 @@ The `get_cluster_dataframe() `executes the pipeline in the script, calling other
 
 
 ### **Figures**
+Within the `figures` folder of this GitHub, there are code files to generate the data elements of each figure, as well as examples of the full figures used in the manuscript.
 
-
-#### **Figure 1**
+#### **Figure 1**--Example of full figure: figure_1_complete.png
 
 Make sure you have the ete3 python package installed from the setup code at the top.
 
 To replicate our Phylogenetic Tree Figures follow these steps:
+
+(*note: if running from the command line, these files must be run within the `figures/figure_1` folder where they are located)
 
 Prokaryote Figure
 1. Run the pipeline with `K00937 target_prokaryotes.csv` as commandline arguments
@@ -160,7 +165,7 @@ The Rest of Figure 1
 4. The above residues are the reference residues and all corresponding invariant residues according to the alignment are emphasized in the figure.
 
 
-#### **Figure 2**
+#### **Figure 2**--Example of full figure: figure_2_1.png and figure_2_2.png
 
 **Data used:**
 
@@ -183,13 +188,13 @@ Install open source Pymol from GitHub: [github.com/schrodinger/pymol-open-source
 
 This can be done with the following conda command:
 
-	`conda install conda-forge::pymol-open-source`
+ 	conda install conda-forge::pymol-open-source
 
 See for additional instructions if necessary:
 
-For Windows: (https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
+[For Windows](https://pymolwiki.org/index.php/Windows_Install#:~:text=pymol.org/%23download-,Open%2DSource%20PyMOL,-Open%2DSource%20PyMOL)
 
-For MacOS: (https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
+[For MacOS](https://pymolwiki.org/index.php/MAC_Install#:~:text=PyMOL%20Users%20Archive-,Open%2DSource%20PyMOL,-Package%20managers)
 
 Install Pymol plugin to import 3D protein structures from Alphafold2
 
@@ -197,17 +202,17 @@ Follow the instructions in the Readme of the following Github repository:
 
 [github.com/APAJanssen/Alphafold2import.git](http://github.com/APAJanssen/Alphafold2import.git)
 
-Once Pymol is installed, simply run Pymol by typing `pymol `into the command line.
+Once Pymol is installed, simply run Pymol by typing `pymol` into the command line.
 
 Make sure to return to the Alphafold2 plugin instructions and install the plugin through the Pymol window configurations.
 
-**Generating images with Pymol: **
+**Generating images with Pymol:**
 
 (for the remainder of figure 2 creation, the commands are individually run in the Pymol window command line)
 
 Import an individual homolog with the following command:
 
-	`fetchAF2 [UniProt_ID]`
+	fetchAF2 [UniProt_ID]
 
 To get images like those included in figure 2:
 
@@ -215,60 +220,48 @@ To get images like those included in figure 2:
 
 1. Set the following global variables:
 
-        ```
         set dot_density, 4
         set dot_color, gray
-        ```
 
 
 2. For each protein homolog, 
 
-    	`show cartoon`, [UniProt_ID]
+    	show cartoon, [UniProt_ID]
+    	color gray, [UniProt_ID]
+    	select [bind_site_name], resi [list of residues, concatenated by ‘+’]
+
+(note: if multiple proteins are loaded into the Pymol project, the above command will highlight the indicated residues in all the loaded proteins; you can remove residues from the selection by clicking each one where they appear on the protein model in the Pymol window)
+    	
+     	show sticks, [bind_site_name]
+     	show dots, [bind_site_name]
 
 
-    	`color gray`, [UniProt_ID]
+Example for Q9VH77:
 
+    	fetchAF2 Q9VH77
 
-    	`select` [bind_site_name], `resi` [list of residues, concatenated by ‘+’] 
-
-
-(note: if multiple proteins are loaded into the Pymol project, the above command will highlight the indicated residues in all the loaded proteins)
-
-
-    	`show sticks`, [bind_site_name]
-
-
-    	`show dots`, [bind_site_name]
-
-
-    Example for Q9VH77:
-
-
-    	`fetchAF2 Q9VH77`
-
-
-            ```
             show cartoon, Q9VH77
             color gray, Q9VH77
             select Q9VH77_bind_site, resi 86+88+113+241
             show sticks, Q9VH77_bind_site
             show dots, Q9VH77_bind_site
-            ```
 
 
-3. On the right hand side, click the A button next to the bind_site name, then click the option labeled “center” to center the camera on the binding site.
-4. Click and drag on the display window to rotate the camera until reaching a desired image.
-5. Export the image by clicking File > Export image > PNG > Capture current display > Save PNG image as…
+3. On the right hand side, click the A button next to the bind_site name, then click the option labeled `center` to center the camera on the binding site.
+4. Four buttons to the left, click the colored button C, then find the option `by element` then click the second option from the top to color the residues and highlight the atoms that participate in binding.
+5. Zoom into the binding site using the scroll wheel. Click and drag on the display window to rotate the camera until reaching a desired image.
+6. Change the background color through the Display settings: `Display > Background > White`
+7. Export the image by clicking `File > Export image > PNG > Capture current display > Save PNG image as…`
 
 
-#### **Figure 3**
+#### **Figure 3**--Example of full figure: figure_3_complete.png
 
 To generate Figure 3, run the file `figures/figure_3/make_figure_3.py` with 2 commandline arguments:
 
 
 
 1. the target UniProt ID of the protein which you want to analyze
-2. the filepath to a CSV file that contains the cluster data generated by the pipeline. This cluster data can be found in `/datafiles/cluster_data/` directory.
+2. the filepath to a CSV file that contains the cluster data generated by the pipeline. This cluster data can be found in `datafiles/cluster_data/` directory.
 
 This script filters the cluster output data from our pipeline and generates a graphical visualization of the invariant residues and their proximity to other invariant residues in a 3D space. This graph is generated using the data for a specific protein ortholog from one organism (ie. one UniProt ID). 
 
