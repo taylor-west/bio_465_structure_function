@@ -1,0 +1,12 @@
+,ko_id,gene_name,kegg_organism_code,uniprot_id,organisms_list
+0,K01455,bpe:BP1516,bpe,Q7VY47,target_prokaryotes.csv
+0,K01455,ais:BUW96_10445,ais,A0A6S7FAQ4,target_prokaryotes.csv
+0,K01455,rle:pRL100351,rle,Q1M7F5,target_prokaryotes.csv
+0,K01455,hpy:HP_1238,hpy,O25836,target_prokaryotes.csv
+0,K01455,ban:BA_4149,ban,P59700,target_prokaryotes.csv
+0,K01455,msm:MSMEG_0484,msm,A0QPQ9,target_prokaryotes.csv
+0,K01455,msm:MSMEG_3403,msm,A0QXS0,target_prokaryotes.csv
+0,K01455,msm:MSMEG_4367,msm,A0R0F4,target_prokaryotes.csv
+0,K01455,msm:MSMEG_5335,msm,A0R342,target_prokaryotes.csv
+0,K01455,cdo:CDOO_05715,cdo,A0A097IFB5,target_prokaryotes.csv
+0,K01455,sen:SACE_1932,sen,A4FB18,target_prokaryotes.csv

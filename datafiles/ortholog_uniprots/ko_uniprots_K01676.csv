@@ -1,0 +1,7 @@
+,ko_id,gene_name,kegg_organism_code,uniprot_id,organisms_list
+0,K01676,bfo:118430850,bfo,A0A9J7NB38,target_eukaryotes.csv
+0,K01676,tad:TRIADDRAFT_50429,tad,B3S033,target_eukaryotes.csv
+0,K01676,cre:CHLRE_06g254400v5,cre,A8HYA9,target_eukaryotes.csv
+0,K01676,tps:THAPSDRAFT_22464,tps,B8C0H3,target_eukaryotes.csv
+0,K01676,ehx:EMIHUDRAFT_438455,ehx,R1D0A0,target_eukaryotes.csv
+0,K01676,ngr:NAEGRDRAFT_34693,ngr,D2UY48,target_eukaryotes.csv

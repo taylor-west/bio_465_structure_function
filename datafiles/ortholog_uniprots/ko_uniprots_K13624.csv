@@ -1,0 +1,14 @@
+,ko_id,gene_name,kegg_organism_code,uniprot_id,organisms_list
+0,K13624,mmu:12870,mmu,Q61147,target_eukaryotes.csv
+0,K13624,rno:24268,rno,A0A8I6A708,target_eukaryotes.csv
+0,K13624,cfa:611632,cfa,A0A8C0MV44,target_eukaryotes.csv
+0,K13624,mpuf:101671124,mpuf,A0A8U0MUK2,target_eukaryotes.csv
+0,K13624,mpuf:101673390,mpuf,A0A8U0SX78,target_eukaryotes.csv
+0,K13624,fca:101081158,fca,A0A5F5XSN2,target_eukaryotes.csv
+0,K13624,fca:101080399,fca,A0A2I2UCA7,target_eukaryotes.csv
+0,K13624,clv:102094497,clv,A0A2I0M1H6,target_eukaryotes.csv
+0,K13624,acs:100562012,acs,G1KGN3,target_eukaryotes.csv
+0,K13624,xla:108717079,xla,A0A1L8GB09,target_eukaryotes.csv
+0,K13624,dre:84702,dre,Q7ZU12,target_eukaryotes.csv
+0,K13624,ola:101171566,ola,A0A3B3H4C1,target_eukaryotes.csv
+0,K13624,nfu:107392965,nfu,A0A9D2XJA8,target_eukaryotes.csv

@@ -63,7 +63,7 @@ def make_tree_with_species_names():
 # pseudomonadota / gammaproteobacteria / pseudomonadales / (pae) Pseudomonas aeruginosa
 # bacillota / bacilli / bacillales (ban) Bacillus anthracis
 # pseudomonadota / gammaproteobacteria / enterobacterales (ype) Yersinia pestis
-# pseudomonadota / proteobacteria / neisseriales (ngo) Neisseria gonorrhoeae
+# pseudomonadota / betaproteobacteria / neisseriales (ngo) Neisseria gonorrhoeae
 # basillota / Baccilli / bacillales (sep) Staphylococcus epidermidis
 # campylobacterota / epsilonprteobacteria / campylobacterales (cje) Campylobacter jejuni
 # pseudomonadota / gammaproteobacteria / enterobacterales (sfl) Shigella flexneri
@@ -196,7 +196,7 @@ def my_layout(node):
 
 def get_newick_tree():
     email = "alexwalbom@gmail.com"
-    title = "Eukaryotes"
+    title = "Prokaryotes"
     with open(os.path.join(PATH_TO_MUSCLE_DATA, "alignment.aln"), 'r') as inF:
         sequence = inF.read()
     clustering = "UPGMA"

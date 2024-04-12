@@ -1,0 +1,29 @@
+K0 id,fraction of uniprot invariant,species,protein,number of orthologs in alignment,"# of uniprot classified as "":""","# of uniprot classified as "".""",# of uniprot not classified,species class,percent invariant in uniprot,percent invariant + two dots in uniprot,uniprot id,% active sites found,% total binding + active found,binding residues,binding res. found,active residues,active res. found,notes
+"
+K01835",9/10,Mus musculus,phosphoglucomutase,14 orthologs,1 two dots,,,eukaryotes,0.9,1,,,,,,,,
+K01785,4/10,Mus musculus,aldose-1-epimerase,26 orthologs,6 two dots,,,eukaryotes,0.4,1,,,,,,,,
+K00031,22/23,Mus musculus,isocitrate dehydrogenase,25 orthologs,,,1 no dot,eukaryotes,0.96,0.96,,,,,,,,
+K11262 ,34/64,Mus musculus,acetyl-CoA carboxylase,11 orthologs,8 two dots,10 one dot,12 no dot,eukaryotes,0.53,0.66,,,,,,,,
+K01188,1/10,Zea mays,beta-glucosidase,25 orthologs,2 two dots,,7 no dot,eukaryotes,0.1,0.3,,,,,,,,
+K01623,2/2,Mus musculus,fructose-bisphosphate aldolase,25 orthologs,,,,eukaryotes,1,1,,,,,,,,all orthologs but this one came from two organisms
+K00927,14/17,Mus musculus,phosphoglycerate kinase,24 orthologs,2 two dots,,1 no dot,eukaryotes,0.82,0.94,,,,,,,,
+K01681,11/12,Mus musculus,aconitate hydratase,14 orthologs,,1 one dot,,eukaryotes,0.92,0.92,,,,,,,,
+K00234 ,29/30,Mus musculus,succinate dehydrogenase,18 orthologs,1 two dots,,,eukaryotes,0.97,1,,,,,,,,
+"	
+K01958",8/9,Drosophila melanogaster,pyruvate carboxylase,25 orthologs,1 two dots,,,eukaryotes,0.89,1,,,,,,,,
+,,,,,,,,averages,0.75,0.91,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+K00088,20/23,Rhizobium johnstonii,IMP dehydrogenase,23 orthologs,3 two dots,,,prokaryotes,0.87,1,Q1ML11,1,0.88,"[252, 253, 254, 302, 303, 304, 306, 307, 309, 342, 343, 344, 365, 366, 389, 390, 391, 392, 393, 420, 474, 475, 476] ","[252, 302, 304, 306, 309, 342, 343, 344, 365, 366, 389, 390, 391, 392, 393, 420, 474, 475, 476]","[309, 405]","309, 405",
+K00937,6/6,"
+Helicobacter pylori",polyphosphate kinase,16 orthologs,,,,prokaryotes,1,1,O25654,1,1,"42, 372, 401, 464, 558, 586]","42, 372, 401, 464, 558, 586]",431,431,
+K03787,3/4,Chlamydia trachomatis,5'/3'-nucleotidase,12 orthologs,,,1 no dot,prokaryotes,0.75,0.75,O84220,1,0.75,"[14, 15, 47, 105]","[15, 47, 105]",n/a,n/a,
+K00764,2/3,e coli,amidophosphoribosyltransferase,24 orthologs,,,1 no dot,prokaryotes,0.67,0.67,P0AG16,0,0.5,"[305, 367, 368]","367, 368",2,None,
+K01939,18/28,Deinococcus radiodurans,Adenylosuccinate synthetase,25 orthologs,,3 one dot,7 no dot,prokaryotes,0.64,0.64,Q9RYB5,1,0.67,"[12, 13, 14, 15, 16, 17, 18, 38, 39, 40, 41, 121, 135, 213, 228, 293, 294, 295, 296, 297, 298, 299, 325, 326, 327, 390, 391, 392]","[12, 13, 14, 15, 16, 17, 18, 38, 39, 40, 41, 121, 135, 213, 228, 295, 297, 327]","[13, 41]","[13, 41]",
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+K00927,13/16,Helicobacter pylori,phosphoglycerate kinase,23 orthologs,1 two dots,2 one dot,,prokaryotes,0.81,0.88,P56154,n/a,0.81,"[29, 30, 31, 45, 69, 70, 71, 72, 125, 158, 209, 331, 357, 358, 359, 360]","[29, 31, 45, 69, 71, 125, 158, 209, 331, 357, 358, 359, 360]",n/a,n/a,
+K00948,7/14,e coli,ribose-phosphate pyrophosphokinase,25 orthologs,2 two dots,2 one dot,3 no dot,prokaryotes,0.5,0.64,P0A717,0,0.47,"37, 38, 39, 96, 97, 131, 170, 196, 220, 224, 225, 226, 227, 228]","38, 39, 96, 97, 131, 220, 225",194,None,
+K05810,3/3,e coli,adenosine deaminase,12 orthologs,,,,prokaryotes,1,1,P33644,n/a,1,"[71, 107, 124] ","[71, 107, 124] ",n/a,n/a,
+K01681,3/3,e coli,aconitate hydratase,10 orthologs,,,,prokaryotes,1,1,P25516,n/a,1,"[435, 501, 504]","[435, 501, 504]",n/a,n/a,
+K02112,7/8,e coli,atp synthase subunit beta,25 orthologs,1 two dots,,,prokaryotes,0.88,1,P0ABB4,n/a,0.88,"[150, 151, 152, 153, 154, 155, 156, 157]","[150, 151, 152, 153, 154, 155, 156, 157]",n/a,n/a,
+,,,,,,,,averages,0.81,0.86,,,0.8,,,,,
