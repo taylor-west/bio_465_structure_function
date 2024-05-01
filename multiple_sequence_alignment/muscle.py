@@ -167,7 +167,7 @@ def multiple_sequence_alignment(uniprot_ids, target_ko_id, threshold = 1.0):
 
     postURL = "https://www.ebi.ac.uk/Tools/services/rest/muscle/run"
 
-    email = "alexwalbom@gmail.com"
+    #email = TODO PUT YOUR EMAIL HERE AS A STRING AND UNCOMMENT THIS LINE
     title = "practiceSubmission"
 
     sequences = readDirectoryContents(folder_path)
