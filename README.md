@@ -4,14 +4,22 @@
 ## **Setup**
 
 
-
 * download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) if you don't already have it
 * add conda to PATH (if necessary)
 * create a new conda environment with the target by running `conda create --name &lt;env>` (replace `&lt;env>` with your desired environment name)
 * activate the conda environment `conda activate &lt;env>`
 * install the necessary conda packages manually if needed
+    * Python 3.11.8 was the version used for this project.
     * The following script should install the appropriate packages:  \
-`conda install python requests numpy pandas biopython networkx matplotlib && conda install -c etetoolkit ete3`
+`conda install python requests=2.31.0 numpy=1.26.3 pandas=2.1.4 biopython=1.78 networkx=3.1 matplotlib=3.8.0 && conda install -c etetoolkit ete3=3.1.3`
+    * The following versions of each package were used in this project:
+        * requests 2.31.0
+        * numpy 1.26.3
+        * pandas 2.1.4
+        * biopython 1.78
+        * networkx 3.1
+        * matplotlib 3.8.0
+        * ete3 3.1.3
 
 
 ## **To Run**
